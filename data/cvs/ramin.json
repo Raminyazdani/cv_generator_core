@@ -1,4 +1,8 @@
 {
+  "config": {
+    "lang": "en",
+    "ID": "ramin_yazdani"
+  },
   "basics": [
     {
       "fname": "Ramin",
@@ -56,7 +60,7 @@
       "url": "https://linkedin.com/in/ramin-yz/"
     },
     {
-      "network": "ORCHID",
+      "network": "ORCID",
       "username": "Ramin Yazdani",
       "url": "https://orcid.org/0000-0002-7996-5475"
     }

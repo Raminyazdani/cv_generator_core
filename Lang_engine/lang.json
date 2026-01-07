@@ -1,2437 +1,737 @@
 {
   "Analytical Instruments & Chromatography": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Analytische Geräte & Chromatographie",
+    "en": "Analytical Instruments & Chromatography",
+    "fa": "ابزارهای تحلیلی و کروماتوگرافی"
   },
   "Backend Development & APIs": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Backend-Entwicklung & APIs",
+    "en": "Backend Development & APIs",
+    "fa": "توسعه بک‌اند و APIها"
   },
   "Bioinformatics Domains": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Bioinformatik-Domänen",
+    "en": "Bioinformatics Domains",
+    "fa": "حوزه‌های بیوانفورماتیک"
   },
   "Bioprocess & Bioreactor Engineering": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Bioprozess- & Bioreaktortechnik",
+    "en": "Bioprocess & Bioreactor Engineering",
+    "fa": "مهندسی بیوفرایند و بیورآکتور"
   },
   "CEFR": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "GER (Gemeinsamer Europäischer Referenzrahmen)",
+    "en": "CEFR",
+    "fa": "چارچوب مرجع اروپایی مشترک (CEFR)"
   },
   "Cloud Platforms & Authentication": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Cloud-Plattformen & Authentifizierung",
+    "en": "Cloud Platforms & Authentication",
+    "fa": "پلتفرم‌های ابری و احراز هویت"
   },
   "Containerization & Orchestration": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Containerisierung & Orchestrierung",
+    "en": "Containerization & Orchestration",
+    "fa": "کانتینرسازی و ارکستریشن"
   },
   "Core Soft Skills": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Kernkompetenzen",
+    "en": "Core Soft Skills",
+    "fa": "مهارت‌های نرمِ اصلی"
   },
   "Dashboarding & Reporting Platforms": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Dashboarding- & Reporting-Plattformen",
+    "en": "Dashboarding & Reporting Platforms",
+    "fa": "پلتفرم‌های داشبورد و گزارش‌دهی"
   },
   "Data Pipelines & ETL Systems": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Datenpipelines & ETL-Systeme",
+    "en": "Data Pipelines & ETL Systems",
+    "fa": "پایپ‌لاین‌های داده و سامانه‌های ETL"
   },
   "Data Visualization & Reporting": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Datenvisualisierung & Reporting",
+    "en": "Data Visualization & Reporting",
+    "fa": "مصورسازی داده و گزارش‌دهی"
   },
   "Database Modeling & Optimization": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Datenbankmodellierung & -optimierung",
+    "en": "Database Modeling & Optimization",
+    "fa": "مدل‌سازی و بهینه‌سازی پایگاه داده"
   },
   "Databases & Data Engineering": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Datenbanken & Data Engineering",
+    "en": "Databases & Data Engineering",
+    "fa": "پایگاه‌های داده و مهندسی داده"
   },
   "DevOps & Infrastructure": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "DevOps & Infrastruktur",
+    "en": "DevOps & Infrastructure",
+    "fa": "دواپس و زیرساخت"
   },
   "DevOps Tools & CI/CD Pipelines": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "DevOps-Tools & CI/CD-Pipelines",
+    "en": "DevOps Tools & CI/CD Pipelines",
+    "fa": "ابزارهای DevOps و پایپ‌لاین‌های CI/CD"
   },
   "Experimental Design & Laboratory Documentation": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Versuchsplanung & Labordokumentation",
+    "en": "Experimental Design & Laboratory Documentation",
+    "fa": "طراحی آزمایش و مستندسازی آزمایشگاهی"
   },
   "Frontend Frameworks & UI Technologies": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Frontend-Frameworks & UI-Technologien",
+    "en": "Frontend Frameworks & UI Technologies",
+    "fa": "فریم‌ورک‌های فرانت‌اند و فناوری‌های UI"
   },
   "Functional Annotation & Systems Biology": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Funktionelle Annotation & Systembiologie",
+    "en": "Functional Annotation & Systems Biology",
+    "fa": "حاشیه‌نویسی عملکردی و زیست‌شناسی سامانه‌ای"
   },
   "Genomics & Genome Assembly": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Genomik & Genomassemblierung",
+    "en": "Genomics & Genome Assembly",
+    "fa": "ژنومیکس و مونتاژ ژنوم"
+  },
+  "ID": {
+    "de": "ID",
+    "en": "ID",
+    "fa": "ID"
   },
   "In Vivo & Ex Vivo Experimental Protocols": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "In-vivo- & Ex-vivo-Experimentprotokolle",
+    "en": "In Vivo & Ex Vivo Experimental Protocols",
+    "fa": "پروتکل‌های آزمایشگاهی درون‌تنی و برون‌تنی"
   },
   "Lab Safety, Compliance & Regulatory Practices": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Laborsicherheit, Compliance & regulatorische Praxis",
+    "en": "Lab Safety, Compliance & Regulatory Practices",
+    "fa": "ایمنی آزمایشگاه، انطباق و الزامات قانونی"
   },
   "Laboratory Techniques": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Labortechniken",
+    "en": "Laboratory Techniques",
+    "fa": "تکنیک‌های آزمایشگاهی"
   },
   "Machine Learning & Data Science": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Maschinelles Lernen & Data Science",
+    "en": "Machine Learning & Data Science",
+    "fa": "یادگیری ماشین و علم داده"
   },
   "Metagenomics & Microbial Ecology": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Metagenomik & Mikrobielle Ökologie",
+    "en": "Metagenomics & Microbial Ecology",
+    "fa": "متاژنومیکس و بوم‌شناسی میکروبی"
   },
   "Molecular & Microbial Biology Techniques": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Molekular- & Mikrobiologie-Techniken",
+    "en": "Molecular & Microbial Biology Techniques",
+    "fa": "تکنیک‌های زیست‌شناسی مولکولی و میکروبی"
   },
   "Networking & Protocols": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Netzwerk & Protokolle",
+    "en": "Networking & Protocols",
+    "fa": "شبکه و پروتکل‌ها"
   },
   "NoSQL Databases": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "NoSQL-Datenbanken",
+    "en": "NoSQL Databases",
+    "fa": "پایگاه‌های دادهٔ NoSQL"
   },
   "Phylogeny & Comparative Genomics": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Phylogenie & Vergleichende Genomik",
+    "en": "Phylogeny & Comparative Genomics",
+    "fa": "فیلوژنی و ژنومیکس مقایسه‌ای"
   },
   "Pictures": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Bilder",
+    "en": "Pictures",
+    "fa": "تصاویر"
   },
   "Programming & Scripting": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Programmierung & Skripting",
+    "en": "Programming & Scripting",
+    "fa": "برنامه‌نویسی و اسکریپت‌نویسی"
   },
   "Programming Languages": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Programmiersprachen",
+    "en": "Programming Languages",
+    "fa": "زبان‌های برنامه‌نویسی"
   },
   "Protein Structure & Structural Bioinformatics": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Proteinstruktur & Struktur-Bioinformatik",
+    "en": "Protein Structure & Structural Bioinformatics",
+    "fa": "ساختار پروتئین و بیوانفورماتیک ساختاری"
   },
   "SQL Databases": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "SQL-Datenbanken",
+    "en": "SQL Databases",
+    "fa": "پایگاه‌های دادهٔ SQL"
   },
   "Scientific Plotting Tools": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Wissenschaftliche Plotting-Tools",
+    "en": "Scientific Plotting Tools",
+    "fa": "ابزارهای رسم علمی"
   },
   "Scripting & Automation Tools": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Skripting- & Automatisierungstools",
+    "en": "Scripting & Automation Tools",
+    "fa": "ابزارهای اسکریپت‌نویسی و خودکارسازی"
   },
   "Soft Skills": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Soft Skills",
+    "en": "Soft Skills",
+    "fa": "مهارت‌های نرم"
   },
   "Software & Web Development": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Software- & Webentwicklung",
+    "en": "Software & Web Development",
+    "fa": "توسعه نرم‌افزار و وب"
   },
   "Statistical Modeling & Machine Learning in Bioinformatics": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Statistische Modellierung & Machine Learning in der Bioinformatik",
+    "en": "Statistical Modeling & Machine Learning in Bioinformatics",
+    "fa": "مدل‌سازی آماری و یادگیری ماشین در بیوانفورماتیک"
   },
   "System Administration & Linux Tools": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Systemadministration & Linux-Tools",
+    "en": "System Administration & Linux Tools",
+    "fa": "مدیریت سیستم و ابزارهای لینوکس"
   },
   "Transcriptomics & Single-Cell Analysis": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Transkriptomik & Single-Cell-Analyse",
+    "en": "Transcriptomics & Single-Cell Analysis",
+    "fa": "ترنسکریپتومیکس و تحلیل تک‌سلولی"
   },
   "URL": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "URL",
+    "en": "URL",
+    "fa": "لینک (URL)"
   },
   "Visual Analytics & Network Tools": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Visual Analytics & Network-Tools",
+    "en": "Visual Analytics & Network Tools",
+    "fa": "تحلیل بصری و ابزارهای شبکه"
   },
   "access_date": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Zugriffsdatum",
+    "en": "access_date",
+    "fa": "تاریخ دسترسی"
   },
   "address": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Adresse",
+    "en": "address",
+    "fa": "آدرس"
   },
   "area": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Fachbereich",
+    "en": "area",
+    "fa": "رشته/حوزه"
   },
   "article_number": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Artikelnummer",
+    "en": "article_number",
+    "fa": "شماره مقاله"
   },
   "arxiv": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "arXiv",
+    "en": "arxiv",
+    "fa": "آرکایو (arXiv)"
   },
   "authors": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Autor:innen",
+    "en": "authors",
+    "fa": "نویسندگان"
   },
   "authors_structured": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Autor:innen (strukturiert)",
+    "en": "authors_structured",
+    "fa": "نویسندگان (ساختاریافته)"
   },
   "basics": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].Pictures": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].Pictures[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].Pictures[].URL": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].Pictures[].type_of": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].birthDate": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].email": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].fname": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].label": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].label[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].lname": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].location": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].location[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].location[].address": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].location[].city": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].location[].country": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].location[].postalCode": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].location[].region": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].phone": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].phone.countryCode": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].phone.formatted": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].phone.number": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "basics[].summary": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Grunddaten",
+    "en": "basics",
+    "fa": "اطلاعات پایه"
   },
   "birthDate": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Geburtsdatum",
+    "en": "birthDate",
+    "fa": "تاریخ تولد"
   },
   "book_title": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Buchtitel",
+    "en": "book_title",
+    "fa": "عنوان کتاب"
   },
   "certificate": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Zertifikat",
+    "en": "certificate",
+    "fa": "گواهی"
   },
   "certifications": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Zertifikate",
+    "en": "certifications",
+    "fa": "گواهینامه‌ها"
   },
   "chapter_pages": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Kapitel-Seiten",
+    "en": "chapter_pages",
+    "fa": "صفحات فصل"
   },
   "city": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Stadt",
+    "en": "city",
+    "fa": "شهر"
   },
   "conference": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Konferenz",
+    "en": "conference",
+    "fa": "کنفرانس"
+  },
+  "config": {
+    "de": "config",
+    "en": "config",
+    "fa": "config"
   },
   "correspondent": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Korrespondenzperson",
+    "en": "correspondent",
+    "fa": "مسئول مکاتبه"
   },
   "country": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Land",
+    "en": "country",
+    "fa": "کشور"
   },
   "countryCode": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Ländervorwahl",
+    "en": "countryCode",
+    "fa": "کد کشور"
   },
   "date": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Datum",
+    "en": "date",
+    "fa": "تاریخ"
   },
   "day": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Tag",
+    "en": "day",
+    "fa": "روز"
   },
   "degree_type": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Abschlussart",
+    "en": "degree_type",
+    "fa": "نوع مدرک"
   },
   "department": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Abteilung",
+    "en": "department",
+    "fa": "بخش/دپارتمان"
   },
   "description": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Beschreibung",
+    "en": "description",
+    "fa": "توضیحات"
   },
   "doi": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "DOI",
+    "en": "doi",
+    "fa": "شناسه DOI"
   },
   "duration": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Dauer",
+    "en": "duration",
+    "fa": "مدت"
   },
   "edition": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Auflage",
+    "en": "edition",
+    "fa": "ویرایش"
   },
   "editors": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Herausgeber:innen",
+    "en": "editors",
+    "fa": "ویراستاران"
   },
   "education": {
     "de": "Ausbildung",
-    "en": "Education",
+    "en": "education",
     "fa": "تحصیلات"
   },
-  "education[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "education[].area": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "education[].endDate": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "education[].gpa": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "education[].institution": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "education[].location": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "education[].logo_url": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "education[].startDate": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "education[].studyType": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "education[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "education[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
   "email": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "E-Mail",
+    "en": "email",
+    "fa": "ایمیل"
   },
   "endDate": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Enddatum",
+    "en": "endDate",
+    "fa": "تاریخ پایان"
   },
   "examDate": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Prüfungsdatum",
+    "en": "examDate",
+    "fa": "تاریخ آزمون"
   },
   "experiences": {
-    "de": "Berufserfahrung",
-    "en": "Experience",
-    "fa": "تجربه کاری"
-  },
-  "experiences[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "experiences[].description": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "experiences[].duration": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "experiences[].institution": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "experiences[].primaryFocus": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "experiences[].role": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Erfahrungen",
+    "en": "experiences",
+    "fa": "سوابق"
   },
   "faculty": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Fakultät",
+    "en": "faculty",
+    "fa": "دانشکده"
   },
   "fname": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Vorname",
+    "en": "fname",
+    "fa": "نام"
   },
   "formatted": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Formatiert",
+    "en": "formatted",
+    "fa": "فرمت‌شده"
   },
   "gpa": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Notendurchschnitt (GPA)",
+    "en": "gpa",
+    "fa": "معدل"
   },
   "identifiers": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Kennungen",
+    "en": "identifiers",
+    "fa": "شناسه‌ها"
   },
   "institution": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Institution",
+    "en": "institution",
+    "fa": "مؤسسه/دانشگاه"
   },
   "isbn": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "ISBN",
+    "en": "isbn",
+    "fa": "شابک (ISBN)"
   },
   "issn": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "ISSN",
+    "en": "issn",
+    "fa": "شاپا (ISSN)"
   },
   "issue": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Heft/Ausgabe",
+    "en": "issue",
+    "fa": "شماره/جلد (Issue)"
   },
   "issuer": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Aussteller",
+    "en": "issuer",
+    "fa": "صادرکننده"
   },
   "journal": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Zeitschrift",
+    "en": "journal",
+    "fa": "ژورنال/مجله"
   },
   "label": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Bezeichnung",
+    "en": "label",
+    "fa": "عنوان"
+  },
+  "lang": {
+    "de": "lang",
+    "en": "lang",
+    "fa": "lang"
   },
   "language": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Sprache",
+    "en": "language",
+    "fa": "زبان"
   },
   "languages": {
     "de": "Sprachen",
-    "en": "Languages",
+    "en": "languages",
     "fa": "زبان‌ها"
   },
-  "languages[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].certifications": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].certifications[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].certifications[].URL": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].certifications[].examDate": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].certifications[].listening": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].certifications[].maxScore": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].certifications[].minScore": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].certifications[].organization": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].certifications[].overall": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].certifications[].reading": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].certifications[].speaking": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].certifications[].test": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].certifications[].writing": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].language": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].proficiency": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].proficiency.CEFR": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].proficiency.level": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "languages[].proficiency.status": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
   "level": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Niveau",
+    "en": "level",
+    "fa": "سطح"
   },
   "listening": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Hören",
+    "en": "listening",
+    "fa": "شنیداری"
   },
   "literal": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Wortlaut",
+    "en": "literal",
+    "fa": "متن/نام دقیق"
   },
   "lname": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Nachname",
+    "en": "lname",
+    "fa": "نام خانوادگی"
   },
   "location": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Ort",
+    "en": "location",
+    "fa": "موقعیت"
   },
   "logo_url": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Logo-url",
+    "en": "logo_url",
+    "fa": "لینک لوگو"
   },
   "long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Langer Name",
+    "en": "long_name",
+    "fa": "نام کامل"
   },
   "maxScore": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Maximalpunktzahl",
+    "en": "maxScore",
+    "fa": "حداکثر نمره"
   },
   "minScore": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Minimalpunktzahl",
+    "en": "minScore",
+    "fa": "حداقل نمره"
   },
   "month": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Monat",
+    "en": "month",
+    "fa": "ماه"
   },
   "name": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Name",
+    "en": "name",
+    "fa": "نام"
   },
   "network": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Netzwerk",
+    "en": "network",
+    "fa": "شبکه"
   },
   "notes": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Notizen",
+    "en": "notes",
+    "fa": "یادداشت‌ها"
   },
   "number": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Nummer",
+    "en": "number",
+    "fa": "شماره"
   },
   "organization": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Organisation",
+    "en": "organization",
+    "fa": "سازمان"
   },
   "overall": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Gesamt",
+    "en": "overall",
+    "fa": "کل"
   },
   "pages": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Seiten",
+    "en": "pages",
+    "fa": "صفحات"
   },
   "phone": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Telefon",
+    "en": "phone",
+    "fa": "تلفن"
   },
   "place": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Ort/Platz",
+    "en": "place",
+    "fa": "محل"
   },
   "pmcid": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "PMCID",
+    "en": "pmcid",
+    "fa": "PMCID"
   },
   "pmid": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "PMID",
+    "en": "pmid",
+    "fa": "PMID"
   },
   "position": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Position",
+    "en": "position",
+    "fa": "سمت"
   },
   "postalCode": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Postleitzahl",
+    "en": "postalCode",
+    "fa": "کدپستی"
   },
   "primaryFocus": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Hauptfokus",
+    "en": "primaryFocus",
+    "fa": "تمرکز اصلی"
   },
   "proficiency": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Kompetenz",
+    "en": "proficiency",
+    "fa": "میزان تسلط"
   },
   "profiles": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "profiles[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "profiles[].network": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "profiles[].url": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "profiles[].username": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "profiles[].uuid": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Profile",
+    "en": "profiles",
+    "fa": "پروفایل‌ها"
   },
   "projects": {
     "de": "Projekte",
-    "en": "Projects",
+    "en": "projects",
     "fa": "پروژه‌ها"
-  },
-  "projects[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "projects[].description": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "projects[].title": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "projects[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "projects[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "projects[].url": {
-    "de": "",
-    "en": "",
-    "fa": ""
   },
   "publications": {
     "de": "Publikationen",
-    "en": "Publications",
+    "en": "publications",
     "fa": "انتشارات"
   },
-  "publications[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].URL": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].access_date": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].article_number": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].authors": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].authors[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].authors_structured": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].authors_structured[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].authors_structured[].literal": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].book_title": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].chapter_pages": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].conference": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].correspondent": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].date": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].day": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].degree_type": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].doi": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].edition": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].editors": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].faculty": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].identifiers": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].identifiers.arxiv": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].identifiers.doi": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].identifiers.isbn": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].identifiers.issn": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].identifiers.pmcid": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].identifiers.pmid": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].institution": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].isbn": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].issn": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].issue": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].journal": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].language": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].month": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].notes": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].pages": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].place": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].publisher": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].repository_url": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].school": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].status": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].submissionDate": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].supervisors": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].supervisors[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].title": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].type": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].url": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].volume": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "publications[].year": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
   "publisher": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Verlag",
+    "en": "publisher",
+    "fa": "ناشر"
   },
   "reading": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Lesen",
+    "en": "reading",
+    "fa": "خواندن"
   },
   "references": {
     "de": "Referenzen",
-    "en": "References",
-    "fa": "مراجع"
-  },
-  "references[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].URL": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].department": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].email": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].email[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].institution": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].location": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].phone": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].phone[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].phone[].countryCode": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].phone[].formatted": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].phone[].number": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].position": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "references[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "en": "references",
+    "fa": "معرف‌ها"
   },
   "region": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Region/Bundesland",
+    "en": "region",
+    "fa": "استان/منطقه"
   },
   "repository_url": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Repository-url",
+    "en": "repository_url",
+    "fa": "لینک مخزن (Repository)"
   },
   "role": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Rolle",
+    "en": "role",
+    "fa": "نقش"
   },
   "school": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Schule",
+    "en": "school",
+    "fa": "مدرسه"
   },
   "short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Kurzer Name",
+    "en": "short_name",
+    "fa": "نام کوتاه"
   },
   "skills": {
     "de": "Fähigkeiten",
-    "en": "Skills",
+    "en": "skills",
     "fa": "مهارت‌ها"
   },
-  "skills.Bioinformatics Domains": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Functional Annotation & Systems Biology": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Functional Annotation & Systems Biology[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Functional Annotation & Systems Biology[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Functional Annotation & Systems Biology[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Functional Annotation & Systems Biology[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Functional Annotation & Systems Biology[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Genomics & Genome Assembly": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Genomics & Genome Assembly[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Genomics & Genome Assembly[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Genomics & Genome Assembly[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Genomics & Genome Assembly[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Genomics & Genome Assembly[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Metagenomics & Microbial Ecology": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Metagenomics & Microbial Ecology[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Metagenomics & Microbial Ecology[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Metagenomics & Microbial Ecology[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Metagenomics & Microbial Ecology[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Metagenomics & Microbial Ecology[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Phylogeny & Comparative Genomics": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Phylogeny & Comparative Genomics[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Phylogeny & Comparative Genomics[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Phylogeny & Comparative Genomics[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Phylogeny & Comparative Genomics[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Phylogeny & Comparative Genomics[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Protein Structure & Structural Bioinformatics": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Protein Structure & Structural Bioinformatics[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Protein Structure & Structural Bioinformatics[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Protein Structure & Structural Bioinformatics[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Protein Structure & Structural Bioinformatics[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Protein Structure & Structural Bioinformatics[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Statistical Modeling & Machine Learning in Bioinformatics": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Statistical Modeling & Machine Learning in Bioinformatics[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Statistical Modeling & Machine Learning in Bioinformatics[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Statistical Modeling & Machine Learning in Bioinformatics[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Statistical Modeling & Machine Learning in Bioinformatics[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Statistical Modeling & Machine Learning in Bioinformatics[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Transcriptomics & Single-Cell Analysis": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Transcriptomics & Single-Cell Analysis[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Transcriptomics & Single-Cell Analysis[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Transcriptomics & Single-Cell Analysis[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Transcriptomics & Single-Cell Analysis[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Bioinformatics Domains.Transcriptomics & Single-Cell Analysis[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Dashboarding & Reporting Platforms": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Dashboarding & Reporting Platforms[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Dashboarding & Reporting Platforms[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Dashboarding & Reporting Platforms[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Dashboarding & Reporting Platforms[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Dashboarding & Reporting Platforms[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Scientific Plotting Tools": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Scientific Plotting Tools[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Scientific Plotting Tools[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Scientific Plotting Tools[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Scientific Plotting Tools[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Scientific Plotting Tools[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Visual Analytics & Network Tools": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Visual Analytics & Network Tools[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Visual Analytics & Network Tools[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Visual Analytics & Network Tools[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Visual Analytics & Network Tools[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Data Visualization & Reporting.Visual Analytics & Network Tools[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.Data Pipelines & ETL Systems": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.Data Pipelines & ETL Systems[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.Data Pipelines & ETL Systems[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.Data Pipelines & ETL Systems[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.Data Pipelines & ETL Systems[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.Data Pipelines & ETL Systems[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.Database Modeling & Optimization": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.Database Modeling & Optimization[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.Database Modeling & Optimization[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.Database Modeling & Optimization[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.Database Modeling & Optimization[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.Database Modeling & Optimization[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.NoSQL Databases": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.NoSQL Databases[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.NoSQL Databases[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.NoSQL Databases[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.NoSQL Databases[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.NoSQL Databases[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.SQL Databases": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.SQL Databases[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.SQL Databases[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.SQL Databases[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.SQL Databases[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Databases & Data Engineering.SQL Databases[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Cloud Platforms & Authentication": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Cloud Platforms & Authentication[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Cloud Platforms & Authentication[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Cloud Platforms & Authentication[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Cloud Platforms & Authentication[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Cloud Platforms & Authentication[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Containerization & Orchestration": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Containerization & Orchestration[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Containerization & Orchestration[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Containerization & Orchestration[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Containerization & Orchestration[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Containerization & Orchestration[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.DevOps Tools & CI/CD Pipelines": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.DevOps Tools & CI/CD Pipelines[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.DevOps Tools & CI/CD Pipelines[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.DevOps Tools & CI/CD Pipelines[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.DevOps Tools & CI/CD Pipelines[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.DevOps Tools & CI/CD Pipelines[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Networking & Protocols": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Networking & Protocols[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Networking & Protocols[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Networking & Protocols[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Networking & Protocols[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.Networking & Protocols[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.System Administration & Linux Tools": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.System Administration & Linux Tools[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.System Administration & Linux Tools[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.System Administration & Linux Tools[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.System Administration & Linux Tools[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.DevOps & Infrastructure.System Administration & Linux Tools[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Analytical Instruments & Chromatography": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Analytical Instruments & Chromatography[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Analytical Instruments & Chromatography[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Analytical Instruments & Chromatography[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Analytical Instruments & Chromatography[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Analytical Instruments & Chromatography[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Bioprocess & Bioreactor Engineering": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Bioprocess & Bioreactor Engineering[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Bioprocess & Bioreactor Engineering[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Bioprocess & Bioreactor Engineering[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Bioprocess & Bioreactor Engineering[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Bioprocess & Bioreactor Engineering[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Experimental Design & Laboratory Documentation": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Experimental Design & Laboratory Documentation[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Experimental Design & Laboratory Documentation[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Experimental Design & Laboratory Documentation[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Experimental Design & Laboratory Documentation[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Experimental Design & Laboratory Documentation[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.In Vivo & Ex Vivo Experimental Protocols": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.In Vivo & Ex Vivo Experimental Protocols[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.In Vivo & Ex Vivo Experimental Protocols[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.In Vivo & Ex Vivo Experimental Protocols[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.In Vivo & Ex Vivo Experimental Protocols[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.In Vivo & Ex Vivo Experimental Protocols[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Lab Safety, Compliance & Regulatory Practices": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Lab Safety, Compliance & Regulatory Practices[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Lab Safety, Compliance & Regulatory Practices[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Lab Safety, Compliance & Regulatory Practices[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Lab Safety, Compliance & Regulatory Practices[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Lab Safety, Compliance & Regulatory Practices[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Molecular & Microbial Biology Techniques": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Molecular & Microbial Biology Techniques[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Molecular & Microbial Biology Techniques[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Molecular & Microbial Biology Techniques[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Molecular & Microbial Biology Techniques[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Laboratory Techniques.Molecular & Microbial Biology Techniques[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Machine Learning & Data Science": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Machine Learning & Data Science[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Machine Learning & Data Science[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Machine Learning & Data Science[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Machine Learning & Data Science[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Machine Learning & Data Science[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Programming Languages": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Programming Languages[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Programming Languages[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Programming Languages[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Programming Languages[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Programming Languages[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Scripting & Automation Tools": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Scripting & Automation Tools[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Scripting & Automation Tools[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Scripting & Automation Tools[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Scripting & Automation Tools[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Programming & Scripting.Scripting & Automation Tools[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Soft Skills": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Soft Skills.Core Soft Skills": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Soft Skills.Core Soft Skills[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Soft Skills.Core Soft Skills[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Soft Skills.Core Soft Skills[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Soft Skills.Core Soft Skills[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Soft Skills.Core Soft Skills[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Software & Web Development": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Software & Web Development.Backend Development & APIs": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Software & Web Development.Backend Development & APIs[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Software & Web Development.Backend Development & APIs[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Software & Web Development.Backend Development & APIs[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Software & Web Development.Backend Development & APIs[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Software & Web Development.Backend Development & APIs[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Software & Web Development.Frontend Frameworks & UI Technologies": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Software & Web Development.Frontend Frameworks & UI Technologies[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Software & Web Development.Frontend Frameworks & UI Technologies[].long_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Software & Web Development.Frontend Frameworks & UI Technologies[].short_name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Software & Web Development.Frontend Frameworks & UI Technologies[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "skills.Software & Web Development.Frontend Frameworks & UI Technologies[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
   "speaking": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Sprechen",
+    "en": "speaking",
+    "fa": "گفتاری"
   },
   "startDate": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Startdatum",
+    "en": "startDate",
+    "fa": "تاریخ شروع"
   },
   "status": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Status",
+    "en": "status",
+    "fa": "وضعیت"
   },
   "studyType": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Studienart",
+    "en": "studyType",
+    "fa": "مقطع/نوع تحصیل"
   },
   "submissionDate": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Einreichungsdatum",
+    "en": "submissionDate",
+    "fa": "تاریخ ارسال"
   },
   "summary": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Zusammenfassung",
+    "en": "summary",
+    "fa": "خلاصه"
   },
   "supervisors": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Betreuer:innen",
+    "en": "supervisors",
+    "fa": "اساتید راهنما"
   },
   "test": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Test",
+    "en": "test",
+    "fa": "آزمون"
   },
   "title": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Titel",
+    "en": "title",
+    "fa": "عنوان"
   },
   "type": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Typ",
+    "en": "type",
+    "fa": "نوع"
   },
   "type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Typ-Schlüssel",
+    "en": "type_key",
+    "fa": "کلید نوع"
   },
   "type_of": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Art von",
+    "en": "type_of",
+    "fa": "نوعِ"
   },
   "url": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "url",
+    "en": "url",
+    "fa": "لینک"
   },
   "username": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Benutzername",
+    "en": "username",
+    "fa": "نام کاربری"
   },
   "uuid": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "UUID",
+    "en": "uuid",
+    "fa": "شناسه یکتا (UUID)"
   },
   "volume": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Band",
+    "en": "volume",
+    "fa": "جلد"
   },
   "workshop_and_certifications": {
     "de": "Workshops & Zertifizierungen",
-    "en": "Workshops & Certifications",
+    "en": "workshop_and_certifications",
     "fa": "کارگاه‌ها و گواهینامه‌ها"
   },
-  "workshop_and_certifications[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "workshop_and_certifications[].certifications": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "workshop_and_certifications[].certifications[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "workshop_and_certifications[].certifications[].URL": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "workshop_and_certifications[].certifications[].certificate": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "workshop_and_certifications[].certifications[].date": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "workshop_and_certifications[].certifications[].duration": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "workshop_and_certifications[].certifications[].name": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "workshop_and_certifications[].certifications[].type_key": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "workshop_and_certifications[].certifications[].type_key[]": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "workshop_and_certifications[].issuer": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
   "writing": {
-    "de": "",
-    "en": "",
-    "fa": ""
+    "de": "Schreiben",
+    "en": "writing",
+    "fa": "نوشتاری"
   },
   "year": {
-    "de": "",
-    "en": "",
-    "fa": ""
-  },
-  "curriculum_vitae": {
-    "de": "Lebenslauf",
-    "en": "Curriculum Vitae",
-    "fa": "رزومه"
+    "de": "Jahr",
+    "en": "year",
+    "fa": "سال"
   }
 }

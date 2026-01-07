@@ -1,78 +1,81 @@
-{
-  "grunddaten": [
+{  "config": {
+    "lang": "de",
+    "ID": "ramin_yazdani"
+  },
+  "basics": [
     {
-      "vorname": "Ramin",
-      "nachname": "Yazdani",
-      "bezeichnungen": [
+      "fname": "Ramin",
+      "lname": "Yazdani",
+      "label": [
         "Biotechnologe",
         "Entwickler",
-        "Data Scientist",
+        "Datenwissenschaftler",
         "Bioinformatiker"
       ],
-      "e_mail": "raya00001@stud.uni-saarland.de",
-      "telefon": {
-        "landesvorwahl": "+49",
-        "nummer": "17666652181",
-        "formatiert": "+49 (0) 176 666 52181"
+      "email": "raya00001@stud.uni-saarland.de",
+      "phone": {
+        "countryCode": "+49",
+        "number": "17666652181",
+        "formatted": "+49 (0) 176 666 52181"
       },
-      "geburtsdatum": "1997-09-07",
-      "zusammenfassung": "Ich bin Ramin Yazdani – Data-Science-Enthusiast mit großer Leidenschaft für Biotechnologie und Bioinformatik. Derzeit erweitere ich mein Wissen an der Universität des Saarlandes und nutze Programmierung und Datenanalyse, um wirkungsvolle Forschung voranzutreiben. Mein Hintergrund in der Biotechnologie und meine Erfahrung in Bioinformatikprojekten motivieren mich, innovative Lösungen zu entwickeln und Erkenntnisse aus komplexen Daten zu gewinnen. Als Teamplayer bringe ich mich gerne in kollaborativen Umgebungen ein und lerne dort. Abseits meiner technischen Tätigkeiten verbessere ich mein Deutsch und stelle mich gerne neuen Herausforderungen.",
-      "standort": [
+      "birthDate": "1997-09-07",
+      "summary": "Ich bin Ramin Yazdani, ein Data-Science-Enthusiast mit großer Leidenschaft für Biotechnologie und Bioinformatik. Derzeit erweitere ich mein Wissen an der Universität des Saarlandes und setze Programmierung sowie Datenanalyse gezielt ein, um wirkungsvolle Forschung voranzutreiben. Mein biotechnologischer Hintergrund und meine Erfahrungen in bioinformatischen Projekten stärken mein Engagement, innovative Lösungen zu entwickeln und aus komplexen Daten neue Erkenntnisse zu gewinnen. Als Teamplayer bringe ich mich gern ein und lerne in kollaborativen Umgebungen. Neben meinen technischen Aktivitäten verbessere ich mein Deutsch und stelle mich neuen Herausforderungen.",
+      "location": [
         {
-          "adresse": null,
-          "postleitzahl": "66121",
-          "stadt": "Saarbrücken",
-          "bundesland": "Saarland",
-          "land": "Deutschland"
+          "address": null,
+          "postalCode": "66121",
+          "city": "Saarbrücken",
+          "region": "Saarland",
+          "country": "Deutschland"
         }
       ],
-      "bilder": [
+      "Pictures": [
         {
-          "typ_auf": "profil",
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/cv_profile_photo.jpg"
+          "type_of": "profile",
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/cv_profile_photo.jpg"
         },
         {
-          "typ_auf": "titelbild",
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/cv_cover_photo.jpg"
+          "type_of": "cover",
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/cv_cover_photo.jpg"
         }
       ]
     }
   ],
-  "profile": [
+  "profiles": [
     {
-      "netzwerk": "GitHub",
-      "benutzername": "Raminyazdani",
-      "link": "https://github.com/Raminyazdani"
+      "network": "GitHub",
+      "username": "Raminyazdani",
+      "url": "https://github.com/Raminyazdani"
     },
     {
-      "netzwerk": "Google Scholar",
-      "benutzername": "Ramin Yazdani",
-      "link": "https://scholar.google.com/citations?user=PIKk-q0AAAAJ&hl=en",
+      "network": "Google Scholar",
+      "username": "Ramin Yazdani",
+      "url": "https://scholar.google.com/citations?user=PIKk-q0AAAAJ&hl=en",
       "uuid": "PIKk-q0AAAAJ"
     },
     {
-      "netzwerk": "LinkedIn",
-      "benutzername": "ramin-yz",
-      "link": "https://linkedin.com/in/ramin-yz/"
+      "network": "LinkedIn",
+      "username": "ramin-yz",
+      "url": "https://linkedin.com/in/ramin-yz/"
     },
     {
-      "netzwerk": "ORCHID",
-      "benutzername": "Ramin Yazdani",
-      "link": "https://orcid.org/0000-0002-7996-5475"
+      "network": "ORCID",
+      "username": "Ramin Yazdani",
+      "url": "https://orcid.org/0000-0002-7996-5475"
     }
   ],
-  "ausbildung": [
+  "education": [
     {
       "institution": "Universität des Saarlandes",
-      "standort": "Saarbrücken, Deutschland",
-      "fachgebiet": "Bioinformatik",
-      "abschlussart": "Master",
-      "startdatum": "2024-10-20",
-      "enddatum": "heute",
-      "note": "",
+      "location": "Saarbrücken, Deutschland",
+      "area": "Bioinformatik",
+      "studyType": "Master",
+      "startDate": "2024-10-20",
+      "endDate": "aktuell",
+      "gpa": "",
       "logo_url": "",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik",
@@ -81,15 +84,15 @@
     },
     {
       "institution": "Universität Teheran",
-      "standort": "Teheran, Iran",
-      "fachgebiet": "Biotechnologie (industriell und umweltbezogen)",
-      "abschlussart": "Master",
-      "startdatum": "2021-09-22",
-      "enddatum": "2024-09-15",
-      "note": "17.29 / 20.00",
+      "location": "Teheran, Iran",
+      "area": "Biotechnologie (industriell und Umwelt)",
+      "studyType": "Master",
+      "startDate": "2021-09-22",
+      "endDate": "2024-09-15",
+      "gpa": "17.29 / 20.00",
       "logo_url": "",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik",
@@ -97,16 +100,16 @@
       ]
     },
     {
-      "institution": "Islamische Azad-Universität, Campus Roudehen",
-      "standort": "Roudehen, Iran",
-      "fachgebiet": "Biotechnologie",
-      "abschlussart": "Bachelor",
-      "startdatum": "2017-09-23",
-      "enddatum": "2021-07-22",
-      "note": "17.13 / 20.00",
+      "institution": "Islamische Azad-Universität, Zweigstelle Roudehen",
+      "location": "Roudehen, Iran",
+      "area": "Biotechnologie",
+      "studyType": "Bachelor",
+      "startDate": "2017-09-23",
+      "endDate": "2021-07-22",
+      "gpa": "17.13 / 20.00",
       "logo_url": "",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik",
@@ -114,119 +117,119 @@
       ]
     },
     {
-      "institution": "Schule Soltani 1, Karadsch",
-      "standort": "Karadsch, Iran",
-      "fachgebiet": "Naturwissenschaften",
-      "abschlussart": "Voruniversitäre_Ausbildung",
-      "startdatum": "2014-09-23",
-      "enddatum": "2015-09-22",
-      "note": "13.36 / 20.00",
+      "institution": "Schule Soltani 1 Karaj",
+      "location": "Karaj, Iran",
+      "area": "Naturwissenschaften",
+      "studyType": "Voruniversitär",
+      "startDate": "2014-09-23",
+      "endDate": "2015-09-22",
+      "gpa": "13.36 / 20.00",
       "logo_url": "",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik"
       ]
     },
     {
-      "institution": "Schule Soltani 1, Karadsch",
-      "standort": "Karadsch, Iran",
-      "fachgebiet": "Naturwissenschaften",
-      "abschlussart": "Sekundarschule",
-      "startdatum": "2011-09-23",
-      "enddatum": "2014-06-22",
-      "note": "18.50 / 20.00",
+      "institution": "Schule Soltani 1 Karaj",
+      "location": "Karaj, Iran",
+      "area": "Naturwissenschaften",
+      "studyType": "Gymnasium",
+      "startDate": "2011-09-23",
+      "endDate": "2014-06-22",
+      "gpa": "18.50 / 20.00",
       "logo_url": "",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik"
       ]
     }
   ],
-  "sprachen": [
+  "languages": [
     {
-      "sprache": "Persisch",
-      "kenntnisse": {
-        "niveau": "Muttersprachlich",
-        "GER": null,
+      "language": "Persisch",
+      "proficiency": {
+        "level": "Muttersprache",
+        "CEFR": null,
         "status": "Muttersprache"
       },
-      "zertifikate": [
+      "certifications": [
         {
-          "pruefung": "Muttersprache",
-          "organisation": null,
-          "gesamt": null,
-          "lesen": null,
-          "schreiben": null,
-          "hoeren": null,
-          "sprechen": null,
-          "pruefungsdatum": null,
-          "url": null
+          "test": "Muttersprache",
+          "organization": null,
+          "overall": null,
+          "reading": null,
+          "writing": null,
+          "listening": null,
+          "speaking": null,
+          "examDate": null,
+          "URL": null
         }
       ]
     },
     {
-      "sprache": "Englisch",
-      "kenntnisse": {
-        "niveau": "Beruflich",
-        "GER": "C1",
+      "language": "Englisch",
+      "proficiency": {
+        "level": "Beruflich",
+        "CEFR": "C1",
         "status": "Fließend"
       },
-      "zertifikate": [
+      "certifications": [
         {
-          "pruefung": "IELTS Academic",
-          "organisation": "British Council",
-          "gesamt": 8.0,
-          "lesen": 9.0,
-          "hoeren": 8.5,
-          "schreiben": 6.5,
-          "sprechen": 7.0,
-          "max_punktzahl": 9.0,
-          "min_punktzahl": 0.0,
-          "pruefungsdatum": "2023-12-28",
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_ielts.pdf"
+          "test": "IELTS Academic",
+          "organization": "British Council",
+          "overall": 8.0,
+          "reading": 9.0,
+          "listening": 8.5,
+          "writing": 6.5,
+          "speaking": 7.0,
+          "maxScore": 9.0,
+          "minScore": 0.0,
+          "examDate": "2023-12-28",
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_ielts.pdf"
         }
       ]
     },
     {
-      "sprache": "Deutsch",
-      "kenntnisse": {
-        "niveau": "Anfänger",
-        "GER": null,
-        "status": "In_Lernphase"
+      "language": "Deutsch",
+      "proficiency": {
+        "level": "Anfänger",
+        "CEFR": null,
+        "status": "In Vorbereitung"
       },
-      "zertifikate": [
+      "certifications": [
         {
-          "pruefung": null,
-          "organisation": null,
-          "gesamt": null,
-          "lesen": null,
-          "hoeren": null,
-          "schreiben": null,
-          "sprechen": null,
-          "max_punktzahl": null,
-          "min_punktzahl": null,
-          "pruefungsdatum": null,
-          "url": null
+          "test": null,
+          "organization": null,
+          "overall": null,
+          "reading": null,
+          "listening": null,
+          "writing": null,
+          "speaking": null,
+          "maxScore": null,
+          "minScore": null,
+          "examDate": null,
+          "URL": null
         }
       ]
     }
   ],
-  "schulungen_und_zertifikate": [
+  "workshop_and_certifications": [
     {
-      "anbieter": "Tuf North Academy",
-      "zertifikate": [
+      "issuer": "Tuf North Academy",
+      "certifications": [
         {
-          "name": "Mikroarray Datenanalyse in R Software und Systembiologie",
-          "datum": "2020-9-31",
-          "dauer": "18 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_TUV_north_Academy_MicroArray.pdf",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Mikroarray-Datenanalyse in R und Systembiologie",
+          "date": "2020-9-31",
+          "duration": "18 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_TUV_north_Academy_MicroArray.pdf",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
@@ -234,12 +237,12 @@
         },
         {
           "name": "Bioinformatik von Proteinen, Molekulardynamik-Simulation und Impfstoffdesign",
-          "datum": "2021-04-10",
-          "dauer": "58 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_TUV_north_Academy_MD.pdf",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "date": "2021-04-10",
+          "duration": "58 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_TUV_north_Academy_MD.pdf",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
@@ -248,16 +251,16 @@
       ]
     },
     {
-      "anbieter": "ICAD Academy International",
-      "zertifikate": [
+      "issuer": "ICAD Academy International",
+      "certifications": [
         {
           "name": "GLP",
-          "datum": "2023-12-08",
-          "dauer": "16 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_ICAD_glp_EN.pdf",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "date": "2023-12-08",
+          "duration": "16 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_ICAD_glp_EN.pdf",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
@@ -266,40 +269,40 @@
       ]
     },
     {
-      "anbieter": "Rahpouyan Fanavar Sadegh",
-      "zertifikate": [
+      "issuer": "Rahpouyan Fanavar Sadegh",
+      "certifications": [
         {
-          "name": "Biosicherheit, Biosecurity, und biologisch Risiko",
-          "datum": "2023-12-09",
-          "dauer": "8 Stunden",
-          "zertifikat": false,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Biosafety_biosecurity_and_biological_risk.pdf",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Biosicherheit, Biosecurity und biologisches Risiko",
+          "date": "2023-12-09",
+          "duration": "8 Stunden",
+          "certificate": false,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Biosafety_biosecurity_and_biological_risk.pdf",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch"
           ]
         },
         {
-          "name": "GMP in Arzneimittel Industrie",
-          "datum": "2023-12-20",
-          "dauer": "90 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "GMP in der Arzneimittelindustrie",
+          "date": "2023-12-20",
+          "duration": "90 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch"
           ]
         },
         {
-          "name": "Fermentationsprozess der heterologen Proteinproduktion",
-          "datum": "2024-02-25",
-          "dauer": "20 Wochen",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Fermentationsprozess zur Produktion heterologer Proteine",
+          "date": "2024-02-25",
+          "duration": "20 Wochen",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
@@ -308,77 +311,77 @@
       ]
     },
     {
-      "anbieter": "Universität Teheran",
-      "zertifikate": [
+      "issuer": "Universität Teheran",
+      "certifications": [
         {
-          "name": "Histologisch Techniken und Ausrüstung",
-          "datum": "2023-09-13",
-          "dauer": "15 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Histological_Techniques_and_Equipment.pdf",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Histologische Techniken und Geräte",
+          "date": "2023-09-13",
+          "duration": "15 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Histological_Techniques_and_Equipment.pdf",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch"
           ]
         },
         {
-          "name": "Grundlegende Prinzipien molekularer Testverfahren",
-          "datum": "2023-09-10",
-          "dauer": "45 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Fundamental_Principles_of_Molecular_Testing_Techniques.pdf",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Grundprinzipien molekularer Testverfahren",
+          "date": "2023-09-10",
+          "duration": "45 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Fundamental_Principles_of_Molecular_Testing_Techniques.pdf",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch"
           ]
         },
         {
-          "name": "Grundlegende Techniken zur Handhabung, Blutentnahme und Injektion von Labortieren",
-          "datum": "2023-09-20",
-          "dauer": "6 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Fundamental_Techniques_for_Handling_Bleeding_and_Injection_of_Lab_Animals.pdf",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Grundlegende Techniken zum Umgang, zur Blutentnahme und Injektion bei Labortieren",
+          "date": "2023-09-20",
+          "duration": "6 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Fundamental_Techniques_for_Handling_Bleeding_and_Injection_of_Lab_Animals.pdf",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch"
           ]
         },
         {
-          "name": "Angewandt Bioinformatik",
-          "datum": "2023-09-20",
-          "dauer": "10 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Applied_Bioinformatics.pdf",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Angewandte Bioinformatik",
+          "date": "2023-09-20",
+          "duration": "10 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Applied_Bioinformatics.pdf",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
           ]
         },
         {
-          "name": "Grundlegende Prinzipien der In-vitro-Zellkulturtechniken",
-          "datum": "2023-09-15",
-          "dauer": "10 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Fundamental_Principles_of_In_Vitro_Cell_Culture_Techniques.pdf",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Grundprinzipien der In-vitro-Zellkulturtechniken",
+          "date": "2023-09-15",
+          "duration": "10 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Fundamental_Principles_of_In_Vitro_Cell_Culture_Techniques.pdf",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch"
           ]
         },
         {
-          "name": "Einführung zu Microbiological Labor Techniken",
-          "datum": "2023-09-17",
-          "dauer": "10 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Introduction_to_Microbiological_Lab_Techniques.pdf",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Einführung in mikrobiologische Labortechniken",
+          "date": "2023-09-17",
+          "duration": "10 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Introduction_to_Microbiological_Lab_Techniques.pdf",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch"
           ]
@@ -386,94 +389,94 @@
       ]
     },
     {
-      "anbieter": "Actin Academy",
-      "zertifikate": [
+      "issuer": "Actin Academy",
+      "certifications": [
         {
-          "name": "ChIP-Seq Datenanalyse",
-          "datum": "2024-06-06",
-          "dauer": "12 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "ChIP-Seq-Datenanalyse",
+          "date": "2024-06-06",
+          "duration": "12 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
           ]
         },
         {
-          "name": "Online Datenbanken",
-          "datum": "2024-03-14",
-          "dauer": "8 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Online-Datenbanken",
+          "date": "2024-03-14",
+          "duration": "8 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
           ]
         },
         {
-          "name": "Genomic Datenanalyse",
-          "datum": "2024-04-04",
-          "dauer": "24 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Genomische Datenanalyse",
+          "date": "2024-04-04",
+          "duration": "24 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
           ]
         },
         {
-          "name": "Mikroarray Datenanalyse",
-          "datum": "2024-04-15",
-          "dauer": "16 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Mikroarray-Datenanalyse",
+          "date": "2024-04-15",
+          "duration": "16 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
           ]
         },
         {
-          "name": "Single-Cell RNA Sequenzierung",
-          "datum": "2024-04-22",
-          "dauer": "12 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Single-Cell-RNA-Sequenzierung",
+          "date": "2024-04-22",
+          "duration": "12 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
           ]
         },
         {
-          "name": "Bulk RNA Sequenzierung",
-          "datum": "2024-04-29",
-          "dauer": "12 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Bulk-RNA-Sequenzierung",
+          "date": "2024-04-29",
+          "duration": "12 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
           ]
         },
         {
-          "name": "Proteomik Datenanalyse",
-          "datum": "2024-05-06",
-          "dauer": "16 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Proteomik-Datenanalyse",
+          "date": "2024-05-06",
+          "duration": "16 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
@@ -481,90 +484,90 @@
         },
         {
           "name": "Maschinelles Lernen",
-          "datum": "2024-06-27",
-          "dauer": "20 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "date": "2024-06-27",
+          "duration": "20 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
           ]
         },
         {
-          "name": "Metagenomic Datenanalyse",
-          "datum": "2024-05-27",
-          "dauer": "12 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Metagenomische Datenanalyse",
+          "date": "2024-05-27",
+          "duration": "12 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
           ]
         },
         {
-          "name": "Precision Medicine Biologisch Systeme",
-          "datum": "2024-02-19",
-          "dauer": "8 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Biologische Systeme der Präzisionsmedizin",
+          "date": "2024-02-19",
+          "duration": "8 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
           ]
         },
         {
-          "name": "Gen Regulatorisch Netzwerk Analyse",
-          "datum": "2024-06-10",
-          "dauer": "8 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Analyse genregulatorischer Netzwerke",
+          "date": "2024-06-10",
+          "duration": "8 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
           ]
         },
         {
-          "name": "Complex Biologisch Netzwerk Analyse",
-          "datum": "2024-06-13",
-          "dauer": "20 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Analyse komplexer biologischer Netzwerke",
+          "date": "2024-06-13",
+          "duration": "20 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
           ]
         },
         {
-          "name": "Metabolic Netzwerk Reconstruction",
-          "datum": "2024-05-20",
-          "dauer": "20 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Rekonstruktion metabolischer Netzwerke",
+          "date": "2024-05-20",
+          "duration": "20 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
           ]
         },
         {
-          "name": "Einführung zu Big Biologisch Daten",
-          "datum": "2024-03-04",
-          "dauer": "8 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Einführung in Big Biological Data",
+          "date": "2024-03-04",
+          "duration": "8 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik"
@@ -572,12 +575,12 @@
         },
         {
           "name": "Docker und Visualisierung",
-          "datum": "2024-07-04",
-          "dauer": "8 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "date": "2024-07-04",
+          "duration": "8 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik",
@@ -587,16 +590,16 @@
       ]
     },
     {
-      "anbieter": "Maktab Sharif Academy",
-      "zertifikate": [
+      "issuer": "Maktab Sharif Academy",
+      "certifications": [
         {
           "name": "Python & Django",
-          "datum": "2023-01-18",
-          "dauer": "400 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabsharif_python_django.pdf",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "date": "2023-01-18",
+          "duration": "400 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabsharif_python_django.pdf",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik",
@@ -606,28 +609,28 @@
       ]
     },
     {
-      "anbieter": "Maktabkhooneh",
-      "zertifikate": [
+      "issuer": "Maktabkhooneh",
+      "certifications": [
         {
-          "name": "Front-End Web Entwicklung und Design",
-          "datum": "2020-09-18",
-          "dauer": "70 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabkhune_front_end.pdf",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Front-End-Webentwicklung und -Design",
+          "date": "2020-09-18",
+          "duration": "70 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabkhune_front_end.pdf",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Akademisch",
             "Programmierung"
           ]
         },
         {
-          "name": "Python Programmierung für Anfänger",
-          "datum": "2020-07-23",
-          "dauer": "57 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabkhune_beginner_python.pdf",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Python-Programmierung für Anfänger",
+          "date": "2020-07-23",
+          "duration": "57 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabkhune_beginner_python.pdf",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik",
@@ -635,13 +638,13 @@
           ]
         },
         {
-          "name": "Fortgeschritten Python Programmierung",
-          "datum": "2021-12-11",
-          "dauer": "57 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabkhune_advanced_python.pdf",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Fortgeschrittene Python-Programmierung",
+          "date": "2021-12-11",
+          "duration": "57 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabkhune_advanced_python.pdf",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Biotechnologie",
             "Akademisch",
             "Bioinformatik",
@@ -651,16 +654,16 @@
       ]
     },
     {
-      "anbieter": "Daneshjooyar",
-      "zertifikate": [
+      "issuer": "Daneshjooyar",
+      "certifications": [
         {
           "name": "UI/UX",
-          "datum": "2021-11-09",
-          "dauer": "30 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "date": "2021-11-09",
+          "duration": "30 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Akademisch",
             "Programmierung"
           ]
@@ -668,70 +671,70 @@
       ]
     },
     {
-      "anbieter": "Hamrah Academy",
-      "zertifikate": [
+      "issuer": "Hamrah Academy",
+      "certifications": [
         {
           "name": "Grundlagen und Roadmap der Data Science",
-          "datum": "2023-07-15",
-          "dauer": "3 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Fundamentals_and_Roadmap_of_Data_Science.pdf"
+          "date": "2023-07-15",
+          "duration": "3 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Fundamentals_and_Roadmap_of_Data_Science.pdf"
         },
         {
-          "name": "Mathematics für Daten Science und Artificial Intelligence",
-          "datum": "2023-09-01",
-          "dauer": "8 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Mathematics_for_Data_Science_and_Artificial_Intelligence.pdf"
+          "name": "Mathematik für Data Science und Künstliche Intelligenz",
+          "date": "2023-09-01",
+          "duration": "8 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Mathematics_for_Data_Science_and_Artificial_Intelligence.pdf"
         },
         {
-          "name": "Daten Mining und Business Intelligence mit KNIME",
-          "datum": "2023-09-05",
-          "dauer": "6 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Mining_and_Business_Intelligence_with_KNIME.pdf"
+          "name": "Data Mining und Business Intelligence mit KNIME",
+          "date": "2023-09-05",
+          "duration": "6 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Mining_and_Business_Intelligence_with_KNIME.pdf"
         },
         {
-          "name": "Umfassend Python Programmierung",
-          "datum": "2023-09-12",
-          "dauer": "12 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Comprehensive_Python_Programming.pdf"
+          "name": "Umfassende Python-Programmierung",
+          "date": "2023-09-12",
+          "duration": "12 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Comprehensive_Python_Programming.pdf"
         },
         {
-          "name": "Daten Visualisierung Tools",
-          "datum": "2023-10-22",
-          "dauer": "5 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Visualization_Tools.pdf"
+          "name": "Werkzeuge zur Datenvisualisierung",
+          "date": "2023-10-22",
+          "duration": "5 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Visualization_Tools.pdf"
         },
         {
-          "name": "Introductory Datenbank Prinzipien",
-          "datum": "2023-10-19",
-          "dauer": "10 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Introductory_Database_Principles.pdf"
+          "name": "Einführende Datenbankprinzipien",
+          "date": "2023-10-19",
+          "duration": "10 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Introductory_Database_Principles.pdf"
         },
         {
-          "name": "Daten Mining mit Python",
-          "datum": "2023-11-01",
-          "dauer": "8 Stunden",
-          "zertifikat": true,
-          "url": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Mining_with_Python.pdf"
+          "name": "Data Mining mit Python",
+          "date": "2023-11-01",
+          "duration": "8 Stunden",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Mining_with_Python.pdf"
         }
       ]
     },
     {
-      "anbieter": "Faradars",
-      "zertifikate": [
+      "issuer": "Faradars",
+      "certifications": [
         {
-          "name": "Linear Algebra Toward Daten Science",
-          "datum": "2024-03-18",
-          "dauer": "60 Stunden",
-          "zertifikat": false,
-          "url": null,
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "name": "Lineare Algebra für Data Science",
+          "date": "2024-03-18",
+          "duration": "60 Stunden",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Akademisch",
             "Bioinformatik",
             "Programmierung"
@@ -740,238 +743,238 @@
       ]
     }
   ],
-  "faehigkeiten": {
-    "programmierung_und_skripting": {
-      "programmiersprachen": [
+  "skills": {
+    "Programmierung & Skripting": {
+      "Programmiersprachen": [
         {
-          "voller_name": "Python",
-          "kurzer_name": "Python",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Python",
+          "short_name": "Python",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "R",
-          "kurzer_name": "R",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "R",
+          "short_name": "R",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "C++",
-          "kurzer_name": "C++",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "C++",
+          "short_name": "C++",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "JavaScript",
-          "kurzer_name": "JS",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "JavaScript",
+          "short_name": "JS",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         }
       ],
-      "maschinelles_lernen_und_data_science": [
+      "Maschinelles Lernen & Data Science": [
         {
-          "voller_name": "Supervised & Unsupervised Lernen",
-          "kurzer_name": "Supervised/Unsupervised",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Überwachtes & unüberwachtes Lernen",
+          "short_name": "Überw./Unüberw.",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Modell Evaluation Metriken (Accuracy, Precision, Recall, F1 Score, ROC AUC)",
-          "kurzer_name": "Modell Metriken",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Metriken zur Modellbewertung (Accuracy, Precision, Recall, F1-Score, ROC AUC)",
+          "short_name": "Modellmetriken",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Cross-Validation Techniken",
-          "kurzer_name": "Cross-Validation",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Kreuzvalidierungstechniken",
+          "short_name": "Kreuzvalidierung",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Hyperparameter Tuning",
-          "kurzer_name": "Hyperparameter Tuning",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Hyperparameter-Tuning",
+          "short_name": "Hyperparameter",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Feature Engineering & Auswahl",
-          "kurzer_name": "Feature Engineering",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Feature Engineering & -Selektion",
+          "short_name": "Feature Eng.",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "TensorFlow",
-          "kurzer_name": "TensorFlow",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "TensorFlow",
+          "short_name": "TensorFlow",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "PyTorch",
-          "kurzer_name": "PyTorch",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "PyTorch",
+          "short_name": "PyTorch",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Hugging Face Transformers",
-          "kurzer_name": "Transformers",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Hugging Face Transformers",
+          "short_name": "Transformers",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Pipeline Design & Workflow Automatisierung",
-          "kurzer_name": "ML Pipelines",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Pipeline-Design & Workflow-Automatisierung",
+          "short_name": "ML-Pipelines",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Dimensionsreduktion (PCA, t-SNE, UMAP)",
-          "kurzer_name": "Dim. Reduktion",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Dimensionsreduktion (PCA, t‑SNE, UMAP)",
+          "short_name": "Dim.-Reduktion",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Neuronales Netze & Tiefes Lernen",
-          "kurzer_name": "Tiefes Lernen",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Neuronale Netze & Deep Learning",
+          "short_name": "Deep Learning",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Regularization Techniken",
-          "kurzer_name": "Regularization",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Regularisierungstechniken",
+          "short_name": "Regularisierung",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Explainability",
-          "kurzer_name": "Explainability",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Erklärbarkeit",
+          "short_name": "Erklärbarkeit",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         }
       ],
-      "skripting_und_automatisierungs_tools": [
+      "Skripting- & Automatisierungstools": [
         {
-          "voller_name": "Bash",
-          "kurzer_name": "Bash",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Bash",
+          "short_name": "Bash",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "selenium",
-          "kurzer_name": "Selenium",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Selenium",
+          "short_name": "Selenium",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Web crawling und Automatisierung und Daten Extraktion",
-          "kurzer_name": "Web Automatisierung & Crawling",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Web-Crawling, Automatisierung und Datenextraktion",
+          "short_name": "Web-Autom./Crawling",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Shell Skripting",
-          "kurzer_name": "Shell",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Shell-Skripting",
+          "short_name": "Shell",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Conda",
-          "kurzer_name": "Conda",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Conda",
+          "short_name": "Conda",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "venv",
-          "kurzer_name": "venv",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "venv",
+          "short_name": "venv",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
@@ -979,1842 +982,1842 @@
         }
       ]
     },
-    "devops_und_infrastruktur": {
-      "netzwerke_und_protokolle": [
+    "DevOps & Infrastruktur": {
+      "Netzwerk & Protokolle": [
         {
-          "voller_name": "Netzwerk Protokolle & Standards",
-          "kurzer_name": "Protokolle",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Netzwerkprotokolle & Standards",
+          "short_name": "Protokolle",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "OSI & TCP/IP Modelle",
-          "kurzer_name": "OSI/TCP-IP",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "OSI- & TCP/IP-Modelle",
+          "short_name": "OSI/TCP-IP",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "IP-Adressierung & Subnetting",
-          "kurzer_name": "IP/Subnetting",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "IP-Adressierung & Subnetting",
+          "short_name": "IP/Subnetting",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Routing & Switching",
-          "kurzer_name": "Routing/Switching",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Routing & Switching",
+          "short_name": "Routing/Switching",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "VPN & Tunneling Konzepte",
-          "kurzer_name": "VPN/Tunneling",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "VPN- & Tunneling-Konzepte",
+          "short_name": "VPN/Tunneling",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Firewall & Access Kontrolle",
-          "kurzer_name": "Firewall & ACL",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Firewall & Zugriffskontrolle",
+          "short_name": "Firewall & ACL",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Proxy & Load Balancing",
-          "kurzer_name": "Proxys & LB",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Proxy & Load Balancing",
+          "short_name": "Proxies & LB",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "DNS & DHCP Dienste",
-          "kurzer_name": "DNS/DHCP",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "DNS- & DHCP-Dienste",
+          "short_name": "DNS/DHCP",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Socket Programmierung",
-          "kurzer_name": "Sockets",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Socket-Programmierung",
+          "short_name": "Sockets",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Netzwerk Diagnostics & Monitoring",
-          "kurzer_name": "Diagnostics",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Netzwerkdiagnose & Monitoring",
+          "short_name": "Diagnose",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Traffic Analyse & Packet Inspection",
-          "kurzer_name": "Traffic Analyse",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Traffic-Analyse & Paketinspektion",
+          "short_name": "Traffic-Analyse",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Netzwerk Performance Optimierung",
-          "kurzer_name": "Performance Tuning",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Optimierung der Netzwerkleistung",
+          "short_name": "Performance Tuning",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "IoT & Embedded Networking",
-          "kurzer_name": "IoT & Embedded",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "IoT & Embedded Networking",
+          "short_name": "IoT & Embedded",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         }
       ],
-      "devops_tools_und_ci_cd_pipelines": [
+      "DevOps-Tools & CI/CD-Pipelines": [
         {
-          "voller_name": "Pipeline Design & Workflow Automatisierung",
-          "kurzer_name": "Pipeline Design",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Pipeline-Design & Workflow-Automatisierung",
+          "short_name": "Pipeline Design",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Git",
-          "kurzer_name": "Git",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Git",
+          "short_name": "Git",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "n8n",
-          "kurzer_name": "n8n",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "n8n",
+          "short_name": "n8n",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "CI/CD Pipelines",
-          "kurzer_name": "CI/CD",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "CI/CD-Pipelines",
+          "short_name": "CI/CD",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung",
             "Bioinformatik",
             "Akademisch"
           ]
         }
       ],
-      "cloud_plattformen_und_authentifizierung": [
+      "Cloud-Plattformen & Authentifizierung": [
         {
-          "voller_name": "Firebase Authentifizierung",
-          "kurzer_name": "Firebase Auth",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Firebase-Authentifizierung",
+          "short_name": "Firebase Auth",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Azure",
-          "kurzer_name": "Azure",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Azure",
+          "short_name": "Azure",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         }
       ],
-      "containerisierung_und_orchestrierung": [
+      "Containerisierung & Orchestrierung": [
         {
-          "voller_name": "Docker",
-          "kurzer_name": "Docker",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Docker",
+          "short_name": "Docker",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Kubernetes",
-          "kurzer_name": "K8s",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Kubernetes",
+          "short_name": "K8s",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         }
       ],
-      "systemadministration_und_linux_tools": [
+      "Systemadministration & Linux-Tools": [
         {
-          "voller_name": "Linux Kommandozeile",
-          "kurzer_name": "Linux CLI",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Linux-Kommandozeile",
+          "short_name": "Linux CLI",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         }
       ]
     },
-    "software_und_webentwicklung": {
-      "frontend_frameworks_und_ui_technologien": [
+    "Software- & Webentwicklung": {
+      "Frontend-Frameworks & UI-Technologien": [
         {
-          "voller_name": "HTML",
-          "kurzer_name": "HTML",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "HTML",
+          "short_name": "HTML",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "CSS",
-          "kurzer_name": "CSS",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "CSS",
+          "short_name": "CSS",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "React",
-          "kurzer_name": "React",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "React",
+          "short_name": "React",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Tailwind CSS",
-          "kurzer_name": "Tailwind",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Tailwind CSS",
+          "short_name": "Tailwind",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Bootstrap",
-          "kurzer_name": "Bootstrap",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Bootstrap",
+          "short_name": "Bootstrap",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         }
       ],
-      "backend_entwicklung_und_apis": [
+      "Backend-Entwicklung & APIs": [
         {
-          "voller_name": "Node.js",
-          "kurzer_name": "Node.js",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Node.js",
+          "short_name": "Node.js",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Express.js",
-          "kurzer_name": "Express",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Express.js",
+          "short_name": "Express",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Flask",
-          "kurzer_name": "Flask",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Flask",
+          "short_name": "Flask",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Django",
-          "kurzer_name": "Django",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Django",
+          "short_name": "Django",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "FastAPI",
-          "kurzer_name": "FastAPI",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "FastAPI",
+          "short_name": "FastAPI",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "RESTful API Entwicklung",
-          "kurzer_name": "REST APIs",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Entwicklung von RESTful APIs",
+          "short_name": "REST APIs",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         }
       ]
     },
-    "datenbanken_und_data_engineering": {
-      "datenbankmodellierung_und_optimierung": [
+    "Datenbanken & Data Engineering": {
+      "Datenbankmodellierung & -optimierung": [
         {
-          "voller_name": "SQL/NoSQL Konzepte",
-          "kurzer_name": "DB Konzepte",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "SQL/NoSQL-Konzepte",
+          "short_name": "DB-Konzepte",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "ORM",
-          "kurzer_name": "ORM",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "ORM",
+          "short_name": "ORM",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Entity-Relationship Modellierung (ERD)",
-          "kurzer_name": "ERD Modellierung",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Entity-Relationship-Modellierung (ERD)",
+          "short_name": "ERD-Modellierung",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Indexierung & Abfrage Optimierung",
-          "kurzer_name": "Indexierung & Abfragen",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Indexierung & Query-Optimierung",
+          "short_name": "Index & Queries",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "ACID Transaktion",
-          "kurzer_name": "ACID",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "ACID-Transaktionen",
+          "short_name": "ACID",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Schema Design",
-          "kurzer_name": "Schema Design",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Schema-Design",
+          "short_name": "Schema Design",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Backup & Wiederherstellung Strategien",
-          "kurzer_name": "Backup & Wiederherstellung",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Backup- & Recovery-Strategien",
+          "short_name": "Backup & Recovery",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         }
       ],
-      "sql_datenbanken": [
+      "SQL-Datenbanken": [
         {
-          "voller_name": "PostgreSQL",
-          "kurzer_name": "PostgreSQL",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "PostgreSQL",
+          "short_name": "PostgreSQL",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "MySQL",
-          "kurzer_name": "MySQL",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "MySQL",
+          "short_name": "MySQL",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "SQLite",
-          "kurzer_name": "SQLite",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "SQLite",
+          "short_name": "SQLite",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         }
       ],
-      "nosql_datenbanken": [
+      "NoSQL-Datenbanken": [
         {
-          "voller_name": "MongoDB",
-          "kurzer_name": "MongoDB",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "MongoDB",
+          "short_name": "MongoDB",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         },
         {
-          "voller_name": "Redis",
-          "kurzer_name": "Redis",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Redis",
+          "short_name": "Redis",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         }
       ],
-      "datenpipelines_und_etl_systeme": [
+      "Datenpipelines & ETL-Systeme": [
         {
-          "voller_name": "Knime",
-          "kurzer_name": "Knime",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "KNIME",
+          "short_name": "Knime",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Programmierung"
           ]
         }
       ]
     },
-    "datenvisualisierung_und_berichtswesen": {
-      "wissenschaftliche_plot_tools": [
+    "Datenvisualisierung & Reporting": {
+      "Wissenschaftliche Plotting-Tools": [
         {
-          "voller_name": "Matplotlib",
-          "kurzer_name": "Matplotlib",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Matplotlib",
+          "short_name": "Matplotlib",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Bioinformatik",
             "Biotechnologie",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Seaborn",
-          "kurzer_name": "Seaborn",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Seaborn",
+          "short_name": "Seaborn",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Bioinformatik",
             "Biotechnologie",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Plotly",
-          "kurzer_name": "Plotly",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Plotly",
+          "short_name": "Plotly",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Bioinformatik",
             "Biotechnologie",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "ggplot2",
-          "kurzer_name": "ggplot2",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "ggplot2",
+          "short_name": "ggplot2",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Bioinformatik",
             "Biotechnologie",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Jupyter Notebooks",
-          "kurzer_name": "Jupyter",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Jupyter Notebooks",
+          "short_name": "Jupyter",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Bioinformatik",
             "Biotechnologie",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "RMarkdown",
-          "kurzer_name": "RMarkdown",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "RMarkdown",
+          "short_name": "RMarkdown",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Bioinformatik",
             "Biotechnologie",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "LaTeX",
-          "kurzer_name": "LaTeX",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        }
-      ],
-      "dashboard_und_reporting_plattformen": [
-        {
-          "voller_name": "Power BI",
-          "kurzer_name": "Power BI",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Tableau",
-          "kurzer_name": "Tableau",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Interactive Dashboards",
-          "kurzer_name": "Dashboards",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "LaTeX",
+          "short_name": "LaTeX",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Bioinformatik",
             "Biotechnologie",
             "Akademisch"
           ]
         }
       ],
-      "visuelle_analytik_und_netzwerk_tools": [
+      "Dashboarding- & Reporting-Plattformen": [
         {
-          "voller_name": "NetworkX",
-          "kurzer_name": "NetworkX",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Power BI",
+          "short_name": "Power BI",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Bioinformatik",
             "Biotechnologie",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Graphviz",
-          "kurzer_name": "Graphviz",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Tableau",
+          "short_name": "Tableau",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Bioinformatik",
             "Biotechnologie",
             "Akademisch"
           ]
-        }
-      ]
-    },
-    "bioinformatik_bereiche": {
-      "statistische_modellierung_und_ml_in_bioinformatik": [
+        },
         {
-          "voller_name": "scikit-learn",
-          "kurzer_name": "scikit-learn",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Interaktive Dashboards",
+          "short_name": "Dashboards",
+          "type_key": [
+            "Vollständiger Lebenslauf",
             "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Gen Set Enrichment Analyse (GSEA)",
-          "kurzer_name": "GSEA",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "FDR Correction",
-          "kurzer_name": "FDR",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Elastic Net",
-          "kurzer_name": "Elastic Net",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "LASSO",
-          "kurzer_name": "LASSO",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Gradient-Boosting (XGBoost)",
-          "kurzer_name": "XGBoost",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Canonical Correlation Analyse (CCA)",
-          "kurzer_name": "CCA",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Weighted Gen Co-expression Netzwerk Analyse (WGCNA)",
-          "kurzer_name": "WGCNA",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Regularization Techniken in Maschinelles Lernen",
-          "kurzer_name": "Regularization",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Fine-tuning Modelle",
-          "kurzer_name": "Fine-Tuning",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Modell evaluations",
-          "kurzer_name": "Modell Eval",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        }
-      ],
-      "genomik_und_genomassemblierung": [
-        {
-          "voller_name": "FASTQC",
-          "kurzer_name": "FASTQC",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Bowtie2",
-          "kurzer_name": "Bowtie2",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "BWA",
-          "kurzer_name": "BWA",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "HISAT2",
-          "kurzer_name": "HISAT2",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Kallisto",
-          "kurzer_name": "Kallisto",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "BUSCO",
-          "kurzer_name": "BUSCO",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Quast",
-          "kurzer_name": "Quast",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Library preparation für Genom Sequenzierung",
-          "kurzer_name": "Library Vorbereitung",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        }
-      ],
-      "transkriptomik_und_single_cell_analyse": [
-        {
-          "voller_name": "DESeq2",
-          "kurzer_name": "DESeq2",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "edgeR",
-          "kurzer_name": "edgeR",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "limma",
-          "kurzer_name": "limma",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "DoubletFinder",
-          "kurzer_name": "DoubletFinder",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "ArchR",
-          "kurzer_name": "ArchR",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "10x Visium",
-          "kurzer_name": "10x Visium",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Seurat",
-          "kurzer_name": "Seurat",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Cell Ranger",
-          "kurzer_name": "Cell Ranger",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "CytoSPACE",
-          "kurzer_name": "CytoSPACE",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Hist2ST",
-          "kurzer_name": "Hist2ST",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        }
-      ],
-      "metagenomik_und_mikrobielle_oekologie": [
-        {
-          "voller_name": "eggNOG-mapper",
-          "kurzer_name": "eggNOG",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "MetaPhlAn",
-          "kurzer_name": "MetaPhlAn",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "QIIME2",
-          "kurzer_name": "QIIME2",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Kraken2",
-          "kurzer_name": "Kraken2",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        }
-      ],
-      "funktionelle_annotation_und_systembiologie": [
-        {
-          "voller_name": "Gen Ontologie (GO)",
-          "kurzer_name": "GO",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Enrichr",
-          "kurzer_name": "Enrichr",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "BioCyc",
-          "kurzer_name": "BioCyc",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Cytoscape",
-          "kurzer_name": "Cytoscape",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "KeGG",
-          "kurzer_name": "KeGG",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        }
-      ],
-      "proteinstruktur_und_strukturelle_bioinformatik": [
-        {
-          "voller_name": "AlphaFold",
-          "kurzer_name": "AlphaFold",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Modeller",
-          "kurzer_name": "Modeller",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Swiss-Model",
-          "kurzer_name": "SwissModel",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "HHpred",
-          "kurzer_name": "HHpred",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Hidden Markov Modelle (HMMs)",
-          "kurzer_name": "HMMs",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "TmHMM",
-          "kurzer_name": "TmHMM",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Rosetta",
-          "kurzer_name": "Rosetta",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        }
-      ],
-      "phylogenie_und_vergleichende_genomik": [
-        {
-          "voller_name": "BLAST",
-          "kurzer_name": "BLAST",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Clustal Omega",
-          "kurzer_name": "Clustal",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "OrthoFinder",
-          "kurzer_name": "OrthoFinder",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Bioinformatik",
-            "Akademisch"
-          ]
-        }
-      ]
-    },
-    "labortechniken": {
-      "molekulare_und_mikrobielle_biologie_techniken": [
-        {
-          "voller_name": "DNA/RNA-Extraktion",
-          "kurzer_name": "DNA/RNA-Extraktion",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "PCR / RT-PCR / qPCR",
-          "kurzer_name": "PCR/qPCR",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Gelelektrophorese (Agarose / Polyacrylamide)",
-          "kurzer_name": "Gelelektrophorese",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Electroporation",
-          "kurzer_name": "Electroporation",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Gram-Färbung",
-          "kurzer_name": "Gram-Färbung",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Medienvorbereitung & Optimierung",
-          "kurzer_name": "Medienvorbereitung",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Contamination Kontrolle",
-          "kurzer_name": "Contamination Kontrolle",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Antibiotic Sensitivity Test",
-          "kurzer_name": "AST",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Biochemische Identifizierung",
-          "kurzer_name": "Biochemisch ID",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Anaerob & Bouillonkultur",
-          "kurzer_name": "Bouillonkultur",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Aseptic Technik",
-          "kurzer_name": "Aseptic Technik",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Cell Counting",
-          "kurzer_name": "Cell Counting",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Cell Zeile Authentifizierung",
-          "kurzer_name": "Cell Authentifizierung",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Cryopreservation",
-          "kurzer_name": "Cryopreservation",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Adherent Cell Kultur",
-          "kurzer_name": "Cell Kultur",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Western Blotting",
-          "kurzer_name": "Western Blot",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "General chemical Handhabung",
-          "kurzer_name": "Chem Handhabung",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Pipettieren tools",
-          "kurzer_name": "Pipettieren",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
             "Biotechnologie",
             "Akademisch"
           ]
         }
       ],
-      "in_vivo_und_ex_vivo_protokolle": [
+      "Visual Analytics & Network-Tools": [
         {
-          "voller_name": "Labor Tier Handhabung",
-          "kurzer_name": "Tier Handhabung",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "NetworkX",
+          "short_name": "NetworkX",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
             "Biotechnologie",
             "Akademisch"
           ]
         },
         {
-          "voller_name": "Anesthesia & Analgesia",
-          "kurzer_name": "Anesthesia",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Oral Gavage",
-          "kurzer_name": "Gavage",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Blood Collection",
-          "kurzer_name": "Blood Draw",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Environmental Enrichment",
-          "kurzer_name": "Enrichment",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Euthanasia Protokolle",
-          "kurzer_name": "Euthanasia",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Ethical Guidelines",
-          "kurzer_name": "Ethics",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        }
-      ],
-      "versuchsplanung_und_labordokumentation": [
-        {
-          "voller_name": "Versuchsplanung (DoE)",
-          "kurzer_name": "DoE",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Versuchsplanung und SOP-Compliance",
-          "kurzer_name": "SOP Compliance",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Response Surface Methodology (RSM)",
-          "kurzer_name": "RSM",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        }
-      ],
-      "analytische_instrumente_und_chromatographie": [
-        {
-          "voller_name": "2D-PAGE",
-          "kurzer_name": "2D-PAGE",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "ELISA Plate Reader",
-          "kurzer_name": "ELISA",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "FACS",
-          "kurzer_name": "FACS",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Confocal Microscope",
-          "kurzer_name": "Confocal Scope",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Fluorescence Microscope",
-          "kurzer_name": "Fluoro Scope",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Atomabsorptionsspektrometer",
-          "kurzer_name": "AAS",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Capillary Elektrophorese",
-          "kurzer_name": "CE",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Conductivity Meter",
-          "kurzer_name": "Cond. Meter",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "HPLC",
-          "kurzer_name": "HPLC",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Chromatography",
-          "kurzer_name": "Chromatography",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Spectroscopy methods (e.g., UV-Vis, FTIR)",
-          "kurzer_name": "UV-Vis/FTIR",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        }
-      ],
-      "bioprozess_und_bioreaktor_technik": [
-        {
-          "voller_name": "Fed-Batch / Batch / Continuous Stirred Tank Reactors (CSTR)",
-          "kurzer_name": "Reactor Modes",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Airlift- und Einweg-Bioreaktoren",
-          "kurzer_name": "Airlift BioR",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Agitation Speed & Foam Kontrolle",
-          "kurzer_name": "Agitation/Foam",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Nutrient Feed Regulation",
-          "kurzer_name": "Feed Kontrolle",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Hochzelldichte-Kultivierung",
-          "kurzer_name": "HCDC",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Metabolic Flux Analyse",
-          "kurzer_name": "MFA",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Dynamisch Flux Balance Analyse (DFBA)",
-          "kurzer_name": "DFBA",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Wet Weight Determination",
-          "kurzer_name": "Wet Wt",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Zentrifugation und Filtration",
-          "kurzer_name": "Centrifug./Filt.",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Metabolic Engineering",
-          "kurzer_name": "Metabolic Eng.",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Prozess Scale-Up",
-          "kurzer_name": "Scale-Up",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Bioreaktor-Überwachungstools (z. B. pH-Sensoren, DO-Sensoren)",
-          "kurzer_name": "Monitoring Tools",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Bio-stat / pH-stat Methods in Bioreactors",
-          "kurzer_name": "Bio/pH-stat",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        }
-      ],
-      "laborsicherheit_compliance_und_regulatorik": [
-        {
-          "voller_name": "Gute Labor Praktiken (GLP)",
-          "kurzer_name": "GLP",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Gute Manufacturing Praktiken (GMP)",
-          "kurzer_name": "GMP",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "Biosicherheit Training",
-          "kurzer_name": "Biosicherheit",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "QA/QC Qc Procedures",
-          "kurzer_name": "QA/QC",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
-            "Biotechnologie",
-            "Akademisch"
-          ]
-        },
-        {
-          "voller_name": "R&D Compliance",
-          "kurzer_name": "R&D Rules",
-          "typ_schluessel": [
-            "Voller_Lebenslauf",
+          "long_name": "Graphviz",
+          "short_name": "Graphviz",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
             "Biotechnologie",
             "Akademisch"
           ]
         }
       ]
     },
-    "soft_skills": {
-      "zentrale_soft_skills": [
+    "Bioinformatik-Domänen": {
+      "Statistische Modellierung & Machine Learning in der Bioinformatik": [
         {
-          "voller_name": "Analytical Thinking",
-          "kurzer_name": "Analytical Thinking",
-          "typ_schluessel": [
-            "Voller_Lebenslauf"
+          "long_name": "scikit-learn",
+          "short_name": "scikit-learn",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
           ]
         },
         {
-          "voller_name": "Problem-Solving",
-          "kurzer_name": "Problem-Solving",
-          "typ_schluessel": [
-            "Voller_Lebenslauf"
+          "long_name": "Gene Set Enrichment Analysis (GSEA)",
+          "short_name": "GSEA",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
           ]
         },
         {
-          "voller_name": "Team Collaboration",
-          "kurzer_name": "Team Collaboration",
-          "typ_schluessel": [
-            "Voller_Lebenslauf"
+          "long_name": "FDR-Korrektur",
+          "short_name": "FDR",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
           ]
         },
         {
-          "voller_name": "Projektmanagement",
-          "kurzer_name": "Projektmanagement",
-          "typ_schluessel": [
-            "Voller_Lebenslauf"
+          "long_name": "Elastic Net",
+          "short_name": "Elastic Net",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
           ]
         },
         {
-          "voller_name": "Scientific Writing",
-          "kurzer_name": "Scientific Writing",
-          "typ_schluessel": [
-            "Voller_Lebenslauf"
+          "long_name": "LASSO",
+          "short_name": "LASSO",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
           ]
         },
         {
-          "voller_name": "Adaptability & Continuous Lernen",
-          "kurzer_name": "Adaptability & Lernen",
-          "typ_schluessel": [
-            "Voller_Lebenslauf"
+          "long_name": "Gradient Boosting (XGBoost)",
+          "short_name": "XGBoost",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
           ]
         },
         {
-          "voller_name": "Zeit Management",
-          "kurzer_name": "Zeit Management",
-          "typ_schluessel": [
-            "Voller_Lebenslauf"
+          "long_name": "Kanonische Korrelationsanalyse (CCA)",
+          "short_name": "CCA",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
           ]
         },
         {
-          "voller_name": "Interdisziplinäre Kommunikation",
-          "kurzer_name": "Interdisziplinäre Kommunikation",
-          "typ_schluessel": [
-            "Voller_Lebenslauf"
+          "long_name": "Weighted Gene Co-expression Network Analysis (WGCNA)",
+          "short_name": "WGCNA",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
           ]
         },
         {
-          "voller_name": "Research & Critical Analyse",
-          "kurzer_name": "Research & Analyse",
-          "typ_schluessel": [
-            "Voller_Lebenslauf"
+          "long_name": "Regularisierungstechniken im Machine Learning",
+          "short_name": "Regularisierung",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
           ]
         },
         {
-          "voller_name": "Selbstmotivation und Eigeninitiative",
-          "kurzer_name": "Self-Motivation",
-          "typ_schluessel": [
-            "Voller_Lebenslauf"
+          "long_name": "Modelle feinabstimmen",
+          "short_name": "Fine-Tuning",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Modellbewertungen",
+          "short_name": "Model Eval",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        }
+      ],
+      "Genomik & Genomassemblierung": [
+        {
+          "long_name": "FASTQC",
+          "short_name": "FASTQC",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Bowtie2",
+          "short_name": "Bowtie2",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "BWA",
+          "short_name": "BWA",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "HISAT2",
+          "short_name": "HISAT2",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Kallisto",
+          "short_name": "Kallisto",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "BUSCO",
+          "short_name": "BUSCO",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Quast",
+          "short_name": "Quast",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Bibliothekspräparation für Genomsequenzierung",
+          "short_name": "Library Prep",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        }
+      ],
+      "Transkriptomik & Single-Cell-Analyse": [
+        {
+          "long_name": "DESeq2",
+          "short_name": "DESeq2",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "edgeR",
+          "short_name": "edgeR",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "limma",
+          "short_name": "limma",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "DoubletFinder",
+          "short_name": "DoubletFinder",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "ArchR",
+          "short_name": "ArchR",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "10x Visium",
+          "short_name": "10x Visium",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Seurat",
+          "short_name": "Seurat",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Cell Ranger",
+          "short_name": "Cell Ranger",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "CytoSPACE",
+          "short_name": "CytoSPACE",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Hist2ST",
+          "short_name": "Hist2ST",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        }
+      ],
+      "Metagenomik & Mikrobielle Ökologie": [
+        {
+          "long_name": "eggNOG-mapper",
+          "short_name": "eggNOG",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "MetaPhlAn",
+          "short_name": "MetaPhlAn",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "QIIME2",
+          "short_name": "QIIME2",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Kraken2",
+          "short_name": "Kraken2",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        }
+      ],
+      "Funktionelle Annotation & Systembiologie": [
+        {
+          "long_name": "Gene Ontology (GO)",
+          "short_name": "GO",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Enrichr",
+          "short_name": "Enrichr",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "BioCyc",
+          "short_name": "BioCyc",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Cytoscape",
+          "short_name": "Cytoscape",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "KEGG",
+          "short_name": "KeGG",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        }
+      ],
+      "Proteinstruktur & Struktur-Bioinformatik": [
+        {
+          "long_name": "AlphaFold",
+          "short_name": "AlphaFold",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Modeller",
+          "short_name": "Modeller",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Swiss-Model",
+          "short_name": "SwissModel",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "HHpred",
+          "short_name": "HHpred",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Hidden Markov Models (HMMs)",
+          "short_name": "HMMs",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "TmHMM",
+          "short_name": "TmHMM",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Rosetta",
+          "short_name": "Rosetta",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        }
+      ],
+      "Phylogenie & Vergleichende Genomik": [
+        {
+          "long_name": "BLAST",
+          "short_name": "BLAST",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Clustal Omega",
+          "short_name": "Clustal",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "OrthoFinder",
+          "short_name": "OrthoFinder",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        }
+      ]
+    },
+    "Labortechniken": {
+      "Molekular- & Mikrobiologie-Techniken": [
+        {
+          "long_name": "DNA/RNA-Extraktion",
+          "short_name": "DNA/RNA-Extraktion",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "PCR / RT-PCR / qPCR",
+          "short_name": "PCR/qPCR",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Gelelektrophorese (Agarose / Polyacrylamid)",
+          "short_name": "Gelelektrophorese",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Elektroporation",
+          "short_name": "Elektroporation",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Gram-Färbung",
+          "short_name": "Gram-Färbung",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Medienvorbereitung & -optimierung",
+          "short_name": "Medien",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Kontaminationskontrolle",
+          "short_name": "Kontamination",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Antibiotika-Empfindlichkeitstest",
+          "short_name": "AST",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Biochemische Identifizierung",
+          "short_name": "Biochem. ID",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Anaerobe & Bouillonkultur",
+          "short_name": "Bouillonkultur",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Aseptische Technik",
+          "short_name": "Aseptisch",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Zellzählung",
+          "short_name": "Zellzählung",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Authentifizierung von Zelllinien",
+          "short_name": "Zell-Auth.",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Kryokonservierung",
+          "short_name": "Kryokonserv.",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Adhärente Zellkultur",
+          "short_name": "Zellkultur",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Western Blotting",
+          "short_name": "Western Blot",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Allgemeiner Umgang mit Chemikalien",
+          "short_name": "Chem. Handling",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Pipettierwerkzeuge",
+          "short_name": "Pipettieren",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        }
+      ],
+      "In-vivo- & Ex-vivo-Experimentprotokolle": [
+        {
+          "long_name": "Umgang mit Labortieren",
+          "short_name": "Tierhandling",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Anästhesie & Analgesie",
+          "short_name": "Anästhesie",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Orale Gavage",
+          "short_name": "Gavage",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Blutentnahme",
+          "short_name": "Blutentnahme",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Umweltanreicherung",
+          "short_name": "Enrichment",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Euthanasie-Protokolle",
+          "short_name": "Euthanasie",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Ethische Richtlinien",
+          "short_name": "Ethik",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        }
+      ],
+      "Versuchsplanung & Labordokumentation": [
+        {
+          "long_name": "Versuchsplanung (DoE)",
+          "short_name": "DoE",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Versuchsdesign & SOP-Compliance",
+          "short_name": "SOP-Compliance",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Response-Surface-Methodik (RSM)",
+          "short_name": "RSM",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        }
+      ],
+      "Analytische Geräte & Chromatographie": [
+        {
+          "long_name": "2D-PAGE",
+          "short_name": "2D-PAGE",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "ELISA-Plattenleser",
+          "short_name": "ELISA",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "FACS",
+          "short_name": "FACS",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Konfokales Mikroskop",
+          "short_name": "Confocal Scope",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Fluoreszenzmikroskop",
+          "short_name": "Fluoro Scope",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Atomabsorptionsspektrometer",
+          "short_name": "AAS",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Kapillarelektrophorese",
+          "short_name": "CE",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Leitfähigkeitsmessgerät",
+          "short_name": "Cond. Meter",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "HPLC",
+          "short_name": "HPLC",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Chromatographie",
+          "short_name": "Chromatographie",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Spektroskopiemethoden (z. B. UV-Vis, FTIR)",
+          "short_name": "UV-Vis/FTIR",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        }
+      ],
+      "Bioprozess- & Bioreaktortechnik": [
+        {
+          "long_name": "Fed-Batch / Batch / kontinuierliche Rührkesselreaktoren (CSTR)",
+          "short_name": "Reaktormodi",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Airlift- & Einweg-Bioreaktoren",
+          "short_name": "Airlift BioR",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Rührgeschwindigkeit & Schaummanagement",
+          "short_name": "Rühren/Schaum",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Nährstoff-Feed-Regelung",
+          "short_name": "Feed Control",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Kultivierung mit hoher Zelldichte",
+          "short_name": "HCDC",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Metabolische Flussanalyse",
+          "short_name": "MFA",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Dynamische Flux-Balance-Analyse (dFBA)",
+          "short_name": "DFBA",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Bestimmung des Nassgewichts",
+          "short_name": "Wet Wt",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Zentrifugation & Filtration",
+          "short_name": "Centrifug./Filt.",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Stoffwechsel-Engineering",
+          "short_name": "Metabolic Eng.",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Prozess-Scale-up",
+          "short_name": "Scale-Up",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Bioreaktor-Monitoring-Tools (z. B. pH-Sensoren, DO-Sensoren)",
+          "short_name": "Monitoring Tools",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Bio-stat-/pH-stat-Methoden in Bioreaktoren",
+          "short_name": "Bio/pH-stat",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        }
+      ],
+      "Laborsicherheit, Compliance & regulatorische Praxis": [
+        {
+          "long_name": "Good Laboratory Practices (GLP)",
+          "short_name": "GLP",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Good Manufacturing Practices (GMP)",
+          "short_name": "GMP",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "Biosafety-Training",
+          "short_name": "Biosafety",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "QA/QC-Verfahren",
+          "short_name": "QA/QC",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        },
+        {
+          "long_name": "R&D-Compliance",
+          "short_name": "R&D Rules",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Biotechnologie",
+            "Akademisch"
+          ]
+        }
+      ]
+    },
+    "Soft Skills": {
+      "Kernkompetenzen": [
+        {
+          "long_name": "Analytisches Denken",
+          "short_name": "Analytisches Denken",
+          "type_key": [
+            "Vollständiger Lebenslauf"
+          ]
+        },
+        {
+          "long_name": "Problemlösung",
+          "short_name": "Problemlösung",
+          "type_key": [
+            "Vollständiger Lebenslauf"
+          ]
+        },
+        {
+          "long_name": "Teamarbeit",
+          "short_name": "Teamarbeit",
+          "type_key": [
+            "Vollständiger Lebenslauf"
+          ]
+        },
+        {
+          "long_name": "Projektmanagement",
+          "short_name": "Projektmanagement",
+          "type_key": [
+            "Vollständiger Lebenslauf"
+          ]
+        },
+        {
+          "long_name": "Wissenschaftliches Schreiben",
+          "short_name": "Wiss. Schreiben",
+          "type_key": [
+            "Vollständiger Lebenslauf"
+          ]
+        },
+        {
+          "long_name": "Anpassungsfähigkeit & kontinuierliches Lernen",
+          "short_name": "Anpassung & Lernen",
+          "type_key": [
+            "Vollständiger Lebenslauf"
+          ]
+        },
+        {
+          "long_name": "Zeitmanagement",
+          "short_name": "Zeitmanagement",
+          "type_key": [
+            "Vollständiger Lebenslauf"
+          ]
+        },
+        {
+          "long_name": "Interdisziplinäre Kommunikation",
+          "short_name": "Interdisz. Komm.",
+          "type_key": [
+            "Vollständiger Lebenslauf"
+          ]
+        },
+        {
+          "long_name": "Recherche & kritische Analyse",
+          "short_name": "Recherche & Analyse",
+          "type_key": [
+            "Vollständiger Lebenslauf"
+          ]
+        },
+        {
+          "long_name": "Selbstmotivation & Initiative",
+          "short_name": "Selbstmotivation",
+          "type_key": [
+            "Vollständiger Lebenslauf"
           ]
         }
       ]
     }
   },
-  "erfahrungen": [
+  "experiences": [
     {
-      "rolle": "Full-Stack-Entwickler",
+      "role": "Full-Stack-Entwickler",
       "institution": "Freiberuflich",
-      "dauer": "2018-02-11 - Recent",
-      "beschreibung": "Ich entwickelte und wartete vielfältige Webanwendungen, Backend-/Frontend-Komponenten und automatisierte Daten-Workflows."
+      "duration": "2018-02-11 - Aktuell",
+      "description": "Entwicklung und Wartung vielfältiger Webanwendungen, Backend- und Frontend-Komponenten sowie automatisierter Datenworkflows."
     },
     {
-      "rolle": "Bioinformatik-Forscher – Masterarbeit",
+      "role": "Bioinformatik-Forscher – Masterarbeit",
       "institution": "Universität Teheran",
-      "dauer": "2023-10-23 - 2024-09-15",
-      "hauptfokus": "Omics-basierte Analyse mikrobieller Genome/Fermentation und Bioprozessierung",
-      "beschreibung": "Ich führte bioinformatische Analysen, Genexpressionsprofilierung, funktionelle Annotation und Bioprozess-Optimierung durch."
+      "duration": "2023-10-23 - 2024-09-15",
+      "primaryFocus": "Omics-basierte Analyse mikrobieller Genome/Fermentation und Bioprozessierung",
+      "description": "Durchführung bioinformatischer Analysen, Genexpressions-Profiling, funktioneller Annotation und Bioprozess-Optimierung."
     },
     {
-      "rolle": "Mitgründer & Leiter Business Development",
+      "role": "Mitgründer & Leiter Business Development",
       "institution": "Kamadani Foodstuff Trading LLC",
-      "dauer": "2022-07-14 - 2023-07-13",
-      "hauptfokus": "Unternehmensgründung & Business Development",
-      "beschreibung": "Ich gründete das Unternehmen mit und etablierte es; zudem leitete ich Business Development und Partnerschaften."
+      "duration": "2022-07-14 - 2023-07-13",
+      "primaryFocus": "Unternehmensgründung & Geschäftsentwicklung",
+      "description": "Mitgründung und Aufbau des Unternehmens, Leitung von Geschäftsentwicklung und Partnerschaften."
     },
     {
-      "rolle": "Wissenschaftlicher Mitarbeiter – Biotechnologie-Labor / Fermentationstechnik",
+      "role": "Wissenschaftlicher Mitarbeiter – Biotechnologie-Labor / Fermentation Engineering",
       "institution": "Universität Teheran / Rahpouyan Fanavar Sadegh",
-      "dauer": "2023-01-21 - 2023-09-22",
-      "hauptfokus": "Fed-Batch-Optimierung & Bioprozess-Engineering",
-      "beschreibung": "Ich arbeitete an der Optimierung der Pichia-pastoris-Fermentation sowie an Bioprozess-Engineering-Projekten."
+      "duration": "2023-01-21 - 2023-09-22",
+      "primaryFocus": "Fed-Batch-Optimierung & Bioprozess-Engineering",
+      "description": "Mitarbeit an Projekten zur Optimierung der Pichia-pastoris-Fermentation und zum Bioprozess-Engineering."
     },
     {
-      "rolle": "Vorstandsmitglied",
+      "role": "Mitglied des Verwaltungsrats",
       "institution": "Yazdan Tejarat Absaran",
-      "dauer": "2009-04-25 - 2023-10-23",
-      "hauptfokus": "Export, Import und Unternehmensmanagement",
-      "beschreibung": "Ich verantwortete Betrieb, strategische Planung und Business Development für das Familienhandelsunternehmen."
+      "duration": "2009-04-25 - 2023-10-23",
+      "primaryFocus": "Export, Import und Unternehmensmanagement",
+      "description": "Verantwortlich für Betrieb, strategische Planung und Geschäftsentwicklung im Familienhandel."
     }
   ],
-  "projekte": [
+  "projects": [
     {
-      "titel": "Integrierte Omics-Pipeline für mikrobielle Genomik",
-      "beschreibung": "Entwickelte eine umfassende Pipeline, die metagenomische, transkriptomische und proteomische Daten für funktionelle Genanalysen und das Profiling mikrobieller Gemeinschaften integriert.",
-      "link": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Integrierte Omics-Pipeline für mikrobielle Genomik",
+      "description": "Entwicklung einer umfassenden Pipeline, die metagenomische, transkriptomische und proteomische Daten zur funktionellen Genanalyse und zum Profiling mikrobieller Gemeinschaften integriert.",
+      "url": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Bioinformatik",
         "Akademisch"
       ]
     },
     {
-      "titel": "Policy-Compliance-Checker (Flask + React + SQLite)",
-      "beschreibung": "Erstellte eine Webanwendung im FReMP-Stack zum Upload dynamischer Sicherheitsrichtlinien und Nutzerdatensätze (JSON/CSV), zur serverseitigen Prüfung der Compliance pro Nutzer und zur Darstellung filterbarer/exportierbarer Pass/Fail-Ergebnisse inklusive Begründungen in einer React-Oberfläche.",
-      "link": "https://github.com/Raminyazdani/policy-compliance-checker",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Policy-Compliance-Checker (Flask + React + SQLite)",
+      "description": "Entwicklung einer FReMP-Stack-Webanwendung zum Hochladen dynamischer Sicherheitsrichtlinien und Benutzerdatensätze (JSON/CSV), serverseitiger Prüfung der Compliance pro Nutzer sowie Darstellung filter-/exportierbarer Pass/Fail-Ergebnisse mit Erklärungen in einer React-UI.",
+      "url": "https://github.com/Raminyazdani/policy-compliance-checker",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Akademisch"
       ]
     },
     {
-      "titel": "Marktplatz-Template für Kosmetikshop (Django)",
-      "beschreibung": "Baute ein Multi-App-Django‑4.1-Marktplatz-Template für einen Kosmetikshop mit einer wiederverwendbaren Core-Schicht (zentralisierte Field-Factories, Basismodelle mit Soft-Delete, gemeinsame Mixins und ein eigener App-Scaffolding-Befehl) sowie Produktkatalog (Liste/Suche/Filter), Warenkorb- und Checkout-Flow und Bestell-/Zahlungs-/Versandmodelle, gerendert mit Bootstrap-Templates auf SQLite.",
-      "link": "https://github.com/Raminyazdani/Cosmetic_Shop",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Marketplace-Template für Kosmetikshop (Django)",
+      "description": "Entwicklung eines Multi-App-Django-4.1-Marketplace-Templates für einen Kosmetikshop mit einer wiederverwendbaren Core-Schicht (zentralisierte Field-Factories, Basismodelle mit Soft-Delete, gemeinsame Mixins und ein Custom-Scaffolding-Command) sowie Produktkatalog (Listen/Suche/Filter), Warenkorb- & Checkout-Flow und Modellen für Bestellung/Zahlung/Versand, gerendert mit Bootstrap-Templates auf SQLite.",
+      "url": "https://github.com/Raminyazdani/Cosmetic_Shop",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Akademisch"
       ]
     },
     {
-      "titel": "Marktplatz-Template für Kosmetikshop (Django)",
-      "beschreibung": "Baute ein Multi-App-Django‑4.1-Marktplatz-Template für einen Kosmetikshop mit einer wiederverwendbaren Core-Schicht (zentralisierte Field-Factories, Basismodelle mit Soft-Delete, gemeinsame Mixins und ein eigener App-Scaffolding-Befehl) sowie Produktkatalog (Liste/Suche/Filter), Warenkorb- und Checkout-Flow und Bestell-/Zahlungs-/Versandmodelle, gerendert mit Bootstrap-Templates auf SQLite.",
-      "link": "https://github.com/Raminyazdani/Cosmetic_Shop",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Marketplace-Template für Kosmetikshop (Django)",
+      "description": "Entwicklung eines Multi-App-Django-4.1-Marketplace-Templates für einen Kosmetikshop mit einer wiederverwendbaren Core-Schicht (zentralisierte Field-Factories, Basismodelle mit Soft-Delete, gemeinsame Mixins und ein Custom-Scaffolding-Command) sowie Produktkatalog (Listen/Suche/Filter), Warenkorb- & Checkout-Flow und Modellen für Bestellung/Zahlung/Versand, gerendert mit Bootstrap-Templates auf SQLite.",
+      "url": "https://github.com/Raminyazdani/Cosmetic_Shop",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Akademisch"
       ]
     },
     {
-      "titel": "Maktab-78-Dateispeicher (framework-loses Python + PostgreSQL)",
-      "beschreibung": "Entwickelte ein lehrreiches, framework-loses Python-Projekt mit einem verschachtelten CLI-Router/Menüsystem mit dynamischen Callbacks, einer leichten PostgreSQL-Persistenzschicht (psycopg2) mit kleinen ORM-ähnlichen Modellen und Query-Buildern für CRUD sowie Domänenmodulen für Nutzer, Dateien, Kommentare, Warenkörbe und Bestellpositionen.",
-      "link": "https://github.com/Raminyazdani/m78bookstore",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Maktab 78 File Store (Framework-loses Python + PostgreSQL)",
+      "description": "Entwicklung eines edukativen, framework-losen Python-Projekts mit verschachteltem CLI-Router/Menu-System und dynamischen Callbacks, einer schlanken PostgreSQL-Persistenzschicht (psycopg2) mit kleinen ORM-ähnlichen Modellen und Query-Buildern für CRUD sowie Domain-Modulen für Nutzer, Dateien, Kommentare, Warenkörbe und Bestellpositionen.",
+      "url": "https://github.com/Raminyazdani/m78bookstore",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
-        "Studentische_Projekte"
+        "Studierendenprojekte"
       ]
     },
     {
-      "titel": "Python-Bootcamp-Portfolio — Maktab-78 Aufgaben & Projekte",
-      "beschreibung": "Stellte und dokumentierte ein Monorepo aus Python-Bootcamp-Kursarbeit und Projekten zusammen, gegliedert nach Homework-Modulen (Grundlagen, OOP, System-Scripting, Datenvalidierung, Datenbanken mit PostgreSQL/MongoDB und Flask-REST-APIs), inklusive mehrerer größerer Teilprojekte in einem strukturierten Repository.",
-      "link": "https://github.com/Raminyazdani/HW_all_maktab-78",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Python-Bootcamp-Portfolio — Maktab-78-Aufgaben & Projekte",
+      "description": "Zusammenstellung und Dokumentation eines Monorepos mit Python-Bootcamp-Kursarbeiten und Projekten, organisiert nach Homework-Modulen (Grundlagen, OOP, System-Scripting, Datenvalidierung, Datenbanken mit PostgreSQL/MongoDB und Flask-REST-APIs) inklusive mehrerer größerer Teilprojekte in einem strukturierten Repository.",
+      "url": "https://github.com/Raminyazdani/HW_all_maktab-78",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
-        "Studentische_Projekte"
+        "Studierendenprojekte"
       ]
     },
     {
-      "titel": "IranDoc-Ganj Scraper für Paper & Abschlussarbeiten (Selenium + BeautifulSoup)",
-      "beschreibung": "Entwickelte ein Python-Web-Scraping-Tool mit Selenium und BeautifulSoup, das ganj.irandoc.ac.ir jahrweise (und bei Bedarf seitenweise) crawlt, Metadaten zu Abschlussarbeiten/Papern (z. B. Thema, Typ, Studiengang, Jahr, Universität, Mitwirkende) mit UTF‑8-Persisch-Unterstützung extrahiert und die Ergebnisse als CSV ausgibt, inklusive zusätzlichem CSV-Cleaning-Utility.",
-      "link": "https://github.com/Raminyazdani/irandoc",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
-        "Programmierung",
-        "Akademisch"
-      ]
-    },
-    {
-      "titel": "Persönliche CV-Website (Django + React)",
-      "beschreibung": "Baute eine persönliche CV-Website mit einem React-Single-Page-Frontend und einem Django-Backend für Datenspeicherung und API-Services, die Skills, Projekte und Berufserfahrung im Web präsentiert.",
-      "link": "https://github.com/Raminyazdani/My-CV-Website",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "IranDoc-Ganj-Scraper für Forschungsarbeiten & Abschlussarbeiten (Selenium + BeautifulSoup)",
+      "description": "Entwicklung eines Python-Web-Scrapers mit Selenium und BeautifulSoup zum Crawlen von ganj.irandoc.ac.ir jahrweise (und bei Bedarf seitenweise), Extraktion von Thesis/Paper-Metadaten (z. B. Thema, Typ, Studiengang, Jahr, Universität, Mitwirkende) mit UTF‑8-Persisch-Support und Export nach CSV inklusive zusätzlichem CSV-Cleaning-Tool.",
+      "url": "https://github.com/Raminyazdani/irandoc",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Akademisch"
       ]
     },
     {
-      "titel": "Film/Serien-Discovery- & Personalisierungs-App (React + Express + MySQL)",
-      "beschreibung": "Baute ein Full-Stack-Monorepo zur Film/Serien-Entdeckung und Personalisierung mit einem React-Client (Redux Toolkit, Material UI) und einem Express-Server auf MySQL-Basis; integrierte Firebase Auth sowie OMDb/TMDb-Metadaten-APIs, um nutzerspezifische Favoriten, Bewertungen, Reviews und Empfehlungsanfragen über eine REST-API zu unterstützen.",
-      "link": "https://github.com/Raminyazdani/movie-rating-app",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Persönliche CV-Website (Django + React)",
+      "description": "Aufbau einer persönlichen CV-Website mit einer React-Single-Page-Frontend und einem Django-Backend für Datenspeicherung und API-Services, um Skills, Projekte und Berufserfahrung webbasiert zu präsentieren.",
+      "url": "https://github.com/Raminyazdani/My-CV-Website",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Akademisch"
       ]
     },
     {
-      "titel": "Krankenhaus-Datenbank-Managementsystem (MySQL + SQL)",
-      "beschreibung": "Entwickelte ein MySQL-Krankenhaus-Datenbankschema zur Verwaltung von Patienten, Ärzten, Leistungen, Abteilungen, Operationen und Besuchen; lieferte SQL-Skripte zum Anlegen der Tabellen, Einfügen von Beispieldaten und Erzeugen mehrerer Report-Views sowie ein ERD zur Dokumentation.",
-      "link": "https://github.com/Raminyazdani/Hospital-Data-base",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
-        "Programmierung",
-        "Studentische_Projekte"
-      ]
-    },
-    {
-      "titel": "Terminal-Rechner (TUI) — Python",
-      "beschreibung": "Entwickelte einen Python‑3.10-Terminalrechner (TUI) mit sicherer Ausdrucksauswertung, Command-History (Ansehen/Wiederholen) und Hell-/Dunkel-Themes mit Rich + prompt_toolkit; als CLI paketiert mit pytest-Tests und GitHub-Pages-Dokumentation.",
-      "link": "https://github.com/Raminyazdani/Calculator",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
-        "Programmierung",
-        "Studentische_Projekte"
-      ]
-    },
-    {
-      "titel": "CV-Generator — JSON → Awesome‑CV‑PDF (Jinja2 + XeLaTeX)",
-      "beschreibung": "Entwickelte einen Python-basierten CV-Generator, der strukturiertes JSON in modulare Jinja2+LaTeX-Section-Templates mit der Awesome‑CV-Klasse rendert und anschließend hochwertige PDFs via XeLaTeX kompiliert; mit Multi-CV-Batch-Support, optionalen Profilfotos, StrictUndefined-Validierung, LaTeX-Escaping-Helpern und zuverlässigem Cleanup der Zwischenartefakte.",
-      "link": "https://github.com/Raminyazdani/cv_generator",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Movie/TV-Discovery- & Personalisierungs-App (React + Express + MySQL)",
+      "description": "Entwicklung eines Full-Stack-Monorepos zur Film/Serien-Discovery und Personalisierung mit React-Client (Redux Toolkit, Material UI) und Express-Server mit MySQL, inkl. Firebase Auth und OMDb/TMDb-Metadaten-APIs für per-user Favoriten, Ratings, Reviews und Empfehlungsanfragen über eine REST-API.",
+      "url": "https://github.com/Raminyazdani/movie-rating-app",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Akademisch"
       ]
     },
     {
-      "titel": "Python-Projekte-Roadmap (laufend)",
-      "beschreibung": "Pflege eine laufend kuratierte Roadmap mit ~100 Python-Projektideen, nach Schwierigkeitsgrad (Beginner/Intermediate/Advanced) kategorisiert, um konsequentes Üben und Portfolio-Aufbau zu unterstützen, inklusive Repo-Utilities (z. B. create_projects.py).",
-      "link": "https://github.com/Raminyazdani/Python-projects",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Krankenhaus-Datenbank-Management-System (MySQL + SQL)",
+      "description": "Entwicklung eines MySQL-Datenbankschemas zur Verwaltung von Patienten, Ärzten, Leistungen, Abteilungen, Operationen und Besuchen, inklusive SQL-Skripten zum Erstellen von Tabellen, Einfügen von Beispieldaten und Erzeugen mehrerer Report-Views sowie eines ERD zur Dokumentation.",
+      "url": "https://github.com/Raminyazdani/Hospital-Data-base",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
-        "Studentische_Projekte"
+        "Studierendenprojekte"
       ]
     },
     {
-      "titel": "Workflow für Single-Cell- & Spatial-Transcriptomics",
-      "beschreibung": "Implementierte Analyse-Workflows für Single-Cell-RNA-seq und Spatial-Transcriptomics, die Zelltyp-Identifikation und Trajektorien-Inferenz ermöglichen.",
-      "link": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Terminal-Rechner (TUI) — Python",
+      "description": "Entwicklung eines Python-3.10-Terminalrechners (TUI) mit sicherer Ausdrucksauswertung, Kommandohistorie (Ansehen/Wiederholen) und Light/Dark-Theming mit Rich + prompt_toolkit; als CLI paketiert mit pytest-Tests und GitHub-Pages-Dokumentation.",
+      "url": "https://github.com/Raminyazdani/Calculator",
+      "type_key": [
+        "Vollständiger Lebenslauf",
+        "Programmierung",
+        "Studierendenprojekte"
+      ]
+    },
+    {
+      "title": "CV-Generator — JSON → Awesome-CV-PDF (Jinja2 + XeLaTeX)",
+      "description": "Entwicklung eines Python-basierten CV-Generators, der strukturiertes JSON in modulare Jinja2+LaTeX-Section-Templates (Awesome-CV-Klasse) rendert und anschließend professionelle PDFs via XeLaTeX kompiliert; inkl. Multi-CV-Batch-Support, optionalen Profilfotos, StrictUndefined-Validierung, LaTeX-Escaping-Helpern und zuverlässigem Cleanup von Zwischenfiles.",
+      "url": "https://github.com/Raminyazdani/cv_generator",
+      "type_key": [
+        "Vollständiger Lebenslauf",
+        "Programmierung",
+        "Akademisch"
+      ]
+    },
+    {
+      "title": "Python-Projekte-Roadmap (laufend)",
+      "description": "Pflege einer laufend kuratierten Roadmap von ~100 Python-Projektideen, nach Schwierigkeitsgrad (Beginner/Intermediate/Advanced) kategorisiert, zur kontinuierlichen Übung und Portfolio-Entwicklung; inkl. Repo-Utilities (z. B. create_projects.py).",
+      "url": "https://github.com/Raminyazdani/Python-projects",
+      "type_key": [
+        "Vollständiger Lebenslauf",
+        "Programmierung",
+        "Studierendenprojekte"
+      ]
+    },
+    {
+      "title": "Workflow für Single-Cell- & Spatial-Transcriptomics",
+      "description": "Implementierung von Analyse-Workflows für Single-Cell-RNA-seq und Spatial-Transcriptomics-Daten zur Identifikation von Zelltypen und Trajektorien-Inferenz.",
+      "url": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Bioinformatik",
         "Akademisch"
       ]
     },
     {
-      "titel": "Bioprozess-Optimierung für Proteinproduktion",
-      "beschreibung": "Optimierte Fed-Batch-Fermentationsprozesse für heterologe Proteinexpression in Pichia pastoris, einschließlich Pathway-Engineering und Bioreaktor-Management.",
-      "link": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Bioprozess-Optimierung für Proteinproduktion",
+      "description": "Optimierung von Fed-Batch-Fermentationsprozessen für heterologe Proteinexpression in Pichia pastoris, einschließlich Pathway Engineering und Bioreaktor-Management.",
+      "url": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch"
       ]
     },
     {
-      "titel": "Automatisierung & Web-Datenextraktion",
-      "beschreibung": "Entwarf und deployte Python-basierte Web-Crawler und Automationsskripte für Datenextraktion, -bereinigung und -verarbeitung aus vielfältigen Online-Quellen.",
-      "link": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Automatisierung & Web-Datenextraktionslösungen",
+      "description": "Konzeption und Deployment Python-basierter Web-Crawler und Automatisierungsskripte zur Datenextraktion, -bereinigung und -verarbeitung aus vielfältigen Online-Quellen.",
+      "url": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Akademisch"
       ]
     },
     {
-      "titel": "Full-Stack-Webanwendung zur Datenvisualisierung",
-      "beschreibung": "Baute interaktive Dashboards und Visualisierungstools mit Django, React und Plotly für wissenschaftliche Datenrepräsentation und Reporting.",
-      "link": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Full-Stack-Webanwendung zur Datenvisualisierung",
+      "description": "Entwicklung interaktiver Dashboards und Visualisierungstools mit Django, React und Plotly für wissenschaftliche Datenrepräsentation und Reporting.",
+      "url": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Akademisch"
       ]
     },
     {
-      "titel": "Machine-Learning-Anwendungen in der Bioinformatik",
-      "beschreibung": "Entwickelte prädiktive Modelle und Clustering-Algorithmen für die Analyse biologischer Daten, mit Fokus auf Genexpression und Klassifikationsaufgaben.",
-      "link": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Machine-Learning-Anwendungen in der Bioinformatik",
+      "description": "Entwicklung prädiktiver Modelle und Clustering-Algorithmen für die Analyse biologischer Daten mit Fokus auf Genexpression und Klassifikationsaufgaben.",
+      "url": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Bioinformatik",
         "Akademisch"
       ]
     },
     {
-      "titel": "Containerisierte Bioinformatik-Workflows",
-      "beschreibung": "Deployte reproduzierbare Bioinformatik-Pipelines mit Docker und Kubernetes für skalierbare und kollaborative Forschungsumgebungen.",
-      "link": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Containerisierte Bioinformatik-Workflows",
+      "description": "Deployment reproduzierbarer Bioinformatik-Pipelines mit Docker und Kubernetes für skalierbare und kollaborative Forschungsumgebungen.",
+      "url": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Bioinformatik",
         "Akademisch"
       ]
     },
     {
-      "titel": "CI/CD-Pipeline-Implementierung für Webanwendungen",
-      "beschreibung": "Konfigurierte und automatisierte Continuous-Integration- und Deployment-Pipelines mit GitLab CI/CD und Docker für Webanwendungen, um robuste Delivery-Workflows sicherzustellen.",
-      "link": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Implementierung von CI/CD-Pipelines für Webanwendungen",
+      "description": "Konfiguration und Automatisierung von Continuous-Integration- und Deployment-Pipelines mit GitLab CI/CD und Docker für Webanwendungen zur Sicherstellung robuster Delivery-Workflows.",
+      "url": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Akademisch"
       ]
     },
     {
-      "titel": "Backend-API-Entwicklung für datengetriebene Anwendungen",
-      "beschreibung": "Entwarf RESTful APIs mit Django Rest Framework und FastAPI als Backends für datengetriebene Anwendungen, mit Fokus auf Performance und Skalierbarkeit.",
-      "link": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Backend-API-Entwicklung für datengetriebene Anwendungen",
+      "description": "Design von RESTful APIs mit Django Rest Framework und FastAPI als Backends für datengetriebene Anwendungen mit Fokus auf Performance und Skalierbarkeit.",
+      "url": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Akademisch"
       ]
     },
     {
-      "titel": "Echtzeit-Datenvisualisierungs-Dashboard",
-      "beschreibung": "Entwickelte ein Echtzeit-Dashboard zur Überwachung und Visualisierung von Streaming-Daten mit React, WebSockets und Plotly für eine interaktive User Experience.",
-      "link": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Echtzeit-Datenvisualisierungs-Dashboard",
+      "description": "Entwicklung eines Echtzeit-Dashboards zur Überwachung und Visualisierung von Streaming-Daten mit React, WebSockets und Plotly für eine interaktive User Experience.",
+      "url": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Bioinformatik",
         "Biotechnologie",
@@ -2822,96 +2825,96 @@
       ]
     },
     {
-      "titel": "Full-Stack-E-Commerce-Plattform",
-      "beschreibung": "Baute eine skalierbare E‑Commerce-Plattform, die Nutzerverwaltung, Produktkataloge und Zahlungssysteme mit Django, React und PostgreSQL integriert.",
-      "link": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Full-Stack-E-Commerce-Webplattform",
+      "description": "Entwicklung einer skalierbaren E-Commerce-Plattform mit User-Management, Produktkatalogen und Zahlungssystemen unter Einsatz von Django, React und PostgreSQL.",
+      "url": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Akademisch"
       ]
     },
     {
-      "titel": "Linux-Systemautomatisierungs- & Monitoring-Skripte",
-      "beschreibung": "Erstellte Bash- und Python-Skripte zur Automatisierung von Server-Wartungsaufgaben, Log-Management und Ressourcenmonitoring auf Linux-basierten Systemen.",
-      "link": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Linux-Systemautomatisierung & Monitoring-Skripte",
+      "description": "Erstellung von Bash- und Python-Skripten zur Automatisierung von Server-Wartungsaufgaben, Log-Management und Ressourcen-Monitoring auf Linux-basierten Systemen.",
+      "url": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Bioinformatik",
         "Akademisch"
       ]
     },
     {
-      "titel": "Cloud-basiertes Microservices-Deployment",
-      "beschreibung": "Implementierte eine Microservices-Architektur und deployte containerisierte Services auf Cloud-Infrastruktur mit Docker und Kubernetes.",
-      "link": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Cloud-basierte Microservices-Deployment",
+      "description": "Implementierung einer Microservices-Architektur und Deployment containerisierter Services auf Cloud-Infrastruktur mit Docker und Kubernetes.",
+      "url": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Programmierung",
         "Akademisch"
       ]
     },
     {
-      "titel": "Robotik- & Embedded-Systems-Entwickler — Schule & private Projekte (2011–2015)",
-      "beschreibung": "Mikrocontroller-Programmierung und Robotik-Entwicklung für Schülerwettbewerbe; Entwurf und Aufbau eingebetteter Robotiksysteme und Steuerlogik.",
-      "link": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "title": "Robotics & Embedded-Systems-Entwickler — High School & persönliche Projekte (2011–2015)",
+      "description": "Mikrocontroller-Programmierung und Robotik-Entwicklung für Schülerwettbewerbe; Entwurf und Aufbau eingebetteter Robotiksysteme und Steuerlogik.",
+      "url": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Robotik",
         "Embedded Systems",
-        "Studentische_Projekte"
+        "Studierendenprojekte"
       ]
     }
   ],
-  "publikationen": [
+  "publications": [
     {
-      "titel": "Antibakterielle Wirkung von Vancomycin/Ziziphus-verkapselten Niosom-Nanopartikeln gegen vancomycinresistente klinische Isolate von Enterococcus faecium",
-      "autoren": [
+      "title": "Antibakterielle Wirkung von Vancomycin-/Ziziphus‑verkapselten Niosomen‑Nanopartikeln gegen vancomycinresistente klinische Isolate von Enterococcus faecium",
+      "authors": [
         "Rysan Jabr Kadhim Alboughanimeh",
-        "et al."
+        "u. a."
       ],
-      "autoren_strukturiert": [
+      "authors_structured": [
         {
-          "wortlaut": "Rysan Jabr Kadhim Alboughanimeh"
+          "literal": "Rysan Jabr Kadhim Alboughanimeh"
         },
         {
-          "wortlaut": "et al."
+          "literal": "u. a."
         }
       ],
-      "typ": "Forschungsartikel",
-      "status": "Warten_auf_Einreichung",
-      "jahr": null,
-      "monat": null,
-      "tag": null,
-      "datum": null,
-      "zeitschrift": null,
-      "band": null,
-      "ausgabe": null,
-      "seiten": null,
-      "artikelnummer": null,
+      "type": "Forschungsartikel",
+      "status": "Wartet auf Einreichung",
+      "year": null,
+      "month": null,
+      "day": null,
+      "date": null,
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
       "doi": null,
       "issn": null,
-      "link": null,
-      "zugriffsdatum": null,
-      "sprache": null,
-      "verlag": null,
-      "ort": null,
-      "herausgeber": null,
-      "buchtitel": null,
-      "kapitel_seiten": null,
-      "auflage": null,
-      "konferenz": null,
-      "abschluss": null,
+      "url": null,
+      "access_date": null,
+      "language": null,
+      "publisher": null,
+      "place": null,
+      "editors": null,
+      "book_title": null,
+      "chapter_pages": null,
+      "edition": null,
+      "conference": null,
+      "degree_type": null,
       "repository_url": null,
-      "korrespondenzautor": "Dr. Saeed Samarghandian",
-      "betreuer": null,
+      "correspondent": "Dr. Saeed Samarghandian",
+      "supervisors": null,
       "institution": null,
-      "fakultaet": null,
-      "schule": null,
+      "faculty": null,
+      "school": null,
       "isbn": null,
-      "einreichungsdatum": null,
-      "kennungen": {
+      "submissionDate": null,
+      "identifiers": {
         "doi": null,
         "isbn": null,
         "issn": null,
@@ -2919,62 +2922,62 @@
         "pmcid": null,
         "arxiv": null
       },
-      "notizen": null,
-      "url": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "notes": null,
+      "URL": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik"
       ]
     },
     {
-      "titel": "Aktuelle Fortschritte bei konventionellen und modernen Verfahren der Abfallbehandlung",
-      "autoren": [
+      "title": "Aktuelle Fortschritte bei konventionellen und modernen Ansätzen der Abfallbehandlung",
+      "authors": [
         "Ramin Yazdani",
-        "et al."
+        "u. a."
       ],
-      "autoren_strukturiert": [
+      "authors_structured": [
         {
-          "wortlaut": "Ramin Yazdani"
+          "literal": "Ramin Yazdani"
         },
         {
-          "wortlaut": "et al."
+          "literal": "u. a."
         }
       ],
-      "typ": "Buchkapitel",
+      "type": "Buchkapitel",
       "status": "Veröffentlicht",
-      "jahr": null,
-      "monat": null,
-      "tag": null,
-      "datum": null,
-      "zeitschrift": null,
-      "band": null,
-      "ausgabe": null,
-      "seiten": null,
-      "artikelnummer": null,
+      "year": null,
+      "month": null,
+      "day": null,
+      "date": null,
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
       "doi": null,
       "issn": null,
-      "link": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003441069-5/recent-advances-conventional-modern-wastewater-treatment-approaches-ramin-yazdani-sharareh-harirchi-mandana-lak-mojdeh-mirshafiei-seyed-ali-nojoumi-mohadasseh-ramezani-behnam-rasekh-fatemeh-yazdian",
-      "zugriffsdatum": null,
-      "sprache": null,
-      "verlag": "Taylor & Francis",
-      "ort": null,
-      "herausgeber": null,
-      "buchtitel": null,
-      "kapitel_seiten": null,
-      "auflage": null,
-      "konferenz": null,
-      "abschluss": null,
+      "url": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003441069-5/recent-advances-conventional-modern-wastewater-treatment-approaches-ramin-yazdani-sharareh-harirchi-mandana-lak-mojdeh-mirshafiei-seyed-ali-nojoumi-mohadasseh-ramezani-behnam-rasekh-fatemeh-yazdian",
+      "access_date": null,
+      "language": null,
+      "publisher": "Taylor & Francis",
+      "place": null,
+      "editors": null,
+      "book_title": null,
+      "chapter_pages": null,
+      "edition": null,
+      "conference": null,
+      "degree_type": null,
       "repository_url": null,
-      "korrespondenzautor": "Dr. Fatemeh Yazdian",
-      "betreuer": null,
+      "correspondent": "Dr. Fatemeh Yazdian",
+      "supervisors": null,
       "institution": null,
-      "fakultaet": null,
-      "schule": null,
+      "faculty": null,
+      "school": null,
       "isbn": "9781032528595",
-      "einreichungsdatum": null,
-      "kennungen": {
+      "submissionDate": null,
+      "identifiers": {
         "doi": null,
         "isbn": "9781032528595",
         "issn": null,
@@ -2982,62 +2985,62 @@
         "pmcid": null,
         "arxiv": null
       },
-      "notizen": null,
-      "url": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003441069-5/recent-advances-conventional-modern-wastewater-treatment-approaches-ramin-yazdani-sharareh-harirchi-mandana-lak-mojdeh-mirshafiei-seyed-ali-nojoumi-mohadasseh-ramezani-behnam-rasekh-fatemeh-yazdian",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "notes": null,
+      "URL": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003441069-5/recent-advances-conventional-modern-wastewater-treatment-approaches-ramin-yazdani-sharareh-harirchi-mandana-lak-mojdeh-mirshafiei-seyed-ali-nojoumi-mohadasseh-ramezani-behnam-rasekh-fatemeh-yazdian",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik"
       ]
     },
     {
-      "titel": "Ceftazidim-beladene Niosomen als wirksames antibakterielles Mittel gegen biofilmbildende Pseudomonas-aeruginosa-Isolate",
-      "autoren": [
+      "title": "Ceftazidim‑beladene Niosomen als wirksamer antibakterieller Wirkstoff gegen biofilmbildende klinische Isolate von Pseudomonas aeruginosa",
+      "authors": [
         "Yaqoob Thajil Al-Bozouni",
-        "et al."
+        "u. a."
       ],
-      "autoren_strukturiert": [
+      "authors_structured": [
         {
-          "wortlaut": "Yaqoob Thajil Al-Bozouni"
+          "literal": "Yaqoob Thajil Al-Bozouni"
         },
         {
-          "wortlaut": "et al."
+          "literal": "u. a."
         }
       ],
-      "typ": "Forschungsartikel",
-      "status": "Warten_auf_Einreichung",
-      "jahr": null,
-      "monat": null,
-      "tag": null,
-      "datum": null,
-      "zeitschrift": null,
-      "band": null,
-      "ausgabe": null,
-      "seiten": null,
-      "artikelnummer": null,
+      "type": "Forschungsartikel",
+      "status": "Wartet auf Einreichung",
+      "year": null,
+      "month": null,
+      "day": null,
+      "date": null,
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
       "doi": null,
       "issn": null,
-      "link": null,
-      "zugriffsdatum": null,
-      "sprache": null,
-      "verlag": null,
-      "ort": null,
-      "herausgeber": null,
-      "buchtitel": null,
-      "kapitel_seiten": null,
-      "auflage": null,
-      "konferenz": null,
-      "abschluss": null,
+      "url": null,
+      "access_date": null,
+      "language": null,
+      "publisher": null,
+      "place": null,
+      "editors": null,
+      "book_title": null,
+      "chapter_pages": null,
+      "edition": null,
+      "conference": null,
+      "degree_type": null,
       "repository_url": null,
-      "korrespondenzautor": "Dr. Saeed Samarghandian",
-      "betreuer": null,
+      "correspondent": "Dr. Saeed Samarghandian",
+      "supervisors": null,
       "institution": null,
-      "fakultaet": null,
-      "schule": null,
+      "faculty": null,
+      "school": null,
       "isbn": null,
-      "einreichungsdatum": null,
-      "kennungen": {
+      "submissionDate": null,
+      "identifiers": {
         "doi": null,
         "isbn": null,
         "issn": null,
@@ -3045,62 +3048,62 @@
         "pmcid": null,
         "arxiv": null
       },
-      "notizen": null,
-      "url": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "notes": null,
+      "URL": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik"
       ]
     },
     {
-      "titel": "BCL-2-vermittelter apoptotischer Signalweg als vielversprechendes Ziel für biosynthetisierte Silbernanopartikel: Übersichtsartikel",
-      "autoren": [
+      "title": "Der BCL‑2‑vermittelte apoptotische Signalweg als vielversprechendes Ziel für biosynthetisierte Silbernanopartikel: Übersichtsartikel",
+      "authors": [
         "Pooria Moulavi",
-        "et al."
+        "u. a."
       ],
-      "autoren_strukturiert": [
+      "authors_structured": [
         {
-          "wortlaut": "Pooria Moulavi"
+          "literal": "Pooria Moulavi"
         },
         {
-          "wortlaut": "et al."
+          "literal": "u. a."
         }
       ],
-      "typ": "Übersichtsartikel",
-      "status": "Warten_auf_Einreichung",
-      "jahr": null,
-      "monat": null,
-      "tag": null,
-      "datum": null,
-      "zeitschrift": null,
-      "band": null,
-      "ausgabe": null,
-      "seiten": null,
-      "artikelnummer": null,
+      "type": "Übersichtsartikel",
+      "status": "Wartet auf Einreichung",
+      "year": null,
+      "month": null,
+      "day": null,
+      "date": null,
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
       "doi": null,
       "issn": null,
-      "link": null,
-      "zugriffsdatum": null,
-      "sprache": null,
-      "verlag": null,
-      "ort": null,
-      "herausgeber": null,
-      "buchtitel": null,
-      "kapitel_seiten": null,
-      "auflage": null,
-      "konferenz": null,
-      "abschluss": null,
+      "url": null,
+      "access_date": null,
+      "language": null,
+      "publisher": null,
+      "place": null,
+      "editors": null,
+      "book_title": null,
+      "chapter_pages": null,
+      "edition": null,
+      "conference": null,
+      "degree_type": null,
       "repository_url": null,
-      "korrespondenzautor": "Dr. Saeed Samarghandian",
-      "betreuer": null,
+      "correspondent": "Dr. Saeed Samarghandian",
+      "supervisors": null,
       "institution": null,
-      "fakultaet": null,
-      "schule": null,
+      "faculty": null,
+      "school": null,
       "isbn": null,
-      "einreichungsdatum": null,
-      "kennungen": {
+      "submissionDate": null,
+      "identifiers": {
         "doi": null,
         "isbn": null,
         "issn": null,
@@ -3108,61 +3111,61 @@
         "pmcid": null,
         "arxiv": null
       },
-      "notizen": null,
-      "url": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "notes": null,
+      "URL": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik"
       ]
     },
     {
-      "titel": "Omics-basierte Analyse und Genprofilierung zur Identifizierung von Lactobacillus-Stämmen zur Modulation der HDL/LDL-Verhältnisse in pharmazeutischen Anwendungen",
-      "autoren": [
+      "title": "Omics‑basierte Analyse und Genprofilierung zur Identifizierung von Lactobacillus‑Stämmen zur Modulation des HDL/LDL‑Verhältnisses in pharmazeutischen Anwendungen",
+      "authors": [
         "Ramin Yazdani"
       ],
-      "autoren_strukturiert": [
+      "authors_structured": [
         {
-          "wortlaut": "Ramin Yazdani"
+          "literal": "Ramin Yazdani"
         }
       ],
-      "typ": "Masterarbeit",
+      "type": "Masterarbeit",
       "status": "Eingereicht",
-      "jahr": 2024,
-      "monat": 9,
-      "tag": 15,
-      "datum": "2024-09-15",
-      "zeitschrift": null,
-      "band": null,
-      "ausgabe": null,
-      "seiten": null,
-      "artikelnummer": null,
+      "year": 2024,
+      "month": 9,
+      "day": 15,
+      "date": "2024-09-15",
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
       "doi": null,
       "issn": null,
-      "link": null,
-      "zugriffsdatum": null,
-      "sprache": null,
-      "verlag": null,
-      "ort": null,
-      "herausgeber": null,
-      "buchtitel": null,
-      "kapitel_seiten": null,
-      "auflage": null,
-      "konferenz": null,
-      "abschluss": "Master's thesis",
+      "url": null,
+      "access_date": null,
+      "language": null,
+      "publisher": null,
+      "place": null,
+      "editors": null,
+      "book_title": null,
+      "chapter_pages": null,
+      "edition": null,
+      "conference": null,
+      "degree_type": "Masterarbeit",
       "repository_url": null,
-      "korrespondenzautor": "Dr. Mohammad Barshan Tashnizi",
-      "betreuer": [
+      "correspondent": "Dr. Mohammad Barshan Tashnizi",
+      "supervisors": [
         "Dr. Mohammad Barshan Tashnizi",
         "Dr. Najaf Allahyari Fard"
       ],
       "institution": "Universität Teheran",
-      "fakultaet": "Fakultät für Neue Wissenschaften und Technologien",
-      "schule": "School für Life-Science-Engineering",
+      "faculty": "Fakultät für Neue Wissenschaften und Technologien",
+      "school": "School of Life Science Engineering",
       "isbn": null,
-      "einreichungsdatum": "2024-09-15",
-      "kennungen": {
+      "submissionDate": "2024-09-15",
+      "identifiers": {
         "doi": null,
         "isbn": null,
         "issn": null,
@@ -3170,30 +3173,30 @@
         "pmcid": null,
         "arxiv": null
       },
-      "notizen": null,
-      "url": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "notes": null,
+      "URL": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik"
       ]
     }
   ],
-  "referenzen": [
+  "references": [
     {
       "name": "Shokouh Shomeil Zadeh Shoushtari",
       "position": "Wissenschaftliche Mitarbeiterin / Researcher",
-      "abteilung": "Abteilung für Entwicklungsneuropsychologie",
+      "department": "Abteilung für Entwicklungsneuropsychologie",
       "institution": "Universität Trier",
-      "standort": "Trier, Deutschland",
-      "e_mail": [
+      "location": "Trier, Deutschland",
+      "email": [
         "Shoushtari@uni-trier.de"
       ],
-      "telefon": null,
-      "url": null,
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "phone": null,
+      "URL": null,
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik"
@@ -3202,17 +3205,17 @@
     {
       "name": "Prof. Babak Khalili Hadad",
       "position": "Assistenzprofessor, Biochemiker, Mitglied der AAUP",
-      "abteilung": "Abteilung für Biotechnologie",
+      "department": "Abteilung für Biotechnologie",
       "institution": "Islamische Azad-Universität, Campus Roudehen",
-      "standort": "Roudehen, Iran",
-      "e_mail": [
+      "location": "Roudehen, Iran",
+      "email": [
         "Babakkhalili.hadad@ciu.edu.ge",
         "Ba.khalili@iau.ac.ir"
       ],
-      "telefon": null,
-      "url": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Babak__Khalili_Hadad.pdf",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "phone": null,
+      "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Babak__Khalili_Hadad.pdf",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik"
@@ -3221,16 +3224,16 @@
     {
       "name": "Prof. Hedieh Dibah",
       "position": "Assistenzprofessor, Fakultät für Landwirtschaft & Wissenschaft",
-      "abteilung": "Abteilung für Biotechnologie",
+      "department": "Abteilung für Biotechnologie",
       "institution": "Islamische Azad-Universität, Campus Roudehen",
-      "standort": "Roudehen, Iran",
-      "e_mail": [
+      "location": "Roudehen, Iran",
+      "email": [
         "biodibio@yahoo.com"
       ],
-      "telefon": null,
-      "url": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Hedieh_Dibah.pdf",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "phone": null,
+      "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Hedieh_Dibah.pdf",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik"
@@ -3239,22 +3242,22 @@
     {
       "name": "Prof. Simin Nabizadeh",
       "position": "Assistenzprofessor, Fakultät für Landwirtschaft & Wissenschaft",
-      "abteilung": "Abteilung für Biotechnologie",
+      "department": "Abteilung für Biotechnologie",
       "institution": "Islamische Azad-Universität, Campus Roudehen",
-      "standort": "Roudehen, Iran",
-      "e_mail": [
+      "location": "Roudehen, Iran",
+      "email": [
         "Nabizadeh_simin@gmail.com"
       ],
-      "telefon": [
+      "phone": [
         {
-          "formatiert": "+98 912 396 1780",
-          "landesvorwahl": "+98",
-          "nummer": "9123961780"
+          "formatted": "+98 912 396 1780",
+          "countryCode": "+98",
+          "number": "9123961780"
         }
       ],
-      "url": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Simin_Nabizadeh.pdf",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Simin_Nabizadeh.pdf",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik"
@@ -3262,27 +3265,29 @@
     },
     {
       "name": "Dr. Mohammad Amin Boojari",
-      "position": "Bioprozess-Engineering, F&E-Spezialist bei RFS",
-      "abteilung": null,
-      "institution": "Tarbiat Modares University",
-      "standort": "Teheran, Iran",
-      "e_mail": [
+      "position": "Bioprozessingenieurwesen, F&E-Spezialist bei RFS",
+      "department": null,
+      "institution": "Tarbiat-Modares-Universität",
+      "location": "Teheran, Iran",
+      "email": [
         "a.boojari@modares.ac.ir"
       ],
-      "telefon": [
+      "phone": [
         {
-          "formatiert": "+98 910 596 9589",
-          "landesvorwahl": "+98",
-          "nummer": "9105969589"
+          "formatted": "+98 910 596 9589",
+          "countryCode": "+98",
+          "number": "9105969589"
         }
       ],
-      "url": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Mohammad_Amin_Boojari.pdf",
-      "typ_schluessel": [
-        "Voller_Lebenslauf",
+      "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Mohammad_Amin_Boojari.pdf",
+      "type_key": [
+        "Vollständiger Lebenslauf",
         "Biotechnologie",
         "Akademisch",
         "Bioinformatik"
       ]
     }
   ]
+
+
 }

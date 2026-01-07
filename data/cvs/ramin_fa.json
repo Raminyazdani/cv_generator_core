@@ -1,585 +1,588 @@
-{
-  "اطلاعات_پایه": [
+{  "config": {
+    "lang": "fa",
+    "ID": "ramin_yazdani"
+  },
+  "basics": [
     {
-      "نام_کوچک": "Ramin",
-      "نام_خانوادگی": "Yazdani",
-      "عناوین": [
+      "fname": "رامین",
+      "lname": "یزدانی",
+      "label": [
         "زیست‌فناور",
         "توسعه‌دهنده",
         "دانشمند داده",
-        "بیوانفورماتیسین"
+        "بیوانفورماتیک‌دان"
       ],
-      "ایمیل": "raya00001@stud.uni-saarland.de",
-      "تلفن": {
-        "کد_کشور": "+49",
-        "شماره": "17666652181",
-        "قالب_بندی_شده": "+49 (0) 176 666 52181"
+      "email": "raya00001@stud.uni-saarland.de",
+      "phone": {
+        "countryCode": "+49",
+        "number": "17666652181",
+        "formatted": "+49 (0) 176 666 52181"
       },
-      "تاریخ_تولد": "1997-09-07",
-      "خلاصه": "من رامین یزدانی هستم؛ علاقه‌مند به علم داده با اشتیاق عمیق به زیست‌فناوری و بیوانفورماتیک. در حال حاضر در دانشگاه زارلند دانش خود را گسترش می‌دهم و از برنامه‌نویسی و تحلیل داده برای پیشبرد پژوهش‌های اثرگذار استفاده می‌کنم. پیشینه‌ام در زیست‌فناوری و تجربه‌ام در پروژه‌های بیوانفورماتیک، تعهدم را برای جست‌وجوی راه‌حل‌های نوآورانه و استخراج بینش از داده‌های پیچیده تقویت کرده است. به‌عنوان یک عضو تیم، مشتاقانه در محیط‌های مشارکتی کمک می‌کنم و می‌آموزم. فراتر از فعالیت‌های فنی، در حال تقویت زبان آلمانی خود هستم و از چالش‌های جدید استقبال می‌کنم.",
-      "موقعیت": [
+      "birthDate": "1997-09-07",
+      "summary": "من رامین یزدانی هستم؛ علاقه‌مند به علم داده و عمیقاً مشتاق زیست‌فناوری و بیوانفورماتیک. در حال حاضر در دانشگاه زارلند دانشم را گسترش می‌دهم و از برنامه‌نویسی و تحلیل داده برای پیشبرد پژوهش‌های اثرگذار استفاده می‌کنم. پیش‌زمینه‌ام در زیست‌فناوری و تجربه‌ام در پروژه‌های بیوانفورماتیک، انگیزه‌ام را برای یافتن راه‌حل‌های نوآورانه و استخراج بینش از داده‌های پیچیده تقویت می‌کند. به‌عنوان فردی تیمی، با اشتیاق در محیط‌های مشارکتی یاد می‌گیرم و مشارکت می‌کنم. فراتر از فعالیت‌های فنی، در حال تقویت زبان آلمانی‌ام هستم و از چالش‌های جدید استقبال می‌کنم.",
+      "location": [
         {
-          "نشانی": null,
-          "کد_پستی": "66121",
-          "شهر": "زاربروکن",
-          "استان_یا_ایالت": "Saarland",
-          "کشور": "آلمان"
+          "address": null,
+          "postalCode": "66121",
+          "city": "زاربروکن",
+          "region": "زارلند",
+          "country": "آلمان"
         }
       ],
-      "تصاویر": [
+      "Pictures": [
         {
-          "نوع_مورد": "پروفایل",
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/cv_profile_photo.jpg"
+          "type_of": "profile",
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/cv_profile_photo.jpg"
         },
         {
-          "نوع_مورد": "کاور",
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/cv_cover_photo.jpg"
+          "type_of": "cover",
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/cv_cover_photo.jpg"
         }
       ]
     }
   ],
-  "پروفایل‌ها": [
+  "profiles": [
     {
-      "شبکه": "GitHub",
-      "نام_کاربری": "Raminyazdani",
-      "پیوند": "https://github.com/Raminyazdani"
+      "network": "گیت‌هاب",
+      "username": "Raminyazdani",
+      "url": "https://github.com/Raminyazdani"
     },
     {
-      "شبکه": "Google Scholar",
-      "نام_کاربری": "Ramin Yazdani",
-      "پیوند": "https://scholar.google.com/citations?user=PIKk-q0AAAAJ&hl=en",
-      "شناسه_یونیک": "PIKk-q0AAAAJ"
+      "network": "گوگل اسکالر",
+      "username": "رامین یزدانی",
+      "url": "https://scholar.google.com/citations?user=PIKk-q0AAAAJ&hl=en",
+      "uuid": "PIKk-q0AAAAJ"
     },
     {
-      "شبکه": "LinkedIn",
-      "نام_کاربری": "ramin-yz",
-      "پیوند": "https://linkedin.com/in/ramin-yz/"
+      "network": "لینکدین",
+      "username": "ramin-yz",
+      "url": "https://linkedin.com/in/ramin-yz/"
     },
     {
-      "شبکه": "ORCHID",
-      "نام_کاربری": "Ramin Yazdani",
-      "پیوند": "https://orcid.org/0000-0002-7996-5475"
+      "network": "ORCID",
+      "username": "رامین یزدانی",
+      "url": "https://orcid.org/0000-0002-7996-5475"
     }
   ],
-  "تحصیلات": [
+  "education": [
     {
-      "مؤسسه": "دانشگاه زارلند",
-      "موقعیت": "زاربروکن, آلمان",
-      "رشته": "بیوانفورماتیک",
-      "مقطع": "کارشناسی_ارشد",
-      "تاریخ_شروع": "2024-10-20",
-      "تاریخ_پایان": "تاکنون",
-      "معدل": "",
-      "آدرس_لوگو": "",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "institution": "دانشگاه زارلند",
+      "location": "زاربروکن، آلمان",
+      "area": "بیوانفورماتیک",
+      "studyType": "کارشناسی‌ارشد",
+      "startDate": "2024-10-20",
+      "endDate": "اکنون",
+      "gpa": "",
+      "logo_url": "",
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک",
         "برنامه‌نویسی"
       ]
     },
     {
-      "مؤسسه": "دانشگاه تهران",
-      "موقعیت": "تهران, ایران",
-      "رشته": "زیست‌فناوری (صنعتی و محیط‌زیستی)",
-      "مقطع": "کارشناسی_ارشد",
-      "تاریخ_شروع": "2021-09-22",
-      "تاریخ_پایان": "2024-09-15",
-      "معدل": "17.29 / 20.00",
-      "آدرس_لوگو": "",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "institution": "دانشگاه تهران",
+      "location": "تهران، ایران",
+      "area": "زیست‌فناوری (صنعتی و محیط‌زیست)",
+      "studyType": "کارشناسی‌ارشد",
+      "startDate": "2021-09-22",
+      "endDate": "2024-09-15",
+      "gpa": "17.29 / 20.00",
+      "logo_url": "",
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک",
         "برنامه‌نویسی"
       ]
     },
     {
-      "مؤسسه": "دانشگاه آزاد اسلامی، واحد رودهن",
-      "موقعیت": "رودهن, ایران",
-      "رشته": "زیست‌فناوری",
-      "مقطع": "کارشناسی",
-      "تاریخ_شروع": "2017-09-23",
-      "تاریخ_پایان": "2021-07-22",
-      "معدل": "17.13 / 20.00",
-      "آدرس_لوگو": "",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "institution": "دانشگاه آزاد اسلامی، واحد رودهن",
+      "location": "رودهن، ایران",
+      "area": "زیست‌فناوری",
+      "studyType": "کارشناسی",
+      "startDate": "2017-09-23",
+      "endDate": "2021-07-22",
+      "gpa": "17.13 / 20.00",
+      "logo_url": "",
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک",
         "برنامه‌نویسی"
       ]
     },
     {
-      "مؤسسه": "مدرسه سلطانی ۱ کرج",
-      "موقعیت": "کرج, ایران",
-      "رشته": "علوم_طبیعی",
-      "مقطع": "پیش‌دانشگاهی",
-      "تاریخ_شروع": "2014-09-23",
-      "تاریخ_پایان": "2015-09-22",
-      "معدل": "13.36 / 20.00",
-      "آدرس_لوگو": "",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "institution": "دبیرستان سلطانی ۱ کرج",
+      "location": "کرج، ایران",
+      "area": "علوم طبیعی",
+      "studyType": "پیش‌دانشگاهی",
+      "startDate": "2014-09-23",
+      "endDate": "2015-09-22",
+      "gpa": "13.36 / 20.00",
+      "logo_url": "",
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک"
       ]
     },
     {
-      "مؤسسه": "مدرسه سلطانی ۱ کرج",
-      "موقعیت": "کرج, ایران",
-      "رشته": "علوم_طبیعی",
-      "مقطع": "دبیرستان",
-      "تاریخ_شروع": "2011-09-23",
-      "تاریخ_پایان": "2014-06-22",
-      "معدل": "18.50 / 20.00",
-      "آدرس_لوگو": "",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "institution": "دبیرستان سلطانی ۱ کرج",
+      "location": "کرج، ایران",
+      "area": "علوم طبیعی",
+      "studyType": "دبیرستان",
+      "startDate": "2011-09-23",
+      "endDate": "2014-06-22",
+      "gpa": "18.50 / 20.00",
+      "logo_url": "",
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک"
       ]
     }
   ],
-  "زبان‌ها": [
+  "languages": [
     {
-      "زبان": "فارسی",
-      "مهارت": {
-        "سطح": "بومی",
-        "چارچوب_CEFR": null,
-        "وضعیت": "زبان_مادری"
+      "language": "فارسی",
+      "proficiency": {
+        "level": "زبان مادری",
+        "CEFR": null,
+        "status": "زبان مادری"
       },
-      "گواهی‌ها": [
+      "certifications": [
         {
-          "آزمون": "زبان مادری",
-          "سازمان": null,
-          "نمره_کل": null,
-          "خواندن": null,
-          "نوشتن": null,
-          "شنیدن": null,
-          "صحبت_کردن": null,
-          "تاریخ_آزمون": null,
-          "نشانی_وب": null
+          "test": "زبان مادری",
+          "organization": null,
+          "overall": null,
+          "reading": null,
+          "writing": null,
+          "listening": null,
+          "speaking": null,
+          "examDate": null,
+          "URL": null
         }
       ]
     },
     {
-      "زبان": "انگلیسی",
-      "مهارت": {
-        "سطح": "حرفه‌ای",
-        "چارچوب_CEFR": "C1",
-        "وضعیت": "روان"
+      "language": "انگلیسی",
+      "proficiency": {
+        "level": "حرفه‌ای",
+        "CEFR": "C1",
+        "status": "روان"
       },
-      "گواهی‌ها": [
+      "certifications": [
         {
-          "آزمون": "آیلتس آکادمیک",
-          "سازمان": "شورای بریتانیا",
-          "نمره_کل": 8.0,
-          "خواندن": 9.0,
-          "شنیدن": 8.5,
-          "نوشتن": 6.5,
-          "صحبت_کردن": 7.0,
-          "حداکثر_نمره": 9.0,
-          "حداقل_نمره": 0.0,
-          "تاریخ_آزمون": "2023-12-28",
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_ielts.pdf"
+          "test": "آیلتس آکادمیک",
+          "organization": "بریتیش کانسیل",
+          "overall": 8.0,
+          "reading": 9.0,
+          "listening": 8.5,
+          "writing": 6.5,
+          "speaking": 7.0,
+          "maxScore": 9.0,
+          "minScore": 0.0,
+          "examDate": "2023-12-28",
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_ielts.pdf"
         }
       ]
     },
     {
-      "زبان": "آلمانی",
-      "مهارت": {
-        "سطح": "مبتدی",
-        "چارچوب_CEFR": null,
-        "وضعیت": "در_حال_یادگیری"
+      "language": "آلمانی",
+      "proficiency": {
+        "level": "مبتدی",
+        "CEFR": null,
+        "status": "در حال یادگیری"
       },
-      "گواهی‌ها": [
+      "certifications": [
         {
-          "آزمون": null,
-          "سازمان": null,
-          "نمره_کل": null,
-          "خواندن": null,
-          "شنیدن": null,
-          "نوشتن": null,
-          "صحبت_کردن": null,
-          "حداکثر_نمره": null,
-          "حداقل_نمره": null,
-          "تاریخ_آزمون": null,
-          "نشانی_وب": null
+          "test": null,
+          "organization": null,
+          "overall": null,
+          "reading": null,
+          "listening": null,
+          "writing": null,
+          "speaking": null,
+          "maxScore": null,
+          "minScore": null,
+          "examDate": null,
+          "URL": null
         }
       ]
     }
   ],
-  "کارگاه‌ها_و_گواهی‌ها": [
+  "workshop_and_certifications": [
     {
-      "برگزارکننده": "آکادمی توف نورث",
-      "گواهی‌ها": [
+      "issuer": "آکادمی توف نورث",
+      "certifications": [
         {
-          "نام": "میکرواری تحلیل داده در R Software و زیست‌شناسی سامانه‌ای",
-          "تاریخ": "2020-9-31",
-          "مدت": "18 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_TUV_north_Academy_MicroArray.pdf",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "تحلیل داده‌های میکروآرایه در نرم‌افزار R و زیست‌شناسی سامانه‌ای",
+          "date": "2020-9-31",
+          "duration": "18 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_TUV_north_Academy_MicroArray.pdf",
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "بیوانفورماتیک ِ پروتئین‌ها, مولکولی دینامیک شبیه‌سازی, و واکسن طراحی",
-          "تاریخ": "2021-04-10",
-          "مدت": "58 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_TUV_north_Academy_MD.pdf",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "بیوانفورماتیک پروتئین‌ها، شبیه‌سازی دینامیک مولکولی و طراحی واکسن",
+          "date": "2021-04-10",
+          "duration": "58 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_TUV_north_Academy_MD.pdf",
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         }
       ]
     },
     {
-      "برگزارکننده": "آکادمی بین‌المللی ICAD",
-      "گواهی‌ها": [
+      "issuer": "آکادمی بین‌المللی ICAD",
+      "certifications": [
         {
-          "نام": "GLP",
-          "تاریخ": "2023-12-08",
-          "مدت": "16 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_ICAD_glp_EN.pdf",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "GLP",
+          "date": "2023-12-08",
+          "duration": "16 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_ICAD_glp_EN.pdf",
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         }
       ]
     },
     {
-      "برگزارکننده": "رهپویان فناور صادق",
-      "گواهی‌ها": [
+      "issuer": "رهپویان فناور صادق",
+      "certifications": [
         {
-          "نام": "ایمنی_زیستی, زیست‌امنیتی, و زیستی خطر",
-          "تاریخ": "2023-12-09",
-          "مدت": "8 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Biosafety_biosecurity_and_biological_risk.pdf",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "ایمنی زیستی، امنیت زیستی و ریسک زیستی",
+          "date": "2023-12-09",
+          "duration": "8 ساعت",
+          "certificate": false,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Biosafety_biosecurity_and_biological_risk.pdf",
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام": "GMP در دارو صنعت",
-          "تاریخ": "2023-12-20",
-          "مدت": "90 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "GMP در صنعت داروسازی",
+          "date": "2023-12-20",
+          "duration": "90 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام": "تخمیر فرایند ِ هترولگ پروتئین تولید",
-          "تاریخ": "2024-02-25",
-          "مدت": "20 هفته",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "فرایند تخمیر برای تولید پروتئین هترولوگ",
+          "date": "2024-02-25",
+          "duration": "20 هفته",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         }
       ]
     },
     {
-      "برگزارکننده": "دانشگاه تهران",
-      "گواهی‌ها": [
+      "issuer": "دانشگاه تهران",
+      "certifications": [
         {
-          "نام": "هیستولوژیک تکنیک‌ها و تجهیزات",
-          "تاریخ": "2023-09-13",
-          "مدت": "15 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Histological_Techniques_and_Equipment.pdf",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "تکنیک‌ها و تجهیزات بافت‌شناسی",
+          "date": "2023-09-13",
+          "duration": "15 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Histological_Techniques_and_Equipment.pdf",
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام": "بنیادی اصول ِ مولکولی آزمایش تکنیک‌ها",
-          "تاریخ": "2023-09-10",
-          "مدت": "45 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Fundamental_Principles_of_Molecular_Testing_Techniques.pdf",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "اصول پایهٔ تکنیک‌های آزمون‌های مولکولی",
+          "date": "2023-09-10",
+          "duration": "45 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Fundamental_Principles_of_Molecular_Testing_Techniques.pdf",
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام": "بنیادی تکنیک‌ها برای کار_با, خون‌گیری, و تزریق ِ آزمایشگاهی حیوانات",
-          "تاریخ": "2023-09-20",
-          "مدت": "6 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Fundamental_Techniques_for_Handling_Bleeding_and_Injection_of_Lab_Animals.pdf",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "تکنیک‌های پایه برای هندلینگ، خون‌گیری و تزریق حیوانات آزمایشگاهی",
+          "date": "2023-09-20",
+          "duration": "6 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Fundamental_Techniques_for_Handling_Bleeding_and_Injection_of_Lab_Animals.pdf",
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام": "کاربردی بیوانفورماتیک",
-          "تاریخ": "2023-09-20",
-          "مدت": "10 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Applied_Bioinformatics.pdf",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "بیوانفورماتیک کاربردی",
+          "date": "2023-09-20",
+          "duration": "10 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Applied_Bioinformatics.pdf",
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "اصول بنیادی تکنیک‌های کشت سلولی in vitro",
-          "تاریخ": "2023-09-15",
-          "مدت": "10 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Fundamental_Principles_of_In_Vitro_Cell_Culture_Techniques.pdf",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "اصول پایهٔ تکنیک‌های کشت سلولی درون‌کشتگاهی (In Vitro)",
+          "date": "2023-09-15",
+          "duration": "10 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Fundamental_Principles_of_In_Vitro_Cell_Culture_Techniques.pdf",
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام": "مقدمه‌ای بر تکنیک‌های آزمایشگاهی میکروبیولوژی",
-          "تاریخ": "2023-09-17",
-          "مدت": "10 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Introduction_to_Microbiological_Lab_Techniques.pdf",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "مقدمه‌ای بر تکنیک‌های آزمایشگاهی میکروبیولوژی",
+          "date": "2023-09-17",
+          "duration": "10 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_UoT_Introduction_to_Microbiological_Lab_Techniques.pdf",
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         }
       ]
     },
     {
-      "برگزارکننده": "آکادمی اکتین",
-      "گواهی‌ها": [
+      "issuer": "آکادمی اکتین",
+      "certifications": [
         {
-          "نام": "ChIP-Seq تحلیل داده",
-          "تاریخ": "2024-06-06",
-          "مدت": "12 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "تحلیل داده‌های ChIP-Seq",
+          "date": "2024-06-06",
+          "duration": "12 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "پایگاه‌های داده آنلاین",
-          "تاریخ": "2024-03-14",
-          "مدت": "8 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "پایگاه‌های دادهٔ آنلاین",
+          "date": "2024-03-14",
+          "duration": "8 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "Genomic تحلیل داده",
-          "تاریخ": "2024-04-04",
-          "مدت": "24 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "تحلیل داده‌های ژنومی",
+          "date": "2024-04-04",
+          "duration": "24 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "میکرواری تحلیل داده",
-          "تاریخ": "2024-04-15",
-          "مدت": "16 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "تحلیل داده‌های میکروآرایه",
+          "date": "2024-04-15",
+          "duration": "16 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "تک‌سلولی RNA توالی‌یابی",
-          "تاریخ": "2024-04-22",
-          "مدت": "12 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "توالی‌یابی RNA تک‌سلولی",
+          "date": "2024-04-22",
+          "duration": "12 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "توده‌ای RNA توالی‌یابی",
-          "تاریخ": "2024-04-29",
-          "مدت": "12 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "توالی‌یابی RNA بالک",
+          "date": "2024-04-29",
+          "duration": "12 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "پروتئومیک تحلیل داده",
-          "تاریخ": "2024-05-06",
-          "مدت": "16 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "تحلیل داده‌های پروتئومیکس",
+          "date": "2024-05-06",
+          "duration": "16 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "ماشین یادگیری",
-          "تاریخ": "2024-06-27",
-          "مدت": "20 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "یادگیری ماشین",
+          "date": "2024-06-27",
+          "duration": "20 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "تحلیل داده‌های متاژنومیک",
-          "تاریخ": "2024-05-27",
-          "مدت": "12 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "تحلیل داده‌های متاژنومیک",
+          "date": "2024-05-27",
+          "duration": "12 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "سامانه‌های زیستی در پزشکی دقیق",
-          "تاریخ": "2024-02-19",
-          "مدت": "8 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "سامانه‌های زیستی پزشکی دقیق",
+          "date": "2024-02-19",
+          "duration": "8 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "ژن قانونی شبکه تحلیل",
-          "تاریخ": "2024-06-10",
-          "مدت": "8 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "تحلیل شبکه‌های تنظیم ژنی",
+          "date": "2024-06-10",
+          "duration": "8 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "تحلیل شبکه‌های زیستی پیچیده",
-          "تاریخ": "2024-06-13",
-          "مدت": "20 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "تحلیل شبکه‌های زیستی پیچیده",
+          "date": "2024-06-13",
+          "duration": "20 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "Metabolic شبکه Reconstruction",
-          "تاریخ": "2024-05-20",
-          "مدت": "20 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "بازسازی شبکه‌های متابولیکی",
+          "date": "2024-05-20",
+          "duration": "20 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "مقدمه‌ای بر داده‌های بزرگ زیستی",
-          "تاریخ": "2024-03-04",
-          "مدت": "8 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "مقدمه‌ای بر داده‌های زیستی بزرگ",
+          "date": "2024-03-04",
+          "duration": "8 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک"
           ]
         },
         {
-          "نام": "Docker و تصورسازی",
-          "تاریخ": "2024-07-04",
-          "مدت": "8 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "داکر و مصورسازی",
+          "date": "2024-07-04",
+          "duration": "8 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک",
             "برنامه‌نویسی"
           ]
@@ -587,18 +590,18 @@
       ]
     },
     {
-      "برگزارکننده": "آکادمی مکتب شریف",
-      "گواهی‌ها": [
+      "issuer": "آکادمی مکتب شریف",
+      "certifications": [
         {
-          "نام": "Python & Django",
-          "تاریخ": "2023-01-18",
-          "مدت": "400 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabsharif_python_django.pdf",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "پایتون و جنگو",
+          "date": "2023-01-18",
+          "duration": "400 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabsharif_python_django.pdf",
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک",
             "برنامه‌نویسی"
           ]
@@ -606,44 +609,44 @@
       ]
     },
     {
-      "برگزارکننده": "مکتب‌خونه",
-      "گواهی‌ها": [
+      "issuer": "مکتب‌خونه",
+      "certifications": [
         {
-          "نام": "توسعه و طراحی فرانت‌اند وب",
-          "تاریخ": "2020-09-18",
-          "مدت": "70 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabkhune_front_end.pdf",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "دانشگاهی",
+          "name": "توسعه و طراحی وب فرانت‌اند",
+          "date": "2020-09-18",
+          "duration": "70 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabkhune_front_end.pdf",
+          "type_key": [
+            "رزومه کامل",
+            "آکادمیک",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام": "Python برنامه‌نویسی برای مبتدیان",
-          "تاریخ": "2020-07-23",
-          "مدت": "57 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabkhune_beginner_python.pdf",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "آموزش برنامه‌نویسی پایتون برای مبتدیان",
+          "date": "2020-07-23",
+          "duration": "57 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabkhune_beginner_python.pdf",
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام": "پیشرفته Python برنامه‌نویسی",
-          "تاریخ": "2021-12-11",
-          "مدت": "57 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabkhune_advanced_python.pdf",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "name": "برنامه‌نویسی پیشرفته پایتون",
+          "date": "2021-12-11",
+          "duration": "57 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_maktabkhune_advanced_python.pdf",
+          "type_key": [
+            "رزومه کامل",
             "زیست‌فناوری",
-            "دانشگاهی",
+            "آکادمیک",
             "بیوانفورماتیک",
             "برنامه‌نویسی"
           ]
@@ -651,88 +654,88 @@
       ]
     },
     {
-      "برگزارکننده": "دانشجویار",
-      "گواهی‌ها": [
+      "issuer": "دانشجویار",
+      "certifications": [
         {
-          "نام": "UI/UX",
-          "تاریخ": "2021-11-09",
-          "مدت": "30 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "دانشگاهی",
+          "name": "UI/UX",
+          "date": "2021-11-09",
+          "duration": "30 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
+            "آکادمیک",
             "برنامه‌نویسی"
           ]
         }
       ]
     },
     {
-      "برگزارکننده": "آکادمی همراه",
-      "گواهی‌ها": [
+      "issuer": "آکادمی همراه",
+      "certifications": [
         {
-          "نام": "اصول و Roadmap ِ داده علم",
-          "تاریخ": "2023-07-15",
-          "مدت": "3 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Fundamentals_and_Roadmap_of_Data_Science.pdf"
+          "name": "مبانی و نقشه‌راه علم داده",
+          "date": "2023-07-15",
+          "duration": "3 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Fundamentals_and_Roadmap_of_Data_Science.pdf"
         },
         {
-          "نام": "ریاضیات برای علم داده و هوش مصنوعی",
-          "تاریخ": "2023-09-01",
-          "مدت": "8 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Mathematics_for_Data_Science_and_Artificial_Intelligence.pdf"
+          "name": "ریاضیات برای علم داده و هوش مصنوعی",
+          "date": "2023-09-01",
+          "duration": "8 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Mathematics_for_Data_Science_and_Artificial_Intelligence.pdf"
         },
         {
-          "نام": "داده‌کاوی و هوش تجاری با KNIME",
-          "تاریخ": "2023-09-05",
-          "مدت": "6 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Mining_and_Business_Intelligence_with_KNIME.pdf"
+          "name": "داده‌کاوی و هوش تجاری با KNIME",
+          "date": "2023-09-05",
+          "duration": "6 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Mining_and_Business_Intelligence_with_KNIME.pdf"
         },
         {
-          "نام": "جامع Python برنامه‌نویسی",
-          "تاریخ": "2023-09-12",
-          "مدت": "12 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Comprehensive_Python_Programming.pdf"
+          "name": "برنامه‌نویسی جامع پایتون",
+          "date": "2023-09-12",
+          "duration": "12 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Comprehensive_Python_Programming.pdf"
         },
         {
-          "نام": "داده تصورسازی ابزارها",
-          "تاریخ": "2023-10-22",
-          "مدت": "5 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Visualization_Tools.pdf"
+          "name": "ابزارهای مصورسازی داده",
+          "date": "2023-10-22",
+          "duration": "5 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Visualization_Tools.pdf"
         },
         {
-          "نام": "اصول مقدماتی پایگاه داده",
-          "تاریخ": "2023-10-19",
-          "مدت": "10 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Introductory_Database_Principles.pdf"
+          "name": "اصول مقدماتی پایگاه داده",
+          "date": "2023-10-19",
+          "duration": "10 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Introductory_Database_Principles.pdf"
         },
         {
-          "نام": "داده کاوش با Python",
-          "تاریخ": "2023-11-01",
-          "مدت": "8 ساعت",
-          "گواهی_دارد": true,
-          "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Mining_with_Python.pdf"
+          "name": "داده‌کاوی با پایتون",
+          "date": "2023-11-01",
+          "duration": "8 ساعت",
+          "certificate": true,
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Mining_with_Python.pdf"
         }
       ]
     },
     {
-      "برگزارکننده": "فرادرس",
-      "گواهی‌ها": [
+      "issuer": "فرادرس",
+      "certifications": [
         {
-          "نام": "جبر خطی برای علم داده",
-          "تاریخ": "2024-03-18",
-          "مدت": "60 ساعت",
-          "گواهی_دارد": false,
-          "نشانی_وب": null,
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "دانشگاهی",
+          "name": "جبر خطی برای علم داده",
+          "date": "2024-03-18",
+          "duration": "60 ساعت",
+          "certificate": false,
+          "URL": null,
+          "type_key": [
+            "رزومه کامل",
+            "آکادمیک",
             "بیوانفورماتیک",
             "برنامه‌نویسی"
           ]
@@ -740,2549 +743,2551 @@
       ]
     }
   ],
-  "مهارت‌ها": {
-    "برنامه‌نویسی_و_اسکریپت‌نویسی": {
-      "زبان‌های_برنامه‌نویسی": [
+  "skills": {
+    "برنامه‌نویسی و اسکریپت‌نویسی": {
+      "زبان‌های برنامه‌نویسی": [
         {
-          "نام_کامل": "Python",
-          "نام_کوتاه": "Python",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Python",
+          "short_name": "Python",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "R",
-          "نام_کوتاه": "R",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "R",
+          "short_name": "R",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "C++",
-          "نام_کوتاه": "C++",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "C++",
+          "short_name": "C++",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "JavaScript",
-          "نام_کوتاه": "JS",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "JavaScript",
+          "short_name": "JS",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         }
       ],
-      "یادگیری_ماشین_و_علم_داده": [
+      "یادگیری ماشین و علم داده": [
         {
-          "نام_کامل": "یادگیری نظارت‌شده و بدون‌نظارت",
-          "نام_کوتاه": "نظارت‌شده/بدون‌نظارت",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "یادگیری با ناظر و بدون ناظر",
+          "short_name": "ناظر/بدون‌ناظر",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "مدل ارزیابی معیارها (دقت, صحت, بازخوانی, F1 امتیاز, ROC AUC)",
-          "نام_کوتاه": "مدل معیارها",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "شاخص‌های ارزیابی مدل (Accuracy، Precision، Recall، F1 Score، ROC AUC)",
+          "short_name": "شاخص‌های مدل",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "اعتبارسنجی_متقابل تکنیک‌ها",
-          "نام_کوتاه": "اعتبارسنجی_متقابل",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "تکنیک‌های اعتبارسنجی متقاطع",
+          "short_name": "اعتبارسنجی متقاطع",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "Hyperparameter تنظیم",
-          "نام_کوتاه": "Hyperparameter تنظیم",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "تنظیم ابرپارامترها",
+          "short_name": "تنظیم ابرپارامتر",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "ویژگی مهندسی & انتخاب",
-          "نام_کوتاه": "ویژگی مهندسی",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "مهندسی و انتخاب ویژگی",
+          "short_name": "مهندسی ویژگی",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "TensorFlow",
-          "نام_کوتاه": "TensorFlow",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "TensorFlow",
+          "short_name": "TensorFlow",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "PyTorch",
-          "نام_کوتاه": "PyTorch",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "PyTorch",
+          "short_name": "PyTorch",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "ترنسفورمرهای Hugging Face",
-          "نام_کوتاه": "ترنسفورمرها",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Hugging Face Transformers",
+          "short_name": "Transformers",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "پایپلاین طراحی & جریان‌کار اتوماسیون",
-          "نام_کوتاه": "ML پایپلاین‌ها",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "طراحی پایپ‌لاین و خودکارسازی ورک‌فلو",
+          "short_name": "پایپ‌لاین‌های ML",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "کاهش بُعد (PCA، t‑SNE، UMAP)",
-          "نام_کوتاه": "Dim. کاهش",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "کاهش بُعد (PCA، t‑SNE، UMAP)",
+          "short_name": "کاهش بُعد",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "عصبی شبکه‌ها & عمیق یادگیری",
-          "نام_کوتاه": "عمیق یادگیری",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "شبکه‌های عصبی و یادگیری عمیق",
+          "short_name": "یادگیری عمیق",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "Regularization تکنیک‌ها",
-          "نام_کوتاه": "Regularization",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "تکنیک‌های رگولاریزیشن",
+          "short_name": "رگولاریزیشن",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "Explainability",
-          "نام_کوتاه": "Explainability",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "توضیح‌پذیری",
+          "short_name": "توضیح‌پذیری",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         }
       ],
-      "ابزارهای_اسکریپت‌نویسی_و_اتوماسیون": [
+      "ابزارهای اسکریپت‌نویسی و خودکارسازی": [
         {
-          "نام_کامل": "Bash",
-          "نام_کوتاه": "Bash",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Bash",
+          "short_name": "Bash",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "selenium",
-          "نام_کوتاه": "Selenium",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Selenium",
+          "short_name": "Selenium",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "خزش وب، اتوماسیون و استخراج داده",
-          "نام_کوتاه": "اتوماسیون و خزش وب",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "خزش وب، خودکارسازی و استخراج داده",
+          "short_name": "خودکارسازی/خزش وب",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "Shell اسکریپت‌نویسی",
-          "نام_کوتاه": "Shell",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "اسکریپت‌نویسی شِل",
+          "short_name": "Shell",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "Conda",
-          "نام_کوتاه": "Conda",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Conda",
+          "short_name": "Conda",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "venv",
-          "نام_کوتاه": "venv",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "venv",
+          "short_name": "venv",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         }
       ]
     },
-    "دواپس_و_زیرساخت": {
-      "شبکه_و_پروتکل‌ها": [
+    "دواپس و زیرساخت": {
+      "شبکه و پروتکل‌ها": [
         {
-          "نام_کامل": "پروتکل‌ها و استانداردهای شبکه",
-          "نام_کوتاه": "پروتکل‌ها",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "پروتکل‌ها و استانداردهای شبکه",
+          "short_name": "پروتکل‌ها",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "OSI & TCP/IP مدل‌ها",
-          "نام_کوتاه": "OSI/TCP-IP",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "مدل‌های OSI و TCP/IP",
+          "short_name": "OSI/TCP-IP",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "آدرس‌دهی IP و زیرشبکه‌بندی",
-          "نام_کوتاه": "IP/زیرشبکه‌بندی",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "آدرس‌دهی IP و ساب‌نتینگ",
+          "short_name": "IP/ساب‌نتینگ",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "مسیریابی & سوئیچینگ",
-          "نام_کوتاه": "مسیریابی/سوئیچینگ",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "مسیریابی و سوئیچینگ",
+          "short_name": "مسیریابی/سوئیچ",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "VPN & تونلینگ مفاهیم",
-          "نام_کوتاه": "VPN/تونلینگ",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "مفاهیم VPN و تونلینگ",
+          "short_name": "VPN/تونلینگ",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "دیوار آتش و کنترل دسترسی",
-          "نام_کوتاه": "فایروال & ACL",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "فایروال و کنترل دسترسی",
+          "short_name": "فایروال و ACL",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "پروکسی & توزیع بار",
-          "نام_کوتاه": "پروکسی‌ها & LB",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "پراکسی و توزیع بار",
+          "short_name": "پراکسی/LB",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "DNS & DHCP سرویس‌ها",
-          "نام_کوتاه": "DNS/DHCP",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "سرویس‌های DNS و DHCP",
+          "short_name": "DNS/DHCP",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "Socket برنامه‌نویسی",
-          "نام_کوتاه": "Sockets",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "برنامه‌نویسی سوکت",
+          "short_name": "Sockets",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "عیب‌یابی و پایش شبکه",
-          "نام_کوتاه": "Diagnostics",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "عیب‌یابی و پایش شبکه",
+          "short_name": "عیب‌یابی",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "تحلیل ترافیک و بازرسی بسته‌ها",
-          "نام_کوتاه": "Traffic تحلیل",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "تحلیل ترافیک و بازرسی بسته",
+          "short_name": "تحلیل ترافیک",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "شبکه کارایی بهینه‌سازی",
-          "نام_کوتاه": "کارایی تنظیم",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "بهینه‌سازی کارایی شبکه",
+          "short_name": "تیونینگ کارایی",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "اینترنت_اشیا & نهفته شبکه",
-          "نام_کوتاه": "اینترنت_اشیا & نهفته",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "شبکه در IoT و سامانه‌های نهفته",
+          "short_name": "IoT/نهفته",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         }
       ],
-      "ابزارهای_دواپس_و_پایپلاین‌های_CI_CD": [
+      "ابزارهای DevOps و پایپ‌لاین‌های CI/CD": [
         {
-          "نام_کامل": "پایپلاین طراحی & جریان‌کار اتوماسیون",
-          "نام_کوتاه": "پایپلاین طراحی",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "طراحی پایپ‌لاین و خودکارسازی ورک‌فلو",
+          "short_name": "طراحی پایپ‌لاین",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "Git",
-          "نام_کوتاه": "Git",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Git",
+          "short_name": "Git",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "n8n",
-          "نام_کوتاه": "n8n",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "n8n",
+          "short_name": "n8n",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "CI/CD پایپلاین‌ها",
-          "نام_کوتاه": "CI/CD",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "پایپ‌لاین‌های CI/CD",
+          "short_name": "CI/CD",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "آکادمیک"
           ]
         }
       ],
-      "پلتفرم‌های_ابری_و_احراز_هویت": [
+      "پلتفرم‌های ابری و احراز هویت": [
         {
-          "نام_کامل": "Firebase احراز_هویت",
-          "نام_کوتاه": "Firebase Auth",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "احراز هویت Firebase",
+          "short_name": "Firebase Auth",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "Azure",
-          "نام_کوتاه": "Azure",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "برنامه‌نویسی"
-          ]
-        }
-      ],
-      "کانتینرسازی_و_ارکستریشن": [
-        {
-          "نام_کامل": "Docker",
-          "نام_کوتاه": "Docker",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "برنامه‌نویسی"
-          ]
-        },
-        {
-          "نام_کامل": "Kubernetes",
-          "نام_کوتاه": "K8s",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Azure",
+          "short_name": "Azure",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         }
       ],
-      "مدیریت_سیستم_و_ابزارهای_لینوکس": [
+      "کانتینرسازی و ارکستریشن": [
         {
-          "نام_کامل": "لینوکس خط فرمان",
-          "نام_کوتاه": "لینوکس CLI",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "برنامه‌نویسی"
-          ]
-        }
-      ]
-    },
-    "توسعه_نرم‌افزار_و_وب": {
-      "فریم‌ورک‌های_فرانت‌اند_و_فناوری‌های_UI": [
-        {
-          "نام_کامل": "HTML",
-          "نام_کوتاه": "HTML",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Docker",
+          "short_name": "Docker",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "CSS",
-          "نام_کوتاه": "CSS",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "برنامه‌نویسی"
-          ]
-        },
-        {
-          "نام_کامل": "React",
-          "نام_کوتاه": "React",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "برنامه‌نویسی"
-          ]
-        },
-        {
-          "نام_کامل": "Tailwind CSS",
-          "نام_کوتاه": "Tailwind",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "برنامه‌نویسی"
-          ]
-        },
-        {
-          "نام_کامل": "Bootstrap",
-          "نام_کوتاه": "Bootstrap",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Kubernetes",
+          "short_name": "K8s",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         }
       ],
-      "توسعه_بک‌اند_و_APIها": [
+      "مدیریت سیستم و ابزارهای لینوکس": [
         {
-          "نام_کامل": "Node.js",
-          "نام_کوتاه": "Node.js",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "برنامه‌نویسی"
-          ]
-        },
-        {
-          "نام_کامل": "Express.js",
-          "نام_کوتاه": "Express",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "برنامه‌نویسی"
-          ]
-        },
-        {
-          "نام_کامل": "Flask",
-          "نام_کوتاه": "Flask",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "برنامه‌نویسی"
-          ]
-        },
-        {
-          "نام_کامل": "Django",
-          "نام_کوتاه": "Django",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "برنامه‌نویسی"
-          ]
-        },
-        {
-          "نام_کامل": "FastAPI",
-          "نام_کوتاه": "FastAPI",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "برنامه‌نویسی"
-          ]
-        },
-        {
-          "نام_کامل": "RESTful API توسعه",
-          "نام_کوتاه": "REST APIها",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "خط فرمان لینوکس",
+          "short_name": "Linux CLI",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         }
       ]
     },
-    "پایگاه‌داده_و_مهندسی_داده": {
-      "مدل‌سازی_و_بهینه‌سازی_پایگاه‌داده": [
+    "توسعه نرم‌افزار و وب": {
+      "فریم‌ورک‌های فرانت‌اند و فناوری‌های UI": [
         {
-          "نام_کامل": "SQL/NoSQL مفاهیم",
-          "نام_کوتاه": "DB مفاهیم",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "HTML",
+          "short_name": "HTML",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "ORM",
-          "نام_کوتاه": "ORM",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "CSS",
+          "short_name": "CSS",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "Entity-Relationship مدل‌سازی (ERD)",
-          "نام_کوتاه": "ERD مدل‌سازی",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "React",
+          "short_name": "React",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "ایندکس‌گذاری & کوئری بهینه‌سازی",
-          "نام_کوتاه": "ایندکس‌گذاری & کوئری‌ها",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Tailwind CSS",
+          "short_name": "Tailwind",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "ACID تراکنش",
-          "نام_کوتاه": "ACID",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "برنامه‌نویسی"
-          ]
-        },
-        {
-          "نام_کامل": "Schema طراحی",
-          "نام_کوتاه": "Schema طراحی",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "برنامه‌نویسی"
-          ]
-        },
-        {
-          "نام_کامل": "پشتیبان‌گیری و بازیابی راهبردها",
-          "نام_کوتاه": "پشتیبان‌گیری و بازیابی",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Bootstrap",
+          "short_name": "Bootstrap",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         }
       ],
-      "پایگاه‌داده‌های_SQL": [
+      "توسعه بک‌اند و APIها": [
         {
-          "نام_کامل": "PostgreSQL",
-          "نام_کوتاه": "PostgreSQL",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Node.js",
+          "short_name": "Node.js",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "MySQL",
-          "نام_کوتاه": "MySQL",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Express.js",
+          "short_name": "Express",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "SQLite",
-          "نام_کوتاه": "SQLite",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "برنامه‌نویسی"
-          ]
-        }
-      ],
-      "پایگاه‌داده‌های_NoSQL": [
-        {
-          "نام_کامل": "MongoDB",
-          "نام_کوتاه": "MongoDB",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Flask",
+          "short_name": "Flask",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "Redis",
-          "نام_کوتاه": "Redis",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Django",
+          "short_name": "Django",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
-        }
-      ],
-      "پایپلاین‌های_داده_و_سامانه‌های_ETL": [
+        },
         {
-          "نام_کامل": "Knime",
-          "نام_کوتاه": "Knime",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "FastAPI",
+          "short_name": "FastAPI",
+          "type_key": [
+            "رزومه کامل",
+            "برنامه‌نویسی"
+          ]
+        },
+        {
+          "long_name": "توسعهٔ APIهای RESTful",
+          "short_name": "REST APIs",
+          "type_key": [
+            "رزومه کامل",
             "برنامه‌نویسی"
           ]
         }
       ]
     },
-    "تصورسازی_داده_و_گزارش‌دهی": {
-      "ابزارهای_رسم_علمی": [
+    "پایگاه‌های داده و مهندسی داده": {
+      "مدل‌سازی و بهینه‌سازی پایگاه داده": [
         {
-          "نام_کامل": "Matplotlib",
-          "نام_کوتاه": "Matplotlib",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "مفاهیم SQL/NoSQL",
+          "short_name": "مفاهیم DB",
+          "type_key": [
+            "رزومه کامل",
+            "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "Seaborn",
-          "نام_کوتاه": "Seaborn",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "ORM",
+          "short_name": "ORM",
+          "type_key": [
+            "رزومه کامل",
+            "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "Plotly",
-          "نام_کوتاه": "Plotly",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "مدل‌سازی رابطه موجودیت (ERD)",
+          "short_name": "مدل‌سازی ERD",
+          "type_key": [
+            "رزومه کامل",
+            "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "ggplot2",
-          "نام_کوتاه": "ggplot2",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "ایندکس‌گذاری و بهینه‌سازی کوئری",
+          "short_name": "ایندکس/کوئری",
+          "type_key": [
+            "رزومه کامل",
+            "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "Jupyter نوت‌بوک‌ها",
-          "نام_کوتاه": "Jupyter",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "تراکنش ACID",
+          "short_name": "ACID",
+          "type_key": [
+            "رزومه کامل",
+            "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "RMarkdown",
-          "نام_کوتاه": "RMarkdown",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "طراحی شِما",
+          "short_name": "Schema Design",
+          "type_key": [
+            "رزومه کامل",
+            "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "LaTeX",
-          "نام_کوتاه": "LaTeX",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "راهبردهای پشتیبان‌گیری و بازیابی",
+          "short_name": "پشتیبان/بازیابی",
+          "type_key": [
+            "رزومه کامل",
+            "برنامه‌نویسی"
           ]
         }
       ],
-      "پلتفرم‌های_داشبورد_و_گزارش‌دهی": [
+      "پایگاه‌های دادهٔ SQL": [
         {
-          "نام_کامل": "Power BI",
-          "نام_کوتاه": "Power BI",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "PostgreSQL",
+          "short_name": "PostgreSQL",
+          "type_key": [
+            "رزومه کامل",
+            "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "Tableau",
-          "نام_کوتاه": "Tableau",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "MySQL",
+          "short_name": "MySQL",
+          "type_key": [
+            "رزومه کامل",
+            "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "داشبوردهای تعاملی",
-          "نام_کوتاه": "داشبوردها",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "SQLite",
+          "short_name": "SQLite",
+          "type_key": [
+            "رزومه کامل",
+            "برنامه‌نویسی"
           ]
         }
       ],
-      "تحلیل_بصری_و_ابزارهای_شبکه": [
+      "پایگاه‌های دادهٔ NoSQL": [
         {
-          "نام_کامل": "NetworkX",
-          "نام_کوتاه": "NetworkX",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "MongoDB",
+          "short_name": "MongoDB",
+          "type_key": [
+            "رزومه کامل",
+            "برنامه‌نویسی"
           ]
         },
         {
-          "نام_کامل": "Graphviz",
-          "نام_کوتاه": "Graphviz",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "Redis",
+          "short_name": "Redis",
+          "type_key": [
+            "رزومه کامل",
+            "برنامه‌نویسی"
+          ]
+        }
+      ],
+      "پایپ‌لاین‌های داده و سامانه‌های ETL": [
+        {
+          "long_name": "KNIME",
+          "short_name": "Knime",
+          "type_key": [
+            "رزومه کامل",
+            "برنامه‌نویسی"
           ]
         }
       ]
     },
-    "حوزه‌های_بیوانفورماتیک": {
-      "مدل‌سازی_آماری_و_یادگیری_ماشین_در_بیوانفورماتیک": [
+    "مصورسازی داده و گزارش‌دهی": {
+      "ابزارهای رسم علمی": [
         {
-          "نام_کامل": "scikit-learn",
-          "نام_کوتاه": "scikit-learn",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Matplotlib",
+          "short_name": "Matplotlib",
+          "type_key": [
+            "رزومه کامل",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "تحلیل غنی‌سازی مجموعه ژن (GSEA)",
-          "نام_کوتاه": "GSEA",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Seaborn",
+          "short_name": "Seaborn",
+          "type_key": [
+            "رزومه کامل",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "FDR Correction",
-          "نام_کوتاه": "FDR",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Plotly",
+          "short_name": "Plotly",
+          "type_key": [
+            "رزومه کامل",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "Elastic Net",
-          "نام_کوتاه": "Elastic Net",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "ggplot2",
+          "short_name": "ggplot2",
+          "type_key": [
+            "رزومه کامل",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "LASSO",
-          "نام_کوتاه": "LASSO",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "نوت‌بوک‌های ژوپیتر",
+          "short_name": "Jupyter",
+          "type_key": [
+            "رزومه کامل",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "گرادیان بوستینگ (XGBoost)",
-          "نام_کوتاه": "XGBoost",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "RMarkdown",
+          "short_name": "RMarkdown",
+          "type_key": [
+            "رزومه کامل",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "تحلیل همبستگی کانونی (CCA)",
-          "نام_کوتاه": "CCA",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "LaTeX",
+          "short_name": "LaTeX",
+          "type_key": [
+            "رزومه کامل",
             "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "تحلیل شبکه هم‌بیان ژنِ وزن‌دار (WGCNA)",
-          "نام_کوتاه": "WGCNA",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Regularization تکنیک‌ها در ماشین یادگیری",
-          "نام_کوتاه": "Regularization",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Fine-tuning مدل‌ها",
-          "نام_کوتاه": "Fine-Tuning",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "مدل evaluations",
-          "نام_کوتاه": "مدل Eval",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         }
       ],
-      "ژنومیک_و_مونتاژ_ژنوم": [
+      "پلتفرم‌های داشبورد و گزارش‌دهی": [
         {
-          "نام_کامل": "FASTQC",
-          "نام_کوتاه": "FASTQC",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Power BI",
+          "short_name": "Power BI",
+          "type_key": [
+            "رزومه کامل",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "Bowtie2",
-          "نام_کوتاه": "Bowtie2",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Tableau",
+          "short_name": "Tableau",
+          "type_key": [
+            "رزومه کامل",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "BWA",
-          "نام_کوتاه": "BWA",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "داشبوردهای تعاملی",
+          "short_name": "Dashboards",
+          "type_key": [
+            "رزومه کامل",
             "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "HISAT2",
-          "نام_کوتاه": "HISAT2",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Kallisto",
-          "نام_کوتاه": "Kallisto",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "BUSCO",
-          "نام_کوتاه": "BUSCO",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Quast",
-          "نام_کوتاه": "Quast",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "آماده‌سازی کتابخانه برای توالی‌یابی ژنوم",
-          "نام_کوتاه": "Library آماده‌سازی",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         }
       ],
-      "ترنسکریپتومیک_و_تحلیل_تک‌سلولی": [
+      "تحلیل بصری و ابزارهای شبکه": [
         {
-          "نام_کامل": "DESeq2",
-          "نام_کوتاه": "DESeq2",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "NetworkX",
+          "short_name": "NetworkX",
+          "type_key": [
+            "رزومه کامل",
             "بیوانفورماتیک",
-            "دانشگاهی"
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "edgeR",
-          "نام_کوتاه": "edgeR",
-          "کلید_نوع": [
-            "رزومه_کامل",
+          "long_name": "Graphviz",
+          "short_name": "Graphviz",
+          "type_key": [
+            "رزومه کامل",
             "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "limma",
-          "نام_کوتاه": "limma",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "DoubletFinder",
-          "نام_کوتاه": "DoubletFinder",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "ArchR",
-          "نام_کوتاه": "ArchR",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "10x Visium",
-          "نام_کوتاه": "10x Visium",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Seurat",
-          "نام_کوتاه": "Seurat",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "سلول Ranger",
-          "نام_کوتاه": "سلول Ranger",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "CytoSPACE",
-          "نام_کوتاه": "CytoSPACE",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Hist2ST",
-          "نام_کوتاه": "Hist2ST",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        }
-      ],
-      "متاژنومیک_و_بوم‌شناسی_میکروبی": [
-        {
-          "نام_کامل": "eggNOG-mapper",
-          "نام_کوتاه": "eggNOG",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "MetaPhlAn",
-          "نام_کوتاه": "MetaPhlAn",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "QIIME2",
-          "نام_کوتاه": "QIIME2",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Kraken2",
-          "نام_کوتاه": "Kraken2",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        }
-      ],
-      "حاشیه‌نویسی_عملکردی_و_زیست‌شناسی_سامانه‌ای": [
-        {
-          "نام_کامل": "ژن هستان‌شناسی (GO)",
-          "نام_کوتاه": "GO",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Enrichr",
-          "نام_کوتاه": "Enrichr",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "BioCyc",
-          "نام_کوتاه": "BioCyc",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Cytoscape",
-          "نام_کوتاه": "Cytoscape",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "KeGG",
-          "نام_کوتاه": "KeGG",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        }
-      ],
-      "ساختار_پروتئین_و_بیوانفورماتیک_ساختاری": [
-        {
-          "نام_کامل": "AlphaFold",
-          "نام_کوتاه": "AlphaFold",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Modeller",
-          "نام_کوتاه": "Modeller",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Swiss-Model",
-          "نام_کوتاه": "SwissModel",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "HHpred",
-          "نام_کوتاه": "HHpred",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "مدل‌های پنهان مارکوف (HMM)",
-          "نام_کوتاه": "HMMs",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "TmHMM",
-          "نام_کوتاه": "TmHMM",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Rosetta",
-          "نام_کوتاه": "Rosetta",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        }
-      ],
-      "فیلوژنی_و_ژنومیک_مقایسه‌ای": [
-        {
-          "نام_کامل": "BLAST",
-          "نام_کوتاه": "BLAST",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Clustal Omega",
-          "نام_کوتاه": "Clustal",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "OrthoFinder",
-          "نام_کوتاه": "OrthoFinder",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "بیوانفورماتیک",
-            "دانشگاهی"
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         }
       ]
     },
-    "تکنیک‌های_آزمایشگاهی": {
-      "تکنیک‌های_زیست‌شناسی_مولکولی_و_میکروبی": [
+    "حوزه‌های بیوانفورماتیک": {
+      "مدل‌سازی آماری و یادگیری ماشین در بیوانفورماتیک": [
         {
-          "نام_کامل": "استخراج DNA/RNA",
-          "نام_کوتاه": "استخراج DNA/RNA",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "scikit-learn",
+          "short_name": "scikit-learn",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "PCR / RT-PCR / qPCR",
-          "نام_کوتاه": "PCR/qPCR",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "تحلیل غنای مجموعه ژنی (GSEA)",
+          "short_name": "GSEA",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "الکتروفورز ژل (Agarose / Polyacrylamide)",
-          "نام_کوتاه": "الکتروفورز ژل",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "اصلاح/تصحیح FDR",
+          "short_name": "FDR",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "Electroporation",
-          "نام_کوتاه": "Electroporation",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "Elastic Net",
+          "short_name": "Elastic Net",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "رنگ‌آمیزی گرم",
-          "نام_کوتاه": "رنگ‌آمیزی گرم",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "LASSO",
+          "short_name": "LASSO",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "تهیه و بهینه‌سازی محیط کشت",
-          "نام_کوتاه": "آماده‌سازی محیط کشت",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "گرادیان بوستینگ (XGBoost)",
+          "short_name": "XGBoost",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "Contamination کنترل",
-          "نام_کوتاه": "Contamination کنترل",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "تحلیل همبستگی کانونی (CCA)",
+          "short_name": "CCA",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "آزمون حساسیت آنتی‌بیوتیکی",
-          "نام_کوتاه": "AST",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "تحلیل شبکه هم‌بیان ژنی وزن‌دار (WGCNA)",
+          "short_name": "WGCNA",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "شناسایی بیوشیمیایی",
-          "نام_کوتاه": "بیوشیمیایی ID",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "تکنیک‌های رگولاریزیشن در یادگیری ماشین",
+          "short_name": "رگولاریزیشن",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "بی‌هوازی & کشت براث",
-          "نام_کوتاه": "کشت براث",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "فاین‌تیون کردن مدل‌ها",
+          "short_name": "Fine‑Tuning",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "Aseptic تکنیک",
-          "نام_کوتاه": "Aseptic تکنیک",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "سلول Counting",
-          "نام_کوتاه": "سلول Counting",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "سلول خط احراز_هویت",
-          "نام_کوتاه": "سلول احراز_هویت",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Cryopreservation",
-          "نام_کوتاه": "Cryopreservation",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Adherent سلول کشت",
-          "نام_کوتاه": "سلول کشت",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "وسترن بلات",
-          "نام_کوتاه": "وسترن بلات",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "General chemical کار_با",
-          "نام_کوتاه": "Chem کار_با",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "پیپت‌کردن ابزارها",
-          "نام_کوتاه": "پیپت‌کردن",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "ارزیابی مدل‌ها",
+          "short_name": "Model Eval",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         }
       ],
-      "پروتکل‌های_آزمایشی_درون‌تنی_و_برون‌تنی": [
+      "ژنومیکس و مونتاژ ژنوم": [
         {
-          "نام_کامل": "آزمایشگاهی حیوان کار_با",
-          "نام_کوتاه": "حیوان کار_با",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "FASTQC",
+          "short_name": "FASTQC",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "بیهوشی و بی‌دردی",
-          "نام_کوتاه": "بیهوشی",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "Bowtie2",
+          "short_name": "Bowtie2",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "گاواژ دهانی",
-          "نام_کوتاه": "گاواژ",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "BWA",
+          "short_name": "BWA",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "نمونه‌گیری خون",
-          "نام_کوتاه": "خون‌گیری",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "HISAT2",
+          "short_name": "HISAT2",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "غنی‌سازی محیطی",
-          "نام_کوتاه": "غنی‌سازی",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "Kallisto",
+          "short_name": "Kallisto",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "Euthanasia پروتکل‌ها",
-          "نام_کوتاه": "Euthanasia",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "BUSCO",
+          "short_name": "BUSCO",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "دستورالعمل‌های اخلاقی",
-          "نام_کوتاه": "اخلاق",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "Quast",
+          "short_name": "Quast",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "آماده‌سازی کتابخانه برای توالی‌یابی ژنوم",
+          "short_name": "Library Prep",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         }
       ],
-      "طراحی_آزمایش_و_مستندسازی_آزمایشگاه": [
+      "ترنسکریپتومیکس و تحلیل تک‌سلولی": [
         {
-          "نام_کامل": "طراحی آزمایش‌ها (DoE)",
-          "نام_کوتاه": "DoE",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "DESeq2",
+          "short_name": "DESeq2",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "طراحی آزمایش و پایبندی به SOP",
-          "نام_کوتاه": "SOP انطباق",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "edgeR",
+          "short_name": "edgeR",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "Response Surface Methodology (RSM)",
-          "نام_کوتاه": "RSM",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "limma",
+          "short_name": "limma",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "DoubletFinder",
+          "short_name": "DoubletFinder",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "ArchR",
+          "short_name": "ArchR",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "10x Visium",
+          "short_name": "10x Visium",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "Seurat",
+          "short_name": "Seurat",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "Cell Ranger",
+          "short_name": "Cell Ranger",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "CytoSPACE",
+          "short_name": "CytoSPACE",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "Hist2ST",
+          "short_name": "Hist2ST",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         }
       ],
-      "ابزارهای_تحلیلی_و_کروماتوگرافی": [
+      "متاژنومیکس و بوم‌شناسی میکروبی": [
         {
-          "نام_کامل": "2D-PAGE",
-          "نام_کوتاه": "2D-PAGE",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "eggNOG-mapper",
+          "short_name": "eggNOG",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "ELISA Plate Reader",
-          "نام_کوتاه": "ELISA",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "MetaPhlAn",
+          "short_name": "MetaPhlAn",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "FACS",
-          "نام_کوتاه": "FACS",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "QIIME2",
+          "short_name": "QIIME2",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "میکروسکوپ کانفوکال",
-          "نام_کوتاه": "میکروسکوپ کانفوکال",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "میکروسکوپ فلورسانس",
-          "نام_کوتاه": "میکروسکوپ فلورو",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "طیف‌سنج جذب اتمی",
-          "نام_کوتاه": "AAS",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Capillary الکتروفورز",
-          "نام_کوتاه": "CE",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "هدایت‌سنج",
-          "نام_کوتاه": "هدایت‌سنج",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "HPLC",
-          "نام_کوتاه": "HPLC",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Chromatography",
-          "نام_کوتاه": "Chromatography",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Spectroscopy methods (e.g., UV-Vis, FTIR)",
-          "نام_کوتاه": "UV-Vis/FTIR",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "Kraken2",
+          "short_name": "Kraken2",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         }
       ],
-      "مهندسی_بیوفرایند_و_بیورآکتور": [
+      "حاشیه‌نویسی عملکردی و زیست‌شناسی سامانه‌ای": [
         {
-          "نام_کامل": "Fed-Batch / Batch / Continuous Stirred Tank Reactors (CSTR)",
-          "نام_کوتاه": "Reactor Modes",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "Gene Ontology (GO)",
+          "short_name": "GO",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "بیورآکتورهای ایرلیفت و یکبارمصرف",
-          "نام_کوتاه": "Airlift BioR",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "Enrichr",
+          "short_name": "Enrichr",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "سرعت هم‌زدن و کنترل کف",
-          "نام_کوتاه": "Agitation/Foam",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "BioCyc",
+          "short_name": "BioCyc",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "تنظیم تغذیه‌دهی مواد مغذی",
-          "نام_کوتاه": "Feed کنترل",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "Cytoscape",
+          "short_name": "Cytoscape",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "کشت با چگالی سلولی بالا",
-          "نام_کوتاه": "HCDC",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Metabolic Flux تحلیل",
-          "نام_کوتاه": "MFA",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "تحلیل تعادل شار پویا (DFBA)",
-          "نام_کوتاه": "DFBA",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "تعیین وزن مرطوب",
-          "نام_کوتاه": "وزن مرطوب",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "سانتریفیوژ و فیلتراسیون",
-          "نام_کوتاه": "Centrifug./Filt.",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Metabolic مهندسی",
-          "نام_کوتاه": "Metabolic Eng.",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "فرایند Scale-Up",
-          "نام_کوتاه": "Scale-Up",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "ابزارهای پایش بیورآکتور (مثلاً سنسورهای pH و DO)",
-          "نام_کوتاه": "پایش ابزارها",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
-          ]
-        },
-        {
-          "نام_کامل": "Bio-stat / pH-stat Methods در Bioreactors",
-          "نام_کوتاه": "Bio/pH-stat",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "KEGG",
+          "short_name": "KeGG",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         }
       ],
-      "ایمنی_آزمایشگاه_و_انطباق_و_الزامات_قانونی": [
+      "ساختار پروتئین و بیوانفورماتیک ساختاری": [
         {
-          "نام_کامل": "شیوه‌های خوب آزمایشگاهی (GLP)",
-          "نام_کوتاه": "GLP",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "AlphaFold",
+          "short_name": "AlphaFold",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "شیوه‌های خوب تولید (GMP)",
-          "نام_کوتاه": "GMP",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "Modeller",
+          "short_name": "Modeller",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "ایمنی_زیستی Training",
-          "نام_کوتاه": "ایمنی_زیستی",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "Swiss-Model",
+          "short_name": "SwissModel",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "QA/QC Qc Procedures",
-          "نام_کوتاه": "QA/QC",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "HHpred",
+          "short_name": "HHpred",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "R&D انطباق",
-          "نام_کوتاه": "R&D Rules",
-          "کلید_نوع": [
-            "رزومه_کامل",
-            "زیست‌فناوری",
-            "دانشگاهی"
+          "long_name": "مدل‌های مارکوف پنهان (HMMs)",
+          "short_name": "HMMs",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "TmHMM",
+          "short_name": "TmHMM",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "Rosetta",
+          "short_name": "Rosetta",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
+          ]
+        }
+      ],
+      "فیلوژنی و ژنومیکس مقایسه‌ای": [
+        {
+          "long_name": "BLAST",
+          "short_name": "BLAST",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "Clustal Omega",
+          "short_name": "Clustal",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "OrthoFinder",
+          "short_name": "OrthoFinder",
+          "type_key": [
+            "رزومه کامل",
+            "بیوانفورماتیک",
+            "آکادمیک"
           ]
         }
       ]
     },
-    "مهارت‌های_نرم": {
-      "مهارت‌های_نرم_اصلی": [
+    "تکنیک‌های آزمایشگاهی": {
+      "تکنیک‌های زیست‌شناسی مولکولی و میکروبی": [
         {
-          "نام_کامل": "تفکر تحلیلی",
-          "نام_کوتاه": "تفکر تحلیلی",
-          "کلید_نوع": [
-            "رزومه_کامل"
+          "long_name": "استخراج DNA/RNA",
+          "short_name": "استخراج DNA/RNA",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "حل مسئله",
-          "نام_کوتاه": "حل مسئله",
-          "کلید_نوع": [
-            "رزومه_کامل"
+          "long_name": "PCR / RT‑PCR / qPCR",
+          "short_name": "PCR/qPCR",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "همکاری تیمی",
-          "نام_کوتاه": "همکاری تیمی",
-          "کلید_نوع": [
-            "رزومه_کامل"
+          "long_name": "الکتروفورز ژل (آگاروز / پلی‌آکریل‌آمید)",
+          "short_name": "الکتروفورز ژل",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "مدیریت پروژه",
-          "نام_کوتاه": "مدیریت پروژه",
-          "کلید_نوع": [
-            "رزومه_کامل"
+          "long_name": "الکتروپوریشن",
+          "short_name": "الکتروپوریشن",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "نگارش علمی",
-          "نام_کوتاه": "نگارش علمی",
-          "کلید_نوع": [
-            "رزومه_کامل"
+          "long_name": "رنگ‌آمیزی گرم",
+          "short_name": "رنگ‌آمیزی گرم",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "سازگاری و یادگیری مستمر",
-          "نام_کوتاه": "سازگاری و یادگیری",
-          "کلید_نوع": [
-            "رزومه_کامل"
+          "long_name": "تهیه و بهینه‌سازی محیط کشت",
+          "short_name": "آماده‌سازی محیط",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "زمان مدیریت",
-          "نام_کوتاه": "زمان مدیریت",
-          "کلید_نوع": [
-            "رزومه_کامل"
+          "long_name": "کنترل آلودگی",
+          "short_name": "کنترل آلودگی",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "ارتباطات بین‌رشته‌ای",
-          "نام_کوتاه": "ارتباطات بین‌رشته‌ای",
-          "کلید_نوع": [
-            "رزومه_کامل"
+          "long_name": "آزمون حساسیت به آنتی‌بیوتیک",
+          "short_name": "AST",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "پژوهش و تحلیل انتقادی",
-          "نام_کوتاه": "پژوهش و تحلیل",
-          "کلید_نوع": [
-            "رزومه_کامل"
+          "long_name": "شناسایی بیوشیمیایی",
+          "short_name": "شناساگر بیوشیمیایی",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
           ]
         },
         {
-          "نام_کامل": "خودانگیختگی و ابتکار",
-          "نام_کوتاه": "خودانگیختگی",
-          "کلید_نوع": [
-            "رزومه_کامل"
+          "long_name": "کشت بی‌هوازی و کشت مایع (Broth)",
+          "short_name": "کشت مایع",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "تکنیک آسپتیک",
+          "short_name": "آسپتیک",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "شمارش سلولی",
+          "short_name": "شمارش سلول",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "اصالت‌سنجی ردهٔ سلولی",
+          "short_name": "اصالت‌سنجی سلول",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "کرایوپریزرویشن (فریز نگه‌داری)",
+          "short_name": "کرایوپریزرویشن",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "کشت سلول چسبنده (Adherent)",
+          "short_name": "کشت سلول",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "وسترن بلاتینگ",
+          "short_name": "Western Blot",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "کار با مواد شیمیایی (عمومی)",
+          "short_name": "کار با مواد شیمیایی",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "ابزارهای پیپت‌زنی",
+          "short_name": "پیپت‌زنی",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        }
+      ],
+      "پروتکل‌های آزمایشگاهی درون‌تنی و برون‌تنی": [
+        {
+          "long_name": "کار با حیوانات آزمایشگاهی",
+          "short_name": "هندلینگ حیوان",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "بیهوشی و ضد درد (آنالژزیا)",
+          "short_name": "بیهوشی",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "گاواژ خوراکی",
+          "short_name": "گاواژ",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "نمونه‌گیری/خون‌گیری",
+          "short_name": "خون‌گیری",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "غنی‌سازی محیطی (Enrichment)",
+          "short_name": "Enrichment",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "پروتکل‌های اتانازی",
+          "short_name": "اتانازی",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "راهنماهای اخلاقی",
+          "short_name": "اخلاق",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        }
+      ],
+      "طراحی آزمایش و مستندسازی آزمایشگاهی": [
+        {
+          "long_name": "طراحی آزمایش‌ها (DoE)",
+          "short_name": "DoE",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "طراحی آزمایش و انطباق با SOP",
+          "short_name": "انطباق SOP",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "روش‌شناسی سطح پاسخ (RSM)",
+          "short_name": "RSM",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        }
+      ],
+      "ابزارهای تحلیلی و کروماتوگرافی": [
+        {
+          "long_name": "2D‑PAGE",
+          "short_name": "2D-PAGE",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "ریدر پلیت ELISA",
+          "short_name": "ELISA",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "FACS",
+          "short_name": "FACS",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "میکروسکوپ کانفوکال",
+          "short_name": "Confocal Scope",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "میکروسکوپ فلورسانس",
+          "short_name": "Fluoro Scope",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "اسپکتروفتومتر جذب اتمی",
+          "short_name": "AAS",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "الکتروفورز موئینه",
+          "short_name": "CE",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "هدایت‌سنج",
+          "short_name": "Cond. Meter",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "HPLC",
+          "short_name": "HPLC",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "کروماتوگرافی",
+          "short_name": "Chromatography",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "روش‌های طیف‌سنجی (مثل UV‑Vis، FTIR)",
+          "short_name": "UV-Vis/FTIR",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        }
+      ],
+      "مهندسی بیوفرایند و بیورآکتور": [
+        {
+          "long_name": "Fed‑Batch / Batch / راکتور مخزن همزن‌دار پیوسته (CSTR)",
+          "short_name": "حالت‌های راکتور",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "بیورآکتورهای ایرلیفت و یک‌بارمصرف",
+          "short_name": "Airlift BioR",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "کنترل سرعت هم‌زدن و فوم",
+          "short_name": "هم‌زدن/فوم",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "تنظیم خوراک مواد مغذی",
+          "short_name": "کنترل خوراک",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "کشت با چگالی سلولی بالا",
+          "short_name": "HCDC",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "تحلیل شار متابولیکی",
+          "short_name": "MFA",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "تحلیل توازن شار پویا (DFBA)",
+          "short_name": "DFBA",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "تعیین وزن تر",
+          "short_name": "Wet Wt",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "سانتریفیوژ و فیلتراسیون",
+          "short_name": "Centrifug./Filt.",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "مهندسی متابولیک",
+          "short_name": "Metabolic Eng.",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "اسکیل‌آپ فرایند",
+          "short_name": "Scale-Up",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "ابزارهای پایش بیورآکتور (مثل حسگر pH، حسگر DO)",
+          "short_name": "ابزارهای پایش",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "روش‌های Bio‑stat / pH‑stat در بیورآکتورها",
+          "short_name": "Bio/pH-stat",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        }
+      ],
+      "ایمنی آزمایشگاه، انطباق و الزامات قانونی": [
+        {
+          "long_name": "استانداردهای GLP (Good Laboratory Practices)",
+          "short_name": "GLP",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "استانداردهای GMP (Good Manufacturing Practices)",
+          "short_name": "GMP",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "آموزش ایمنی زیستی",
+          "short_name": "ایمنی زیستی",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "رویه‌های QA/QC",
+          "short_name": "QA/QC",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        },
+        {
+          "long_name": "انطباق در تحقیق و توسعه (R&D)",
+          "short_name": "قواعد R&D",
+          "type_key": [
+            "رزومه کامل",
+            "زیست‌فناوری",
+            "آکادمیک"
+          ]
+        }
+      ]
+    },
+    "مهارت‌های نرم": {
+      "مهارت‌های نرمِ اصلی": [
+        {
+          "long_name": "تفکر تحلیلی",
+          "short_name": "تفکر تحلیلی",
+          "type_key": [
+            "رزومه کامل"
+          ]
+        },
+        {
+          "long_name": "حل مسئله",
+          "short_name": "حل مسئله",
+          "type_key": [
+            "رزومه کامل"
+          ]
+        },
+        {
+          "long_name": "همکاری تیمی",
+          "short_name": "همکاری تیمی",
+          "type_key": [
+            "رزومه کامل"
+          ]
+        },
+        {
+          "long_name": "مدیریت پروژه",
+          "short_name": "مدیریت پروژه",
+          "type_key": [
+            "رزومه کامل"
+          ]
+        },
+        {
+          "long_name": "نگارش علمی",
+          "short_name": "نگارش علمی",
+          "type_key": [
+            "رزومه کامل"
+          ]
+        },
+        {
+          "long_name": "سازگاری و یادگیری مستمر",
+          "short_name": "سازگاری/یادگیری",
+          "type_key": [
+            "رزومه کامل"
+          ]
+        },
+        {
+          "long_name": "مدیریت زمان",
+          "short_name": "مدیریت زمان",
+          "type_key": [
+            "رزومه کامل"
+          ]
+        },
+        {
+          "long_name": "ارتباطات میان‌رشته‌ای",
+          "short_name": "ارتباط میان‌رشته‌ای",
+          "type_key": [
+            "رزومه کامل"
+          ]
+        },
+        {
+          "long_name": "پژوهش و تحلیل انتقادی",
+          "short_name": "پژوهش/تحلیل",
+          "type_key": [
+            "رزومه کامل"
+          ]
+        },
+        {
+          "long_name": "انگیزه و پیش‌قدمی",
+          "short_name": "انگیزه فردی",
+          "type_key": [
+            "رزومه کامل"
           ]
         }
       ]
     }
   },
-  "سوابق": [
+  "experiences": [
     {
-      "نقش": "توسعه‌دهنده فول‌استک",
-      "مؤسسه": "فریلنس",
-      "مدت": "2018-02-11 - Recent",
-      "توضیحات": "وب‌اپلیکیشن‌های متنوع، اجزای بک‌اند و فرانت‌اند و جریان‌های کاری خودکارسازی‌شدهٔ داده را توسعه و نگهداری کردم."
+      "role": "توسعه‌دهنده فول‌استک",
+      "institution": "فریلنس",
+      "duration": "2018-02-11 - تاکنون",
+      "description": "توسعه و نگه‌داری انواع اپلیکیشن‌های وب، اجزای بک‌اند و فرانت‌اند، و خودکارسازی گردش‌کارهای داده."
     },
     {
-      "نقش": "پژوهشگر بیوانفورماتیک — پایان‌نامه کارشناسی ارشد",
-      "مؤسسه": "دانشگاه تهران",
-      "مدت": "2023-10-23 - 2024-09-15",
-      "تمرکز_اصلی": "تحلیل اُمیکس‌محور ژنوم‌های میکروبی/تخمیر و بیوفرایندها",
-      "توضیحات": "تحلیل‌های بیوانفورماتیکی، پروفایلینگ بیان ژن، حاشیه‌نویسی عملکردی و بهینه‌سازی بیوفرایند را انجام دادم."
+      "role": "پژوهشگر بیوانفورماتیک - پایان‌نامه کارشناسی ارشد",
+      "institution": "دانشگاه تهران",
+      "duration": "2023-10-23 - 2024-09-15",
+      "primaryFocus": "تحلیل اُمیکس‌محور ژنوم‌های میکروبی/تخمیر و بیوفرایند",
+      "description": "انجام تحلیل‌های بیوانفورماتیکی، پروفایلینگ بیان ژن، حاشیه‌نویسی عملکردی و بهینه‌سازی بیوفرایند."
     },
     {
-      "نقش": "هم‌بنیان‌گذار و مسئول توسعه کسب‌وکار",
-      "مؤسسه": "Kamadani Foodstuff Trading LLC",
-      "مدت": "2022-07-14 - 2023-07-13",
-      "تمرکز_اصلی": "تأسیس شرکت و توسعه کسب‌وکار",
-      "توضیحات": "شرکت را هم‌بنیان‌گذاری و راه‌اندازی کردم و توسعه کسب‌وکار و مشارکت‌ها را هدایت کردم."
+      "role": "هم‌بنیان‌گذار و مسئول توسعه کسب‌وکار",
+      "institution": "Kamadani Foodstuff Trading LLC",
+      "duration": "2022-07-14 - 2023-07-13",
+      "primaryFocus": "تأسیس شرکت و توسعه کسب‌وکار",
+      "description": "هم‌بنیان‌گذاری و راه‌اندازی شرکت، هدایت توسعه کسب‌وکار و ایجاد مشارکت‌ها."
     },
     {
-      "نقش": "دستیار پژوهشی — آزمایشگاه زیست‌فناوری / مهندسی تخمیر",
-      "مؤسسه": "دانشگاه تهران / رهپویان فناور صادق",
-      "مدت": "2023-01-21 - 2023-09-22",
-      "تمرکز_اصلی": "بهینه‌سازی فد-بچ و مهندسی بیوفرایند",
-      "توضیحات": "روی بهینه‌سازی تخمیر Pichia pastoris و پروژه‌های مهندسی بیوفرایند کار کردم."
+      "role": "دستیار پژوهشی - آزمایشگاه زیست‌فناوری / مهندسی تخمیر",
+      "institution": "دانشگاه تهران / Rahpouyan Fanavar Sadegh",
+      "duration": "2023-01-21 - 2023-09-22",
+      "primaryFocus": "بهینه‌سازی فد-بچ و مهندسی بیوفرایند",
+      "description": "کار روی بهینه‌سازی تخمیر Pichia pastoris و پروژه‌های مهندسی بیوفرایند."
     },
     {
-      "نقش": "عضو هیئت‌مدیره",
-      "مؤسسه": "Yazdan Tejarat Absaran",
-      "مدت": "2009-04-25 - 2023-10-23",
-      "تمرکز_اصلی": "صادرات، واردات و مدیریت کسب‌وکار",
-      "توضیحات": "بر عملیات، برنامه‌ریزی راهبردی و توسعه کسب‌وکار برای تجارت خانوادگی نظارت داشتم."
+      "role": "عضو هیئت‌مدیره",
+      "institution": "Yazdan Tejarat Absaran",
+      "duration": "2009-04-25 - 2023-10-23",
+      "primaryFocus": "صادرات، واردات و مدیریت کسب‌وکار",
+      "description": "نظارت بر عملیات، برنامه‌ریزی راهبردی و توسعه کسب‌وکار برای تجارت خانوادگی."
     }
   ],
-  "پروژه‌ها": [
+  "projects": [
     {
-      "عنوان": "پایپلاین یکپارچهٔ اُمیکس برای ژنومیک میکروبی",
-      "توضیحات": "یک پایپلاین جامع توسعه دادم که داده‌های متاژنومیک، ترنسکریپتومیک و پروتئومیک را برای تحلیل ژن‌های عملکردی و پروفایلینگ جوامع میکروبی یکپارچه می‌کند.",
-      "پیوند": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "پایپ‌لاین یکپارچه اُمیکس برای ژنومیک میکروبی",
+      "description": "توسعه یک پایپ‌لاین جامع که داده‌های متاژنومیک، ترنسکریپتومیک و پروتئومیک را برای تحلیل عملکرد ژن‌ها و پروفایلینگ جامعه میکروبی یکپارچه می‌کند.",
+      "url": null,
+      "type_key": [
+        "رزومه کامل",
         "بیوانفورماتیک",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "بررسی‌گر انطباق سیاست‌ها (Flask + React + SQLite)",
-      "توضیحات": "یک وب‌اپلیکیشن با پشتهٔ FReMP ساختم تا سیاست‌های امنیتی پویا و داده‌های کاربران (JSON/CSV) بارگذاری شود، انطباق هر کاربر در سمت سرور ارزیابی گردد، و نتایج قبولی/ردی به‌صورت قابل فیلتر و خروجی‌گرفتن همراه با توضیحات در رابط React نمایش داده شود.",
-      "پیوند": "https://github.com/Raminyazdani/policy-compliance-checker",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "بررسی‌کننده انطباق با سیاست‌ها (Flask + React + SQLite)",
+      "description": "ساخت یک وب‌اپلیکیشن با استک FReMP برای بارگذاری سیاست‌های امنیتی پویا و دیتاست‌های کاربران (JSON/CSV)، ارزیابی انطباق هر کاربر در سمت سرور، و نمایش نتایج قبولی/رد قابل فیلتر و خروجی‌گیری همراه با توضیحات در رابط React.",
+      "url": "https://github.com/Raminyazdani/policy-compliance-checker",
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "قالب مارکت‌پلیس فروشگاه لوازم آرایشی (Django)",
-      "توضیحات": "یک قالب مارکت‌پلیس چنداپی با Django 4.1 برای فروشگاه لوازم آرایشی ساختم که شامل لایهٔ Core قابل‌استفاده‌مجدد (فکتوری‌های متمرکز برای فیلدها، مدل‌های پایه با soft-delete، میکسین‌های مشترک و فرمان سفارشی برای ساخت اسکلت اپ) به‌همراه فهرست/جست‌وجو/فیلتر محصولات، جریان سبد و پرداخت، و مدل‌های سفارش/پرداخت/ارسال با قالب‌های Bootstrap روی SQLite است.",
-      "پیوند": "https://github.com/Raminyazdani/Cosmetic_Shop",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "قالب مارکت‌پلیس فروشگاه لوازم آرایشی (Django)",
+      "description": "ساخت یک قالب مارکت‌پلیس چند-اپ در Django 4.1 برای فروشگاه لوازم آرایشی با یک لایه Core قابل‌استفاده مجدد (کارخانه‌های متمرکز فیلدها، مدل‌های پایه با حذف نرم، میکسین‌های مشترک و دستور سفارشی برای اسکلَفولد اپ)، به‌همراه فهرست/جستجو/فیلتر محصولات، سبد خرید و فرایند پرداخت، و مدل‌های سفارش/پرداخت/ارسال با قالب‌های Bootstrap روی SQLite.",
+      "url": "https://github.com/Raminyazdani/Cosmetic_Shop",
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "قالب مارکت‌پلیس فروشگاه لوازم آرایشی (Django)",
-      "توضیحات": "یک قالب مارکت‌پلیس چنداپی با Django 4.1 برای فروشگاه لوازم آرایشی ساختم که شامل لایهٔ Core قابل‌استفاده‌مجدد (فکتوری‌های متمرکز برای فیلدها، مدل‌های پایه با soft-delete، میکسین‌های مشترک و فرمان سفارشی برای ساخت اسکلت اپ) به‌همراه فهرست/جست‌وجو/فیلتر محصولات، جریان سبد و پرداخت، و مدل‌های سفارش/پرداخت/ارسال با قالب‌های Bootstrap روی SQLite است.",
-      "پیوند": "https://github.com/Raminyazdani/Cosmetic_Shop",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "قالب مارکت‌پلیس فروشگاه لوازم آرایشی (Django)",
+      "description": "ساخت یک قالب مارکت‌پلیس چند-اپ در Django 4.1 برای فروشگاه لوازم آرایشی با یک لایه Core قابل‌استفاده مجدد (کارخانه‌های متمرکز فیلدها، مدل‌های پایه با حذف نرم، میکسین‌های مشترک و دستور سفارشی برای اسکلَفولد اپ)، به‌همراه فهرست/جستجو/فیلتر محصولات، سبد خرید و فرایند پرداخت، و مدل‌های سفارش/پرداخت/ارسال با قالب‌های Bootstrap روی SQLite.",
+      "url": "https://github.com/Raminyazdani/Cosmetic_Shop",
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "فایل‌استور مکتب ۷۸ (Python بدون فریم‌ورک + PostgreSQL)",
-      "توضیحات": "یک پروژه آموزشی پایتونِ بدون فریم‌ورک توسعه دادم که شامل سیستم منویی/روتر تو در توی CLI با callbackهای پویا، لایهٔ سبک ذخیره‌سازی PostgreSQL (psycopg2) با مدل‌های کوچک شبه‑ORM و query builder برای CRUD، و ماژول‌های دامنه برای کاربران، فایل‌ها، دیدگاه‌ها، سبدها و آیتم‌های سفارش است.",
-      "پیوند": "https://github.com/Raminyazdani/m78bookstore",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "فروشگاه فایل مکتب ۷۸ (پایتون بدون فریم‌ورک + PostgreSQL)",
+      "description": "توسعه یک پروژه آموزشی پایتون بدون فریم‌ورک با روتر/منوی CLI تو در تو و کال‌بک‌های پویا، یک لایه ذخیره‌سازی سبک PostgreSQL (psycopg2) با مدل‌های شبه ORM و کوئری‌بیلدر برای CRUD، و ماژول‌های دامنه برای کاربران، فایل‌ها، کامنت‌ها، سبدها و آیتم‌های سفارش.",
+      "url": "https://github.com/Raminyazdani/m78bookstore",
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "پروژه‌های_دانشجویی"
+        "پروژه‌های دانشجویی"
       ]
     },
     {
-      "عنوان": "پورتفولیوی بوت‌کمپ پایتون — تکالیف و پروژه‌های مکتب ۷۸",
-      "توضیحات": "یک مونوریپوی مستند از دوره و پروژه‌های بوت‌کمپ پایتون را گردآوری کردم که بر اساس ماژول‌های تکلیف (مبانی، OOP، اسکریپت‌نویسی سیستمی، اعتبارسنجی داده، پایگاه‌داده با PostgreSQL/MongoDB و Flask REST API) سازمان‌دهی شده و چند زیرپروژهٔ اصلی را در یک مخزن ساخت‌یافته شامل می‌شود.",
-      "پیوند": "https://github.com/Raminyazdani/HW_all_maktab-78",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "پورتفولیوی بوت‌کمپ پایتون — تمرین‌ها و پروژه‌های مکتب ۷۸",
+      "description": "گردآوری و مستندسازی یک مونوریپو از تمرین‌ها و پروژه‌های بوت‌کمپ پایتون، سازمان‌دهی‌شده بر اساس ماژول‌های تکلیف (مبانی، OOP، اسکریپت‌نویسی سیستم، اعتبارسنجی داده، دیتابیس با PostgreSQL/MongoDB و Flask REST APIs) به‌همراه چندین زیرپروژه اصلی در یک مخزن ساختاریافته.",
+      "url": "https://github.com/Raminyazdani/HW_all_maktab-78",
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "پروژه‌های_دانشجویی"
+        "پروژه‌های دانشجویی"
       ]
     },
     {
-      "عنوان": "اسکرپر پایان‌نامه و مقاله IranDoc Ganj (Selenium + BeautifulSoup)",
-      "توضیحات": "یک ابزار وب‌اسکرپینگ پایتون با Selenium و BeautifulSoup توسعه دادم که ganj.irandoc.ac.ir را سال‌به‌سال (و در صورت نیاز صفحه‌به‌صفحه) پیمایش می‌کند، متادیتای پایان‌نامه/مقاله (مثل موضوع، نوع، مقطع، سال، دانشگاه، مشارکت‌کنندگان) را با پشتیبانی UTF‑8 فارسی استخراج می‌کند و خروجی را به CSV به‌همراه یک ابزار پاک‌سازی CSV ارائه می‌دهد.",
-      "پیوند": "https://github.com/Raminyazdani/irandoc",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "اسکرپر مقاله و پایان‌نامه ایرانداک گنج (Selenium + BeautifulSoup)",
+      "description": "توسعه یک ابزار وب‌اسکرپینگ پایتون با Selenium و BeautifulSoup برای خزش ganj.irandoc.ac.ir به‌صورت سال‌به‌سال (و در صورت نیاز صفحه‌به‌صفحه)، استخراج متادیتای پایان‌نامه/مقاله (مثل موضوع، نوع، مقطع/رشته، سال، دانشگاه، مشارکت‌کنندگان) با پشتیبانی کامل فارسی UTF‑8، و خروجی CSV به‌همراه یک ابزار جداگانه برای پاک‌سازی CSV.",
+      "url": "https://github.com/Raminyazdani/irandoc",
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "وب‌سایت رزومهٔ شخصی (Django + React)",
-      "توضیحات": "یک وب‌سایت رزومهٔ شخصی ساختم با فرانت‌اند تک‌صفحه‌ای React و بک‌اند Django برای ذخیره‌سازی داده و سرویس‌های API؛ که مهارت‌ها، پروژه‌ها و تجربهٔ حرفه‌ای را در قالب وب نمایش می‌دهد.",
-      "پیوند": "https://github.com/Raminyazdani/My-CV-Website",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "وب‌سایت شخصی رزومه (Django + React)",
+      "description": "ساخت یک وب‌سایت شخصی رزومه با فرانت‌اند تک‌صفحه‌ای React و بک‌اند Django برای ذخیره‌سازی داده و سرویس‌های API، جهت نمایش مهارت‌ها، پروژه‌ها و تجربه‌های حرفه‌ای در قالب وب.",
+      "url": "https://github.com/Raminyazdani/My-CV-Website",
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "اپلیکیشن کشف و شخصی‌سازی فیلم/سریال (React + Express + MySQL)",
-      "توضیحات": "یک مونوریپوی فول‌استک برای کشف و شخصی‌سازی فیلم/سریال ساختم با کلاینت React (Redux Toolkit، Material UI) و سرور Express مبتنی بر MySQL؛ با یکپارچه‌سازی Firebase Auth و APIهای متادیتای OMDb/TMDb برای پشتیبانی از علاقه‌مندی‌ها، امتیازدهی، نقدها و درخواست‌های پیشنهاد به‌ازای هر کاربر از طریق REST API.",
-      "پیوند": "https://github.com/Raminyazdani/movie-rating-app",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "اپلیکیشن کشف و شخصی‌سازی فیلم/سریال (React + Express + MySQL)",
+      "description": "ساخت یک مونوریپو فول‌استک برای کشف و شخصی‌سازی فیلم/سریال با کلاینت React (Redux Toolkit, Material UI) و سرور Express با دیتابیس MySQL، یکپارچه با Firebase Auth و APIهای متادیتای OMDb/TMDb برای امکانات علاقه‌مندی‌ها، امتیازدهی، نقد/بررسی و درخواست توصیه‌گر به‌ازای هر کاربر از طریق REST API.",
+      "url": "https://github.com/Raminyazdani/movie-rating-app",
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "سامانه مدیریت پایگاه‌داده بیمارستان (MySQL + SQL)",
-      "توضیحات": "یک شِمای پایگاه‌داده بیمارستان در MySQL توسعه دادم برای مدیریت بیماران، پزشکان، خدمات، بخش‌ها، جراحی‌ها و ویزیت‌ها؛ همراه با اسکریپت‌های SQL برای ساخت جدول‌ها، درج رکوردهای نمونه و ایجاد چندین نمای گزارش، به‌علاوه یک ERD برای مستندسازی.",
-      "پیوند": "https://github.com/Raminyazdani/Hospital-Data-base",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "سیستم مدیریت دیتابیس بیمارستان (MySQL + SQL)",
+      "description": "توسعه یک اسکیمای دیتابیس MySQL برای مدیریت بیماران، پزشکان، خدمات، بخش‌ها، جراحی‌ها و ویزیت‌ها؛ ارائه اسکریپت‌های SQL برای ایجاد جداول، درج داده نمونه و تولید چندین ویو گزارش‌گیری، به‌همراه ERD جهت مستندسازی.",
+      "url": "https://github.com/Raminyazdani/Hospital-Data-base",
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "پروژه‌های_دانشجویی"
+        "پروژه‌های دانشجویی"
       ]
     },
     {
-      "عنوان": "ماشین‌حساب ترمینالی (TUI) — Python",
-      "توضیحات": "یک ماشین‌حساب ترمینالی پایتون ۳.۱۰ (TUI) توسعه دادم با ارزیابی امن عبارت‌ها، تاریخچهٔ فرمان (مشاهده/اجرای مجدد) و تم روشن/تیره با استفاده از Rich و prompt_toolkit؛ به‌صورت CLI بسته‌بندی شده با تست‌های pytest و مستندات GitHub Pages.",
-      "پیوند": "https://github.com/Raminyazdani/Calculator",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "ماشین‌حساب ترمینالی (TUI) — پایتون",
+      "description": "توسعه یک ماشین‌حساب ترمینالی پایتون 3.10 (TUI) با ارزیابی امن عبارت‌ها، تاریخچه فرمان‌ها (مشاهده/بازپخش) و تم روشن/تیره با Rich + prompt_toolkit، بسته‌بندی‌شده به‌عنوان CLI با تست‌های pytest و مستندات GitHub Pages.",
+      "url": "https://github.com/Raminyazdani/Calculator",
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "پروژه‌های_دانشجویی"
+        "پروژه‌های دانشجویی"
       ]
     },
     {
-      "عنوان": "مولد رزومه — JSON → PDF با Awesome‑CV (Jinja2 + XeLaTeX)",
-      "توضیحات": "یک مولد رزومه مبتنی بر پایتون توسعه دادم که JSON ساخت‌یافته را به قالب‌های ماژولار بخش‌ها در Jinja2+LaTeX با کلاس Awesome‑CV رندر می‌کند و سپس PDFهای حرفه‌ای را با XeLaTeX کامپایل می‌کند؛ با پشتیبانی batch برای چند رزومه، عکس پروفایل اختیاری، اعتبارسنجی StrictUndefined، helperهای escape برای LaTeX و پاک‌سازی مطمئن فایل‌های میانی.",
-      "پیوند": "https://github.com/Raminyazdani/cv_generator",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "ژنراتور رزومه — JSON → PDF با Awesome-CV (Jinja2 + XeLaTeX)",
+      "description": "توسعه یک ژنراتور رزومه مبتنی بر پایتون که JSON ساختاریافته را به قالب‌های ماژولار Jinja2+LaTeX (کلاس Awesome-CV) رندر کرده و سپس PDFهای حرفه‌ای را با XeLaTeX کامپایل می‌کند؛ با پشتیبانی از تولید دسته‌ای چند رزومه، عکس پروفایل اختیاری، اعتبارسنجی StrictUndefined، توابع کمکی برای escape در LaTeX و پاک‌سازی مطمئن فایل‌های میانی.",
+      "url": "https://github.com/Raminyazdani/cv_generator",
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "نقشه‌راه پروژه‌های پایتون (در حال توسعه)",
-      "توضیحات": "یک نقشه‌راه گزینش‌شده و در حال به‌روزرسانی از حدود ۱۰۰ ایدهٔ پروژهٔ پایتون را بر اساس سطح دشواری (مبتدی/متوسط/پیشرفته) نگه‌داری می‌کنم تا تمرین منظم و ساخت پورتفولیو را هدایت کند؛ به‌همراه ابزارهای ریپو (مثل create_projects.py).",
-      "پیوند": "https://github.com/Raminyazdani/Python-projects",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "نقشه‌راه پروژه‌های پایتون (در حال انجام)",
+      "description": "نگه‌داری یک نقشه‌راه منتخب و در حال توسعه از حدود ۱۰۰ ایده پروژه پایتون دسته‌بندی‌شده بر اساس سطح دشواری (مبتدی/متوسط/پیشرفته) برای تمرین مستمر و ساخت پورتفولیو، به‌همراه ابزارهای مخزن (مثل create_projects.py).",
+      "url": "https://github.com/Raminyazdani/Python-projects",
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "پروژه‌های_دانشجویی"
+        "پروژه‌های دانشجویی"
       ]
     },
     {
-      "عنوان": "ورک‌فلو ترنسکریپتومیکس تک‌سلولی و فضایی",
-      "توضیحات": "ورک‌فلوهای تحلیل برای داده‌های RNA-seq تک‌سلولی و ترنسکریپتومیکس فضایی پیاده‌سازی کردم که امکان شناسایی انواع سلولی و استنباط مسیر تکوینی (trajectory) را فراهم می‌کند.",
-      "پیوند": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "گردش‌کار ترنسکریپتومیکس تک‌سلولی و فضایی",
+      "description": "پیاده‌سازی گردش‌کارهای تحلیل داده‌های scRNA-seq و ترنسکریپتومیکس فضایی برای شناسایی انواع سلولی و استنباط مسیر/trajectory.",
+      "url": null,
+      "type_key": [
+        "رزومه کامل",
         "بیوانفورماتیک",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "بهینه‌سازی بیوفرایند برای تولید پروتئین",
-      "توضیحات": "فرایندهای تخمیر fed‑batch را برای بیان هتروولوگ پروتئین در Pichia pastoris بهینه کردم؛ شامل مهندسی مسیر و مدیریت بیورآکتور.",
-      "پیوند": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "بهینه‌سازی بیوفرایند برای تولید پروتئین",
+      "description": "بهینه‌سازی فرایندهای تخمیر فد-بچ برای بیان پروتئین هترولوگ در Pichia pastoris، شامل مهندسی مسیر و مدیریت بیورآکتور.",
+      "url": null,
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "راهکارهای اتوماسیون و استخراج داده از وب",
-      "توضیحات": "خزنده‌های وب و اسکریپت‌های اتوماسیون مبتنی بر پایتون طراحی و مستقر کردم برای استخراج، پاک‌سازی و پردازش داده از منابع آنلاین متنوع.",
-      "پیوند": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "راهکارهای اتوماسیون و استخراج داده وب",
+      "description": "طراحی و استقرار کرالرهای وب و اسکریپت‌های اتوماسیون مبتنی بر پایتون برای استخراج، پاک‌سازی و پردازش داده از منابع آنلاین متنوع.",
+      "url": null,
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "اپلیکیشن وب فول‌استک برای مصورسازی داده",
-      "توضیحات": "داشبوردها و ابزارهای مصورسازی تعاملی با Django، React و Plotly ساختم برای نمایش و گزارش‌گیری داده‌های علمی.",
-      "پیوند": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "وب‌اپلیکیشن فول‌استک برای بصری‌سازی داده",
+      "description": "ساخت داشبوردهای تعاملی و ابزارهای بصری‌سازی با Django، React و Plotly برای نمایش و گزارش‌گیری داده‌های علمی.",
+      "url": null,
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "کاربردهای یادگیری ماشین در بیوانفورماتیک",
-      "توضیحات": "مدل‌های پیش‌بینی و الگوریتم‌های خوشه‌بندی برای تحلیل داده‌های زیستی توسعه دادم با تمرکز بر بیان ژن و مسائل طبقه‌بندی.",
-      "پیوند": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "کاربردهای یادگیری ماشین در بیوانفورماتیک",
+      "description": "توسعه مدل‌های پیش‌بینی و الگوریتم‌های خوشه‌بندی برای تحلیل داده‌های زیستی با تمرکز بر بیان ژن و مسائل طبقه‌بندی.",
+      "url": null,
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
         "بیوانفورماتیک",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "ورک‌فلوهای بیوانفورماتیک کانتینری‌شده",
-      "توضیحات": "پایپلاین‌های بیوانفورماتیک قابل‌بازتولید را با Docker و Kubernetes مستقر کردم تا محیط‌های پژوهشی مقیاس‌پذیر و مشارکتی فراهم شود.",
-      "پیوند": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "گردش‌کارهای بیوانفورماتیک کانتینری‌شده",
+      "description": "استقرار پایپ‌لاین‌های بیوانفورماتیک بازتولیدپذیر با Docker و Kubernetes برای محیط‌های پژوهشی مقیاس‌پذیر و مشارکتی.",
+      "url": null,
+      "type_key": [
+        "رزومه کامل",
         "بیوانفورماتیک",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "پیاده‌سازی پایپلاین CI/CD برای وب‌اپلیکیشن‌ها",
-      "توضیحات": "پایپلاین‌های یکپارچه‌سازی و استقرار پیوسته را با GitLab CI/CD و Docker برای وب‌اپلیکیشن‌ها پیکربندی و خودکارسازی کردم تا فرایند تحویل قابل‌اعتماد ایجاد شود.",
-      "پیوند": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "پیاده‌سازی پایپ‌لاین CI/CD برای وب‌اپلیکیشن‌ها",
+      "description": "پیکربندی و خودکارسازی پایپ‌لاین‌های یکپارچه‌سازی و استقرار مداوم با GitLab CI/CD و Docker برای وب‌اپلیکیشن‌ها، جهت اطمینان از فرایند تحویل پایدار.",
+      "url": null,
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "توسعه API بک‌اند برای اپلیکیشن‌های داده‌محور",
-      "توضیحات": "APIهای RESTful را با Django Rest Framework و FastAPI طراحی کردم تا بک‌اند اپلیکیشن‌های داده‌محور را فراهم کند، با تمرکز بر کارایی و مقیاس‌پذیری.",
-      "پیوند": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "توسعه API بک‌اند برای اپلیکیشن‌های داده‌محور",
+      "description": "طراحی RESTful APIها با Django Rest Framework و FastAPI برای سرویس‌دهی به‌عنوان بک‌اند اپلیکیشن‌های داده‌محور با تمرکز بر کارایی و مقیاس‌پذیری.",
+      "url": null,
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "داشبورد مصورسازی داده به‌صورت بلادرنگ",
-      "توضیحات": "یک داشبورد بلادرنگ برای پایش و مصورسازی داده‌های جریانی توسعه دادم با استفاده از React، WebSockets و Plotly برای تجربهٔ کاربری تعاملی.",
-      "پیوند": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "داشبورد بصری‌سازی داده بلادرنگ",
+      "description": "توسعه یک داشبورد بلادرنگ برای پایش و بصری‌سازی داده‌های استریم با React، WebSockets و Plotly برای تجربه کاربری تعاملی.",
+      "url": null,
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
         "بیوانفورماتیک",
         "زیست‌فناوری",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "پلتفرم تجارت الکترونیک فول‌استک",
-      "توضیحات": "یک پلتفرم تجارت الکترونیک مقیاس‌پذیر ساختم که مدیریت کاربران، کاتالوگ محصولات و سامانه‌های پرداخت را با Django، React و PostgreSQL یکپارچه می‌کند.",
-      "پیوند": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "پلتفرم فول‌استک تجارت الکترونیک",
+      "description": "ساخت یک پلتفرم تجارت الکترونیک مقیاس‌پذیر با یکپارچه‌سازی مدیریت کاربران، کاتالوگ محصولات و سیستم‌های پرداخت با Django، React و PostgreSQL.",
+      "url": null,
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "اسکریپت‌های اتوماسیون و پایش سیستم لینوکس",
-      "توضیحات": "اسکریپت‌های Bash و Python ایجاد کردم برای خودکارسازی وظایف نگه‌داری سرور، مدیریت لاگ‌ها و پایش منابع در سیستم‌های مبتنی بر لینوکس.",
-      "پیوند": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "اسکریپت‌های اتوماسیون و مانیتورینگ سیستم لینوکس",
+      "description": "ایجاد اسکریپت‌های Bash و Python برای خودکارسازی وظایف نگه‌داری سرور، مدیریت لاگ‌ها و پایش منابع در سیستم‌های مبتنی بر لینوکس.",
+      "url": null,
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
         "بیوانفورماتیک",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "استقرار میکروسرویس‌های مبتنی بر ابر",
-      "توضیحات": "معماری میکروسرویس را پیاده‌سازی کردم و سرویس‌های کانتینری‌شده را روی زیرساخت ابری با Docker و Kubernetes مستقر کردم.",
-      "پیوند": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "استقرار میکروسرویس‌ها روی زیرساخت ابری",
+      "description": "پیاده‌سازی معماری میکروسرویس و استقرار سرویس‌های کانتینری‌شده روی زیرساخت ابری با استفاده از Docker و Kubernetes.",
+      "url": null,
+      "type_key": [
+        "رزومه کامل",
         "برنامه‌نویسی",
-        "دانشگاهی"
+        "آکادمیک"
       ]
     },
     {
-      "عنوان": "توسعه‌دهنده رباتیک و سیستم‌های نهفته — دبیرستان و پروژه‌های شخصی (۲۰۱۱–۲۰۱۵)",
-      "توضیحات": "برنامه‌نویسی میکروکنترلر و توسعه ربات برای مسابقات دانش‌آموزی؛ طراحی و ساخت سامانه‌های رباتیکی نهفته و منطق کنترل.",
-      "پیوند": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "title": "توسعه‌دهنده رباتیک و سامانه‌های امبدد — پروژه‌های دبیرستان و شخصی (۲۰۱۱–۲۰۱۵)",
+      "description": "برنامه‌نویسی میکروکنترلر و توسعه ربات برای مسابقات دانش‌آموزی؛ طراحی و ساخت سامانه‌های رباتیک امبدد و منطق کنترلی.",
+      "url": null,
+      "type_key": [
+        "رزومه کامل",
         "رباتیک",
-        "سیستم‌های نهفته",
-        "پروژه‌های_دانشجویی"
+        "سامانه‌های امبدد",
+        "پروژه‌های دانشجویی"
       ]
     }
   ],
-  "انتشارات": [
+    "publications": [
     {
-      "عنوان": "اثرات ضدباکتریایی نانوذرات نیوزومیِ حاوی وانکومایسین/عناب (Ziziphus) علیه ایزوله‌های بالینی Enterococcus faecium مقاوم به وانکومایسین",
-      "نویسندگان": [
+      "title": "اثرات ضدباکتریایی نانوذرات نیوزومیِ کپسوله‌شده با وانکومایسین/عناب (Ziziphus) علیه ایزوله‌های بالینی Enterococcus faecium مقاوم به وانکومایسین",
+      "authors": [
         "Rysan Jabr Kadhim Alboughanimeh",
-        "et al."
+        "و همکاران"
       ],
-      "نویسندگان_ساخت‌یافته": [
+      "authors_structured": [
         {
-          "متن": "Rysan Jabr Kadhim Alboughanimeh"
+          "literal": "Rysan Jabr Kadhim Alboughanimeh"
         },
         {
-          "متن": "et al."
+          "literal": "و همکاران"
         }
       ],
-      "نوع": "مقاله_پژوهشی",
-      "وضعیت": "در_انتظار_ارسال",
-      "سال": null,
-      "ماه": null,
-      "روز": null,
-      "تاریخ": null,
-      "مجله": null,
-      "جلد": null,
-      "شماره_نشریه": null,
-      "صفحات": null,
-      "شماره_مقاله": null,
-      "DOI": null,
-      "ISSN": null,
-      "پیوند": null,
-      "تاریخ_دسترسی": null,
-      "زبان": null,
-      "ناشر": null,
-      "محل": null,
-      "ویراستاران": null,
-      "عنوان_کتاب": null,
-      "صفحات_فصل": null,
-      "ویرایش": null,
-      "کنفرانس": null,
-      "نوع_مدرک": null,
-      "آدرس_مخزن": null,
-      "نویسنده_مسئول": "Dr. Saeed Samarghandian",
-      "سرپرستان": null,
-      "مؤسسه": null,
-      "دانشکده": null,
-      "مدرسه": null,
-      "ISBN": null,
-      "تاریخ_ارسال": null,
-      "شناسه‌ها": {
-        "DOI": null,
-        "ISBN": null,
-        "ISSN": null,
-        "PMID": null,
-        "PMCID": null,
-        "arXiv": null
+      "type": "مقاله پژوهشی",
+      "status": "در انتظار ارسال",
+      "year": null,
+      "month": null,
+      "day": null,
+      "date": null,
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "issn": null,
+      "url": null,
+      "access_date": null,
+      "language": null,
+      "publisher": null,
+      "place": null,
+      "editors": null,
+      "book_title": null,
+      "chapter_pages": null,
+      "edition": null,
+      "conference": null,
+      "degree_type": null,
+      "repository_url": null,
+      "correspondent": "Dr. Saeed Samarghandian",
+      "supervisors": null,
+      "institution": null,
+      "faculty": null,
+      "school": null,
+      "isbn": null,
+      "submissionDate": null,
+      "identifiers": {
+        "doi": null,
+        "isbn": null,
+        "issn": null,
+        "pmid": null,
+        "pmcid": null,
+        "arxiv": null
       },
-      "یادداشت‌ها": null,
-      "نشانی_وب": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "notes": null,
+      "URL": null,
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک"
       ]
     },
     {
-      "عنوان": "پیشرفت‌های اخیر در رویکردهای متداول و نوین تصفیه پسماند",
-      "نویسندگان": [
+      "title": "پیشرفت‌های اخیر در رویکردهای متداول و نوین تصفیه پسماند",
+      "authors": [
         "Ramin Yazdani",
-        "et al."
+        "و همکاران"
       ],
-      "نویسندگان_ساخت‌یافته": [
+      "authors_structured": [
         {
-          "متن": "Ramin Yazdani"
+          "literal": "Ramin Yazdani"
         },
         {
-          "متن": "et al."
+          "literal": "و همکاران"
         }
       ],
-      "نوع": "فصل_کتاب",
-      "وضعیت": "منتشرشده",
-      "سال": null,
-      "ماه": null,
-      "روز": null,
-      "تاریخ": null,
-      "مجله": null,
-      "جلد": null,
-      "شماره_نشریه": null,
-      "صفحات": null,
-      "شماره_مقاله": null,
-      "DOI": null,
-      "ISSN": null,
-      "پیوند": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003441069-5/recent-advances-conventional-modern-wastewater-treatment-approaches-ramin-yazdani-sharareh-harirchi-mandana-lak-mojdeh-mirshafiei-seyed-ali-nojoumi-mohadasseh-ramezani-behnam-rasekh-fatemeh-yazdian",
-      "تاریخ_دسترسی": null,
-      "زبان": null,
-      "ناشر": "Taylor & Francis",
-      "محل": null,
-      "ویراستاران": null,
-      "عنوان_کتاب": null,
-      "صفحات_فصل": null,
-      "ویرایش": null,
-      "کنفرانس": null,
-      "نوع_مدرک": null,
-      "آدرس_مخزن": null,
-      "نویسنده_مسئول": "Dr. Fatemeh Yazdian",
-      "سرپرستان": null,
-      "مؤسسه": null,
-      "دانشکده": null,
-      "مدرسه": null,
-      "ISBN": "9781032528595",
-      "تاریخ_ارسال": null,
-      "شناسه‌ها": {
-        "DOI": null,
-        "ISBN": "9781032528595",
-        "ISSN": null,
-        "PMID": null,
-        "PMCID": null,
-        "arXiv": null
+      "type": "فصل کتاب",
+      "status": "منتشر شده",
+      "year": null,
+      "month": null,
+      "day": null,
+      "date": null,
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "issn": null,
+      "url": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003441069-5/recent-advances-conventional-modern-wastewater-treatment-approaches-ramin-yazdani-sharareh-harirchi-mandana-lak-mojdeh-mirshafiei-seyed-ali-nojoumi-mohadasseh-ramezani-behnam-rasekh-fatemeh-yazdian",
+      "access_date": null,
+      "language": null,
+      "publisher": "Taylor & Francis",
+      "place": null,
+      "editors": null,
+      "book_title": null,
+      "chapter_pages": null,
+      "edition": null,
+      "conference": null,
+      "degree_type": null,
+      "repository_url": null,
+      "correspondent": "Dr. Fatemeh Yazdian",
+      "supervisors": null,
+      "institution": null,
+      "faculty": null,
+      "school": null,
+      "isbn": "9781032528595",
+      "submissionDate": null,
+      "identifiers": {
+        "doi": null,
+        "isbn": "9781032528595",
+        "issn": null,
+        "pmid": null,
+        "pmcid": null,
+        "arxiv": null
       },
-      "یادداشت‌ها": null,
-      "نشانی_وب": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003441069-5/recent-advances-conventional-modern-wastewater-treatment-approaches-ramin-yazdani-sharareh-harirchi-mandana-lak-mojdeh-mirshafiei-seyed-ali-nojoumi-mohadasseh-ramezani-behnam-rasekh-fatemeh-yazdian",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "notes": null,
+      "URL": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003441069-5/recent-advances-conventional-modern-wastewater-treatment-approaches-ramin-yazdani-sharareh-harirchi-mandana-lak-mojdeh-mirshafiei-seyed-ali-nojoumi-mohadasseh-ramezani-behnam-rasekh-fatemeh-yazdian",
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک"
       ]
     },
     {
-      "عنوان": "نیوزوم‌های بارگذاری‌شده با سفتازیدیم به‌عنوان عامل ضدباکتریایی مؤثر علیه ایزوله‌های بالینی Pseudomonas aeruginosa تشکیل‌دهنده بیوفیلم",
-      "نویسندگان": [
+      "title": "نیوزوم‌های بارگذاری‌شده با سف‌تازیدیم به‌عنوان یک عامل ضدباکتریایی مؤثر علیه ایزوله‌های بالینی Pseudomonas aeruginosa تشکیل‌دهندهٔ بیوفیلم",
+      "authors": [
         "Yaqoob Thajil Al-Bozouni",
-        "et al."
+        "و همکاران"
       ],
-      "نویسندگان_ساخت‌یافته": [
+      "authors_structured": [
         {
-          "متن": "Yaqoob Thajil Al-Bozouni"
+          "literal": "Yaqoob Thajil Al-Bozouni"
         },
         {
-          "متن": "et al."
+          "literal": "و همکاران"
         }
       ],
-      "نوع": "مقاله_پژوهشی",
-      "وضعیت": "در_انتظار_ارسال",
-      "سال": null,
-      "ماه": null,
-      "روز": null,
-      "تاریخ": null,
-      "مجله": null,
-      "جلد": null,
-      "شماره_نشریه": null,
-      "صفحات": null,
-      "شماره_مقاله": null,
-      "DOI": null,
-      "ISSN": null,
-      "پیوند": null,
-      "تاریخ_دسترسی": null,
-      "زبان": null,
-      "ناشر": null,
-      "محل": null,
-      "ویراستاران": null,
-      "عنوان_کتاب": null,
-      "صفحات_فصل": null,
-      "ویرایش": null,
-      "کنفرانس": null,
-      "نوع_مدرک": null,
-      "آدرس_مخزن": null,
-      "نویسنده_مسئول": "Dr. Saeed Samarghandian",
-      "سرپرستان": null,
-      "مؤسسه": null,
-      "دانشکده": null,
-      "مدرسه": null,
-      "ISBN": null,
-      "تاریخ_ارسال": null,
-      "شناسه‌ها": {
-        "DOI": null,
-        "ISBN": null,
-        "ISSN": null,
-        "PMID": null,
-        "PMCID": null,
-        "arXiv": null
+      "type": "مقاله پژوهشی",
+      "status": "در انتظار ارسال",
+      "year": null,
+      "month": null,
+      "day": null,
+      "date": null,
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "issn": null,
+      "url": null,
+      "access_date": null,
+      "language": null,
+      "publisher": null,
+      "place": null,
+      "editors": null,
+      "book_title": null,
+      "chapter_pages": null,
+      "edition": null,
+      "conference": null,
+      "degree_type": null,
+      "repository_url": null,
+      "correspondent": "Dr. Saeed Samarghandian",
+      "supervisors": null,
+      "institution": null,
+      "faculty": null,
+      "school": null,
+      "isbn": null,
+      "submissionDate": null,
+      "identifiers": {
+        "doi": null,
+        "isbn": null,
+        "issn": null,
+        "pmid": null,
+        "pmcid": null,
+        "arxiv": null
       },
-      "یادداشت‌ها": null,
-      "نشانی_وب": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "notes": null,
+      "URL": null,
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک"
       ]
     },
     {
-      "عنوان": "مسیر آپوپتوز وابسته به BCL-2 به‌عنوان هدفی امیدبخش برای نانوذرات نقره زیست‌سنتز: مقاله مروری",
-      "نویسندگان": [
+      "title": "مسیر آپوپتوزِ میانجی‌گری‌شده توسط BCL‑2 به‌عنوان هدفی امیدبخش برای نانوذرات نقرهٔ زیست‌سنتزشده: مقالهٔ مروری",
+      "authors": [
         "Pooria Moulavi",
-        "et al."
+        "و همکاران"
       ],
-      "نویسندگان_ساخت‌یافته": [
+      "authors_structured": [
         {
-          "متن": "Pooria Moulavi"
+          "literal": "Pooria Moulavi"
         },
         {
-          "متن": "et al."
+          "literal": "و همکاران"
         }
       ],
-      "نوع": "مقاله_مروری",
-      "وضعیت": "در_انتظار_ارسال",
-      "سال": null,
-      "ماه": null,
-      "روز": null,
-      "تاریخ": null,
-      "مجله": null,
-      "جلد": null,
-      "شماره_نشریه": null,
-      "صفحات": null,
-      "شماره_مقاله": null,
-      "DOI": null,
-      "ISSN": null,
-      "پیوند": null,
-      "تاریخ_دسترسی": null,
-      "زبان": null,
-      "ناشر": null,
-      "محل": null,
-      "ویراستاران": null,
-      "عنوان_کتاب": null,
-      "صفحات_فصل": null,
-      "ویرایش": null,
-      "کنفرانس": null,
-      "نوع_مدرک": null,
-      "آدرس_مخزن": null,
-      "نویسنده_مسئول": "Dr. Saeed Samarghandian",
-      "سرپرستان": null,
-      "مؤسسه": null,
-      "دانشکده": null,
-      "مدرسه": null,
-      "ISBN": null,
-      "تاریخ_ارسال": null,
-      "شناسه‌ها": {
-        "DOI": null,
-        "ISBN": null,
-        "ISSN": null,
-        "PMID": null,
-        "PMCID": null,
-        "arXiv": null
+      "type": "مقاله مروری",
+      "status": "در انتظار ارسال",
+      "year": null,
+      "month": null,
+      "day": null,
+      "date": null,
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "issn": null,
+      "url": null,
+      "access_date": null,
+      "language": null,
+      "publisher": null,
+      "place": null,
+      "editors": null,
+      "book_title": null,
+      "chapter_pages": null,
+      "edition": null,
+      "conference": null,
+      "degree_type": null,
+      "repository_url": null,
+      "correspondent": "Dr. Saeed Samarghandian",
+      "supervisors": null,
+      "institution": null,
+      "faculty": null,
+      "school": null,
+      "isbn": null,
+      "submissionDate": null,
+      "identifiers": {
+        "doi": null,
+        "isbn": null,
+        "issn": null,
+        "pmid": null,
+        "pmcid": null,
+        "arxiv": null
       },
-      "یادداشت‌ها": null,
-      "نشانی_وب": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "notes": null,
+      "URL": null,
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک"
       ]
     },
     {
-      "عنوان": "تحلیل مبتنی بر اُمیکس و پروفایلینگ ژنی برای شناسایی سویه‌های Lactobacillus جهت تعدیل نسبت HDL/LDL در کاربردهای دارویی",
-      "نویسندگان": [
+      "title": "تحلیل مبتنی بر اُمیکس و پروفایلینگ ژنی برای شناسایی سویه‌های Lactobacillus جهت تعدیل نسبت HDL/LDL در کاربردهای دارویی",
+      "authors": [
         "Ramin Yazdani"
       ],
-      "نویسندگان_ساخت‌یافته": [
+      "authors_structured": [
         {
-          "متن": "Ramin Yazdani"
+          "literal": "Ramin Yazdani"
         }
       ],
-      "نوع": "پایان‌نامه_کارشناسی_ارشد",
-      "وضعیت": "ارسال‌شده",
-      "سال": 2024,
-      "ماه": 9,
-      "روز": 15,
-      "تاریخ": "2024-09-15",
-      "مجله": null,
-      "جلد": null,
-      "شماره_نشریه": null,
-      "صفحات": null,
-      "شماره_مقاله": null,
-      "DOI": null,
-      "ISSN": null,
-      "پیوند": null,
-      "تاریخ_دسترسی": null,
-      "زبان": null,
-      "ناشر": null,
-      "محل": null,
-      "ویراستاران": null,
-      "عنوان_کتاب": null,
-      "صفحات_فصل": null,
-      "ویرایش": null,
-      "کنفرانس": null,
-      "نوع_مدرک": "Master's thesis",
-      "آدرس_مخزن": null,
-      "نویسنده_مسئول": "Dr. Mohammad Barshan Tashnizi",
-      "سرپرستان": [
+      "type": "پایان‌نامه کارشناسی ارشد",
+      "status": "تحویل/ارسال شده",
+      "year": 2024,
+      "month": 9,
+      "day": 15,
+      "date": "2024-09-15",
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "issn": null,
+      "url": null,
+      "access_date": null,
+      "language": null,
+      "publisher": null,
+      "place": null,
+      "editors": null,
+      "book_title": null,
+      "chapter_pages": null,
+      "edition": null,
+      "conference": null,
+      "degree_type": "پایان‌نامه کارشناسی ارشد",
+      "repository_url": null,
+      "correspondent": "Dr. Mohammad Barshan Tashnizi",
+      "supervisors": [
         "Dr. Mohammad Barshan Tashnizi",
         "Dr. Najaf Allahyari Fard"
       ],
-      "مؤسسه": "دانشگاه تهران",
-      "دانشکده": "دانشکده علوم و فناوری‌های نوین",
-      "مدرسه": "مدرسه مهندسی علوم زیستی",
-      "ISBN": null,
-      "تاریخ_ارسال": "2024-09-15",
-      "شناسه‌ها": {
-        "DOI": null,
-        "ISBN": null,
-        "ISSN": null,
-        "PMID": null,
-        "PMCID": null,
-        "arXiv": null
+      "institution": "دانشگاه تهران",
+      "faculty": "دانشکده علوم و فناوری‌های نوین",
+      "school": "مدرسه مهندسی علوم زیستی",
+      "isbn": null,
+      "submissionDate": "2024-09-15",
+      "identifiers": {
+        "doi": null,
+        "isbn": null,
+        "issn": null,
+        "pmid": null,
+        "pmcid": null,
+        "arxiv": null
       },
-      "یادداشت‌ها": null,
-      "نشانی_وب": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "notes": null,
+      "URL": null,
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک"
       ]
     }
   ],
-  "معرف‌ها": [
+   "references": [
     {
-      "نام": "Shokouh Shomeil Zadeh Shoushtari",
-      "سمت": "کارمند علمی / پژوهشگر",
-      "دپارتمان": "دپارتمان عصب‌روان‌شناسی رشدی",
-      "مؤسسه": "دانشگاه تریر",
-      "موقعیت": "تریر, آلمان",
-      "ایمیل": [
+      "name": "Shokouh Shomeil Zadeh Shoushtari",
+      "position": "پژوهشگر / دستیار پژوهشی (کارمند علمی)",
+      "department": "دپارتمان نوروپسیکولوژی رشد",
+      "institution": "دانشگاه تریر",
+      "location": "تریر، آلمان",
+      "email": [
         "Shoushtari@uni-trier.de"
       ],
-      "تلفن": null,
-      "نشانی_وب": null,
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "phone": null,
+      "URL": null,
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک"
       ]
     },
     {
-      "نام": "Prof. Babak Khalili Hadad",
-      "سمت": "استادیار، بیوشیمی‌دان، عضو AAUP",
-      "دپارتمان": "دپارتمان زیست‌فناوری",
-      "مؤسسه": "دانشگاه آزاد اسلامی، واحد رودهن",
-      "موقعیت": "رودهن, ایران",
-      "ایمیل": [
+      "name": "Prof. Babak Khalili Hadad",
+      "position": "استادیار، بیوشیمیست، عضو AAUP",
+      "department": "دپارتمان زیست‌فناوری",
+      "institution": "دانشگاه آزاد اسلامی، واحد رودهن",
+      "location": "رودهن، ایران",
+      "email": [
         "Babakkhalili.hadad@ciu.edu.ge",
         "Ba.khalili@iau.ac.ir"
       ],
-      "تلفن": null,
-      "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Babak__Khalili_Hadad.pdf",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "phone": null,
+      "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Babak__Khalili_Hadad.pdf",
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک"
       ]
     },
     {
-      "نام": "Prof. Hedieh Dibah",
-      "سمت": "استادیار، دانشکده کشاورزی و علوم",
-      "دپارتمان": "دپارتمان زیست‌فناوری",
-      "مؤسسه": "دانشگاه آزاد اسلامی، واحد رودهن",
-      "موقعیت": "رودهن, ایران",
-      "ایمیل": [
+      "name": "Prof. Hedieh Dibah",
+      "position": "استادیار، دانشکده کشاورزی و علوم",
+      "department": "دپارتمان زیست‌فناوری",
+      "institution": "دانشگاه آزاد اسلامی، واحد رودهن",
+      "location": "رودهن، ایران",
+      "email": [
         "biodibio@yahoo.com"
       ],
-      "تلفن": null,
-      "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Hedieh_Dibah.pdf",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "phone": null,
+      "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Hedieh_Dibah.pdf",
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک"
       ]
     },
     {
-      "نام": "Prof. Simin Nabizadeh",
-      "سمت": "استادیار، دانشکده کشاورزی و علوم",
-      "دپارتمان": "دپارتمان زیست‌فناوری",
-      "مؤسسه": "دانشگاه آزاد اسلامی، واحد رودهن",
-      "موقعیت": "رودهن, ایران",
-      "ایمیل": [
+      "name": "Prof. Simin Nabizadeh",
+      "position": "استادیار، دانشکده کشاورزی و علوم",
+      "department": "دپارتمان زیست‌فناوری",
+      "institution": "دانشگاه آزاد اسلامی، واحد رودهن",
+      "location": "رودهن، ایران",
+      "email": [
         "Nabizadeh_simin@gmail.com"
       ],
-      "تلفن": [
+      "phone": [
         {
-          "قالب_بندی_شده": "+98 912 396 1780",
-          "کد_کشور": "+98",
-          "شماره": "9123961780"
+          "formatted": "+98 912 396 1780",
+          "countryCode": "+98",
+          "number": "9123961780"
         }
       ],
-      "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Simin_Nabizadeh.pdf",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Simin_Nabizadeh.pdf",
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک"
       ]
     },
     {
-      "نام": "Dr. Mohammad Amin Boojari",
-      "سمت": "مهندسی بیوفرایند، متخصص تحقیق‌وتوسعه در RFS",
-      "دپارتمان": null,
-      "مؤسسه": "دانشگاه تربیت مدرس",
-      "موقعیت": "تهران, ایران",
-      "ایمیل": [
+      "name": "Dr. Mohammad Amin Boojari",
+      "position": "مهندسی بیوفرایند، متخصص تحقیق و توسعه در RFS",
+      "department": null,
+      "institution": "دانشگاه تربیت مدرس",
+      "location": "تهران، ایران",
+      "email": [
         "a.boojari@modares.ac.ir"
       ],
-      "تلفن": [
+      "phone": [
         {
-          "قالب_بندی_شده": "+98 910 596 9589",
-          "کد_کشور": "+98",
-          "شماره": "9105969589"
+          "formatted": "+98 910 596 9589",
+          "countryCode": "+98",
+          "number": "9105969589"
         }
       ],
-      "نشانی_وب": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Mohammad_Amin_Boojari.pdf",
-      "کلید_نوع": [
-        "رزومه_کامل",
+      "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/Reference_Mohammad_Amin_Boojari.pdf",
+      "type_key": [
+        "رزومه کامل",
         "زیست‌فناوری",
-        "دانشگاهی",
+        "آکادمیک",
         "بیوانفورماتیک"
       ]
     }
   ]
+
+
 }
