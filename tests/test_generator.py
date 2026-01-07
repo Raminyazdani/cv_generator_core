@@ -144,6 +144,45 @@ class TestGenerateCV:
         
         assert result.success is False
         assert "basics" in result.error.lower()
+    
+    def test_generate_cv_copies_cls_file(self, sample_cv, lang_map_dir, tmp_path):
+        """Test that awesome-cv.cls is copied to result directory for compilation."""
+        from unittest.mock import patch
+        from cv_generator.paths import get_repo_root
+        
+        result_dir = tmp_path / "result"
+        output_dir = tmp_path / "output"
+        output_dir.mkdir()
+        
+        # Load language map
+        lang_map = load_lang_map(lang_map_dir)
+        
+        # Mock compile_latex to skip actual xelatex execution,
+        # while still triggering the cls file copy logic (which runs before compilation)
+        with patch('cv_generator.generator.compile_latex') as mock_compile:
+            mock_compile.return_value = None  # Skip actual compilation
+            
+            result = generate_cv(
+                sample_cv,
+                templates_dir=get_default_templates_path(),
+                output_dir=output_dir,
+                result_dir=result_dir,
+                lang_map=lang_map,
+                dry_run=False,  # Not dry run - triggers the copy
+                keep_intermediate=True
+            )
+        
+        # The awesome-cv.cls file should be copied to the tex file's directory
+        repo_root = get_repo_root()
+        cls_source = repo_root / "awesome-cv.cls"
+        expected_cls = result_dir / "test" / "en" / "awesome-cv.cls"
+        
+        # Only verify if the source cls file exists (it should in the real repo)
+        if cls_source.exists():
+            assert expected_cls.exists(), \
+                f"awesome-cv.cls should be copied to {expected_cls}"
+            # Verify it's the same content
+            assert expected_cls.read_bytes() == cls_source.read_bytes()
 
 
 class TestGenerateAllCVs:

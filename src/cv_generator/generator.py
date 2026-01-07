@@ -8,6 +8,7 @@ Provides the main functions for:
 """
 
 import logging
+import shutil
 from pathlib import Path
 from typing import Optional, List, Dict, Any
 
@@ -27,7 +28,8 @@ from .paths import (
     get_default_cvs_path,
     get_default_templates_path,
     get_default_output_path,
-    get_default_result_path
+    get_default_result_path,
+    get_repo_root
 )
 from .errors import TemplateError, ConfigurationError
 
@@ -242,6 +244,22 @@ def generate_cv(
             base_name, lang, True,
             tex_path=rendered_tex_path
         )
+    
+    # Copy awesome-cv.cls to the tex file directory.
+    # The layout.tex template uses \documentclass[...]{./awesome-cv}, which tells
+    # LaTeX to look for awesome-cv.cls in the same directory as the .tex file.
+    # Since xelatex runs with cwd=tex_file.parent, we must ensure the class file
+    # is present there. Without this copy, LaTeX fails with:
+    #   "! LaTeX Error: File `./awesome-cv.cls' not found."
+    repo_root = get_repo_root()
+    cls_source = repo_root / "awesome-cv.cls"
+    cls_dest = rendered_tex_path.parent / "awesome-cv.cls"
+    if cls_source.exists() and not cls_dest.exists():
+        try:
+            shutil.copy2(cls_source, cls_dest)
+            logger.debug(f"Copied awesome-cv.cls to {cls_dest}")
+        except OSError as e:
+            logger.warning(f"Could not copy awesome-cv.cls: {e}")
     
     # Compile LaTeX
     logger.info(f"➡️  Compile with: xelatex {rendered_tex_path}")
