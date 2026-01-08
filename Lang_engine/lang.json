@@ -309,6 +309,11 @@
     "en": "countryCode",
     "fa": "کد کشور"
   },
+  "curriculum_vitae": {
+    "de": "Lebenslauf",
+    "en": "Curriculum Vitae",
+    "fa": "رزومه"
+  },
   "date": {
     "de": "Datum",
     "en": "date",

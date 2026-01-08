@@ -569,6 +569,96 @@ If you still hit issues, ensure:
 
 ---
 
+## Right-to-Left (RTL) and Farsi/Persian Support
+
+This CV generator includes built-in support for right-to-left (RTL) languages, specifically Persian (Farsi) and Arabic.
+
+### How It Works
+
+The generator automatically detects RTL languages from the CV filename:
+- `name_fa.json` - Persian (Farsi)
+- `name_ar.json` - Arabic  
+- `name_he.json` - Hebrew
+
+When an RTL language is detected, the generator:
+1. Uses `layout_rtl.tex` instead of `layout.tex`
+2. Uses `awesome-cv-rtl.cls` which adds RTL support via polyglossia and bidi packages
+3. Sets `IS_RTL = true` in template variables
+
+### Requirements for RTL/Farsi CVs
+
+1. **XeLaTeX compiler**: RTL support requires XeLaTeX (not pdfLaTeX). This is already the default compiler used by the generator.
+
+2. **Persian Font**: You need a Persian-capable font installed on your system. The class tries these fonts in order:
+   - **Vazirmatn** (recommended) - A modern, open-source Persian font
+     - Download from: https://github.com/rastikerdar/vazirmatn
+   - **XB Niloofar** - Classic Persian font
+   - **B Nazanin** - Traditional Persian font
+
+3. **LaTeX Packages**: Ensure you have these packages installed:
+   - `polyglossia` - for multilingual support
+   - `bidi` - for bidirectional text
+
+### Creating a Farsi CV
+
+1. Create your CV JSON file with a Farsi suffix:
+   ```text
+   data/cvs/yourname_fa.json
+   ```
+
+2. Use Persian text in your JSON data:
+   ```json
+   {
+     "basics": [
+       {
+         "fname": "رامین",
+         "lname": "یزدانی",
+         "label": ["توسعه‌دهنده", "دانشمند داده"]
+       }
+     ]
+   }
+   ```
+
+3. Run the generator:
+   ```bash
+   python generate_cv.py
+   ```
+
+4. The output PDF will be created with proper RTL layout:
+   ```text
+   output/yourname_fa.pdf
+   ```
+
+### Installing Vazirmatn Font
+
+**Windows:**
+1. Download `Vazirmatn.zip` from https://github.com/rastikerdar/vazirmatn/releases
+2. Extract and install the `.ttf` files (right-click → Install)
+3. Restart your LaTeX environment if it was running
+
+**Linux:**
+```bash
+# Download and extract to fonts directory
+wget https://github.com/rastikerdar/vazirmatn/releases/download/v33.003/vazirmatn-v33.003.zip
+unzip vazirmatn-v33.003.zip -d ~/.local/share/fonts/
+fc-cache -fv
+```
+
+**macOS:**
+1. Download from https://github.com/rastikerdar/vazirmatn/releases
+2. Double-click the `.ttf` files to install via Font Book
+
+### Customizing RTL Templates
+
+If you need to customize the RTL layout:
+
+- **`templates/layout_rtl.tex`** - The main RTL document layout
+- **`awesome-cv-rtl.cls`** - The RTL class file with font and direction settings
+
+Both files are separate from their LTR counterparts to ensure backward compatibility.
+
+---
+
 ## Development Notes
 
 - **Adding a new section**:

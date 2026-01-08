@@ -11,6 +11,7 @@ Usage:
 
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -137,14 +138,37 @@ def test_cv_rendering(cv_path: Path, env: Environment) -> tuple:
     
     people_name = cv_path.stem
     data["OPT_NAME"] = people_name
+    
+    # Detect RTL language from filename (e.g., ramin_fa.json)
+    RTL_LANGUAGES = {"fa", "ar", "he"}
+    match = re.match(r'^(.+?)[-_]([a-z]{2,3})$', people_name)
+    if match:
+        base_name, lang = match.group(1), match.group(2)
+    else:
+        base_name, lang = people_name, "en"
+    is_rtl = lang in RTL_LANGUAGES
+    
     env_vars = {**data}
+    env_vars["LANG"] = lang
+    env_vars["BASE_NAME"] = base_name
+    env_vars["IS_RTL"] = is_rtl
+    
+    # Add translation function stub for testing
+    def t(key, default=None, escape=True):
+        result = default if default is not None else key
+        if escape:
+            return latex_escape(result)
+        return result
+    env.globals["t"] = t
+    env.filters["tr"] = lambda key: latex_escape(key)
+    env.filters["tr_raw"] = lambda key: key
     
     # Get template files
     template_files = [f for f in os.listdir(TEMPLATE_DIR) if f.endswith('.tex')]
     
-    # Render each template (except layout)
+    # Render each template (except layout templates)
     for tmpl_file in template_files:
-        if tmpl_file == "layout.tex":
+        if tmpl_file.startswith("layout"):
             continue
             
         try:
@@ -157,13 +181,15 @@ def test_cv_rendering(cv_path: Path, env: Environment) -> tuple:
             errors.append(f"Template error in {tmpl_file}: {e}")
     
     # Render layout if no errors so far
+    # Select appropriate layout based on RTL
     if not errors:
+        layout_template_name = "layout_rtl.tex" if is_rtl else "layout.tex"
         try:
-            layout_template = env.get_template("layout.tex")
+            layout_template = env.get_template(layout_template_name)
             rendered_layout = layout_template.render(env_vars)
             rendered_sections["layout"] = rendered_layout
         except TemplateError as e:
-            errors.append(f"Layout template error: {e}")
+            errors.append(f"Layout template error ({layout_template_name}): {e}")
     
     success = len(errors) == 0
     return success, rendered_sections, errors, data
