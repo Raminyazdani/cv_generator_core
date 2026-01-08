@@ -429,11 +429,11 @@ def process_cv_file(people, lang_map, section_templates, cache):
     
     # Generate PDF output name with language suffix
     pdf_name = f"{base_name}_{lang}.pdf"
-    comand = fr"xelatex -enable-etex -enable-installer -enable-mltex -interaction=nonstopmode -file-line-error -synctex=1 -output-directory=.\output {RENDERED_OUTPUT} "
+    command = fr"xelatex -enable-etex -enable-installer -enable-mltex -interaction=nonstopmode -file-line-error -synctex=1 -output-directory=.\output {RENDERED_OUTPUT} "
 
     # run the command to compile the LaTeX file
-    log_verbose(f"    🔧 Running: {comand}")
-    os.system(comand)
+    log_verbose(f"    🔧 Running: {command}")
+    os.system(command)
     
     # Handle output files
     output_dir = os.path.join(BASE_DIR, "output")
@@ -574,12 +574,8 @@ Change Detection:
 
 
 # -------------------------
-# Entry Point
+# Cleanup Utilities (available for manual cleanup)
 # -------------------------
-if __name__ == "__main__":
-    main()
-
-
 def _clear_readonly_windows(root: Path) -> None:
     # Best-effort: remove "Read-only" attribute recursively (Windows)
     if os.name == "nt":
@@ -603,6 +599,12 @@ def _make_writable(path: str) -> None:
 
 
 def rmtree_reliable(path: str | os.PathLike, *, attempts: int = 25) -> None:
+    """
+    Reliably remove a directory tree, with retry logic for Windows file locks.
+    
+    Note: This function is available for cleanup but not called automatically
+    to preserve generated results. Call manually if needed.
+    """
     p = Path(path)
 
     if not p.exists():
@@ -640,5 +642,8 @@ def rmtree_reliable(path: str | os.PathLike, *, attempts: int = 25) -> None:
     shutil.rmtree(p, onerror=onerror)
 
 
-# Note: rmtree_reliable is available for cleanup but not called automatically
-# to preserve generated results. Call manually if needed.
+# -------------------------
+# Entry Point
+# -------------------------
+if __name__ == "__main__":
+    main()
