@@ -15,6 +15,8 @@ import re
 import sys
 from pathlib import Path
 
+import pytest
+
 # Add project root to path
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_ROOT = SCRIPT_DIR.parent
@@ -118,6 +120,16 @@ def create_jinja_env():
     env.globals["SHOW_COMMENTS"] = True
     
     return env
+
+
+@pytest.fixture(params=sorted(CVS_PATH.glob("*.json")))
+def cv_path(request: pytest.FixtureRequest) -> Path:
+    return request.param
+
+
+@pytest.fixture
+def env() -> Environment:
+    return create_jinja_env()
 
 
 def test_cv_rendering(cv_path: Path, env: Environment) -> tuple:
