@@ -58,14 +58,23 @@ def load_cache():
 
 def save_cache(cache):
     """Save the hash cache to the cache file."""
+    cache_path = Path(CACHE_FILE)
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    temp_path = cache_path.with_suffix(".tmp")
     try:
-        with open(CACHE_FILE, "w", encoding="utf-8") as f:
+        with open(temp_path, "w", encoding="utf-8") as f:
             json.dump(cache, f, indent=2)
+        os.replace(temp_path, cache_path)
     except IOError as e:
         print(f"⚠️  Warning: Could not save cache: {e}")
+        try:
+            if temp_path.exists():
+                temp_path.unlink()
+        except OSError:
+            pass
 
 
-def compute_file_hash(filepath):
+def compute_file_hash(filepath: Path):
     """Compute SHA-256 hash of a file's contents."""
     hasher = hashlib.sha256()
     try:
@@ -77,19 +86,88 @@ def compute_file_hash(filepath):
         return None
 
 
-def has_file_changed(filepath, cache,output_path,pdf_name):
+def normalize_path_for_cache(path: Path) -> str:
+    """Normalize a path for cache key stability across platforms."""
+    resolved = path.expanduser().resolve()
+    normalized = os.path.normcase(str(resolved))
+    return normalized
+
+
+def cache_key_for_path(path: Path) -> str:
+    """Return a canonical cache key for a given input file path."""
+    return normalize_path_for_cache(path)
+
+
+def has_file_changed(filepath: Path, cache, output_pdf_path: Path):
     """
     Check if a file has changed since last processing.
-    
+
     Returns (changed: bool, current_hash: str)
     """
     current_hash = compute_file_hash(filepath)
-    if current_hash is None or not os.path.exists(os.path.join(output_path,pdf_name)):
+    if current_hash is None:
         return True, None
-    
-    cached_hash = cache.get(filepath)
-    changed = cached_hash != current_hash
-    return changed, current_hash
+
+    cache_key = cache_key_for_path(filepath)
+    cached_hash = cache.get(cache_key)
+    if cached_hash == current_hash and output_pdf_path.exists():
+        return False, current_hash
+    return True, current_hash
+
+
+def gather_input_files(files, default_dir: Path) -> list[Path]:
+    """Resolve file and directory arguments into a list of JSON files."""
+    if not files:
+        candidates = [p for p in default_dir.iterdir() if p.is_file()]
+    else:
+        candidates = []
+        for entry in files:
+            path = Path(entry).expanduser()
+            if not path.is_absolute() and not path.exists():
+                candidate = default_dir / entry
+                if candidate.exists():
+                    path = candidate
+            candidates.append(path)
+
+    resolved_files = []
+    for candidate in candidates:
+        if candidate.is_dir():
+            for item in candidate.iterdir():
+                if item.is_file() and item.suffix.lower() == ".json":
+                    resolved_files.append(item)
+            continue
+        if candidate.is_file():
+            if candidate.suffix.lower() == ".json":
+                resolved_files.append(candidate)
+            else:
+                log_verbose(f"  ⏭️  Skipping {candidate}: not a JSON file")
+            continue
+        resolved_files.append(candidate)
+
+    deduped = []
+    seen = set()
+    for item in resolved_files:
+        try:
+            key = normalize_path_for_cache(item)
+        except FileNotFoundError:
+            key = os.path.normcase(str(item))
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(item)
+    return deduped
+
+
+def resolve_output_target(output_path: str, input_files: list[Path]) -> tuple[Path, Path | None]:
+    """Resolve output path configuration and validate constraints."""
+    output_target = Path(output_path).expanduser()
+    if output_target.suffix.lower() == ".pdf":
+        if len(input_files) != 1:
+            raise SystemExit("❌ --output-path may be a PDF file only when processing a single input file.")
+        return output_target.parent, output_target
+    if output_target.exists() and output_target.is_file():
+        raise SystemExit("❌ --output-path must be a directory when processing multiple outputs.")
+    return output_target, None
 
 
 # -------------------------
@@ -176,7 +254,7 @@ def parse_cv_filename(filename):
     Returns (base_name, lang)
     """
     # Remove .json extension
-    name = filename[:-5] if filename.endswith('.json') else filename
+    name = filename[:-5] if filename.lower().endswith('.json') else filename
     
     # Pattern: name-lang or name_lang where lang is 2-3 lowercase letters
     match = re.match(r'^(.+?)[-_]([a-z]{2,3})$', name)
@@ -272,44 +350,47 @@ def make_tr_raw_filter(lang_map, lang):
 # -------------------------
 # Process Single CV File
 # -------------------------
-def process_cv_file(people, lang_map, section_templates, cache, output_path):
+def process_cv_file(people_path: Path, lang_map, section_templates, cache, output_dir: Path, output_file: Path | None):
     """
     Process a single CV JSON file and generate PDF.
     
     Args:
-        people: Filename of the JSON file (e.g., 'ramin_en.json')
+        people_path: Path to the JSON file
         lang_map: Translation mapping dictionary
         section_templates: List of template files to render
         cache: Hash cache dictionary for change detection
-        output_path: Optional directory or PDF file path for generated output
+        output_dir: Directory for generated output PDFs
+        output_file: Optional full PDF output path (only for single input)
     
     Returns:
         tuple: (processed: bool, skipped: bool, current_hash: str or None)
     """
-    if not people.endswith('.json'):
-        log_verbose(f"  ⏭️  Skipping {people}: not a JSON file")
+    if people_path.suffix.lower() != ".json":
+        log_verbose(f"  ⏭️  Skipping {people_path}: not a JSON file")
         return False, True, None
-    orig_output_path = output_path
+
+    orig_output_dir = output_dir
     # Parse filename to get base_name and language
-    base_name, lang = parse_cv_filename(people)
+    base_name, lang = parse_cv_filename(people_path.stem + people_path.suffix)
     is_rtl = lang in RTL_LANGUAGES
     
-    JSON_PATH = os.path.join(CVS_PATH, people)
+    JSON_PATH = people_path
 
     # Check if file exists
-    if not os.path.exists(JSON_PATH):
+    if not JSON_PATH.exists():
         print(f"❌ File not found: {JSON_PATH}")
         return False, False, None
     pdf_name = f"{base_name}_{lang}.pdf"
+    output_pdf_path = output_file or (output_dir / pdf_name)
 
     # Check if file has changed using cache
-    changed, current_hash = has_file_changed(JSON_PATH, cache,output_path,pdf_name)
+    changed, current_hash = has_file_changed(JSON_PATH, cache, output_pdf_path)
     if not changed:
-        log_verbose(f"  ⏭️  Skipping {people}: file unchanged (cached)")
-        print(f"⏭️  Skipping {people}: no changes detected")
+        log_verbose(f"  ⏭️  Skipping {people_path}: file unchanged (cached)")
+        print(f"⏭️  Skipping {people_path}: no changes detected")
         return False, True, current_hash
 
-    log_verbose(f"  📄 Processing {people} (base: {base_name}, lang: {lang}, RTL: {is_rtl})")
+    log_verbose(f"  📄 Processing {people_path} (base: {base_name}, lang: {lang}, RTL: {is_rtl})")
 
     # -------------------------
     # Load data (no eval, no hacks)
@@ -319,7 +400,7 @@ def process_cv_file(people, lang_map, section_templates, cache, output_path):
 
     # Validate required structure - skip files that don't have the expected schema
     if "basics" not in data:
-        print(f"⚠️  Skipping {people}: missing 'basics' key (incompatible schema)")
+        print(f"⚠️  Skipping {people_path}: missing 'basics' key (incompatible schema)")
         return False, True, None
 
     # Create output directory structure: result/<base_name>/<lang>/sections/
@@ -398,8 +479,8 @@ def process_cv_file(people, lang_map, section_templates, cache, output_path):
 
         # write section file
         section_name = os.path.splitext(tmpl_file)[0]
-        output_path = os.path.join(OUTPUT_DIR, f"{section_name}.tex")
-        with open(output_path, "w", encoding="utf-8") as f:
+        section_output_path = os.path.join(OUTPUT_DIR, f"{section_name}.tex")
+        with open(section_output_path, "w", encoding="utf-8") as f:
             f.write(rendered)
 
         # also store for inline embedding in layout
@@ -431,23 +512,36 @@ def process_cv_file(people, lang_map, section_templates, cache, output_path):
     
     # Generate PDF output name with language suffix
     pdf_name = f"{base_name}_{lang}.pdf"
-    command = fr"xelatex -enable-etex -enable-installer -enable-mltex -interaction=nonstopmode -file-line-error -synctex=1 -output-directory={orig_output_path} {RENDERED_OUTPUT} "
+    command = [
+        "xelatex",
+        "-enable-etex",
+        "-enable-installer",
+        "-enable-mltex",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-synctex=1",
+        f"-output-directory={orig_output_dir}",
+        RENDERED_OUTPUT,
+    ]
 
     # run the command to compile the LaTeX file
-    log_verbose(f"    🔧 Running: {command}")
-    os.system(command)
+    log_verbose(f"    🔧 Running: {' '.join(command)}")
+    subprocess.run(command, check=False)
 
     # Handle output files
-    output_dir = orig_output_path
-    if os.path.exists(output_dir):
+    output_dir = orig_output_dir
+    if output_dir.exists():
         for file in os.listdir(output_dir):
-            file_path = os.path.join(output_dir, file)
+            file_path = output_dir / file
             if not file.endswith(".pdf"):
                 os.remove(file_path)
             if file.endswith("rendered.pdf"):
-                shutil.move(file_path, os.path.join(output_dir, pdf_name))
-                log_verbose(f"    📄 PDF generated: {pdf_name}")
+                shutil.move(file_path, output_pdf_path)
+                log_verbose(f"    📄 PDF generated: {output_pdf_path.name}")
 
+    if not output_pdf_path.exists():
+        print(f"❌ PDF generation failed for {people_path}")
+        return False, False, None
 
     return True, False, current_hash
 
@@ -513,10 +607,16 @@ Change Detection:
         os.makedirs(RESULT_DIR)
         log_verbose(f"📁 Created result directory: {RESULT_DIR}")
     
-    output_dir = output_path
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-        log_verbose(f"📁 Created output directory: {output_dir}")
+    files_to_process = gather_input_files(args.files, Path(CVS_PATH))
+    if not files_to_process:
+        print("❌ No input files found to process.")
+        return
+
+    output_dir, output_file = resolve_output_target(output_path, files_to_process)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    log_verbose(f"📁 Output directory: {output_dir}")
+    if output_file:
+        log_verbose(f"📄 Output file override: {output_file}")
     
     # Load the translation map once
     log_verbose("📖 Loading translation map...")
@@ -532,15 +632,7 @@ Change Detection:
     section_templates = [x for x in os.listdir(TEMPLATE_DIR) if not x.startswith("layout")]
     log_verbose(f"📝 Found {len(section_templates)} section templates")
     
-    # Determine which files to process
-    if args.files:
-        # Process only specified files
-        files_to_process = args.files
-        log_verbose(f"📋 Processing {len(files_to_process)} specified file(s)")
-    else:
-        # Process all JSON files in CVS_PATH
-        files_to_process = [f for f in os.listdir(CVS_PATH) if f.endswith('.json')]
-        log_verbose(f"📋 Processing all {len(files_to_process)} JSON file(s) in {CVS_PATH}")
+    log_verbose(f"📋 Processing {len(files_to_process)} input file(s)")
 
     # Track statistics
     processed_count = 0
@@ -553,15 +645,15 @@ Change Detection:
         log_verbose(f"📄 Checking: {people}")
         
         processed, skipped, current_hash = process_cv_file(
-            people, lang_map, section_templates, cache, output_path
+            people, lang_map, section_templates, cache, output_dir, output_file
         )
 
         if processed:
             processed_count += 1
             # Update cache with new hash
-            json_path = os.path.join(CVS_PATH, people)
             if current_hash:
-                cache[json_path] = current_hash
+                cache_key = cache_key_for_path(people)
+                cache[cache_key] = current_hash
                 log_verbose(f"    💾 Cache updated for {people}")
         elif skipped:
             skipped_count += 1
