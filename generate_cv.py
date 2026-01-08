@@ -8,6 +8,7 @@ import stat
 import time
 import uuid
 import subprocess
+from dataclasses import dataclass
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 from jinja2.exceptions import TemplateError
@@ -42,6 +43,62 @@ def log_verbose(message):
         print(message)
 
 
+def canonicalize_path(path: Path) -> str:
+    resolved = path.expanduser()
+    try:
+        resolved = resolved.resolve()
+    except FileNotFoundError:
+        resolved = resolved.absolute()
+    return os.path.normcase(str(resolved))
+
+
+def is_json_file(path: Path) -> bool:
+    return path.is_file() and path.suffix.lower() == ".json"
+
+
+def expand_input_paths(inputs: list[str]) -> list[Path]:
+    expanded: list[Path] = []
+    for raw in inputs:
+        candidate = Path(raw)
+        if candidate.is_dir():
+            for entry in candidate.iterdir():
+                if is_json_file(entry):
+                    expanded.append(entry)
+        elif candidate.exists():
+            expanded.append(candidate)
+        else:
+            raise SystemExit(f"❌ Input path not found: {raw}")
+
+    seen: set[str] = set()
+    unique: list[Path] = []
+    for path in expanded:
+        key = canonicalize_path(path)
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(path)
+    return unique
+
+
+@dataclass(frozen=True)
+class OutputConfig:
+    output_dir: Path
+    explicit_pdf_path: Path | None = None
+
+
+def resolve_output_config(output_path: str, input_paths: list[Path]) -> OutputConfig:
+    output_candidate = Path(output_path)
+    if output_candidate.exists() and output_candidate.is_dir():
+        return OutputConfig(output_dir=output_candidate)
+
+    if output_candidate.suffix.lower() == ".pdf":
+        if len(input_paths) != 1:
+            raise SystemExit("❌ --output-path as a PDF file is only allowed with a single input file.")
+        return OutputConfig(output_dir=output_candidate.parent, explicit_pdf_path=output_candidate)
+
+    return OutputConfig(output_dir=output_candidate)
+
+
 # -------------------------
 # Cache Management
 # -------------------------
@@ -50,7 +107,16 @@ def load_cache():
     if os.path.exists(CACHE_FILE):
         try:
             with open(CACHE_FILE, encoding="utf-8") as f:
-                return json.load(f)
+                raw_cache = json.load(f)
+                normalized: dict[str, str] = {}
+                for key, value in raw_cache.items():
+                    path = Path(key)
+                    if not path.is_absolute():
+                        path = Path(BASE_DIR) / path
+                    normalized_key = canonicalize_path(path)
+                    if normalized_key not in normalized:
+                        normalized[normalized_key] = value
+                return normalized
         except (json.JSONDecodeError, IOError):
             return {}
     return {}
@@ -59,8 +125,11 @@ def load_cache():
 def save_cache(cache):
     """Save the hash cache to the cache file."""
     try:
-        with open(CACHE_FILE, "w", encoding="utf-8") as f:
+        cache_path = Path(CACHE_FILE)
+        tmp_path = cache_path.with_suffix(".tmp")
+        with open(tmp_path, "w", encoding="utf-8") as f:
             json.dump(cache, f, indent=2)
+        tmp_path.replace(cache_path)
     except IOError as e:
         print(f"⚠️  Warning: Could not save cache: {e}")
 
@@ -77,17 +146,19 @@ def compute_file_hash(filepath):
         return None
 
 
-def has_file_changed(filepath, cache,output_path,pdf_name):
+def has_file_changed(cache_key, cache, output_pdf_path, filepath):
     """
     Check if a file has changed since last processing.
     
     Returns (changed: bool, current_hash: str)
     """
     current_hash = compute_file_hash(filepath)
-    if current_hash is None or not os.path.exists(os.path.join(output_path,pdf_name)):
+    if current_hash is None:
         return True, None
-    
-    cached_hash = cache.get(filepath)
+    if not output_pdf_path.exists():
+        return True, current_hash
+
+    cached_hash = cache.get(cache_key)
     changed = cached_hash != current_hash
     return changed, current_hash
 
@@ -272,44 +343,57 @@ def make_tr_raw_filter(lang_map, lang):
 # -------------------------
 # Process Single CV File
 # -------------------------
-def process_cv_file(people, lang_map, section_templates, cache, output_path):
+def run_xelatex(command: list[str]) -> bool:
+    result = subprocess.run(command, check=False)
+    return result.returncode == 0
+
+
+def process_cv_file(input_path, lang_map, section_templates, cache, output_config):
     """
     Process a single CV JSON file and generate PDF.
     
     Args:
-        people: Filename of the JSON file (e.g., 'ramin_en.json')
+        input_path: Path to the JSON file to process
         lang_map: Translation mapping dictionary
         section_templates: List of template files to render
         cache: Hash cache dictionary for change detection
-        output_path: Optional directory or PDF file path for generated output
+        output_config: Output configuration for generated PDFs
     
     Returns:
         tuple: (processed: bool, skipped: bool, current_hash: str or None)
     """
-    if not people.endswith('.json'):
-        log_verbose(f"  ⏭️  Skipping {people}: not a JSON file")
+    if not is_json_file(input_path):
+        log_verbose(f"  ⏭️  Skipping {input_path}: not a JSON file")
         return False, True, None
-    orig_output_path = output_path
+
     # Parse filename to get base_name and language
-    base_name, lang = parse_cv_filename(people)
+    base_name, lang = parse_cv_filename(input_path.name)
     is_rtl = lang in RTL_LANGUAGES
     
-    JSON_PATH = os.path.join(CVS_PATH, people)
+    JSON_PATH = input_path
+    cache_key = canonicalize_path(JSON_PATH)
 
     # Check if file exists
-    if not os.path.exists(JSON_PATH):
+    if not JSON_PATH.exists():
         print(f"❌ File not found: {JSON_PATH}")
         return False, False, None
+
     pdf_name = f"{base_name}_{lang}.pdf"
+    if output_config.explicit_pdf_path is not None:
+        output_pdf_path = output_config.explicit_pdf_path
+        output_dir = output_config.explicit_pdf_path.parent
+    else:
+        output_dir = output_config.output_dir
+        output_pdf_path = output_dir / pdf_name
 
     # Check if file has changed using cache
-    changed, current_hash = has_file_changed(JSON_PATH, cache,output_path,pdf_name)
+    changed, current_hash = has_file_changed(cache_key, cache, output_pdf_path, JSON_PATH)
     if not changed:
-        log_verbose(f"  ⏭️  Skipping {people}: file unchanged (cached)")
-        print(f"⏭️  Skipping {people}: no changes detected")
+        log_verbose(f"  ⏭️  Skipping {input_path}: file unchanged (cached)")
+        print(f"⏭️  Skipping {input_path}: no changes detected")
         return False, True, current_hash
 
-    log_verbose(f"  📄 Processing {people} (base: {base_name}, lang: {lang}, RTL: {is_rtl})")
+    log_verbose(f"  📄 Processing {input_path} (base: {base_name}, lang: {lang}, RTL: {is_rtl})")
 
     # -------------------------
     # Load data (no eval, no hacks)
@@ -319,15 +403,14 @@ def process_cv_file(people, lang_map, section_templates, cache, output_path):
 
     # Validate required structure - skip files that don't have the expected schema
     if "basics" not in data:
-        print(f"⚠️  Skipping {people}: missing 'basics' key (incompatible schema)")
+        print(f"⚠️  Skipping {input_path}: missing 'basics' key (incompatible schema)")
         return False, True, None
 
     # Create output directory structure: result/<base_name>/<lang>/sections/
-    people_output_dir = os.path.join(RESULT_DIR, base_name, lang)
-    if not os.path.exists(people_output_dir):
-        os.makedirs(people_output_dir)
-    OUTPUT_DIR = os.path.join(people_output_dir, "sections")
-    RENDERED_OUTPUT = os.path.join(people_output_dir, "rendered.tex")
+    people_output_dir = Path(RESULT_DIR) / base_name / lang
+    people_output_dir.mkdir(parents=True, exist_ok=True)
+    OUTPUT_DIR = people_output_dir / "sections"
+    RENDERED_OUTPUT = people_output_dir / "rendered.tex"
 
     # -------------------------
     # Jinja environment
@@ -384,7 +467,7 @@ def process_cv_file(people, lang_map, section_templates, cache, output_path):
     # -------------------------
     # Ensure output folder exists
     # -------------------------
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     # -------------------------
     # Render sections (write files + stash inline strings)
@@ -398,7 +481,7 @@ def process_cv_file(people, lang_map, section_templates, cache, output_path):
 
         # write section file
         section_name = os.path.splitext(tmpl_file)[0]
-        output_path = os.path.join(OUTPUT_DIR, f"{section_name}.tex")
+        output_path = OUTPUT_DIR / f"{section_name}.tex"
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(rendered)
 
@@ -431,23 +514,38 @@ def process_cv_file(people, lang_map, section_templates, cache, output_path):
     
     # Generate PDF output name with language suffix
     pdf_name = f"{base_name}_{lang}.pdf"
-    command = fr"xelatex -enable-etex -enable-installer -enable-mltex -interaction=nonstopmode -file-line-error -synctex=1 -output-directory={orig_output_path} {RENDERED_OUTPUT} "
+    command = [
+        "xelatex",
+        "-enable-etex",
+        "-enable-installer",
+        "-enable-mltex",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-synctex=1",
+        f"-output-directory={output_dir}",
+        str(RENDERED_OUTPUT),
+    ]
 
     # run the command to compile the LaTeX file
-    log_verbose(f"    🔧 Running: {command}")
-    os.system(command)
+    log_verbose(f"    🔧 Running: {' '.join(command)}")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    if not run_xelatex(command):
+        print(f"❌ PDF generation failed for {input_path}")
+        return False, False, None
 
     # Handle output files
-    output_dir = orig_output_path
-    if os.path.exists(output_dir):
+    if output_dir.exists():
         for file in os.listdir(output_dir):
-            file_path = os.path.join(output_dir, file)
+            file_path = Path(output_dir) / file
             if not file.endswith(".pdf"):
                 os.remove(file_path)
             if file.endswith("rendered.pdf"):
-                shutil.move(file_path, os.path.join(output_dir, pdf_name))
-                log_verbose(f"    📄 PDF generated: {pdf_name}")
+                shutil.move(file_path, output_pdf_path)
+                log_verbose(f"    📄 PDF generated: {output_pdf_path.name}")
 
+    if not output_pdf_path.exists():
+        print(f"❌ Expected PDF not found at: {output_pdf_path}")
+        return False, False, None
 
     return True, False, current_hash
 
@@ -513,10 +611,8 @@ Change Detection:
         os.makedirs(RESULT_DIR)
         log_verbose(f"📁 Created result directory: {RESULT_DIR}")
     
-    output_dir = output_path
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-        log_verbose(f"📁 Created output directory: {output_dir}")
+    if not os.path.exists(args.output_path):
+        log_verbose(f"📁 Output path does not exist yet: {args.output_path}")
     
     # Load the translation map once
     log_verbose("📖 Loading translation map...")
@@ -534,13 +630,15 @@ Change Detection:
     
     # Determine which files to process
     if args.files:
-        # Process only specified files
-        files_to_process = args.files
+        files_to_process = expand_input_paths(args.files)
         log_verbose(f"📋 Processing {len(files_to_process)} specified file(s)")
     else:
-        # Process all JSON files in CVS_PATH
-        files_to_process = [f for f in os.listdir(CVS_PATH) if f.endswith('.json')]
+        files_to_process = expand_input_paths([CVS_PATH])
         log_verbose(f"📋 Processing all {len(files_to_process)} JSON file(s) in {CVS_PATH}")
+
+    output_config = resolve_output_config(output_path, files_to_process)
+    output_config.output_dir.mkdir(parents=True, exist_ok=True)
+    log_verbose(f"📁 Output directory: {output_config.output_dir}")
 
     # Track statistics
     processed_count = 0
@@ -553,15 +651,15 @@ Change Detection:
         log_verbose(f"📄 Checking: {people}")
         
         processed, skipped, current_hash = process_cv_file(
-            people, lang_map, section_templates, cache, output_path
+            people, lang_map, section_templates, cache, output_config
         )
 
         if processed:
             processed_count += 1
             # Update cache with new hash
-            json_path = os.path.join(CVS_PATH, people)
             if current_hash:
-                cache[json_path] = current_hash
+                cache_key = canonicalize_path(people)
+                cache[cache_key] = current_hash
                 log_verbose(f"    💾 Cache updated for {people}")
         elif skipped:
             skipped_count += 1

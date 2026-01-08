@@ -9,6 +9,8 @@ Usage:
     python scripts/test_cv_generation.py
 """
 
+__test__ = False
+
 import json
 import os
 import re
