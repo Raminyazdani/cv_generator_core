@@ -42,6 +42,10 @@
     }
   ],
   "profiles": [
+        {"network": "Website",
+      "username": "Raminyazdani",
+      "url": "https://ramin-yz.vercel.app/"
+    },
     {
       "network": "گیت‌هاب",
       "username": "Raminyazdani",
