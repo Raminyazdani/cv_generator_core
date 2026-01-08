@@ -77,14 +77,14 @@ def compute_file_hash(filepath):
         return None
 
 
-def has_file_changed(filepath, cache):
+def has_file_changed(filepath, cache,output_path,pdf_name):
     """
     Check if a file has changed since last processing.
     
     Returns (changed: bool, current_hash: str)
     """
     current_hash = compute_file_hash(filepath)
-    if current_hash is None:
+    if current_hash is None or not os.path.exists(os.path.join(output_path,pdf_name)):
         return True, None
     
     cached_hash = cache.get(filepath)
@@ -289,20 +289,21 @@ def process_cv_file(people, lang_map, section_templates, cache, output_path):
     if not people.endswith('.json'):
         log_verbose(f"  ⏭️  Skipping {people}: not a JSON file")
         return False, True, None
-    
+    orig_output_path = output_path
     # Parse filename to get base_name and language
     base_name, lang = parse_cv_filename(people)
     is_rtl = lang in RTL_LANGUAGES
     
     JSON_PATH = os.path.join(CVS_PATH, people)
-    
+
     # Check if file exists
     if not os.path.exists(JSON_PATH):
         print(f"❌ File not found: {JSON_PATH}")
         return False, False, None
-    
+    pdf_name = f"{base_name}_{lang}.pdf"
+
     # Check if file has changed using cache
-    changed, current_hash = has_file_changed(JSON_PATH, cache)
+    changed, current_hash = has_file_changed(JSON_PATH, cache,output_path,pdf_name)
     if not changed:
         log_verbose(f"  ⏭️  Skipping {people}: file unchanged (cached)")
         print(f"⏭️  Skipping {people}: no changes detected")
@@ -430,35 +431,24 @@ def process_cv_file(people, lang_map, section_templates, cache, output_path):
     
     # Generate PDF output name with language suffix
     pdf_name = f"{base_name}_{lang}.pdf"
-    command = fr"xelatex -enable-etex -enable-installer -enable-mltex -interaction=nonstopmode -file-line-error -synctex=1 -output-directory=.\output {RENDERED_OUTPUT} "
+    command = fr"xelatex -enable-etex -enable-installer -enable-mltex -interaction=nonstopmode -file-line-error -synctex=1 -output-directory={orig_output_path} {RENDERED_OUTPUT} "
 
     # run the command to compile the LaTeX file
     log_verbose(f"    🔧 Running: {command}")
     os.system(command)
-    
+
     # Handle output files
-    output_dir = os.path.join(BASE_DIR, "output")
+    output_dir = orig_output_path
     if os.path.exists(output_dir):
         for file in os.listdir(output_dir):
             file_path = os.path.join(output_dir, file)
             if not file.endswith(".pdf"):
                 os.remove(file_path)
             if file.endswith("rendered.pdf"):
-                final_pdf_path = os.path.join(output_dir, pdf_name)
-                shutil.move(file_path, final_pdf_path)
+                shutil.move(file_path, os.path.join(output_dir, pdf_name))
                 log_verbose(f"    📄 PDF generated: {pdf_name}")
-                if output_path:
-                    destination = output_path
-                    if destination.lower().endswith(".pdf"):
-                        destination_dir = os.path.dirname(destination)
-                        if destination_dir:
-                            os.makedirs(destination_dir, exist_ok=True)
-                    else:
-                        os.makedirs(destination, exist_ok=True)
-                        destination = os.path.join(destination, pdf_name)
-                    shutil.move(final_pdf_path, destination)
-                    log_verbose(f"    📁 PDF moved to: {destination}")
-    
+
+
     return True, False, current_hash
 
 
@@ -504,6 +494,8 @@ Change Detection:
             "Optional: Directory or PDF file path to save generated PDFs. "
             "Defaults to the standard output folder."
         ),
+        default="./output"
+
     )
     
     args = parser.parse_args()
@@ -521,7 +513,7 @@ Change Detection:
         os.makedirs(RESULT_DIR)
         log_verbose(f"📁 Created result directory: {RESULT_DIR}")
     
-    output_dir = os.path.join(BASE_DIR, "output")
+    output_dir = output_path
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
         log_verbose(f"📁 Created output directory: {output_dir}")
@@ -549,7 +541,7 @@ Change Detection:
         # Process all JSON files in CVS_PATH
         files_to_process = [f for f in os.listdir(CVS_PATH) if f.endswith('.json')]
         log_verbose(f"📋 Processing all {len(files_to_process)} JSON file(s) in {CVS_PATH}")
-    
+
     # Track statistics
     processed_count = 0
     skipped_count = 0
@@ -560,26 +552,23 @@ Change Detection:
         log_verbose(f"\n{'='*50}")
         log_verbose(f"📄 Checking: {people}")
         
-        try:
-            processed, skipped, current_hash = process_cv_file(
-                people, lang_map, section_templates, cache, output_path
-            )
-            
-            if processed:
-                processed_count += 1
-                # Update cache with new hash
-                json_path = os.path.join(CVS_PATH, people)
-                if current_hash:
-                    cache[json_path] = current_hash
-                    log_verbose(f"    💾 Cache updated for {people}")
-            elif skipped:
-                skipped_count += 1
-            else:
-                error_count += 1
-                
-        except Exception as e:
-            print(f"❌ Error processing {people}: {e}")
+        processed, skipped, current_hash = process_cv_file(
+            people, lang_map, section_templates, cache, output_path
+        )
+
+        if processed:
+            processed_count += 1
+            # Update cache with new hash
+            json_path = os.path.join(CVS_PATH, people)
+            if current_hash:
+                cache[json_path] = current_hash
+                log_verbose(f"    💾 Cache updated for {people}")
+        elif skipped:
+            skipped_count += 1
+        else:
             error_count += 1
+                
+
     
     # Save updated cache
     log_verbose("\n💾 Saving cache...")
