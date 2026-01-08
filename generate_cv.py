@@ -1,3 +1,5 @@
+import argparse
+import hashlib
 import json
 import os
 import re
@@ -19,12 +21,76 @@ CVS_PATH = os.path.join(BASE_DIR, "data", "cvs")
 TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 RESULT_DIR = os.path.join(BASE_DIR, "result")
 LANG_ENGINE_DIR = os.path.join(BASE_DIR, "Lang_engine")
+CACHE_FILE = os.path.join(BASE_DIR, ".cvgen_cache.json")
 
 # RTL languages
 RTL_LANGUAGES = {"fa", "ar", "he"}
 
 # Toggle whether template-inserted comments are emitted
 SHOW_COMMENTS = True
+
+# Global verbose flag (set by command-line argument)
+VERBOSE = False
+
+
+# -------------------------
+# Verbose Logging
+# -------------------------
+def log_verbose(message):
+    """Print message only if verbose mode is enabled."""
+    if VERBOSE:
+        print(message)
+
+
+# -------------------------
+# Cache Management
+# -------------------------
+def load_cache():
+    """Load the hash cache from the cache file."""
+    if os.path.exists(CACHE_FILE):
+        try:
+            with open(CACHE_FILE, encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, IOError):
+            return {}
+    return {}
+
+
+def save_cache(cache):
+    """Save the hash cache to the cache file."""
+    try:
+        with open(CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(cache, f, indent=2)
+    except IOError as e:
+        print(f"⚠️  Warning: Could not save cache: {e}")
+
+
+def compute_file_hash(filepath):
+    """Compute SHA-256 hash of a file's contents."""
+    hasher = hashlib.sha256()
+    try:
+        with open(filepath, "rb") as f:
+            for chunk in iter(lambda: f.read(8192), b""):
+                hasher.update(chunk)
+        return hasher.hexdigest()
+    except IOError:
+        return None
+
+
+def has_file_changed(filepath, cache):
+    """
+    Check if a file has changed since last processing.
+    
+    Returns (changed: bool, current_hash: str)
+    """
+    current_hash = compute_file_hash(filepath)
+    if current_hash is None:
+        return True, None
+    
+    cached_hash = cache.get(filepath)
+    changed = cached_hash != current_hash
+    return changed, current_hash
+
 
 # -------------------------
 # Utilities / Filters (defined once, outside loop)
@@ -204,26 +270,44 @@ def make_tr_raw_filter(lang_map, lang):
 
 
 # -------------------------
-# Main Processing Loop
+# Process Single CV File
 # -------------------------
-if not os.path.exists(RESULT_DIR):
-    os.makedirs(RESULT_DIR)
-
-# Load the translation map once
-LANG_MAP = load_lang_map()
-
-# Get list of templates (excluding layout templates which are handled separately)
-SECTION_TEMPLATES = [x for x in os.listdir(TEMPLATE_DIR) if not x.startswith("layout")]
-
-for people in os.listdir(CVS_PATH):
+def process_cv_file(people, lang_map, section_templates, cache):
+    """
+    Process a single CV JSON file and generate PDF.
+    
+    Args:
+        people: Filename of the JSON file (e.g., 'ramin_en.json')
+        lang_map: Translation mapping dictionary
+        section_templates: List of template files to render
+        cache: Hash cache dictionary for change detection
+    
+    Returns:
+        tuple: (processed: bool, skipped: bool, current_hash: str or None)
+    """
     if not people.endswith('.json'):
-        continue
+        log_verbose(f"  ⏭️  Skipping {people}: not a JSON file")
+        return False, True, None
     
     # Parse filename to get base_name and language
     base_name, lang = parse_cv_filename(people)
     is_rtl = lang in RTL_LANGUAGES
     
     JSON_PATH = os.path.join(CVS_PATH, people)
+    
+    # Check if file exists
+    if not os.path.exists(JSON_PATH):
+        print(f"❌ File not found: {JSON_PATH}")
+        return False, False, None
+    
+    # Check if file has changed using cache
+    changed, current_hash = has_file_changed(JSON_PATH, cache)
+    if not changed:
+        log_verbose(f"  ⏭️  Skipping {people}: file unchanged (cached)")
+        print(f"⏭️  Skipping {people}: no changes detected")
+        return False, True, current_hash
+
+    log_verbose(f"  📄 Processing {people} (base: {base_name}, lang: {lang}, RTL: {is_rtl})")
 
     # -------------------------
     # Load data (no eval, no hacks)
@@ -234,7 +318,7 @@ for people in os.listdir(CVS_PATH):
     # Validate required structure - skip files that don't have the expected schema
     if "basics" not in data:
         print(f"⚠️  Skipping {people}: missing 'basics' key (incompatible schema)")
-        continue
+        return False, True, None
 
     # Create output directory structure: result/<base_name>/<lang>/sections/
     people_output_dir = os.path.join(RESULT_DIR, base_name, lang)
@@ -262,7 +346,7 @@ for people in os.listdir(CVS_PATH):
     )
 
     # Create translation function for this language
-    t_func = make_translate_func(LANG_MAP, lang)
+    t_func = make_translate_func(lang_map, lang)
 
     # Filters & globals
     data["OPT_NAME"] = base_name
@@ -277,12 +361,12 @@ for people in os.listdir(CVS_PATH):
     env.filters["find_pic"] = find_pic
     
     # Add translation filters
-    env.filters["tr"] = make_tr_filter(LANG_MAP, lang)
-    env.filters["tr_raw"] = make_tr_raw_filter(LANG_MAP, lang)
+    env.filters["tr"] = make_tr_filter(lang_map, lang)
+    env.filters["tr_raw"] = make_tr_raw_filter(lang_map, lang)
     
     # Add globals for templates
     env.globals["SHOW_COMMENTS"] = SHOW_COMMENTS
-    env.globals["LANG_MAP"] = LANG_MAP
+    env.globals["LANG_MAP"] = lang_map
     env.globals["LANG"] = lang
     env.globals["BASE_NAME"] = base_name
     env.globals["IS_RTL"] = is_rtl
@@ -290,7 +374,7 @@ for people in os.listdir(CVS_PATH):
 
     # Vars available to templates (top-level JSON keys become variables)
     env_vars = {**data}
-    env_vars["LANG_MAP"] = LANG_MAP
+    env_vars["LANG_MAP"] = lang_map
     env_vars["LANG"] = lang
     env_vars["BASE_NAME"] = base_name
     env_vars["IS_RTL"] = is_rtl
@@ -303,7 +387,7 @@ for people in os.listdir(CVS_PATH):
     # -------------------------
     # Render sections (write files + stash inline strings)
     # -------------------------
-    for tmpl_file in SECTION_TEMPLATES:
+    for tmpl_file in section_templates:
         try:
             template = env.get_template(tmpl_file)
             rendered = template.render(env_vars)
@@ -318,6 +402,7 @@ for people in os.listdir(CVS_PATH):
 
         # also store for inline embedding in layout
         env_vars[f"{section_name}_section"] = rendered
+        log_verbose(f"    ✓ Rendered section: {section_name}")
 
     print(f"✅ Sections rendered to '{OUTPUT_DIR}'.")
 
@@ -347,12 +432,152 @@ for people in os.listdir(CVS_PATH):
     comand = fr"xelatex -enable-etex -enable-installer -enable-mltex -interaction=nonstopmode -file-line-error -synctex=1 -output-directory=.\output {RENDERED_OUTPUT} "
 
     # run the command to compile the LaTeX file
+    log_verbose(f"    🔧 Running: {comand}")
     os.system(comand)
-    for file in os.listdir("./output"):
-        if not file.endswith(".pdf"):
-            os.remove(f"./output/{file}")
-        if file.endswith("rendered.pdf"):
-            shutil.move(f"./output/{file}", f"./output/{pdf_name}")
+    
+    # Handle output files
+    output_dir = os.path.join(BASE_DIR, "output")
+    if os.path.exists(output_dir):
+        for file in os.listdir(output_dir):
+            file_path = os.path.join(output_dir, file)
+            if not file.endswith(".pdf"):
+                os.remove(file_path)
+            if file.endswith("rendered.pdf"):
+                shutil.move(file_path, os.path.join(output_dir, pdf_name))
+                log_verbose(f"    📄 PDF generated: {pdf_name}")
+    
+    return True, False, current_hash
+
+
+# -------------------------
+# Main Function
+# -------------------------
+def main():
+    """Main entry point for the CV generator."""
+    global VERBOSE
+    
+    # Parse command-line arguments
+    parser = argparse.ArgumentParser(
+        description="Generate PDF CVs from JSON files using Jinja2 templates and LaTeX.",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python generate_cv.py                    # Process all JSON files in data/cvs/
+  python generate_cv.py file1.json         # Process only file1.json
+  python generate_cv.py file1.json file2.json  # Process multiple specific files
+  python generate_cv.py --verbose          # Process all files with detailed output
+  python generate_cv.py --verbose file1.json   # Process file1.json with detailed output
+
+Change Detection:
+  The script uses a cache file (.cvgen_cache.json) to track file hashes.
+  If a JSON file hasn't changed since the last PDF generation, it will be skipped.
+  To force regeneration, delete the cache file or modify the JSON file.
+"""
+    )
+    parser.add_argument(
+        "files",
+        nargs="*",
+        help="Optional: Specific JSON file(s) to process. If not provided, all JSON files in data/cvs/ will be processed."
+    )
+    parser.add_argument(
+        "--verbose", "-v",
+        action="store_true",
+        help="Enable verbose output showing detailed processing information."
+    )
+    
+    args = parser.parse_args()
+    VERBOSE = args.verbose
+    
+    log_verbose("🔧 Verbose mode enabled")
+    log_verbose(f"📁 Base directory: {BASE_DIR}")
+    log_verbose(f"📁 CVs path: {CVS_PATH}")
+    log_verbose(f"📁 Template directory: {TEMPLATE_DIR}")
+    log_verbose(f"📁 Cache file: {CACHE_FILE}")
+    
+    # Ensure result and output directories exist
+    if not os.path.exists(RESULT_DIR):
+        os.makedirs(RESULT_DIR)
+        log_verbose(f"📁 Created result directory: {RESULT_DIR}")
+    
+    output_dir = os.path.join(BASE_DIR, "output")
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+        log_verbose(f"📁 Created output directory: {output_dir}")
+    
+    # Load the translation map once
+    log_verbose("📖 Loading translation map...")
+    lang_map = load_lang_map()
+    log_verbose(f"    ✓ Loaded {len(lang_map)} translation keys")
+    
+    # Load cache
+    log_verbose("📖 Loading cache...")
+    cache = load_cache()
+    log_verbose(f"    ✓ Loaded cache with {len(cache)} entries")
+    
+    # Get list of templates (excluding layout templates which are handled separately)
+    section_templates = [x for x in os.listdir(TEMPLATE_DIR) if not x.startswith("layout")]
+    log_verbose(f"📝 Found {len(section_templates)} section templates")
+    
+    # Determine which files to process
+    if args.files:
+        # Process only specified files
+        files_to_process = args.files
+        log_verbose(f"📋 Processing {len(files_to_process)} specified file(s)")
+    else:
+        # Process all JSON files in CVS_PATH
+        files_to_process = [f for f in os.listdir(CVS_PATH) if f.endswith('.json')]
+        log_verbose(f"📋 Processing all {len(files_to_process)} JSON file(s) in {CVS_PATH}")
+    
+    # Track statistics
+    processed_count = 0
+    skipped_count = 0
+    error_count = 0
+    
+    # Process each file
+    for people in files_to_process:
+        log_verbose(f"\n{'='*50}")
+        log_verbose(f"📄 Checking: {people}")
+        
+        try:
+            processed, skipped, current_hash = process_cv_file(
+                people, lang_map, section_templates, cache
+            )
+            
+            if processed:
+                processed_count += 1
+                # Update cache with new hash
+                json_path = os.path.join(CVS_PATH, people)
+                if current_hash:
+                    cache[json_path] = current_hash
+                    log_verbose(f"    💾 Cache updated for {people}")
+            elif skipped:
+                skipped_count += 1
+            else:
+                error_count += 1
+                
+        except Exception as e:
+            print(f"❌ Error processing {people}: {e}")
+            error_count += 1
+    
+    # Save updated cache
+    log_verbose("\n💾 Saving cache...")
+    save_cache(cache)
+    
+    # Print summary
+    print(f"\n{'='*50}")
+    print("📊 Summary:")
+    print(f"   ✅ Processed: {processed_count}")
+    print(f"   ⏭️  Skipped:   {skipped_count}")
+    if error_count > 0:
+        print(f"   ❌ Errors:    {error_count}")
+    print(f"{'='*50}")
+
+
+# -------------------------
+# Entry Point
+# -------------------------
+if __name__ == "__main__":
+    main()
 
 
 def _clear_readonly_windows(root: Path) -> None:
