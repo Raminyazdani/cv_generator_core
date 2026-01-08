@@ -1,0 +1,167 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume - RTL Version
+%
+% This template provides Right-to-Left (RTL) support for Persian (Farsi) and Arabic.
+% It uses XeLaTeX with polyglossia and bidi packages for proper RTL rendering.
+%
+% This template has been adapted from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Requirements:
+%   - XeLaTeX compiler (pdflatex will NOT work)
+%   - Vazirmatn font (or alternative Persian font)
+%   - polyglossia, bidi packages
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{./awesome-cv-rtl}
+
+% 1) Subsection heading: keep following content with the heading
+\makeatletter
+\renewcommand{\cvsubsection}[1]{%
+  \vspace{\acvSectionContentTopSkip}% global knob below
+  \vspace{-3mm}% fine-tune up
+  \subsectionstyle{#1}%
+  \phantomsection
+  \par\nobreak\@afterheading
+}
+\makeatother
+
+% 2) Global content top skip (single place to control it)
+\renewcommand{\acvSectionContentTopSkip}{3mm}
+
+% 3) Bullet lists inside entries: slightly roomier, consistent
+\renewenvironment{cvitems}{%
+  \vspace{-3.0mm}%
+  \begin{justify}%
+  \begin{itemize}[leftmargin=2ex,nosep]%
+    \setlength{\parskip}{0pt}%
+    \setlength{\itemsep}{0.3ex}% space between bullets
+    \setlength{\topsep}{0.4ex}% space above/below the list
+    \renewcommand{\labelitemi}{\bullet}%
+}{%
+  \end{itemize}%
+  \end{justify}%
+  \vspace{1.5mm}%
+}
+
+% --- Compact 2-row skill block: full-width header + 2 cols (30/70) ---
+\newcommand{\cvskillgroup}[3]{%
+  % local scope: help line-breaking so long lists don't overflow
+  \begingroup\sloppy\emergencystretch=2em
+  % Row 1: full-width heading
+  \noindent\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} p{\linewidth}}
+    \skilltypestyle{#1}\\
+  \end{tabular*}%
+  % small gap
+  \vspace{0.2ex}
+
+  % Row 2: two columns (L 30% / R 70%)
+  \noindent\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}%
+    >{\raggedleft\arraybackslash}p{0.30\linewidth}%
+    >{\raggedright\arraybackslash}p{0.70\linewidth}}
+    \skilltypestyle{#2} & \skillsetstyle{#3}\\
+  \end{tabular*}%
+  \par\endgroup
+}
+% One table per parent, stacked vertically
+\makeatletter
+\newcommand{\SkillGroupTopSep}{0.8\baselineskip} % space before each parent block
+\newcommand{\SkillRowSep}{0.35ex}                % space between rows
+
+% A two-column skills table that wraps nicely (RTL-adjusted)
+\newenvironment{mycvskills}{%
+  \vspace{0.25\baselineskip}%
+  \begingroup
+    \sloppy\emergencystretch=2em % prevent overflow
+    \setlength{\tabcolsep}{0pt}%
+    \setlength{\extrarowheight}{0pt}%
+    \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}%
+      >{\raggedleft\arraybackslash}p{0.67\linewidth}%
+      >{\raggedright\arraybackslash}p{0.30\linewidth}}%
+}{%
+    \end{tabular*}%
+  \endgroup
+}
+
+% Row macro: child label + wrapped values (RTL-adjusted: swap columns)
+\newcommand{\mycvskill}[2]{%
+  \skillsetstyle{#2} & \skilltypestyle{#1} \\[-\SkillRowSep]
+}
+
+\renewcommand*{\headerfirstnamestyle}[1]{\headerlastnamestyle{#1}}
+
+\makeatother
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-nephritis}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{202020}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+<VAR> header_section | default('') </VAR>
+
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {<VAR> basics[0]["fname"] | latex_escape </VAR> <VAR> basics[0]["lname"] | latex_escape </VAR>~~~·~~~<VAR> t("curriculum_vitae", "رزومه") </VAR>}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+% --- File includes (classic Awesome-CV) ---------------------------------------
+% Uncomment these if your Python writes the corresponding files AND you prefer \input.
+<VAR> education_section    | default('') </VAR>
+<VAR> experience_section    | default('') </VAR>
+<VAR> publications_section    | default('') </VAR>
+<VAR> language_section    | default('') </VAR>
+<VAR> certificates_section    | default('') </VAR>
+<VAR> skills_section    | default('') </VAR>
+<VAR> projects_section    | default('') </VAR>
+<VAR> references_section    | default('') </VAR>
+%-------------------------------------------------------------------------------
+\end{document}

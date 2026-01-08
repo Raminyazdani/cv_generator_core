@@ -212,8 +212,8 @@ if not os.path.exists(RESULT_DIR):
 # Load the translation map once
 LANG_MAP = load_lang_map()
 
-# Get list of templates
-SECTION_TEMPLATES = [x for x in os.listdir(TEMPLATE_DIR)]
+# Get list of templates (excluding layout templates which are handled separately)
+SECTION_TEMPLATES = [x for x in os.listdir(TEMPLATE_DIR) if not x.startswith("layout")]
 
 for people in os.listdir(CVS_PATH):
     if not people.endswith('.json'):
@@ -324,11 +324,13 @@ for people in os.listdir(CVS_PATH):
     # -------------------------
     # Render layout with embedded sections
     # -------------------------
+    # Select appropriate layout template based on language direction
+    layout_template_name = "layout_rtl.tex" if is_rtl else "layout.tex"
     try:
-        layout_template = env.get_template("layout.tex")
+        layout_template = env.get_template(layout_template_name)
         rendered_layout = layout_template.render(env_vars)
     except TemplateError as e:
-        raise SystemExit(f"[Jinja error in layout.tex] {e}") from e
+        raise SystemExit(f"[Jinja error in {layout_template_name}] {e}") from e
 
     # Optional tiny cleanup: collapse accidental double blank lines
     rendered_layout = rendered_layout.replace("\n\n\n", "\n\n")
@@ -336,7 +338,8 @@ for people in os.listdir(CVS_PATH):
     with open(RENDERED_OUTPUT, "w", encoding="utf-8") as f:
         f.write(rendered_layout)
 
-    print(f"✅ Final rendered.tex generated for {base_name} ({lang}).")
+    rtl_info = " (RTL mode)" if is_rtl else ""
+    print(f"✅ Final rendered.tex generated for {base_name} ({lang}){rtl_info}.")
     print(f"➡️  Compile with: xelatex {RENDERED_OUTPUT}")
     
     # Generate PDF output name with language suffix

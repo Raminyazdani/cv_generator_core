@@ -67,3 +67,6 @@ output/*.pdf
 # CI generated reports (not tracked, uploaded as artifacts)
 validation-report.json
 requirements-lock.txt
+
+# Visual proof directories (generated during testing)
+docs/visual-proof/
