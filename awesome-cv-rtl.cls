@@ -82,8 +82,10 @@
         No Persian font found (Vazirmatn, XB Niloofar, B Nazanin).
         Please install Vazirmatn from https://github.com/rastikerdar/vazirmatn
         or another Persian-capable font.
-        Using system default which may not render Persian text correctly.
+        Attempting to use default font with Arabic script.
       }
+      % Try to use any available font with Arabic script support
+      \newfontfamily\persianfont[Script=Arabic]{Amiri}[BoldFont=*]
     }%
   }%
 }
@@ -105,10 +107,10 @@
 %-------------------------------------------------------------------------------
 % Redefine column types for RTL alignment
 % In RTL, "left" becomes visually "right" and vice versa
-\renewcommand{\newcolumntype}{}
-\newcolumntype{L}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{R}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+% Note: We redefine the existing L, R, C types from the base class
+\renewcolumntype{L}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\renewcolumntype{R}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\renewcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 
 %-------------------------------------------------------------------------------

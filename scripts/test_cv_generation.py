@@ -11,6 +11,7 @@ Usage:
 
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -139,7 +140,6 @@ def test_cv_rendering(cv_path: Path, env: Environment) -> tuple:
     data["OPT_NAME"] = people_name
     
     # Detect RTL language from filename (e.g., ramin_fa.json)
-    import re
     RTL_LANGUAGES = {"fa", "ar", "he"}
     match = re.match(r'^(.+?)[-_]([a-z]{2,3})$', people_name)
     if match:
