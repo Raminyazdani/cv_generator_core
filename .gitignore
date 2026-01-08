@@ -70,3 +70,6 @@ requirements-lock.txt
 
 # Visual proof directories (generated during testing)
 docs/visual-proof/
+
+# CV generator cache file (stores file hashes for change detection)
+.cvgen_cache.json

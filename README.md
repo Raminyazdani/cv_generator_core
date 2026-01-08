@@ -166,7 +166,9 @@ What this does:
 
 1. Loops over every JSON file in `data/cvs/` (e.g. `mahsa.json`, `ramin.json`).
 2. For each person:
-   - Creates `result/<name>/sections/`.
+   - **Checks if the file has changed** since the last PDF generation (using hash-based caching).
+   - If unchanged, skips PDF generation for that file.
+   - If changed, creates `result/<name>/sections/`.
    - Renders each template in `templates/` with that person’s data into `result/<name>/sections/*.tex`.
    - Embeds all section content into `templates/layout.tex` and produces a combined LaTeX file `rendered.tex` in the same sections folder.
    - Runs `xelatex` to compile the LaTeX to a PDF in `output/`.
@@ -184,6 +186,60 @@ For example:
 
 - `output/mahsa.pdf`
 - `output/ramin.pdf`
+
+
+### Command-line options
+
+The generator supports several command-line options:
+
+```bash
+# Process all JSON files (default behavior)
+python generate_cv.py
+
+# Process specific file(s) only
+python generate_cv.py file1.json file2.json
+
+# Enable verbose output for detailed processing information
+python generate_cv.py --verbose
+python generate_cv.py -v
+
+# Combine options
+python generate_cv.py --verbose file1.json file2.json
+```
+
+To see all available options:
+
+```bash
+python generate_cv.py --help
+```
+
+### Change detection and caching
+
+The generator uses a **hash-based caching mechanism** to avoid regenerating PDFs for unchanged files:
+
+- File hashes are stored in `.cvgen_cache.json` in the project root.
+- Before processing each JSON file, the script compares its current hash with the cached hash.
+- If the file hasn't changed, PDF generation is skipped.
+- This significantly speeds up subsequent runs when only a few files have been modified.
+
+To **force regeneration** of all PDFs:
+1. Delete the `.cvgen_cache.json` file, or
+2. Modify the JSON files you want to regenerate
+
+### Verbose mode
+
+Use the `--verbose` (or `-v`) flag to see detailed processing information:
+
+```bash
+python generate_cv.py --verbose
+```
+
+Verbose output includes:
+- Which files are being checked
+- Which files are skipped (and why)
+- Which templates are being rendered
+- Cache operations (loading/saving)
+- PDF generation commands
 
 ---
 
