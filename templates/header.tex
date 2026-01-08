@@ -70,9 +70,15 @@
   <BLOCK> if prof["network"]=="Google Scholar" </BLOCK>
   \googlescholar{<VAR>prof["uuid"]</VAR>}{google scholar :,<VAR>prof["username"]</VAR>}
   <BLOCK> endif </BLOCK>
+
   <BLOCK> if prof["network"]=="LinkedIn" </BLOCK>
   \linkedin{<VAR>prof["username"]</VAR>}
   <BLOCK> endif </BLOCK>
+    <BLOCK> if prof["network"]=="Website" </BLOCK>
+  \homepage{<VAR>prof["url"]</VAR>}
+  <BLOCK> endif </BLOCK>
+
+
 <BLOCK> endfor </BLOCK>
 <BLOCK> endif </BLOCK>
 
