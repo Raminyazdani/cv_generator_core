@@ -272,7 +272,7 @@ def make_tr_raw_filter(lang_map, lang):
 # -------------------------
 # Process Single CV File
 # -------------------------
-def process_cv_file(people, lang_map, section_templates, cache):
+def process_cv_file(people, lang_map, section_templates, cache, output_path):
     """
     Process a single CV JSON file and generate PDF.
     
@@ -281,6 +281,7 @@ def process_cv_file(people, lang_map, section_templates, cache):
         lang_map: Translation mapping dictionary
         section_templates: List of template files to render
         cache: Hash cache dictionary for change detection
+        output_path: Optional directory or PDF file path for generated output
     
     Returns:
         tuple: (processed: bool, skipped: bool, current_hash: str or None)
@@ -443,8 +444,20 @@ def process_cv_file(people, lang_map, section_templates, cache):
             if not file.endswith(".pdf"):
                 os.remove(file_path)
             if file.endswith("rendered.pdf"):
-                shutil.move(file_path, os.path.join(output_dir, pdf_name))
+                final_pdf_path = os.path.join(output_dir, pdf_name)
+                shutil.move(file_path, final_pdf_path)
                 log_verbose(f"    📄 PDF generated: {pdf_name}")
+                if output_path:
+                    destination = output_path
+                    if destination.lower().endswith(".pdf"):
+                        destination_dir = os.path.dirname(destination)
+                        if destination_dir:
+                            os.makedirs(destination_dir, exist_ok=True)
+                    else:
+                        os.makedirs(destination, exist_ok=True)
+                        destination = os.path.join(destination, pdf_name)
+                    shutil.move(final_pdf_path, destination)
+                    log_verbose(f"    📁 PDF moved to: {destination}")
     
     return True, False, current_hash
 
@@ -467,6 +480,7 @@ Examples:
   python generate_cv.py file1.json file2.json  # Process multiple specific files
   python generate_cv.py --verbose          # Process all files with detailed output
   python generate_cv.py --verbose file1.json   # Process file1.json with detailed output
+  python generate_cv.py --output-path ./pdfs   # Save PDFs to ./pdfs
 
 Change Detection:
   The script uses a cache file (.cvgen_cache.json) to track file hashes.
@@ -484,9 +498,17 @@ Change Detection:
         action="store_true",
         help="Enable verbose output showing detailed processing information."
     )
+    parser.add_argument(
+        "--output-path",
+        help=(
+            "Optional: Directory or PDF file path to save generated PDFs. "
+            "Defaults to the standard output folder."
+        ),
+    )
     
     args = parser.parse_args()
     VERBOSE = args.verbose
+    output_path = args.output_path
     
     log_verbose("🔧 Verbose mode enabled")
     log_verbose(f"📁 Base directory: {BASE_DIR}")
@@ -540,7 +562,7 @@ Change Detection:
         
         try:
             processed, skipped, current_hash = process_cv_file(
-                people, lang_map, section_templates, cache
+                people, lang_map, section_templates, cache, output_path
             )
             
             if processed:
