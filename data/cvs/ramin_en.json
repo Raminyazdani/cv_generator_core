@@ -43,30 +43,30 @@
     }
   ],
   "profiles": [
-    {"network": "Website",
-      "username": "Raminyazdani",
-      "url": "https://ramin-yz.vercel.app/"
-    },
     {
       "network": "GitHub",
       "username": "Raminyazdani",
-      "url": "https://github.com/Raminyazdani"
+      "url": "https://github.com/Raminyazdani",
+      "type_key": []
     },
     {
       "network": "Google Scholar",
       "username": "Ramin Yazdani",
       "url": "https://scholar.google.com/citations?user=PIKk-q0AAAAJ&hl=en",
-      "uuid": "PIKk-q0AAAAJ"
+      "uuid": "PIKk-q0AAAAJ",
+      "type_key": []
     },
     {
       "network": "LinkedIn",
       "username": "ramin-yz",
-      "url": "https://linkedin.com/in/ramin-yz/"
+      "url": "https://linkedin.com/in/ramin-yz/",
+      "type_key": []
     },
     {
       "network": "ORCID",
       "username": "Ramin Yazdani",
-      "url": "https://orcid.org/0000-0002-7996-5475"
+      "url": "https://orcid.org/0000-0002-7996-5475",
+      "type_key": []
     }
   ],
   "education": [
@@ -174,7 +174,8 @@
           "examDate": null,
           "URL": null
         }
-      ]
+      ],
+      "type_key": []
     },
     {
       "language": "English",
@@ -197,7 +198,8 @@
           "examDate": "2023-12-28",
           "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_ielts.pdf"
         }
-      ]
+      ],
+      "type_key": []
     },
     {
       "language": "German",
@@ -220,7 +222,8 @@
           "examDate": null,
           "URL": null
         }
-      ]
+      ],
+      "type_key": []
     }
   ],
   "workshop_and_certifications": [
@@ -683,49 +686,56 @@
           "date": "2023-07-15",
           "duration": "3 hours",
           "certificate": true,
-          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Fundamentals_and_Roadmap_of_Data_Science.pdf"
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Fundamentals_and_Roadmap_of_Data_Science.pdf",
+          "type_key": []
         },
         {
           "name": "Mathematics for Data Science and Artificial Intelligence",
           "date": "2023-09-01",
           "duration": "8 hours",
           "certificate": true,
-          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Mathematics_for_Data_Science_and_Artificial_Intelligence.pdf"
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Mathematics_for_Data_Science_and_Artificial_Intelligence.pdf",
+          "type_key": []
         },
         {
           "name": "Data Mining and Business Intelligence with KNIME",
           "date": "2023-09-05",
           "duration": "6 hours",
           "certificate": true,
-          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Mining_and_Business_Intelligence_with_KNIME.pdf"
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Mining_and_Business_Intelligence_with_KNIME.pdf",
+          "type_key": []
         },
         {
           "name": "Comprehensive Python Programming",
           "date": "2023-09-12",
           "duration": "12 hours",
           "certificate": true,
-          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Comprehensive_Python_Programming.pdf"
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Comprehensive_Python_Programming.pdf",
+          "type_key": []
         },
         {
           "name": "Data Visualization Tools",
           "date": "2023-10-22",
           "duration": "5 hours",
           "certificate": true,
-          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Visualization_Tools.pdf"
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Visualization_Tools.pdf",
+          "type_key": []
         },
         {
           "name": "Introductory Database Principles",
           "date": "2023-10-19",
           "duration": "10 hours",
           "certificate": true,
-          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Introductory_Database_Principles.pdf"
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Introductory_Database_Principles.pdf",
+          "type_key": []
         },
         {
           "name": "Data Mining with Python",
           "date": "2023-11-01",
           "duration": "8 hours",
           "certificate": true,
-          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Mining_with_Python.pdf"
+          "URL": "https://res.cloudinary.com/dgflx4rum/image/upload/certificate_Hamrah_academy_Data_Mining_with_Python.pdf",
+          "type_key": []
         }
       ]
     },
@@ -784,6 +794,16 @@
         {
           "long_name": "JavaScript",
           "short_name": "JS",
+          "type_key": [
+            "Full CV",
+            "Programming",
+            "Bioinformatics",
+            "Academic"
+          ]
+        },
+        {
+          "long_name": "TypeScript",
+          "short_name": "TS",
           "type_key": [
             "Full CV",
             "Programming",
@@ -987,6 +1007,20 @@
         }
       ]
     },
+    "Programmierung & Skripting": {
+      "Programmiersprachen": [
+        {
+          "long_name": "Python",
+          "short_name": "Python",
+          "type_key": [
+            "Vollständiger Lebenslauf",
+            "Programmierung",
+            "Bioinformatik",
+            "Akademisch"
+          ]
+        }
+      ]
+    },
     "DevOps & Infrastructure": {
       "Networking & Protocols": [
         {
@@ -1134,6 +1168,16 @@
             "Bioinformatics",
             "Academic"
           ]
+        },
+        {
+          "long_name": "GitHub Actions",
+          "short_name": "GitHub Actions",
+          "type_key": [
+            "Full CV",
+            "Programming",
+            "Bioinformatics",
+            "Academic"
+          ]
         }
       ],
       "Cloud Platforms & Authentication": [
@@ -1210,6 +1254,14 @@
           ]
         },
         {
+          "long_name": "Vite",
+          "short_name": "Vite",
+          "type_key": [
+            "Full CV",
+            "Programming"
+          ]
+        },
+        {
           "long_name": "Tailwind CSS",
           "short_name": "Tailwind",
           "type_key": [
@@ -1246,6 +1298,14 @@
         {
           "long_name": "Flask",
           "short_name": "Flask",
+          "type_key": [
+            "Full CV",
+            "Programming"
+          ]
+        },
+        {
+          "long_name": "Jinja2",
+          "short_name": "Jinja2",
           "type_key": [
             "Full CV",
             "Programming"
@@ -1456,6 +1516,16 @@
         {
           "long_name": "LaTeX",
           "short_name": "LaTeX",
+          "type_key": [
+            "Full CV",
+            "Bioinformatics",
+            "Biotechnology",
+            "Academic"
+          ]
+        },
+        {
+          "long_name": "XeLaTeX",
+          "short_name": "XeLaTeX",
           "type_key": [
             "Full CV",
             "Bioinformatics",
@@ -1930,6 +2000,15 @@
         {
           "long_name": "Rosetta",
           "short_name": "Rosetta",
+          "type_key": [
+            "Full CV",
+            "Bioinformatics",
+            "Academic"
+          ]
+        },
+        {
+          "long_name": "PyMOL",
+          "short_name": "PyMOL",
           "type_key": [
             "Full CV",
             "Bioinformatics",
@@ -2574,35 +2653,40 @@
       "role": "Full-stack Developer",
       "institution": "Freelance",
       "duration": "2018-02-11 - Recent",
-      "description": "Developed and maintained diverse web applications, backend & frontend components, and automated data workflows."
+      "description": "Developed and maintained diverse web applications, backend & frontend components, and automated data workflows.",
+      "type_key": []
     },
     {
       "role": "Bioinformatics Researcher - Master's Thesis ",
       "institution": "University of Tehran",
       "duration": "2023-10-23 - 2024-09-15",
       "primaryFocus": "Omics-Based Analysis of Microbial Genomes/Fermentation and Bioprocessing",
-      "description": "Performed bioinformatics analyses, gene expression profiling, functional annotation, and bioprocess optimization."
+      "description": "Performed bioinformatics analyses, gene expression profiling, functional annotation, and bioprocess optimization.",
+      "type_key": []
     },
     {
       "role": "Co-Founder & Business Development Lead",
       "institution": "Kamadani Foodstuff Trading LLC",
       "duration": "2022-07-14 - 2023-07-13",
       "primaryFocus": "Company Establishment & Business Development",
-      "description": "Co-founded and established the company, led business development and partnerships."
+      "description": "Co-founded and established the company, led business development and partnerships.",
+      "type_key": []
     },
     {
       "role": "Research Assistant - Biotechnology Laboratory / Fermentation Engineering",
       "institution": "University of Tehran / Rahpouyan Fanavar Sadegh",
       "duration": "2023-01-21 - 2023-09-22",
       "primaryFocus": "Fed-batch Optimization & Bioprocess Engineering",
-      "description": "Worked on Pichia pastoris fermentation optimization and bioprocess engineering projects."
+      "description": "Worked on Pichia pastoris fermentation optimization and bioprocess engineering projects.",
+      "type_key": []
     },
     {
       "role": "Management Board Member",
       "institution": "Yazdan Tejarat Absaran",
       "duration": "2009-04-25 - 2023-10-23",
       "primaryFocus": "Export, Import, and Business Management",
-      "description": "Oversaw operations, strategic planning, and business development for the family trading business."
+      "description": "Oversaw operations, strategic planning, and business development for the family trading business.",
+      "type_key": []
     }
   ],
   "projects": [
@@ -2869,6 +2953,376 @@
         "Robotics",
         "Embedded Systems",
         "Student Projects"
+      ]
+    },
+    {
+      "title": "cv_generator_core",
+      "description": "Core CV Generator - Generate beautiful PDF resumes from structured JSON data using Jinja2 and the Awesome-CV LaTeX template.",
+      "url": "https://github.com/Raminyazdani/cv_generator_core",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Academic"
+      ]
+    },
+    {
+      "title": "premium-cv-port-land",
+      "description": "",
+      "url": "https://github.com/Raminyazdani/premium-cv-port-land",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Academic"
+      ]
+    },
+    {
+      "title": "Raminyazdani",
+      "description": "This is git repo personalizing repo",
+      "url": "https://github.com/Raminyazdani/Raminyazdani",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Academic"
+      ]
+    },
+    {
+      "title": "bioinformatics-hic-and-denoising",
+      "description": "Two Python notebooks covering (1) image denoising via a 2D diffusion filter and (2) Hi-C contact matrix processing.",
+      "url": "https://github.com/Raminyazdani/bioinformatics-hic-and-denoising",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "weekly-planning-templates",
+      "description": "A collection of weekly planning materials (likely documents/spreadsheets) intended for personal productivity.",
+      "url": "https://github.com/Raminyazdani/weekly-planning-templates",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Academic"
+      ]
+    },
+    {
+      "title": "team-notebook-analysis-and-visuals",
+      "description": "A Python/Jupyter notebook produced as part of a team programming task, containing analysis and plots.",
+      "url": "https://github.com/Raminyazdani/team-notebook-analysis-and-visuals",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "spatial-transcriptomics-mouse-brain",
+      "description": "An R/Seurat workflow for analyzing mouse-brain spatial transcriptomics data.",
+      "url": "https://github.com/Raminyazdani/spatial-transcriptomics-mouse-brain",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "scrna-seq-seurat-gbm-analysis",
+      "description": "An R/Seurat single-cell RNA-seq analysis focused on GBM expression matrices.",
+      "url": "https://github.com/Raminyazdani/scrna-seq-seurat-gbm-analysis",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "scrna-qc-clustering-annotation-seurat",
+      "description": "A comprehensive R/Seurat single-cell RNA-seq pipeline covering QC, normalization, clustering, annotation.",
+      "url": "https://github.com/Raminyazdani/scrna-qc-clustering-annotation-seurat",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "scatac-archr-analysis-pipeline",
+      "description": "An R/ArchR pipeline for single-cell ATAC-seq analysis.",
+      "url": "https://github.com/Raminyazdani/scatac-archr-analysis-pipeline",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "pytorch-token-dataset",
+      "description": "A notebook-based Python project implementing a custom PyTorch Dataset/DataLoader workflow for variable-length sequences.",
+      "url": "https://github.com/Raminyazdani/pytorch-token-dataset",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "pymol-hydrophobicity-tools",
+      "description": "A small PyMOL-focused toolkit: a PyMOL script for structure styling/binding-site highlighting and Python utilities.",
+      "url": "https://github.com/Raminyazdani/pymol-hydrophobicity-tools",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "protein-model-comparison-alphafold",
+      "description": "A Python script that compares predicted protein structures (AlphaFold2, MODELLER, RoseTTAFold).",
+      "url": "https://github.com/Raminyazdani/protein-model-comparison-alphafold",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "protein-homology-modeling-modeller",
+      "description": "A Python-based comparative modeling workflow using MODELLER.",
+      "url": "https://github.com/Raminyazdani/protein-homology-modeling-modeller",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "pdb-structure-parser-python",
+      "description": "A Python project implementing a lightweight PDB parser and structural bioinformatics metrics.",
+      "url": "https://github.com/Raminyazdani/pdb-structure-parser-python",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "pca-and-missing-data-imputation",
+      "description": "A Python/Jupyter notebook collection implementing PCA and comparing missing data imputation methods.",
+      "url": "https://github.com/Raminyazdani/pca-and-missing-data-imputation",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "notebook-problem-solution-visualization",
+      "description": "A self-contained Python/Jupyter notebook that solves a computational problem and produces plots.",
+      "url": "https://github.com/Raminyazdani/notebook-problem-solution-visualization",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "neural-network-training-techniques",
+      "description": "A Python/Jupyter notebook covering neural network training techniques and experiments using PyTorch.",
+      "url": "https://github.com/Raminyazdani/neural-network-training-techniques",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "neural-network-practice-notebook",
+      "description": "A Python/Jupyter practice notebook implementing neural network concepts and training runs in PyTorch.",
+      "url": "https://github.com/Raminyazdani/neural-network-practice-notebook",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "neural-network-optimization-notebooks",
+      "description": "A set of PyTorch/Jupyter notebooks exploring optimization algorithms and training strategies.",
+      "url": "https://github.com/Raminyazdani/neural-network-optimization-notebooks",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "neural-network-fundamentals-notebook",
+      "description": "A Python/Jupyter notebook introducing neural network fundamentals via hands-on implementations in PyTorch.",
+      "url": "https://github.com/Raminyazdani/neural-network-fundamentals-notebook",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "msa-consensus-pssm-and-markov",
+      "description": "A Python project for multiple sequence alignment (MSA) post-processing: consensus sequence, PSSM, Markov models.",
+      "url": "https://github.com/Raminyazdani/msa-consensus-pssm-and-markov",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "molformer-finetuning-property-prediction",
+      "description": "A PyTorch/Jupyter project that fine-tunes the MolFormer chemical language model for property prediction.",
+      "url": "https://github.com/Raminyazdani/molformer-finetuning-property-prediction",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "ml-model-selection-notebook",
+      "description": "A Python/Jupyter notebook focused on model selection and evaluation.",
+      "url": "https://github.com/Raminyazdani/ml-model-selection-notebook",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "metagenomics-qc-taxonomy-assembly",
+      "description": "A metagenomics pipeline project for QC, taxonomic profiling, assembly, gene prediction, functional analysis.",
+      "url": "https://github.com/Raminyazdani/metagenomics-qc-taxonomy-assembly",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "image-pca-eigencats",
+      "description": "A Jupyter-based Python notebook that applies PCA to a 64×64 grayscale cat-face dataset.",
+      "url": "https://github.com/Raminyazdani/image-pca-eigencats",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "hierarchical-clustering-bio-data",
+      "description": "A Python/Jupyter analysis of biological datasets using agglomerative hierarchical clustering.",
+      "url": "https://github.com/Raminyazdani/hierarchical-clustering-bio-data",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "gene-ontology-enrichment-python",
+      "description": "A Python/Jupyter project that performs GO term enrichment on gene lists.",
+      "url": "https://github.com/Raminyazdani/gene-ontology-enrichment-python",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "feedforward-neural-network-notebook",
+      "description": "A Python/Jupyter notebook implementing and training a feed-forward neural network in PyTorch.",
+      "url": "https://github.com/Raminyazdani/feedforward-neural-network-notebook",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "data-modeling-notebook-workflow",
+      "description": "A Python/Jupyter notebook demonstrating an end-to-end data analysis and predictive modeling workflow.",
+      "url": "https://github.com/Raminyazdani/data-modeling-notebook-workflow",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "complex-biological-networks",
+      "description": "Lecture/course materials and notes on complex biological networks.",
+      "url": "https://github.com/Raminyazdani/complex-biological-networks",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "bulk-rnaseq-differential-expression-r",
+      "description": "An R/Bioconductor pipeline for bulk RNA-seq differential expression analysis.",
+      "url": "https://github.com/Raminyazdani/bulk-rnaseq-differential-expression-r",
+      "type_key": [
+        "Full CV",
+        "Bioinformatics",
+        "Academic"
+      ]
+    },
+    {
+      "title": "biological-network-reconstruction",
+      "description": "Materials related to biological network reconstruction (coursework/notes and supporting files).",
+      "url": "https://github.com/Raminyazdani/biological-network-reconstruction",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "advanced-neural-network-notebooks",
+      "description": "Two Python/Jupyter notebooks exploring advanced neural network topics and experiments.",
+      "url": "https://github.com/Raminyazdani/advanced-neural-network-notebooks",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "password_gen",
+      "description": "script for generating password with python",
+      "url": "https://github.com/Raminyazdani/password_gen",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Student Projects"
+      ]
+    },
+    {
+      "title": "conway-game-of-life",
+      "description": "this is an illustration of conway's game of life",
+      "url": "https://github.com/Raminyazdani/conway-game-of-life",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Academic"
+      ]
+    },
+    {
+      "title": "Python-Resume",
+      "description": "",
+      "url": "https://github.com/Raminyazdani/Python-Resume",
+      "type_key": [
+        "Full CV",
+        "Programming",
+        "Academic"
       ]
     }
   ],
