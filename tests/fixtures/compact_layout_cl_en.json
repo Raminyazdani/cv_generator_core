@@ -1,0 +1,35 @@
+{
+  "meta": {"type": "cover_letter", "version": "1.0"},
+  "sender": {
+    "first_name": "Carol",
+    "last_name": "White",
+    "position": "Analyst",
+    "email": "carol@example.com"
+  },
+  "recipient": {
+    "company": "DataCorp",
+    "person_name": "Hiring Manager",
+    "address_lines": ["Datenstr. 5"],
+    "city": "10115 Berlin",
+    "country": "Germany"
+  },
+  "job": {
+    "title": "Data Analyst"
+  },
+  "letter": {
+    "date": "2026-03-01",
+    "title": "Application for Data Analyst",
+    "opening": "Dear Hiring Manager,",
+    "closing": "Sincerely,",
+    "enclosures": ["CV"],
+    "signature_name": "Carol White"
+  },
+  "sections": [
+    {"id": "intro", "content": "I would like to apply for the Data Analyst position."},
+    {"id": "skills", "content": "Proficient in Python, SQL, and Tableau."}
+  ],
+  "options": {
+    "template": "compact",
+    "color_theme": "emerald"
+  }
+}

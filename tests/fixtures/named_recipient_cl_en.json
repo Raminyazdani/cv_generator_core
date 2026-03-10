@@ -1,0 +1,44 @@
+{
+  "meta": {"type": "cover_letter", "version": "1.0"},
+  "sender": {
+    "first_name": "Bob",
+    "last_name": "Jones",
+    "position": "Developer",
+    "address": "Munich, Germany",
+    "mobile": "+49 111 222 333",
+    "email": "bob@example.com",
+    "github": "bobjones",
+    "linkedin": "bobjones"
+  },
+  "recipient": {
+    "company": "Widget Inc",
+    "department": "Engineering",
+    "person_name": "Dr. Eva Mueller",
+    "person_title": "CTO",
+    "address_lines": ["Hauptstr. 10"],
+    "city": "80331 Munich",
+    "country": "Germany"
+  },
+  "job": {
+    "title": "Lead Developer",
+    "reference": "WI-2026-042"
+  },
+  "letter": {
+    "date": "2026-02-15",
+    "title": "Application for Lead Developer",
+    "opening": "Dear Dr. Mueller,",
+    "closing": "Kind regards,",
+    "enclosures": ["CV", "Certificates"],
+    "signature_name": "Bob Jones"
+  },
+  "sections": [
+    {"id": "motivation", "content": "I am excited to apply for this role."},
+    {"id": "experience", "content": ["Five years of backend development.", "Led a team of eight engineers."]},
+    {"id": "closing_remarks", "content": "I look forward to discussing further."}
+  ],
+  "options": {
+    "template": "default",
+    "color_theme": "blue",
+    "show_photo": false
+  }
+}

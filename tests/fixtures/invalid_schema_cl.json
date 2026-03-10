@@ -1,0 +1,5 @@
+{
+  "meta": {"type": "cv", "version": "1.0"},
+  "sender": {"first_name": "Bad"},
+  "note": "This file has wrong meta.type and is missing recipient, letter, sections"
+}

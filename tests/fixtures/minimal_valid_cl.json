@@ -1,0 +1,19 @@
+{
+  "meta": {"type": "cover_letter", "version": "1.0"},
+  "sender": {
+    "first_name": "Alice",
+    "last_name": "Smith",
+    "email": "alice@example.com"
+  },
+  "recipient": {
+    "company": "TestCo"
+  },
+  "letter": {
+    "date": "2026-01-01",
+    "opening": "Dear Team,",
+    "closing": "Best regards,"
+  },
+  "sections": [
+    {"id": "body", "content": "I am interested in the position."}
+  ]
+}
