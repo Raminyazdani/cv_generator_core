@@ -186,9 +186,14 @@ class TestCoverLetterSchemaValidation:
         with pytest.raises((json.JSONDecodeError, SystemExit, Exception)):
             process_cover_letter_file(f, {}, {}, tmp_path, None)
 
-    def test_invalid_layout_falls_back_to_default(self):
-        """Unknown template name falls back to 'layout.tex'."""
-        assert get_cl_layout({"template": "nonexistent_layout"}, False) == "layout.tex"
+    def test_invalid_layout_raises_with_allowed_choices(self):
+        """Unknown template name raises SystemExit listing allowed layouts."""
+        with pytest.raises(SystemExit, match="nonexistent_layout") as exc_info:
+            get_cl_layout({"template": "nonexistent_layout"}, False)
+        msg = str(exc_info.value)
+        assert "compact" in msg
+        assert "default" in msg
+        assert "rtl" in msg
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -487,3 +492,125 @@ class TestSmokeValidation:
             assert any("meta.type" in e for e in errors)
         finally:
             __import__("sys").path[:] = sys_path_backup
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# 8) Issue 08 — Validation, cache versioning, and extensibility
+# ═══════════════════════════════════════════════════════════════════════════════
+
+class TestStrongerValidation:
+    """Improved validation error messages are actionable and specific."""
+
+    def test_missing_key_error_names_fields(self, tmp_path, capsys):
+        """Error message names the exact missing fields."""
+        bad = tmp_path / "missing_en.json"
+        _write_json(bad, {"meta": {"type": "cover_letter"}, "sender": {}})
+        process_cover_letter_file(bad, {}, {}, tmp_path, None)
+        out = capsys.readouterr().out
+        assert "'recipient'" in out
+        assert "'letter'" in out
+        assert "'sections'" in out
+
+    def test_wrong_meta_type_error_explains_fix(self, tmp_path, capsys):
+        """Error message tells the user what meta.type should be."""
+        bad = tmp_path / "wrong_en.json"
+        _write_json(bad, {"meta": {"type": "cv"}, "sender": {}, "recipient": {},
+                          "letter": {}, "sections": []})
+        process_cover_letter_file(bad, {}, {}, tmp_path, None)
+        out = capsys.readouterr().out
+        assert "cover_letter" in out
+
+    def test_invalid_layout_lists_allowed(self):
+        """SystemExit from invalid layout lists all allowed choices."""
+        with pytest.raises(SystemExit, match="Allowed choices") as exc_info:
+            get_cl_layout({"template": "unknown"}, False)
+        for layout_name in CL_LAYOUTS:
+            assert layout_name in str(exc_info.value)
+
+    def test_output_path_pdf_with_multiple_files_explains(self, tmp_path):
+        """--output-path .pdf + multiple inputs → detailed error message."""
+        f1 = tmp_path / "a.json"
+        f2 = tmp_path / "b.json"
+        f1.write_text("{}", encoding="utf-8")
+        f2.write_text("{}", encoding="utf-8")
+        with pytest.raises(SystemExit, match=r"\.pdf") as exc_info:
+            resolve_output_target("out.pdf", [f1, f2])
+        msg = str(exc_info.value)
+        assert "2 input file(s)" in msg
+        assert "--output-path" in msg
+
+
+class TestCacheVersioning:
+    """Cache version invalidates stale entries when bumped."""
+
+    def test_cache_version_constant_exists(self):
+        from core.cache import CACHE_VERSION
+        assert isinstance(CACHE_VERSION, int)
+        assert CACHE_VERSION >= 1
+
+    def test_save_and_load_preserves_entries(self, tmp_path, monkeypatch):
+        from core.cache import load_cache, save_cache, CACHE_VERSION
+        cache_file = tmp_path / ".cvgen_cache.json"
+        monkeypatch.setattr("core.cache.CACHE_FILE", str(cache_file))
+        save_cache({"key": "value"})
+        loaded = load_cache()
+        assert loaded == {"key": "value"}
+
+    def test_version_mismatch_discards_cache(self, tmp_path, monkeypatch):
+        from core.cache import load_cache, save_cache, CACHE_VERSION
+        cache_file = tmp_path / ".cvgen_cache.json"
+        monkeypatch.setattr("core.cache.CACHE_FILE", str(cache_file))
+        save_cache({"key": "value"})
+        # Tamper with the stored version
+        raw = json.loads(cache_file.read_text(encoding="utf-8"))
+        raw["__cache_version__"] = CACHE_VERSION + 999
+        cache_file.write_text(json.dumps(raw), encoding="utf-8")
+        loaded = load_cache()
+        assert loaded == {}
+
+    def test_missing_version_key_discards_cache(self, tmp_path, monkeypatch):
+        """A cache file written before versioning is discarded."""
+        from core.cache import load_cache
+        cache_file = tmp_path / ".cvgen_cache.json"
+        monkeypatch.setattr("core.cache.CACHE_FILE", str(cache_file))
+        cache_file.write_text(json.dumps({"old_key": "old_val"}), encoding="utf-8")
+        loaded = load_cache()
+        assert loaded == {}
+
+
+class TestExtensibilityHooks:
+    """Extensibility constants and interfaces are accessible."""
+
+    def test_doc_prefix_constants_exist(self):
+        from core.cache import DOC_PREFIX_CV, DOC_PREFIX_CL
+        assert DOC_PREFIX_CV == ""
+        assert DOC_PREFIX_CL == "cl:"
+
+    def test_cl_doc_type_constant(self):
+        from cover_letter.build import CL_DOC_TYPE
+        assert CL_DOC_TYPE == "cover_letter"
+
+    def test_cl_template_namespace_constant(self):
+        from cover_letter.build import CL_TEMPLATE_NAMESPACE
+        assert CL_TEMPLATE_NAMESPACE == "cover_letter"
+
+    def test_cl_required_keys_constant(self):
+        from cover_letter.build import CL_REQUIRED_KEYS
+        assert "sender" in CL_REQUIRED_KEYS
+        assert "recipient" in CL_REQUIRED_KEYS
+        assert "letter" in CL_REQUIRED_KEYS
+        assert "sections" in CL_REQUIRED_KEYS
+
+    def test_cv_required_keys_constant(self):
+        from cv.build import CV_REQUIRED_KEYS
+        assert "basics" in CV_REQUIRED_KEYS
+
+    def test_new_constants_re_exported_via_generate_cv(self):
+        """New extensibility constants are available on the generate_cv module."""
+        assert hasattr(generate_cv, "CACHE_VERSION")
+        assert hasattr(generate_cv, "DOC_PREFIX_CV")
+        assert hasattr(generate_cv, "DOC_PREFIX_CL")
+        assert hasattr(generate_cv, "CL_DOC_TYPE")
+        assert hasattr(generate_cv, "CL_TEMPLATE_NAMESPACE")
+        assert hasattr(generate_cv, "CL_REQUIRED_KEYS")
+        assert hasattr(generate_cv, "CV_REQUIRED_KEYS")

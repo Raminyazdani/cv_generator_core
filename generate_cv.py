@@ -36,6 +36,9 @@ from core.cache import (  # noqa: F401
     cache_key_for_path,
     has_file_changed,
     compute_composite_hash,
+    CACHE_VERSION,
+    DOC_PREFIX_CV,
+    DOC_PREFIX_CL,
 )
 
 from core.files import (  # noqa: F401
@@ -71,13 +74,16 @@ from core.cleanup import (  # noqa: F401
 )
 
 # ── Re-export CV-specific orchestration ─────────────────────────────────────
-from cv.build import process_cv_file, get_cv_section_templates  # noqa: F401
+from cv.build import process_cv_file, get_cv_section_templates, CV_REQUIRED_KEYS  # noqa: F401
 
 # ── Re-export cover-letter orchestration ────────────────────────────────────
 from cover_letter.build import (  # noqa: F401
     process_cover_letter_file,
     CL_PARTIAL_TEMPLATES,
     CL_LAYOUTS,
+    CL_DOC_TYPE,
+    CL_TEMPLATE_NAMESPACE,
+    CL_REQUIRED_KEYS,
     get_cl_layout,
 )
 
@@ -211,9 +217,9 @@ Change Detection:
             # Update cache with new hash
             if current_hash:
                 if doc_type == "cover-letter":
-                    key = cache_key_for_path(input_file, prefix="cl:")
+                    key = cache_key_for_path(input_file, prefix=DOC_PREFIX_CL)
                 else:
-                    key = cache_key_for_path(input_file)
+                    key = cache_key_for_path(input_file, prefix=DOC_PREFIX_CV)
                 cache[key] = current_hash
                 log_verbose(f"    💾 Cache updated for {input_file}")
         elif skipped:

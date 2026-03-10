@@ -5,26 +5,53 @@ from pathlib import Path
 
 from core.settings import CACHE_FILE
 
+# ── Cache versioning ────────────────────────────────────────────────────────
+# Bump this constant whenever the schema, template structure, or hashing
+# strategy changes so that stale cache entries are automatically invalidated.
+CACHE_VERSION = 1
+
+# ── Document-type key prefixes ──────────────────────────────────────────────
+# Each document type uses a distinct prefix in cache keys so entries never
+# collide across pipelines.  Add new prefixes here when introducing
+# additional document types (e.g. "port:" for portfolio pages).
+DOC_PREFIX_CV = ""
+DOC_PREFIX_CL = "cl:"
+
 
 def load_cache():
-    """Load the hash cache from the cache file."""
+    """Load the hash cache from the cache file.
+
+    If the stored cache version does not match ``CACHE_VERSION`` the cache
+    is silently discarded and an empty dict is returned, ensuring stale
+    entries from older schema/template versions are never reused.
+    """
     if os.path.exists(CACHE_FILE):
         try:
             with open(CACHE_FILE, encoding="utf-8") as f:
-                return json.load(f)
+                raw = json.load(f)
         except (json.JSONDecodeError, IOError):
             return {}
+        # Version gate: discard the entire cache when the version is outdated
+        if raw.get("__cache_version__") != CACHE_VERSION:
+            return {}
+        # Strip the internal metadata key before returning
+        return {k: v for k, v in raw.items() if k != "__cache_version__"}
     return {}
 
 
 def save_cache(cache):
-    """Save the hash cache to the cache file."""
+    """Save the hash cache to the cache file.
+
+    The current ``CACHE_VERSION`` is stored alongside the entries so that
+    future runs can detect incompatible caches.
+    """
     cache_path = Path(CACHE_FILE)
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     temp_path = cache_path.with_suffix(".tmp")
     try:
+        payload = {"__cache_version__": CACHE_VERSION, **cache}
         with open(temp_path, "w", encoding="utf-8") as f:
-            json.dump(cache, f, indent=2)
+            json.dump(payload, f, indent=2)
         os.replace(temp_path, cache_path)
     except IOError as e:
         print(f"⚠️  Warning: Could not save cache: {e}")
