@@ -2,15 +2,18 @@
 """
 Smoke Validation Script for CV Generator
 
-This script validates CV JSON files to prevent regressions that cause:
+This script validates CV and cover-letter JSON files to prevent regressions
+that cause:
 - Empty sections
 - undefined/null values appearing in output
 - Wrong data types (arrays becoming objects, etc.)
 
 Usage:
-    python scripts/smoke_validate.py         # Validate all CVs
-    python scripts/smoke_validate.py --all   # Same as above
-    python scripts/smoke_validate.py -v      # Verbose output
+    python scripts/smoke_validate.py                     # Validate all CVs
+    python scripts/smoke_validate.py --all               # Same as above
+    python scripts/smoke_validate.py --cover-letters      # Validate cover letters
+    python scripts/smoke_validate.py --all --cover-letters # Validate both
+    python scripts/smoke_validate.py -v                  # Verbose output
 """
 
 import json
@@ -23,6 +26,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_ROOT = SCRIPT_DIR.parent
 CVS_PATH = PROJECT_ROOT / "data" / "cvs"
+COVER_LETTER_PATH = PROJECT_ROOT / "data" / "cover_letter_datas"
 
 # Required top-level keys for a valid CV
 REQUIRED_KEYS = ["basics"]
@@ -159,6 +163,133 @@ def validate_cv_file(filepath: Path, verbose: bool = False) -> tuple:
     return len(errors) == 0, errors
 
 
+# ── Cover-letter validation ──────────────────────────────────────────────────
+
+# Required top-level keys for a valid cover letter
+CL_REQUIRED_KEYS = ["meta", "sender", "recipient", "letter", "sections"]
+
+# Keys within sender that are critical
+CL_REQUIRED_SENDER_KEYS = ["first_name", "last_name"]
+
+
+def validate_cl_json_structure(data: dict, filename: str, verbose: bool = False) -> list:
+    """
+    Validate the JSON structure of a cover-letter file.
+
+    Returns a list of error messages (empty if valid).
+    """
+    errors = []
+
+    # Meta type must be cover_letter
+    meta_type = data.get("meta", {}).get("type")
+    if meta_type != "cover_letter":
+        errors.append(f"meta.type must be 'cover_letter', got '{meta_type}'")
+
+    # Check required top-level keys
+    for key in CL_REQUIRED_KEYS:
+        if key not in data:
+            errors.append(f"Missing required key: '{key}'")
+
+    # Check sender structure
+    sender = data.get("sender", {})
+    if isinstance(sender, dict):
+        for key in CL_REQUIRED_SENDER_KEYS:
+            if key not in sender:
+                if verbose:
+                    print(f"  Warning: sender missing '{key}' in {filename}")
+
+    # Check sections is a non-empty list
+    sections = data.get("sections")
+    if sections is not None:
+        if not isinstance(sections, list):
+            errors.append(f"'sections' should be an array, got {type(sections).__name__}")
+        elif len(sections) == 0:
+            errors.append("'sections' array is empty (cover letter has no body content)")
+
+    # Check for null values
+    null_fields = find_null_fields(data)
+    if verbose and null_fields:
+        print(f"  Warning: Found null fields in {filename}: {null_fields[:5]}...")
+
+    return errors
+
+
+def validate_cover_letter_file(filepath: Path, verbose: bool = False) -> tuple:
+    """
+    Validate a single cover-letter JSON file.
+
+    Returns (success: bool, errors: list)
+    """
+    errors = []
+
+    if not filepath.exists():
+        return False, [f"File not found: {filepath}"]
+
+    try:
+        with open(filepath, encoding="utf-8") as f:
+            data = json.load(f)
+    except json.JSONDecodeError as e:
+        return False, [f"Invalid JSON: {e}"]
+    except Exception as e:
+        return False, [f"Error reading file: {e}"]
+
+    structure_errors = validate_cl_json_structure(data, filepath.name, verbose)
+    errors.extend(structure_errors)
+
+    undefined_issues = check_for_undefined_strings(data)
+    errors.extend(undefined_issues)
+
+    return len(errors) == 0, errors
+
+
+def validate_all_cover_letters(verbose: bool = False) -> dict:
+    """
+    Validate all cover-letter JSON files in data/cover_letter_datas/.
+
+    Returns a dict with validation results.
+    """
+    results = {
+        "total": 0,
+        "passed": 0,
+        "failed": 0,
+        "files": {}
+    }
+
+    if not COVER_LETTER_PATH.exists():
+        print(f"❌ Cover-letter directory not found: {COVER_LETTER_PATH}")
+        return results
+
+    json_files = list(COVER_LETTER_PATH.glob("*.json"))
+
+    if not json_files:
+        print(f"⚠️  No JSON files found in {COVER_LETTER_PATH}")
+        return results
+
+    results["total"] = len(json_files)
+
+    print(f"\n📋 Validating {len(json_files)} cover-letter file(s)...\n")
+
+    for filepath in sorted(json_files):
+        filename = filepath.name
+        success, errors = validate_cover_letter_file(filepath, verbose)
+
+        results["files"][filename] = {
+            "success": success,
+            "errors": errors
+        }
+
+        if success:
+            results["passed"] += 1
+            print(f"  ✅ {filename}")
+        else:
+            results["failed"] += 1
+            print(f"  ❌ {filename}")
+            for error in errors:
+                print(f"      - {error}")
+
+    return results
+
+
 def validate_all_cvs(verbose: bool = False) -> dict:
     """
     Validate all CV JSON files in the data/cvs directory.
@@ -218,6 +349,8 @@ def generate_report(results: dict) -> None:
 def main():
     parser = argparse.ArgumentParser(description="Smoke validation for CV Generator")
     parser.add_argument("--all", action="store_true", help="Validate all CV files")
+    parser.add_argument("--cover-letters", action="store_true",
+                        help="Validate cover-letter files in addition to CVs")
     parser.add_argument("-v", "--verbose", action="store_true", help="Verbose output")
     args = parser.parse_args()
     
@@ -225,17 +358,36 @@ def main():
     print("🔍 CV Generator Smoke Validation")
     print("=" * 60)
     
-    results = validate_all_cvs(verbose=args.verbose)
+    cv_results = validate_all_cvs(verbose=args.verbose)
     
+    cl_results = None
+    if args.cover_letters:
+        print("\n" + "-" * 60)
+        print("📨 Cover-Letter Validation")
+        print("-" * 60)
+        cl_results = validate_all_cover_letters(verbose=args.verbose)
+    
+    # Combined summary
+    total_passed = cv_results["passed"]
+    total_total = cv_results["total"]
+    total_failed = cv_results["failed"]
+    if cl_results:
+        total_passed += cl_results["passed"]
+        total_total += cl_results["total"]
+        total_failed += cl_results["failed"]
+
     print("\n" + "=" * 60)
-    print(f"📊 Results: {results['passed']}/{results['total']} passed")
+    print(f"📊 Results: {total_passed}/{total_total} passed")
     print("=" * 60)
     
     # Generate report
-    generate_report(results)
+    combined = {"cv": cv_results}
+    if cl_results:
+        combined["cover_letter"] = cl_results
+    generate_report(combined)
     
     # Exit with appropriate code
-    if results["failed"] > 0:
+    if total_failed > 0:
         print("\n❌ Validation FAILED")
         sys.exit(1)
     else:
