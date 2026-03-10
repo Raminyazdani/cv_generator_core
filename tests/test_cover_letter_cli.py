@@ -12,9 +12,7 @@ Validates:
 """
 
 import json
-import sys
 from pathlib import Path
-from unittest import mock
 
 import pytest
 
@@ -70,15 +68,14 @@ class TestCLITypeFlag:
 
     def test_type_flag_accepted(self):
         """--type cover-letter is accepted without error."""
-        with mock.patch("sys.argv", ["generate_cv.py", "--type", "cover-letter"]):
-            import argparse
+        import argparse
 
-            parser = argparse.ArgumentParser()
-            parser.add_argument("files", nargs="*")
-            parser.add_argument("--type", choices=["cv", "cover-letter"],
-                                default="cv", dest="doc_type")
-            args = parser.parse_args(["--type", "cover-letter"])
-            assert args.doc_type == "cover-letter"
+        parser = argparse.ArgumentParser()
+        parser.add_argument("files", nargs="*")
+        parser.add_argument("--type", choices=["cv", "cover-letter"],
+                            default="cv", dest="doc_type")
+        args = parser.parse_args(["--type", "cover-letter"])
+        assert args.doc_type == "cover-letter"
 
     def test_default_type_is_cv(self):
         """Without --type the default is 'cv'."""
@@ -178,7 +175,8 @@ class TestCompositeHashCacheInvalidation:
         """Cover letter template directory has .tex files for hashing."""
         cl_template_dir = Path(TEMPLATE_DIR) / "cover_letter"
         tex_files = sorted(cl_template_dir.glob("*.tex"))
-        assert len(tex_files) >= 9  # 6 partials + 3 layouts
+        # At least 6 partials + 3 layouts
+        assert len(tex_files) >= len(generate_cv.CL_PARTIAL_TEMPLATES) + len(generate_cv.CL_LAYOUTS)
 
 
 # ── Tests: cover-letter output naming ────────────────────────────────────────

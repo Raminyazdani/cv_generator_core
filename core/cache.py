@@ -64,7 +64,7 @@ def cache_key_for_path(path: Path, prefix: str = "") -> str:
     return prefix + normalize_path_for_cache(path)
 
 
-def compute_composite_hash(filepaths) -> str | None:
+def compute_composite_hash(filepaths: list[Path]) -> str | None:
     """Compute a single SHA-256 hash over the contents of *filepaths*.
 
     The hash is deterministic for a given set of file contents regardless of
