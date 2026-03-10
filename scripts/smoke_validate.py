@@ -350,7 +350,7 @@ def main():
     parser = argparse.ArgumentParser(description="Smoke validation for CV Generator")
     parser.add_argument("--all", action="store_true", help="Validate all CV files")
     parser.add_argument("--cover-letters", action="store_true",
-                        help="Also validate cover-letter files")
+                        help="Validate cover-letter files in addition to CVs")
     parser.add_argument("-v", "--verbose", action="store_true", help="Verbose output")
     args = parser.parse_args()
     
