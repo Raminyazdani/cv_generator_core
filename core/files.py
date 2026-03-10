@@ -49,12 +49,28 @@ def gather_input_files(files, default_dir: Path) -> list[Path]:
 
 
 def resolve_output_target(output_path: str, input_files: list[Path]) -> tuple[Path, Path | None]:
-    """Resolve output path configuration and validate constraints."""
+    """Resolve output path configuration and validate constraints.
+
+    Raises:
+        SystemExit: If the output-path configuration conflicts with the
+            number of input files.  The error message explains how to fix
+            the issue.
+    """
     output_target = Path(output_path).expanduser()
     if output_target.suffix.lower() == ".pdf":
         if len(input_files) != 1:
-            raise SystemExit("❌ --output-path may be a PDF file only when processing a single input file.")
+            raise SystemExit(
+                f"❌ --output-path '{output_path}' ends in .pdf, but you are "
+                f"processing {len(input_files)} input file(s).  A .pdf output "
+                f"path is only allowed when processing a single input file.  "
+                f"Either pass exactly one input file or use a directory path "
+                f"(e.g. --output-path ./pdfs)."
+            )
         return output_target.parent, output_target
     if output_target.exists() and output_target.is_file():
-        raise SystemExit("❌ --output-path must be a directory when processing multiple outputs.")
+        raise SystemExit(
+            f"❌ --output-path '{output_path}' already exists as a regular "
+            f"file, but a directory is required when processing multiple "
+            f"outputs.  Remove the file or choose a different path."
+        )
     return output_target, None

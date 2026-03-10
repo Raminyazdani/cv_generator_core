@@ -2,6 +2,10 @@
 
 Handles the CV rendering pipeline: JSON loading, schema validation,
 section rendering, layout selection, and PDF compilation.
+
+This module mirrors ``cover_letter/build.py`` in structure.  Both
+pipelines share the ``core/`` utilities for caching, Jinja2 setup,
+LaTeX compilation, and cleanup.
 """
 
 import json
@@ -16,6 +20,10 @@ from core.compile import compile_latex, finalize_pdf
 from core.jinja_env import create_jinja_env
 from core.language import parse_cv_filename
 from core.settings import RTL_LANGUAGES, RESULT_DIR, TEMPLATE_DIR, log_verbose
+
+# ── Document-type constants ─────────────────────────────────────────────────
+# Required top-level keys in a CV JSON file (used for validation).
+CV_REQUIRED_KEYS = ("basics",)
 
 
 def get_cv_section_templates():
@@ -81,9 +89,14 @@ def process_cv_file(people_path: Path, lang_map, section_templates, cache, outpu
     with open(JSON_PATH, encoding="utf-8") as f:
         data = json.load(f)
 
-    # Validate required structure - skip files that don't have the expected schema
-    if "basics" not in data:
-        print(f"⚠️  Skipping {people_path}: missing 'basics' key (incompatible schema)")
+    # Validate required structure — skip files that don't have the expected schema
+    missing_keys = [k for k in CV_REQUIRED_KEYS if k not in data]
+    if missing_keys:
+        print(
+            f"⚠️  Skipping {people_path}: missing required field(s): "
+            f"{', '.join(repr(k) for k in missing_keys)} (incompatible schema). "
+            f"A valid CV must contain: {', '.join(repr(k) for k in CV_REQUIRED_KEYS)}."
+        )
         return False, True, None
 
     # Create output directory structure: result/<base_name>/<lang>/sections/
