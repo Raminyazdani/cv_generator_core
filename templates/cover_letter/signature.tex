@@ -1,0 +1,15 @@
+%% cover_letter/signature.tex — Signature block (name printed below closing)
+%% Awesome-CV's \makeletterclosing uses \firstname + \lastname by default.
+%% If letter.signature_name overrides it, we redefine \firstname / \lastname
+%% so the closing block picks it up automatically.
+
+<BLOCK> if letter is defined and letter.signature_name is defined and letter.signature_name </BLOCK>
+<BLOCK> set sig_parts = letter.signature_name.split(' ') </BLOCK>
+<BLOCK> if sig_parts | length > 1 </BLOCK>
+\renewcommand{\@firstname}{<VAR> sig_parts[0] | latex_escape </VAR>}
+\renewcommand{\@lastname}{<VAR> sig_parts[1:] | join(' ') | latex_escape </VAR>}
+<BLOCK> else </BLOCK>
+\renewcommand{\@firstname}{<VAR> letter.signature_name | latex_escape </VAR>}
+\renewcommand{\@lastname}{}
+<BLOCK> endif </BLOCK>
+<BLOCK> endif </BLOCK>

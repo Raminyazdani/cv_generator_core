@@ -1,0 +1,24 @@
+%% cover_letter/letter_meta.tex — Date, title, opening, and closing for Awesome-CV letter
+%% Sets \letterdate, \lettertitle, \letteropening, \letterclosing.
+
+<BLOCK> if letter is defined </BLOCK>
+
+<BLOCK> if letter.date is defined and letter.date </BLOCK>
+\letterdate{<VAR> letter.date | latex_escape </VAR>}
+<BLOCK> else </BLOCK>
+\letterdate{\today}
+<BLOCK> endif </BLOCK>
+
+<BLOCK> if letter.title is defined and letter.title </BLOCK>
+\lettertitle{<VAR> letter.title | latex_escape </VAR>}
+<BLOCK> endif </BLOCK>
+
+<BLOCK> if letter.opening is defined and letter.opening </BLOCK>
+\letteropening{<VAR> letter.opening | latex_escape </VAR>}
+<BLOCK> endif </BLOCK>
+
+<BLOCK> if letter.closing is defined and letter.closing </BLOCK>
+\letterclosing{<VAR> letter.closing | latex_escape </VAR>}
+<BLOCK> endif </BLOCK>
+
+<BLOCK> endif </BLOCK>

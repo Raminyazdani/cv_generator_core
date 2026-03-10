@@ -1,0 +1,20 @@
+%% cover_letter/body_sections.tex — Letter body paragraphs inside cvletter environment
+%% Renders each entry in `sections` as body text (strings or arrays of paragraphs).
+
+<BLOCK> if sections is defined and sections | length > 0 </BLOCK>
+<BLOCK> for section in sections </BLOCK>
+<BLOCK> if section.content is string </BLOCK>
+<VAR> section.content | latex_escape </VAR>
+<BLOCK> elif section.content is iterable </BLOCK>
+<BLOCK> for paragraph in section.content </BLOCK>
+<VAR> paragraph | latex_escape </VAR>
+<BLOCK> if not loop.last </BLOCK>
+
+<BLOCK> endif </BLOCK>
+<BLOCK> endfor </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if not loop.last </BLOCK>
+
+<BLOCK> endif </BLOCK>
+<BLOCK> endfor </BLOCK>
+<BLOCK> endif </BLOCK>

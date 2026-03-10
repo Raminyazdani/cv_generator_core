@@ -1,0 +1,38 @@
+%% cover_letter/recipient.tex — Recipient address block for Awesome-CV letter
+%% Sets \recipient command used by \makelettertitle.
+
+<BLOCK> if recipient is defined </BLOCK>
+<BLOCK> set recipient_name_parts = [] </BLOCK>
+<BLOCK> if recipient.person_title is defined and recipient.person_title </BLOCK>
+<BLOCK> set recipient_name_parts = recipient_name_parts + [recipient.person_title] </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if recipient.person_name is defined and recipient.person_name </BLOCK>
+<BLOCK> set recipient_name_parts = recipient_name_parts + [recipient.person_name] </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if recipient_name_parts | length == 0 and recipient.company is defined </BLOCK>
+<BLOCK> set recipient_name_parts = [recipient.company] </BLOCK>
+<BLOCK> endif </BLOCK>
+
+<BLOCK> set addr_parts = [] </BLOCK>
+<BLOCK> if recipient.company is defined and recipient.company </BLOCK>
+<BLOCK> set addr_parts = addr_parts + [recipient.company] </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if recipient.department is defined and recipient.department </BLOCK>
+<BLOCK> set addr_parts = addr_parts + [recipient.department] </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if recipient.address_lines is defined </BLOCK>
+<BLOCK> for line in recipient.address_lines </BLOCK>
+<BLOCK> set addr_parts = addr_parts + [line] </BLOCK>
+<BLOCK> endfor </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if recipient.city is defined and recipient.city </BLOCK>
+<BLOCK> set addr_parts = addr_parts + [recipient.city] </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if recipient.country is defined and recipient.country </BLOCK>
+<BLOCK> set addr_parts = addr_parts + [recipient.country] </BLOCK>
+<BLOCK> endif </BLOCK>
+
+\recipient
+  {<VAR> recipient_name_parts | join(' ') | latex_escape </VAR>}
+  {<VAR> addr_parts | map('latex_escape') | join('\\\\') </VAR>}
+<BLOCK> endif </BLOCK>
