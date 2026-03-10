@@ -1,8 +1,8 @@
 # CV Generator – JSON → Awesome-CV PDF
 
-Generate beautiful, professional PDF resumes from structured JSON using [Jinja2](https://jinja.palletsprojects.com/) templates and the [Awesome-CV](https://github.com/posquit0/Awesome-CV) LaTeX class.
+Generate beautiful, professional PDF resumes **and cover letters** from structured JSON using [Jinja2](https://jinja.palletsprojects.com/) templates and the [Awesome-CV](https://github.com/posquit0/Awesome-CV) LaTeX class.
 
-This project takes one or more JSON CV files from `data/cvs/`, renders LaTeX using custom section templates in `templates/`, and compiles final PDFs (one per person) using `xelatex`.
+This project takes one or more JSON files — CVs from `data/cvs/` or cover letters from `data/cover_letter_datas/` — renders LaTeX using custom section templates in `templates/`, and compiles final PDFs using `xelatex`.
 
 ---
 
@@ -14,22 +14,24 @@ This project takes one or more JSON CV files from `data/cvs/`, renders LaTeX usi
 - [Installation](#installation)  
 - [Usage](#usage)  
   - [Running the generator](#running-the-generator)  
+  - [Cover Letter Generation](#cover-letter-generation)  
   - [Adding a new CV](#adding-a-new-cv)  
+  - [Adding a new Cover Letter](#adding-a-new-cover-letter)  
   - [Adding a profile picture](#adding-a-profile-picture)  
 - [Data Format (JSON Schema Overview)](#data-format-json-schema-overview)  
-  - [Basics](#basics)  
-  - [Profiles / Social links](#profiles--social-links)  
-  - [Education](#education)  
-  - [Experience](#experience)  
-  - [Skills](#skills)  
-  - [Other Sections](#other-sections)  
+  - [CV Data Format](#cv-data-format)  
+  - [Cover Letter Data Format](#cover-letter-data-format)  
 - [Template System](#template-system)  
   - [Jinja2 configuration](#jinja2-configuration)  
   - [Available filters and helpers](#available-filters-and-helpers)  
   - [Main LaTeX layout](#main-latex-layout)  
+  - [Cover Letter Templates](#cover-letter-templates)  
 - [Output and Intermediate Files](#output-and-intermediate-files)  
 - [Troubleshooting](#troubleshooting)  
 - [Development Notes](#development-notes)  
+  - [Adding a new CV section](#adding-a-new-cv-section)  
+  - [Adding a new cover-letter template](#adding-a-new-cover-letter-template)  
+  - [Architecture and migration notes](#architecture-and-migration-notes)  
 - [License](#license)  
 - [Acknowledgements](#acknowledgements)
 
@@ -38,12 +40,16 @@ This project takes one or more JSON CV files from `data/cvs/`, renders LaTeX usi
 ## Features
 
 - **Multi-CV support**: Automatically generates a PDF for every JSON file in `data/cvs/`.
+- **Cover letter support**: Generate professional cover letters from structured JSON in `data/cover_letter_datas/` using the same CLI.
 - **Beautiful layout**: Uses the popular Awesome-CV LaTeX class (`awesome-cv.cls`).
 - **Modular sections**: Each CV section is a separate Jinja2/LaTeX template under `templates/`:
   - `header`, `education`, `experience`, `skills`, `language`, `projects`, `certificates`, `publications`, `references`, ...
+- **Cover letter partials**: Cover letter templates in `templates/cover_letter/` include sender header, recipient, letter metadata, body sections, signature, and enclosures.
 - **Profile photo support**: Optional per-person images under `data/pics/`.
+- **Change detection caching**: SHA-256 hash-based caching avoids reprocessing unchanged inputs. Cover letters include template hashes in the cache for full invalidation support.
 - **Robust cleanup**: Intermediate result directories are cleaned up reliably, with special handling for Windows file locks (e.g., OneDrive / antivirus).
 - **Safe templating**: Uses `StrictUndefined` to catch missing fields early; custom LaTeX-escaping filter to avoid compilation errors.
+- **RTL language support**: Automatic right-to-left layout for Persian, Arabic, and Hebrew — works for both CVs and cover letters.
 
 ---
 
@@ -52,36 +58,83 @@ This project takes one or more JSON CV files from `data/cvs/`, renders LaTeX usi
 At a glance:
 
 ```text
-cv_generator/
-├─ awesome-cv.cls           # Awesome-CV LaTeX class (upstream)
-├─ generate_cv.py           # Main script: JSON → LaTeX (Jinja2) → PDF
-├─ README.md                # This file
+cv_generator_core/
+├─ generate_cv.py               # CLI entry point (CV + cover letter)
+├─ awesome-cv.cls               # Awesome-CV LaTeX class (LTR)
+├─ awesome-cv-rtl.cls           # Awesome-CV LaTeX class (RTL)
+├─ README.md                    # This file
+├─ .cvgen_cache.json            # Hash cache for change detection
+│
+├─ core/                        # Shared document-agnostic utilities
+│  ├─ settings.py               #   Paths, constants, verbose logging
+│  ├─ cache.py                  #   Hash caching and change detection
+│  ├─ files.py                  #   Input/output file resolution
+│  ├─ latex.py                  #   LaTeX helpers and filters
+│  ├─ language.py               #   Translation and language parsing
+│  ├─ jinja_env.py              #   Jinja2 environment factory
+│  ├─ compile.py                #   xelatex compilation and PDF finalization
+│  └─ cleanup.py                #   Intermediate file cleanup
+│
+├─ cv/                          # CV-specific build orchestration
+│  └─ build.py                  #   process_cv_file(), section discovery
+│
+├─ cover_letter/                # Cover-letter-specific build orchestration
+│  └─ build.py                  #   process_cover_letter_file(), layout selection
+│
 ├─ data/
-│  ├─ cvs/                  # Input JSON CVs (one file per person)
-│  │  ├─ mahsa.json
-│  │  └─ ramin.json
-│  └─ pics/                 # Optional profile photos
-│     ├─ mahsa.jpg
+│  ├─ cvs/                      # Input JSON CVs (one file per person/language)
+│  │  ├─ ramin_en.json
+│  │  └─ ramin_de.json
+│  ├─ cover_letter_datas/       # Input JSON cover letters (one per application)
+│  │  ├─ ramin_google_en.json
+│  │  ├─ ramin_sap_de.json
+│  │  └─ ramin_techcorp_en.json
+│  └─ pics/                     # Optional profile photos
 │     └─ ramin.jpg
-├─ output/                  # Final generated PDFs (e.g. mahsa.pdf, ramin.pdf)
-├─ templates/               # Jinja2+LaTeX section templates
-│  ├─ layout.tex            # Main document layout; includes sections inline
-│  ├─ header.tex            # Personal info & social links
-│  ├─ education.tex
-│  ├─ experience.tex
-│  ├─ skills.tex
-│  ├─ language.tex
-│  ├─ projects.tex
-│  ├─ certificates.tex
-│  ├─ publications.tex
-│  ├─ references.tex
-│  └─ ... (extendable)
+│
+├─ templates/                   # Jinja2 + LaTeX templates
+│  ├─ layout.tex                # CV main layout (LTR)
+│  ├─ layout_rtl.tex            # CV main layout (RTL)
+│  ├─ header.tex                # CV header section
+│  ├─ education.tex             # CV education section
+│  ├─ experience.tex            # CV experience section
+│  ├─ skills.tex                # CV skills section
+│  ├─ ... (other CV sections)
+│  └─ cover_letter/             # Cover letter templates
+│     ├─ layout.tex             #   Standard LTR layout
+│     ├─ layout_compact.tex     #   Compact layout variant
+│     ├─ layout_rtl.tex         #   RTL layout variant
+│     ├─ sender_header.tex      #   Sender contact info
+│     ├─ recipient.tex          #   Addressee block
+│     ├─ letter_meta.tex        #   Date, subject, salutation
+│     ├─ body_sections.tex      #   Letter body paragraphs
+│     ├─ signature.tex          #   Closing and signature
+│     └─ enclosures.tex         #   Enclosed documents list
+│
+├─ output/                      # Final generated PDFs
+│
+├─ Lang_engine/                 # Translation engine
+│  └─ lang.json                 # Translation keys (CV + cover letter)
+│
+├─ docs/                        # Documentation
+│  ├─ ADR-001-cover-letter-architecture.md
+│  └─ cover-letter-schema.md    # Full JSON schema reference
+│
+├─ tests/                       # Test suite
+│  ├─ test_cli_paths.py
+│  ├─ test_core_modules.py
+│  ├─ test_cover_letter_templates.py
+│  ├─ test_cover_letter_cli.py
+│  └─ test_cover_letter_full.py
+│
+├─ scripts/                     # Utility scripts
+│  └─ smoke_validate.py         # Smoke validation (--cover-letters flag)
+│
 └─ (generated at runtime)
-   └─ result/               # Per-person intermediate .tex sections (auto‑cleaned)
-      └─ <name>/sections/
-         ├─ header.tex
-         ├─ education.tex
-         └─ ...
+   └─ result/                   # Per-person intermediate .tex files (auto-cleaned)
+      └─ <name>/<lang>/
+         ├─ sections/           # CV section intermediates
+         └─ cover_letter/       # Cover letter intermediates
 ```
 
 ---
