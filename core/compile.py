@@ -50,10 +50,10 @@ def finalize_pdf(output_dir: Path, output_pdf_path: Path):
     if output_dir.exists():
         for file in os.listdir(output_dir):
             file_path = output_dir / file
-            if not file.endswith(".pdf"):
-                os.remove(file_path)
             if file.endswith("rendered.pdf"):
                 shutil.move(file_path, output_pdf_path)
                 log_verbose(f"    📄 PDF generated: {output_pdf_path.name}")
+            elif not file.endswith(".pdf"):
+                os.remove(file_path)
 
     return output_pdf_path.exists()
