@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "type": "cover_letter",
+    "version": "1.0"
+  },
+  "sender": {
+    "first_name": "Ramin",
+    "last_name": "Yazdani",
+    "email": "ramin@example.com"
+  },
+  "recipient": {
+    "company": "Example Corp"
+  },
+  "letter": {
+    "date": "2026-01-01",
+    "opening": "Dear Hiring Team,",
+    "closing": "Best regards,"
+  },
+  "sections": [
+    {
+      "id": "body",
+      "content": "I am interested in the open position at your company."
+    }
+  ]
+}
