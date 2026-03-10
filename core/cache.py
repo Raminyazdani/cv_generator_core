@@ -54,9 +54,32 @@ def normalize_path_for_cache(path: Path) -> str:
     return normalized
 
 
-def cache_key_for_path(path: Path) -> str:
-    """Return a canonical cache key for a given input file path."""
-    return normalize_path_for_cache(path)
+def cache_key_for_path(path: Path, prefix: str = "") -> str:
+    """Return a canonical cache key for a given input file path.
+
+    Args:
+        path: Input file path.
+        prefix: Optional key prefix (e.g. ``"cl:"`` for cover letters).
+    """
+    return prefix + normalize_path_for_cache(path)
+
+
+def compute_composite_hash(filepaths: list[Path]) -> str | None:
+    """Compute a single SHA-256 hash over the contents of *filepaths*.
+
+    The hash is deterministic for a given set of file contents regardless of
+    read order because individual file hashes are sorted before combining.
+    Returns ``None`` if any file cannot be read.
+    """
+    hashes = []
+    for fp in filepaths:
+        h = compute_file_hash(fp)
+        if h is None:
+            return None
+        hashes.append(h)
+    hashes.sort()
+    combined = hashlib.sha256("".join(hashes).encode()).hexdigest()
+    return combined
 
 
 def has_file_changed(filepath: Path, cache, output_pdf_path: Path):

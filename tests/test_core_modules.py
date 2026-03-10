@@ -23,6 +23,7 @@ from core.cache import (
     normalize_path_for_cache,
     cache_key_for_path,
     has_file_changed,
+    compute_composite_hash,
 )
 from core.files import gather_input_files, resolve_output_target
 from core.latex import latex_escape, file_exists, debug, types, cmt, cblock, find_pic, get_pic
@@ -88,6 +89,60 @@ class TestCoreCache:
         pdf = tmp_path / "a.pdf"
         changed, h = has_file_changed(f, {}, pdf)
         assert changed is True
+
+    def test_cache_key_for_path_with_prefix(self, tmp_path):
+        f = tmp_path / "letter.json"
+        f.write_text("{}", encoding="utf-8")
+        key_no_prefix = cache_key_for_path(f)
+        key_cl = cache_key_for_path(f, prefix="cl:")
+        assert key_cl.startswith("cl:")
+        assert key_cl == "cl:" + key_no_prefix
+
+    def test_cache_key_prefix_avoids_collision(self, tmp_path):
+        f = tmp_path / "data.json"
+        f.write_text("{}", encoding="utf-8")
+        cv_key = cache_key_for_path(f)
+        cl_key = cache_key_for_path(f, prefix="cl:")
+        assert cv_key != cl_key
+
+    def test_compute_composite_hash_single_file(self, tmp_path):
+        f = tmp_path / "a.json"
+        f.write_text('{"key": "value"}', encoding="utf-8")
+        h = compute_composite_hash([f])
+        assert isinstance(h, str) and len(h) == 64
+
+    def test_compute_composite_hash_multiple_files(self, tmp_path):
+        a = tmp_path / "a.json"
+        b = tmp_path / "b.tex"
+        a.write_text('{"key": 1}', encoding="utf-8")
+        b.write_text("\\section{}", encoding="utf-8")
+        h = compute_composite_hash([a, b])
+        assert isinstance(h, str) and len(h) == 64
+
+    def test_compute_composite_hash_order_independent(self, tmp_path):
+        a = tmp_path / "a.json"
+        b = tmp_path / "b.tex"
+        a.write_text('{"key": 1}', encoding="utf-8")
+        b.write_text("\\section{}", encoding="utf-8")
+        h1 = compute_composite_hash([a, b])
+        h2 = compute_composite_hash([b, a])
+        assert h1 == h2
+
+    def test_compute_composite_hash_detects_change(self, tmp_path):
+        a = tmp_path / "a.json"
+        b = tmp_path / "b.tex"
+        a.write_text('{"key": 1}', encoding="utf-8")
+        b.write_text("\\section{}", encoding="utf-8")
+        h1 = compute_composite_hash([a, b])
+        b.write_text("\\section{changed}", encoding="utf-8")
+        h2 = compute_composite_hash([a, b])
+        assert h1 != h2
+
+    def test_compute_composite_hash_returns_none_for_missing(self, tmp_path):
+        a = tmp_path / "exists.json"
+        a.write_text("{}", encoding="utf-8")
+        missing = tmp_path / "missing.json"
+        assert compute_composite_hash([a, missing]) is None
 
 
 # ── Tests: core.files ──────────────────────────────────────────────────────
@@ -216,12 +271,15 @@ class TestBackwardCompatibility:
     @pytest.mark.parametrize("name", [
         "load_cache", "save_cache", "compute_file_hash",
         "normalize_path_for_cache", "cache_key_for_path", "has_file_changed",
+        "compute_composite_hash",
         "gather_input_files", "resolve_output_target",
         "latex_escape", "file_exists", "debug", "types", "cmt", "cblock",
         "find_pic", "get_pic",
         "parse_cv_filename", "load_lang_map", "make_translate_func",
         "make_tr_filter", "make_tr_raw_filter",
         "process_cv_file", "rmtree_reliable",
+        "process_cover_letter_file", "CL_PARTIAL_TEMPLATES", "CL_LAYOUTS", "get_cl_layout",
+        "COVER_LETTER_PATH",
         "main",
         "BASE_DIR", "CVS_PATH", "TEMPLATE_DIR", "RESULT_DIR",
         "LANG_ENGINE_DIR", "CACHE_FILE", "RTL_LANGUAGES", "SHOW_COMMENTS",

@@ -15,11 +15,14 @@ from pathlib import Path
 from jinja2.exceptions import TemplateError
 
 from core import settings
-from core.cache import has_file_changed
+from core.cache import (
+    cache_key_for_path,
+    compute_composite_hash,
+)
 from core.compile import compile_latex, finalize_pdf
 from core.jinja_env import create_jinja_env
 from core.language import parse_cv_filename
-from core.settings import RTL_LANGUAGES, RESULT_DIR, log_verbose
+from core.settings import RTL_LANGUAGES, RESULT_DIR, TEMPLATE_DIR, log_verbose
 
 
 # Cover letter partial templates (rendered in order)
@@ -93,12 +96,20 @@ def process_cover_letter_file(
     pdf_name = f"{base_name}_{lang}_cover_letter.pdf"
     output_pdf_path = output_file or (output_dir / pdf_name)
 
-    # Check if file has changed using cache
-    changed, current_hash = has_file_changed(input_path, cache, output_pdf_path)
-    if not changed:
-        log_verbose(f"  ⏭️  Skipping {input_path}: file unchanged (cached)")
-        print(f"⏭️  Skipping {input_path}: no changes detected")
-        return False, True, current_hash
+    # ── Cache-aware skip: composite hash of JSON + all template files ──
+    cl_template_dir = Path(TEMPLATE_DIR) / "cover_letter"
+    template_files = sorted(cl_template_dir.glob("*.tex"))
+    all_inputs = [input_path] + template_files
+
+    current_hash = compute_composite_hash(all_inputs)
+    cache_key = cache_key_for_path(input_path, prefix="cl:")
+
+    if current_hash is not None:
+        cached_hash = cache.get(cache_key)
+        if cached_hash == current_hash and output_pdf_path.exists():
+            log_verbose(f"  ⏭️  Skipping {input_path}: file unchanged (cached)")
+            print(f"⏭️  Skipping {input_path}: no changes detected")
+            return False, True, current_hash
 
     log_verbose(f"  📄 Processing cover letter {input_path} (base: {base_name}, lang: {lang}, RTL: {is_rtl})")
 
