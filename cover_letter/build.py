@@ -153,10 +153,15 @@ def process_cover_letter_file(
         data = json.load(f)
 
     # ── Validate cover-letter schema ────────────────────────────────────
-    meta_type = data.get("meta", {}).get("type")
-    if meta_type != "cover_letter":
+    meta = data.get("meta")
+    if not isinstance(meta, dict) or meta.get("type") != "cover_letter":
+        actual = meta.get("type") if isinstance(meta, dict) else None
+        if meta is None:
+            detail = "the 'meta' key is missing"
+        else:
+            detail = f"meta.type is '{actual}'"
         print(
-            f"⚠️  Skipping {input_path}: meta.type is '{meta_type}', "
+            f"⚠️  Skipping {input_path}: {detail}, "
             f"expected 'cover_letter'. "
             f"Set \"meta\": {{\"type\": \"cover_letter\"}} in your JSON file."
         )
