@@ -1,0 +1,40 @@
+%% cover_letter/sender_header.tex — Sender personal information for Awesome-CV header
+%% Populates \name, \position, \address, \mobile, \email, and social links.
+
+<BLOCK> if sender.first_name is defined and sender.last_name is defined </BLOCK>
+\name{<VAR> sender.first_name | latex_escape </VAR>}{<VAR> sender.last_name | latex_escape </VAR>}
+<BLOCK> endif </BLOCK>
+
+<BLOCK> if sender.position is defined and sender.position </BLOCK>
+\position{<VAR> sender.position | latex_escape </VAR>}
+<BLOCK> endif </BLOCK>
+
+<BLOCK> if sender.address is defined and sender.address </BLOCK>
+\address{<VAR> sender.address | latex_escape </VAR>}
+<BLOCK> endif </BLOCK>
+
+<BLOCK> if sender.mobile is defined and sender.mobile </BLOCK>
+\mobile{<VAR> sender.mobile | latex_escape </VAR>}
+<BLOCK> endif </BLOCK>
+
+<BLOCK> if sender.email is defined and sender.email </BLOCK>
+\email{<VAR> sender.email | latex_escape </VAR>}
+<BLOCK> endif </BLOCK>
+
+<BLOCK> if sender.github is defined and sender.github </BLOCK>
+\github{<VAR> sender.github </VAR>}
+<BLOCK> endif </BLOCK>
+
+<BLOCK> if sender.linkedin is defined and sender.linkedin </BLOCK>
+\linkedin{<VAR> sender.linkedin </VAR>}
+<BLOCK> endif </BLOCK>
+
+<BLOCK> if sender.homepage is defined and sender.homepage </BLOCK>
+\homepage{<VAR> sender.homepage </VAR>}
+<BLOCK> endif </BLOCK>
+
+<BLOCK> if options is defined and options.show_photo is defined and options.show_photo </BLOCK>
+<BLOCK> if OPT_NAME | find_pic </BLOCK>
+\photo[circle,noedge,left]{<VAR> OPT_NAME | get_pic </VAR>}
+<BLOCK> endif </BLOCK>
+<BLOCK> endif </BLOCK>

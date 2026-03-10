@@ -299,6 +299,26 @@
     "en": "correspondent",
     "fa": "مسئول مکاتبه"
   },
+  "cover_letter": {
+    "de": "Anschreiben",
+    "en": "Cover Letter",
+    "fa": "نامه پوششی"
+  },
+  "cover_letter_date": {
+    "de": "Datum",
+    "en": "Date",
+    "fa": "تاریخ"
+  },
+  "cover_letter_enclosures": {
+    "de": "Anlagen",
+    "en": "Enclosures",
+    "fa": "پیوست‌ها"
+  },
+  "cover_letter_subject": {
+    "de": "Betreff",
+    "en": "Subject",
+    "fa": "موضوع"
+  },
   "country": {
     "de": "Land",
     "en": "country",

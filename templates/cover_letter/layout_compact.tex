@@ -1,0 +1,89 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter — Modern Compact Layout
+%
+% This variant uses narrower margins, a left-aligned header, and compact spacing
+% for a modern, space-efficient cover letter style.
+%
+% Based on Awesome-CV by Claud D. Park <posquit0.bj@gmail.com>
+% Template license: CC BY-SA 4.0
+%
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{./awesome-cv}
+
+% Compact margins for modern layout
+\geometry{left=1.4cm, top=1.2cm, right=1.4cm, bottom=1.4cm, footskip=.5cm}
+
+% Color for highlights
+<BLOCK> if options is defined and options.color_theme is defined </BLOCK>
+<BLOCK> if options.color_theme == "blue" </BLOCK>
+\colorlet{awesome}{awesome-skyblue}
+<BLOCK> elif options.color_theme == "red" </BLOCK>
+\colorlet{awesome}{awesome-red}
+<BLOCK> elif options.color_theme == "orange" </BLOCK>
+\colorlet{awesome}{awesome-orange}
+<BLOCK> elif options.color_theme == "pink" </BLOCK>
+\colorlet{awesome}{awesome-pink}
+<BLOCK> elif options.color_theme == "emerald" </BLOCK>
+\colorlet{awesome}{awesome-emerald}
+<BLOCK> elif options.color_theme == "darkgray" </BLOCK>
+\colorlet{awesome}{awesome-darknight}
+<BLOCK> elif options.color_theme == "concrete" </BLOCK>
+\colorlet{awesome}{awesome-concrete}
+<BLOCK> else </BLOCK>
+\colorlet{awesome}{awesome-nephritis}
+<BLOCK> endif </BLOCK>
+<BLOCK> else </BLOCK>
+\colorlet{awesome}{awesome-nephritis}
+<BLOCK> endif </BLOCK>
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% Social information separator
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION (sender)
+%-------------------------------------------------------------------------------
+<VAR> sender_header_section | default('') </VAR>
+
+%-------------------------------------------------------------------------------
+%	RECIPIENT & LETTER METADATA
+%-------------------------------------------------------------------------------
+<VAR> recipient_section | default('') </VAR>
+<VAR> letter_meta_section | default('') </VAR>
+<VAR> enclosures_section | default('') </VAR>
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with left alignment for compact look
+\makecvheader[L]
+
+% Print the footer
+\makecvfooter
+  {<VAR> letter.date | default('') | latex_escape </VAR>}
+  {<VAR> sender.first_name | default('') | latex_escape </VAR> <VAR> sender.last_name | default('') | latex_escape </VAR>~~~·~~~<VAR> t("cover_letter", "Cover Letter") </VAR>}
+  {\thepage}
+
+%-------------------------------------------------------------------------------
+%	COVER LETTER CONTENT
+%-------------------------------------------------------------------------------
+% Print the recipient and letter title
+\makelettertitle
+
+% Print the letter body
+\begin{cvletter}
+<VAR> body_sections_section | default('') </VAR>
+\end{cvletter}
+
+% Print the signature and enclosures
+<VAR> signature_section | default('') </VAR>
+\makeletterclosing
+
+%-------------------------------------------------------------------------------
+\end{document}

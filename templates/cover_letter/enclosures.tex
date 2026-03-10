@@ -1,0 +1,6 @@
+%% cover_letter/enclosures.tex — Enclosure list for Awesome-CV letter
+%% Sets \letterenclosure which is rendered by \makeletterclosing.
+
+<BLOCK> if letter is defined and letter.enclosures is defined and letter.enclosures | length > 0 </BLOCK>
+\letterenclosure[<VAR> t("cover_letter_enclosures", "Enclosures") </VAR>]{<VAR> letter.enclosures | join(', ') | latex_escape </VAR>}
+<BLOCK> endif </BLOCK>
