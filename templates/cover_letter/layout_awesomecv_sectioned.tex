@@ -22,7 +22,23 @@
 
 % Configure page margins with geometry
 <BLOCK> if options is defined and options.geometry is defined </BLOCK>
-\geometry{<BLOCK> set geo_parts = [] </BLOCK><BLOCK> if options.geometry.left is defined </BLOCK><BLOCK> set geo_parts = geo_parts + ['left=' + options.geometry.left] </BLOCK><BLOCK> endif </BLOCK><BLOCK> if options.geometry.top is defined </BLOCK><BLOCK> set geo_parts = geo_parts + ['top=' + options.geometry.top] </BLOCK><BLOCK> endif </BLOCK><BLOCK> if options.geometry.right is defined </BLOCK><BLOCK> set geo_parts = geo_parts + ['right=' + options.geometry.right] </BLOCK><BLOCK> endif </BLOCK><BLOCK> if options.geometry.bottom is defined </BLOCK><BLOCK> set geo_parts = geo_parts + ['bottom=' + options.geometry.bottom] </BLOCK><BLOCK> endif </BLOCK><BLOCK> if options.geometry.footskip is defined </BLOCK><BLOCK> set geo_parts = geo_parts + ['footskip=' + options.geometry.footskip] </BLOCK><BLOCK> endif </BLOCK><VAR> geo_parts | join(', ') </VAR>}
+<BLOCK> set geo_parts = [] </BLOCK>
+<BLOCK> if options.geometry.left is defined </BLOCK>
+<BLOCK> set geo_parts = geo_parts + ['left=' + options.geometry.left] </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if options.geometry.top is defined </BLOCK>
+<BLOCK> set geo_parts = geo_parts + ['top=' + options.geometry.top] </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if options.geometry.right is defined </BLOCK>
+<BLOCK> set geo_parts = geo_parts + ['right=' + options.geometry.right] </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if options.geometry.bottom is defined </BLOCK>
+<BLOCK> set geo_parts = geo_parts + ['bottom=' + options.geometry.bottom] </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if options.geometry.footskip is defined </BLOCK>
+<BLOCK> set geo_parts = geo_parts + ['footskip=' + options.geometry.footskip] </BLOCK>
+<BLOCK> endif </BLOCK>
+\geometry{<VAR> geo_parts | join(', ') </VAR>}
 <BLOCK> else </BLOCK>
 \geometry{left=1.0cm, top=.5cm, right=1.0cm, bottom=1.0cm, footskip=.25cm}
 <BLOCK> endif </BLOCK>
