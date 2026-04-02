@@ -296,12 +296,12 @@ class TestCoverLetterRenderingPipeline:
 
     def test_output_naming_convention(self):
         """Cover-letter PDF names follow <base>_<lang>_cover_letter.pdf."""
-        base, lang = parse_cv_filename("ramin_google_en.json")
+        base, lang,extra = parse_cv_filename("ramin_google_en.json")
         expected = f"{base}_{lang}_cover_letter.pdf"
         assert expected == "ramin_google_en_cover_letter.pdf"
 
     def test_output_naming_for_german_input(self):
-        base, lang = parse_cv_filename("ramin_sap_de.json")
+        base, lang,extra = parse_cv_filename("ramin_sap_de.json")
         expected = f"{base}_{lang}_cover_letter.pdf"
         assert expected == "ramin_sap_de_cover_letter.pdf"
 
@@ -406,7 +406,7 @@ class TestCVRegression:
 
     def test_cv_output_naming(self):
         """CV PDF names follow <base>_<lang>.pdf."""
-        base, lang = parse_cv_filename("ramin_en.json")
+        base, lang,extra = parse_cv_filename("ramin_en.json")
         assert f"{base}_{lang}.pdf" == "ramin_en.pdf"
 
     def test_backward_compat_imports(self):

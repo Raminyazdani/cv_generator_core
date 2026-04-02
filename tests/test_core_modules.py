@@ -180,7 +180,7 @@ class TestCoreLanguage:
     """Language and translation utilities importable from core."""
 
     def test_parse_cv_filename_with_lang(self):
-        base, lang = parse_cv_filename("ramin_de.json")
+        base, lang,extra = parse_cv_filename("ramin_de.json")
         assert base == "ramin"
         assert lang == "de"
 

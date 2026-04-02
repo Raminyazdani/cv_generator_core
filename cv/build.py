@@ -62,7 +62,7 @@ def process_cv_file(people_path: Path, lang_map, section_templates, cache, outpu
 
     orig_output_dir = output_dir
     # Parse filename to get base_name and language
-    base_name, lang = parse_cv_filename(people_path.stem + people_path.suffix)
+    base_name, lang,extra = parse_cv_filename(people_path.stem + people_path.suffix)
     is_rtl = lang in RTL_LANGUAGES
 
     JSON_PATH = people_path

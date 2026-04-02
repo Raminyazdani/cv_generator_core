@@ -190,7 +190,7 @@ class TestCoverLetterOutputNaming:
         # We don't run the full pipeline, but we can check the naming
         # convention by examining the code constants
         from core.language import parse_cv_filename
-        base, lang = parse_cv_filename("ramin_google_en.json")
+        base, lang,extra = parse_cv_filename("ramin_google_en.json")
         expected = f"{base}_{lang}_cover_letter.pdf"
         assert expected == "ramin_google_en_cover_letter.pdf"
 
