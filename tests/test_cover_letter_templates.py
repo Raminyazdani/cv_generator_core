@@ -39,6 +39,7 @@ REQUIRED_LAYOUTS = [
     "layout.tex",
     "layout_compact.tex",
     "layout_rtl.tex",
+    "layout_awesomecv_sectioned.tex",
 ]
 
 # CV section templates that must NOT be needed by cover letter rendering
@@ -381,3 +382,232 @@ class TestCVTemplatesUnchanged:
         content = (TEMPLATE_DIR / "layout.tex").read_text()
         assert "awesome-cv" in content
         assert r"\makecvheader" in content
+
+
+# ── Tests: awesomecv_sectioned layout ───────────────────────────────────────
+class TestAwesomecvSectionedLayout:
+    """The awesomecv_sectioned layout variant renders correctly."""
+
+    SECTIONED_DATA = {
+        **SAMPLE_DATA,
+        "sender": {
+            **SAMPLE_DATA["sender"],
+            "quote": "Work hard, stay humble.",
+            "photo": {
+                "enabled": True,
+                "path": "profile",
+                "style": ["circle", "noedge", "left"],
+            },
+        },
+        "sections": [
+            {"id": "motivation", "title": "Why I am reaching out",
+             "content": "I am interested in the position."},
+            {"id": "experience", "title": "My background and possible fit",
+             "content": ["First paragraph.", "Second paragraph."]},
+            {"id": "closing_remarks",
+             "content": "I look forward to hearing from you."},
+        ],
+        "options": {
+            "template": "awesomecv_sectioned",
+            "color_theme": "red",
+            "header_alignment": "R",
+            "font_dir": "fonts/",
+            "geometry": {
+                "left": "1.0cm",
+                "top": ".5cm",
+                "right": "1.0cm",
+                "bottom": "1.0cm",
+                "footskip": ".25cm",
+            },
+            "footer": {"show_page_number": False},
+        },
+    }
+
+    def _render_sectioned_layout(self):
+        env = _make_env()
+        partials = _render_all_partials(self.SECTIONED_DATA)
+        ctx = {**self.SECTIONED_DATA, **partials}
+        ctx["OPT_NAME"] = "test"
+        template = env.get_template("cover_letter/layout_awesomecv_sectioned.tex")
+        return template.render(ctx)
+
+    def test_layout_file_exists(self):
+        assert (CL_TEMPLATE_DIR / "layout_awesomecv_sectioned.tex").is_file()
+
+    def test_layout_renders_document_structure(self):
+        rendered = self._render_sectioned_layout()
+        assert r"\documentclass" in rendered
+        assert r"\begin{document}" in rendered
+        assert r"\end{document}" in rendered
+        assert r"\makecvheader" in rendered
+        assert r"\makelettertitle" in rendered
+        assert r"\makeletterclosing" in rendered
+        assert r"\begin{cvletter}" in rendered
+        assert r"\end{cvletter}" in rendered
+
+    def test_layout_uses_right_aligned_header(self):
+        rendered = self._render_sectioned_layout()
+        assert r"\makecvheader[R]" in rendered
+
+    def test_layout_uses_tight_geometry(self):
+        rendered = self._render_sectioned_layout()
+        assert "left=1.0cm" in rendered
+        assert "top=.5cm" in rendered
+        assert "right=1.0cm" in rendered
+        assert "bottom=1.0cm" in rendered
+        assert "footskip=.25cm" in rendered
+
+    def test_layout_includes_font_dir(self):
+        rendered = self._render_sectioned_layout()
+        assert r"\fontdir[fonts/]" in rendered
+
+    def test_layout_footer_without_page_number(self):
+        rendered = self._render_sectioned_layout()
+        # Footer should have empty third argument instead of \thepage
+        assert r"\thepage" not in rendered
+
+    def test_layout_uses_red_color_theme(self):
+        rendered = self._render_sectioned_layout()
+        assert "awesome-red" in rendered
+
+    def test_layout_contains_body_content(self):
+        rendered = self._render_sectioned_layout()
+        assert "I am interested in the position." in rendered
+
+    def test_layout_contains_sender_info(self):
+        rendered = self._render_sectioned_layout()
+        assert r"\name{Jane}{Doe}" in rendered
+
+
+# ── Tests: section title rendering ──────────────────────────────────────────
+class TestSectionTitleRendering:
+    """Body sections render \lettersection when title is present."""
+
+    def test_section_with_title_renders_lettersection(self):
+        data = {
+            **SAMPLE_DATA,
+            "sections": [
+                {"id": "motivation", "title": "Why I am reaching out",
+                 "content": "I want to apply."},
+            ],
+        }
+        rendered = _render_partial("body_sections.tex", data)
+        assert r"\lettersection{Why I am reaching out}" in rendered
+        assert "I want to apply." in rendered
+
+    def test_section_without_title_no_lettersection(self):
+        data = {
+            **SAMPLE_DATA,
+            "sections": [
+                {"id": "motivation", "content": "Just a paragraph."},
+            ],
+        }
+        rendered = _render_partial("body_sections.tex", data)
+        assert r"\lettersection" not in rendered
+        assert "Just a paragraph." in rendered
+
+    def test_mixed_sections_with_and_without_title(self):
+        data = {
+            **SAMPLE_DATA,
+            "sections": [
+                {"id": "intro", "content": "No title here."},
+                {"id": "details", "title": "Detailed Background",
+                 "content": ["Para one.", "Para two."]},
+                {"id": "close", "content": "Final section."},
+            ],
+        }
+        rendered = _render_partial("body_sections.tex", data)
+        assert r"\lettersection{Detailed Background}" in rendered
+        assert rendered.count(r"\lettersection") == 1
+        assert "No title here." in rendered
+        assert "Para one." in rendered
+        assert "Para two." in rendered
+        assert "Final section." in rendered
+
+    def test_backward_compat_no_titles(self):
+        """Original SAMPLE_DATA has no titles — no \lettersection in output."""
+        rendered = _render_partial("body_sections.tex")
+        assert r"\lettersection" not in rendered
+        assert "I am writing to apply" in rendered
+
+
+# ── Tests: sender quote rendering ───────────────────────────────────────────
+class TestSenderQuoteRendering:
+    """Sender quote renders \quote{...} when present."""
+
+    def test_sender_with_quote(self):
+        data = {
+            **SAMPLE_DATA,
+            "sender": {
+                **SAMPLE_DATA["sender"],
+                "quote": "Work hard, stay humble.",
+            },
+        }
+        rendered = _render_partial("sender_header.tex", data)
+        assert r"\quote{Work hard, stay humble.}" in rendered
+
+    def test_sender_without_quote(self):
+        rendered = _render_partial("sender_header.tex")
+        assert r"\quote" not in rendered
+
+
+# ── Tests: rich photo rendering ─────────────────────────────────────────────
+class TestRichPhotoRendering:
+    """Rich photo config renders \photo with style options."""
+
+    def test_rich_photo_config(self):
+        data = {
+            **SAMPLE_DATA,
+            "sender": {
+                **SAMPLE_DATA["sender"],
+                "photo": {
+                    "enabled": True,
+                    "path": "profile",
+                    "style": ["circle", "noedge", "left"],
+                },
+            },
+            "options": {},
+        }
+        rendered = _render_partial("sender_header.tex", data)
+        assert r"\photo[circle,noedge,left]{profile}" in rendered
+
+    def test_rich_photo_disabled(self):
+        data = {
+            **SAMPLE_DATA,
+            "sender": {
+                **SAMPLE_DATA["sender"],
+                "photo": {
+                    "enabled": False,
+                    "path": "profile",
+                    "style": ["circle", "noedge", "left"],
+                },
+            },
+            "options": {},
+        }
+        rendered = _render_partial("sender_header.tex", data)
+        assert r"\photo" not in rendered
+
+    def test_rich_photo_without_style(self):
+        data = {
+            **SAMPLE_DATA,
+            "sender": {
+                **SAMPLE_DATA["sender"],
+                "photo": {
+                    "enabled": True,
+                    "path": "myphoto",
+                    "style": [],
+                },
+            },
+            "options": {},
+        }
+        rendered = _render_partial("sender_header.tex", data)
+        assert r"\photo{myphoto}" in rendered
+
+    def test_legacy_show_photo_still_works(self):
+        """The old options.show_photo boolean still triggers photo rendering."""
+        # This test verifies backward compatibility. The find_pic filter
+        # depends on actual files, so we just verify the code path doesn't
+        # error and doesn't produce rich photo output.
+        rendered = _render_partial("sender_header.tex")
+        # SAMPLE_DATA has show_photo: False, so no photo
+        assert r"\photo[circle,noedge,left]{profile}" not in rendered

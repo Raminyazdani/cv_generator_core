@@ -33,7 +33,21 @@
 \homepage{<VAR> sender.homepage </VAR>}
 <BLOCK> endif </BLOCK>
 
-<BLOCK> if options is defined and options.show_photo is defined and options.show_photo </BLOCK>
+<BLOCK> if sender.quote is defined and sender.quote </BLOCK>
+\quote{<VAR> sender.quote | latex_escape </VAR>}
+<BLOCK> endif </BLOCK>
+
+<BLOCK> if sender.photo is defined and sender.photo is mapping </BLOCK>
+<BLOCK> if sender.photo.enabled is defined and sender.photo.enabled </BLOCK>
+<BLOCK> if sender.photo.path is defined and sender.photo.path </BLOCK>
+<BLOCK> if sender.photo.style is defined and sender.photo.style | length > 0 </BLOCK>
+\photo[<VAR> sender.photo.style | join(',') </VAR>]{<VAR> sender.photo.path </VAR>}
+<BLOCK> else </BLOCK>
+\photo{<VAR> sender.photo.path </VAR>}
+<BLOCK> endif </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> elif options is defined and options.show_photo is defined and options.show_photo </BLOCK>
 <BLOCK> if OPT_NAME | find_pic </BLOCK>
 \photo[circle,noedge,left]{<VAR> OPT_NAME | get_pic </VAR>}
 <BLOCK> endif </BLOCK>

@@ -1,0 +1,75 @@
+{
+  "meta": {"type": "cover_letter", "version": "1.0"},
+  "sender": {
+    "first_name": "Dana",
+    "last_name": "Fischer",
+    "position": "Systems Administrator",
+    "address": "Hamburg, Germany",
+    "mobile": "+49 555 123 456",
+    "email": "dana@example.com",
+    "github": "danafischer",
+    "linkedin": "danafischer",
+    "quote": "I value reliability, careful work, and the willingness to learn whatever is needed to support a team well.",
+    "photo": {
+      "enabled": true,
+      "path": "profile",
+      "style": ["circle", "noedge", "left"]
+    }
+  },
+  "recipient": {
+    "company": "SecureNet GmbH",
+    "department": "IT Operations",
+    "person_name": "Herr Thomas Braun",
+    "person_title": "Head of IT",
+    "address_lines": ["Hafenstr. 22"],
+    "city": "20095 Hamburg",
+    "country": "Germany"
+  },
+  "job": {
+    "title": "Senior Systems Administrator",
+    "reference": "SN-2026-099"
+  },
+  "letter": {
+    "date": "2026-04-01",
+    "title": "Application for Senior Systems Administrator",
+    "opening": "Dear Herr Braun,",
+    "closing": "Sincerely,",
+    "enclosures": ["Curriculum Vitae", "Certificates"],
+    "signature_name": "Dana Fischer"
+  },
+  "sections": [
+    {
+      "id": "motivation",
+      "title": "Why I am reaching out",
+      "content": "I am writing to express my strong interest in the Senior Systems Administrator position at SecureNet GmbH."
+    },
+    {
+      "id": "background",
+      "title": "My background and possible fit",
+      "content": [
+        "With over eight years of experience managing Linux and Windows server environments, I have developed deep expertise in infrastructure automation, monitoring, and incident response.",
+        "In my current role at CloudOps AG, I lead a team responsible for maintaining 99.99% uptime across 200+ production servers using Ansible, Terraform, and Prometheus."
+      ]
+    },
+    {
+      "id": "closing_remarks",
+      "content": "I would welcome the opportunity to discuss how my experience can contribute to your team's goals."
+    }
+  ],
+  "options": {
+    "template": "awesomecv_sectioned",
+    "color_theme": "red",
+    "header_alignment": "R",
+    "font_dir": "fonts/",
+    "geometry": {
+      "left": "1.0cm",
+      "top": ".5cm",
+      "right": "1.0cm",
+      "bottom": "1.0cm",
+      "footskip": ".25cm"
+    },
+    "footer": {
+      "show_page_number": false
+    }
+  }
+}

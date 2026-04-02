@@ -66,10 +66,32 @@ It supports two modes:
 | `homepage` | string | No | Personal website URL. |
 | `github` | string | No | GitHub username or URL. |
 | `linkedin` | string | No | LinkedIn URL or username. |
-| `photo` | string | No | Filename of a photo in `data/pics/` (e.g. `"ramin.jpg"`). |
-| `quote` | string | No | A personal motto or tagline. |
+| `photo` | string or object | No | Photo configuration. Can be a simple filename string (e.g. `"ramin.jpg"`) or a rich object (see below). |
+| `quote` | string | No | A personal motto or tagline. Rendered as `\quote{...}` in the header. |
 
 \* `first_name` and `last_name` are required unless `cv_data_path` is provided and the referenced CV contains `basics[0].fname` / `basics[0].lname`.
+
+### Rich photo configuration
+
+The `photo` field supports a rich object form for fine-grained control over photo rendering:
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `enabled` | boolean | **Yes** | Whether to include the photo. |
+| `path` | string | **Yes** | Photo filename (without extension) or path. |
+| `style` | array of strings | No | Awesome-CV photo style options (e.g. `["circle", "noedge", "left"]`). |
+
+```json
+{
+  "photo": {
+    "enabled": true,
+    "path": "profile",
+    "style": ["circle", "noedge", "left"]
+  }
+}
+```
+
+When a rich `photo` object is provided, it takes precedence over `options.show_photo`. If the rich object is absent, the legacy `options.show_photo` boolean is used as a fallback.
 
 ### Override / Fallback Rules
 
@@ -308,12 +330,16 @@ Optional settings that control how the cover letter is rendered.
 
 | Field | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
-| `template` | string | No | `"default"` | Template family name. Allows switching between different visual designs. |
+| `template` | string | No | `"default"` | Template/layout name. Supported values: `"default"`, `"compact"`, `"awesomecv_sectioned"`. |
 | `layout_variant` | string | No | `"standard"` | Layout variant within the template (e.g. `"standard"`, `"compact"`, `"academic"`). |
 | `color_theme` | string | No | Template default | Awesome-CV color theme (e.g. `"blue"`, `"red"`, `"darkgray"`). |
-| `show_photo` | boolean | No | `false` | Whether to include the sender's photo. |
+| `show_photo` | boolean | No | `false` | Whether to include the sender's photo (legacy; see `sender.photo` for rich config). |
 | `rtl` | boolean | No | Auto-detected | Force RTL layout. When absent, RTL is auto-detected from the language. |
 | `compile` | object | No | `{}` | Additional compilation options (passed through to the build pipeline). |
+| `header_alignment` | string | No | Layout default | Header alignment for `\makecvheader`. Values: `"L"` (left), `"C"` (center), `"R"` (right). Used by `awesomecv_sectioned`. |
+| `font_dir` | string | No | — | Font directory path (e.g. `"fonts/"`). Rendered as `\fontdir[...]`. Used by `awesomecv_sectioned`. |
+| `geometry` | object | No | Layout default | Custom page geometry. Fields: `left`, `top`, `right`, `bottom`, `footskip` (all strings with LaTeX units). |
+| `footer` | object | No | `{}` | Footer configuration. Supports `show_page_number` (boolean, default `true`). |
 
 ```json
 {
@@ -321,6 +347,29 @@ Optional settings that control how the cover letter is rendered.
     "template": "default",
     "color_theme": "blue",
     "show_photo": false
+  }
+}
+```
+
+### `awesomecv_sectioned` template example
+
+```json
+{
+  "options": {
+    "template": "awesomecv_sectioned",
+    "color_theme": "red",
+    "header_alignment": "R",
+    "font_dir": "fonts/",
+    "geometry": {
+      "left": "1.0cm",
+      "top": ".5cm",
+      "right": "1.0cm",
+      "bottom": "1.0cm",
+      "footskip": ".25cm"
+    },
+    "footer": {
+      "show_page_number": false
+    }
   }
 }
 ```

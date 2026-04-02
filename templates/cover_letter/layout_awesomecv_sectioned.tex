@@ -1,0 +1,128 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter — Sectioned Reference Layout
+%
+% This variant produces a structured, sectioned Awesome-CV cover letter with:
+%   - Tight geometry (configurable via options.geometry)
+%   - Optional font directory support
+%   - Configurable header alignment (default: right-aligned)
+%   - Optional sender quote
+%   - Rich photo configuration
+%   - Footer without page number (configurable)
+%   - Body sections rendered via \lettersection{...}
+%
+% Based on Awesome-CV by Claud D. Park <posquit0.bj@gmail.com>
+% Template license: CC BY-SA 4.0
+%
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{./awesome-cv}
+
+% Configure page margins with geometry
+<BLOCK> if options is defined and options.geometry is defined </BLOCK>
+<BLOCK> set geo_parts = [] </BLOCK>
+<BLOCK> if options.geometry.left is defined </BLOCK>
+<BLOCK> set geo_parts = geo_parts + ['left=' + options.geometry.left] </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if options.geometry.top is defined </BLOCK>
+<BLOCK> set geo_parts = geo_parts + ['top=' + options.geometry.top] </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if options.geometry.right is defined </BLOCK>
+<BLOCK> set geo_parts = geo_parts + ['right=' + options.geometry.right] </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if options.geometry.bottom is defined </BLOCK>
+<BLOCK> set geo_parts = geo_parts + ['bottom=' + options.geometry.bottom] </BLOCK>
+<BLOCK> endif </BLOCK>
+<BLOCK> if options.geometry.footskip is defined </BLOCK>
+<BLOCK> set geo_parts = geo_parts + ['footskip=' + options.geometry.footskip] </BLOCK>
+<BLOCK> endif </BLOCK>
+\geometry{<VAR> geo_parts | join(', ') </VAR>}
+<BLOCK> else </BLOCK>
+\geometry{left=1.0cm, top=.5cm, right=1.0cm, bottom=1.0cm, footskip=.25cm}
+<BLOCK> endif </BLOCK>
+
+% Optional font directory
+<BLOCK> if options is defined and options.font_dir is defined and options.font_dir </BLOCK>
+\fontdir[<VAR> options.font_dir </VAR>]
+<BLOCK> endif </BLOCK>
+
+% Color for highlights
+<BLOCK> if options is defined and options.color_theme is defined </BLOCK>
+<BLOCK> if options.color_theme == "blue" </BLOCK>
+\colorlet{awesome}{awesome-skyblue}
+<BLOCK> elif options.color_theme == "red" </BLOCK>
+\colorlet{awesome}{awesome-red}
+<BLOCK> elif options.color_theme == "orange" </BLOCK>
+\colorlet{awesome}{awesome-orange}
+<BLOCK> elif options.color_theme == "pink" </BLOCK>
+\colorlet{awesome}{awesome-pink}
+<BLOCK> elif options.color_theme == "emerald" </BLOCK>
+\colorlet{awesome}{awesome-emerald}
+<BLOCK> elif options.color_theme == "darkgray" </BLOCK>
+\colorlet{awesome}{awesome-darknight}
+<BLOCK> elif options.color_theme == "concrete" </BLOCK>
+\colorlet{awesome}{awesome-concrete}
+<BLOCK> else </BLOCK>
+\colorlet{awesome}{awesome-nephritis}
+<BLOCK> endif </BLOCK>
+<BLOCK> else </BLOCK>
+\colorlet{awesome}{awesome-red}
+<BLOCK> endif </BLOCK>
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% Social information separator
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION (sender)
+%-------------------------------------------------------------------------------
+<VAR> sender_header_section | default('') </VAR>
+
+%-------------------------------------------------------------------------------
+%	RECIPIENT & LETTER METADATA
+%-------------------------------------------------------------------------------
+<VAR> recipient_section | default('') </VAR>
+<VAR> letter_meta_section | default('') </VAR>
+<VAR> enclosures_section | default('') </VAR>
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with configurable alignment
+<BLOCK> if options is defined and options.header_alignment is defined and options.header_alignment </BLOCK>
+\makecvheader[<VAR> options.header_alignment </VAR>]
+<BLOCK> else </BLOCK>
+\makecvheader[R]
+<BLOCK> endif </BLOCK>
+
+% Print the footer
+\makecvfooter
+  {<VAR> letter.date | default('') | latex_escape </VAR>}
+  {<VAR> sender.first_name | default('') | latex_escape </VAR> <VAR> sender.last_name | default('') | latex_escape </VAR>~~~·~~~<VAR> t("cover_letter", "Cover Letter") </VAR>}
+<BLOCK> if options is defined and options.footer is defined and options.footer.show_page_number is defined and not options.footer.show_page_number </BLOCK>
+  {}
+<BLOCK> else </BLOCK>
+  {\thepage}
+<BLOCK> endif </BLOCK>
+
+%-------------------------------------------------------------------------------
+%	COVER LETTER CONTENT
+%-------------------------------------------------------------------------------
+% Print the recipient and letter title
+\makelettertitle
+
+% Print the letter body
+\begin{cvletter}
+<VAR> body_sections_section | default('') </VAR>
+\end{cvletter}
+
+% Print the signature and enclosures
+<VAR> signature_section | default('') </VAR>
+\makeletterclosing
+
+%-------------------------------------------------------------------------------
+\end{document}

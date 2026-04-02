@@ -1,8 +1,12 @@
 %% cover_letter/body_sections.tex — Letter body paragraphs inside cvletter environment
 %% Renders each entry in `sections` as body text (strings or arrays of paragraphs).
+%% When a section has a `title` field, a visible heading is rendered above the content.
 
 <BLOCK> if sections is defined and sections | length > 0 </BLOCK>
 <BLOCK> for section in sections </BLOCK>
+<BLOCK> if section.title is defined and section.title </BLOCK>
+\lettersection{<VAR> section.title | latex_escape </VAR>}
+<BLOCK> endif </BLOCK>
 <BLOCK> if section.content is string </BLOCK>
 <VAR> section.content | latex_escape </VAR>
 <BLOCK> elif section.content is iterable </BLOCK>
