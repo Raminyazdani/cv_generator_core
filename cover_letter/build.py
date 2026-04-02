@@ -61,6 +61,7 @@ CL_LAYOUTS = {
     "default": "layout.tex",
     "compact": "layout_compact.tex",
     "rtl": "layout_rtl.tex",
+    "awesomecv_sectioned": "layout_awesomecv_sectioned.tex",
 }
 
 # Required top-level keys in a cover-letter JSON file (used for validation).

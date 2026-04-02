@@ -194,6 +194,7 @@ class TestCoverLetterSchemaValidation:
         assert "compact" in msg
         assert "default" in msg
         assert "rtl" in msg
+        assert "awesomecv_sectioned" in msg
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -312,6 +313,9 @@ class TestCoverLetterRenderingPipeline:
 
     def test_layout_selection_compact(self):
         assert get_cl_layout({"template": "compact"}, False) == "layout_compact.tex"
+
+    def test_layout_selection_awesomecv_sectioned(self):
+        assert get_cl_layout({"template": "awesomecv_sectioned"}, False) == "layout_awesomecv_sectioned.tex"
 
     def test_layout_selection_rtl_overrides_template(self):
         """RTL flag takes precedence over template choice."""
@@ -439,6 +443,21 @@ class TestFixtureFiles:
     def test_compact_layout_loads(self):
         data = _load_fixture("compact_layout_cl_en.json")
         assert data["options"]["template"] == "compact"
+
+    def test_awesomecv_sectioned_layout_loads(self):
+        data = _load_fixture("awesomecv_sectioned_cl_en.json")
+        assert data["options"]["template"] == "awesomecv_sectioned"
+        assert data["sender"]["quote"] == "I value reliability, careful work, and the willingness to learn whatever is needed to support a team well."
+        assert data["sender"]["photo"]["enabled"] is True
+        assert data["sender"]["photo"]["style"] == ["circle", "noedge", "left"]
+        assert data["options"]["header_alignment"] == "R"
+        assert data["options"]["geometry"]["left"] == "1.0cm"
+        assert data["options"]["footer"]["show_page_number"] is False
+        # Check sections have titles
+        titled = [s for s in data["sections"] if "title" in s]
+        assert len(titled) >= 2
+        untitled = [s for s in data["sections"] if "title" not in s]
+        assert len(untitled) >= 1
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
