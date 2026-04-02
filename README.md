@@ -12,6 +12,7 @@ This project takes JSON input files — CVs from `data/cvs/` or cover letters fr
 - [Project Structure](#project-structure)  
 - [Prerequisites](#prerequisites)  
 - [Installation](#installation)  
+- [Quick Start](#quick-start)  
 - [Usage](#usage)  
   - [Running the generator](#running-the-generator)  
   - [Cover Letter Generation](#cover-letter-generation)  
@@ -142,16 +143,15 @@ cv_generator/
 ### 1. Python
 
 - **Python 3.9+** recommended.
-- Required Python packages:
-  - `jinja2`
+- Required Python packages are listed in `requirements.txt`:
+  - `jinja2` (runtime)
+  - `pytest` (testing only)
 
 Install with:
 
 ```bash
-pip install jinja2
+pip install -r requirements.txt
 ```
-
-(If you prefer, you can create a `requirements.txt` with `jinja2` and run `pip install -r requirements.txt`.)
 
 ### 2. LaTeX (XeLaTeX)
 
@@ -190,7 +190,7 @@ python -m venv .venv
 3. **Install Python dependencies**:
 
 ```bash
-pip install jinja2
+pip install -r requirements.txt
 ```
 
 4. **Verify LaTeX**:
@@ -200,6 +200,37 @@ xelatex --version
 ```
 
 If this fails, install a LaTeX distribution and ensure `xelatex` is on `PATH`.
+
+---
+
+## Quick Start
+
+Get up and running in a few steps:
+
+```bash
+# 1. Clone and enter the project
+git clone https://github.com/Raminyazdani/cv_generator_core.git
+cd cv_generator_core
+
+# 2. Create a virtual environment (recommended)
+python -m venv .venv
+source .venv/bin/activate   # On Windows: .venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Generate all CVs (reads from data/cvs/)
+python generate_cv.py
+
+# 5. Generate all cover letters (reads from data/cover_letter_datas/)
+python generate_cv.py --type cover-letter
+```
+
+> **Tip:** Minimal example JSON files for both a CV and a cover letter are available in
+> `scripts/example/` (`minimal.json` and `minimal_cover_letter.json`).
+> Copy them into `data/cvs/` or `data/cover_letter_datas/`, fill in your details,
+> and run the generator. See [Data Format](#data-format-json-schema-overview) for the
+> full schema reference.
 
 ---
 
