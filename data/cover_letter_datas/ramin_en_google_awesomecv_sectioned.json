@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "type": "cover_letter",
+    "version": "1.0"
+  },
+  "sender": {
+    "cv_data_path" : "../cvs/ramin_en.json",
+    "position": ["Bioinformatics Researcher"],
+    "quote": "Turning biological data into actionable insight."
+  },
+  "recipient": {
+    "company": "Genomics Insight GmbH",
+    "department": "Computational Biology",
+    "person_name": "Dr. Anna Schneider",
+    "person_title": "Senior Hiring Manager",
+    "address_lines": [
+      "Max-Planck-Straße 12",
+      "Building B, 4th Floor"
+    ],
+    "city": "68161 Mannheim",
+    "country": "Germany"
+  },
+  "job": {
+    "title": "Bioinformatics Research Engineer",
+    "reference": "GI-2026-041",
+    "location": "Mannheim, Germany",
+    "posting_url": "https://example.com/jobs/bioinformatics-research-engineer",
+    "team": "Computational Biology Platform",
+    "start_date": "2026-06-01",
+    "employment_type": "Full-time"
+  },
+  "letter": {
+    "title": "Application for Bioinformatics Research Engineer",
+    "opening": "Dear Dr. Anna Schneider,",
+    "closing": "Sincerely,",
+    "enclosures": [
+      "Curriculum Vitae",
+      "Academic Transcripts",
+      "Certificates"
+    ],
+    "language": "en",
+    "output_name": "ramin_genomics_insight_en_cover_letter"
+  },
+  "sections": [
+    {
+      "id": "motivation",
+      "title": "Motivation",
+      "content": "I am writing to express my strong interest in the Bioinformatics Research Engineer position at Genomics Insight GmbH. With a background spanning biotechnology, bioinformatics, computational biology, and software development, I am excited by the opportunity to contribute to a team building robust analytical solutions for real-world biological data."
+    },
+    {
+      "id": "experience",
+      "title": "Relevant Experience",
+      "content": [
+        "During my academic and research work, I have developed hands-on experience in omics data analysis, microbial genomics, transcriptomics, and computational pipeline development. My Master's work has involved omics-based analysis, gene profiling, functional interpretation, and data-driven biological reasoning.",
+        "In parallel, I have built practical skills in Python, R, Linux, automation, web technologies, and containerized workflows. This combination allows me to bridge research questions and production-ready computational implementation."
+      ]
+    },
+    {
+      "id": "skills",
+      "title": "Technical Fit",
+      "content": [
+        "My technical toolkit includes Python, R, Bash, Docker, Git, CI/CD, data visualization, machine learning, and a broad set of bioinformatics tools across genomics, transcriptomics, metagenomics, and structural bioinformatics.",
+        "I am especially motivated by roles where interdisciplinary thinking, scientific rigor, and engineering reliability must come together."
+      ]
+    },
+    {
+      "id": "closing_remarks",
+      "title": "Closing Remarks",
+      "content": "I would welcome the opportunity to discuss how my research background, computational skills, and motivation to contribute can support your team's goals. Thank you for your time and consideration."
+    }
+  ],
+  "options": {
+    "template": "awesomecv_sectioned",
+    "layout_variant": "academic",
+    "color_theme": "red",
+    "show_photo": true,
+    "compile": {
+      "engine": "xelatex",
+      "runs": 2,
+      "shell_escape": false,
+      "clean_intermediate": true
+    },
+    "header_alignment": "R",
+    "font_dir": "fonts/",
+    "geometry": {
+      "left": "1.0cm",
+      "top": "0.5cm",
+      "right": "1.0cm",
+      "bottom": "1.0cm",
+      "footskip": "0.25cm"
+    },
+    "footer": {
+      "show_page_number": true
+    }
+  }
+}
