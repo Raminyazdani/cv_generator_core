@@ -71,7 +71,11 @@ def process_cv_file(people_path: Path, lang_map, section_templates, cache, outpu
     if not JSON_PATH.exists():
         print(f"❌ File not found: {JSON_PATH}")
         return False, False, None
-    pdf_name = f"{base_name}_{lang}.pdf"
+    if extra is not None:
+        pdf_name = f"{base_name}_{lang}_{extra}.pdf"
+    else:
+        pdf_name = f"{base_name}_{lang}.pdf"
+
     output_pdf_path = output_file or (output_dir / pdf_name)
 
     # Check if file has changed using cache

@@ -58,7 +58,7 @@ latexmk/
 result/
 
 # Generated PDFs (optional: track only example outputs if you want)
-output/*.pdf
+#output/*.pdf
 
 # OneDrive sync artifacts
 ~$*

@@ -103,7 +103,13 @@
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
+<BLOCK> if config.color is not defined or not config.color </BLOCK>
+
 \colorlet{awesome}{awesome-nephritis}
+<BLOCK> else </BLOCK>
+\colorlet{awesome}{<VAR> config.color </VAR>}
+<BLOCK> endif </BLOCK>
+
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{202020}
 

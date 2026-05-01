@@ -14,7 +14,12 @@
       <BLOCK> if c.URL </BLOCK>\enskip\href{<VAR> c.URL </VAR>}{\honorlocationstyle{[LINK]}}<BLOCK> endif </BLOCK>%
     }
     {<BLOCK> if c.duration </BLOCK>(<VAR> c.duration | latex_escape </VAR>)<BLOCK> endif </BLOCK>}
-    {<BLOCK> if c.certificate </BLOCK>Certification<BLOCK> else </BLOCK>Workshop<BLOCK> endif </BLOCK>}
+    {
+    <BLOCK> if config.no_cert is not defined or not config.no_cert </BLOCK>
+    <BLOCK> if c.certificate </BLOCK>Certification<BLOCK> else </BLOCK>Workshop<BLOCK> endif </BLOCK>
+    <BLOCK> else </BLOCK>
+    <BLOCK> endif </BLOCK>
+    }
     {<VAR> c.date | latex_escape</VAR>}
   <BLOCK> endfor </BLOCK>
 \end{issuerhonors}

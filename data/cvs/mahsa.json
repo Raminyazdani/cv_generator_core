@@ -1,4 +1,10 @@
 {
+  "config": {
+    "lang": "en",
+    "ID": "mahsa_nejadhossein",
+    "no_cert": true,
+    "color": "awesome-darknight"
+  },
   "basics": [
     {
       "fname": "Mahsa",
@@ -7,7 +13,7 @@
         "Microbiologist",
         "Applied Biotechnology Student"
       ],
-      "email": "mahsa.nejad77@gmail.com",
+      "email": "nejadhossein22242@hs-ansbach.de",
       "phone": {
         "countryCode": "+49",
         "number": "17664777330",
@@ -70,7 +76,7 @@
       },
       "certifications": [
         {
-          "test": "Mother Tongue",
+          "test": null,
           "organization": null,
           "overall": null,
           "reading": null,
@@ -87,9 +93,9 @@
     {
       "language": "English",
       "proficiency": {
-        "level": "Upper-Intermediate",
+        "level": null,
         "CEFR": "B2",
-        "status": "Good command for academic and everyday communication"
+        "status": null
       },
       "certifications": [
         {
@@ -111,7 +117,7 @@
       "language": "German",
       "proficiency": {
         "level": "Intermediate",
-        "CEFR": "B2",
+        "CEFR": "B1-B2",
         "status": "Actively improving for study and work"
       },
       "certifications": [
@@ -154,7 +160,7 @@
         {
           "name": "Laboratory Microbial Techniques Internship",
           "date": null,
-          "duration": "1 year (~90 hours structured training)",
+          "duration": "1 year + ~90 hours structured training",
           "certificate": true,
           "URL": null,
           "type_key": [
@@ -296,7 +302,7 @@
         {
           "name": "Intermediate R and Python programming",
           "date": null,
-          "duration": null,
+          "duration": "54 hours",
           "certificate": true,
           "URL": null,
           "type_key": [
@@ -309,7 +315,7 @@
         {
           "name": "General programming skills",
           "date": null,
-          "duration": null,
+          "duration": "42 hours",
           "certificate": true,
           "URL": null,
           "type_key": [
@@ -321,7 +327,7 @@
         {
           "name": "Front-end development (HTML, CSS, JavaScript, PhpStorm)",
           "date": null,
-          "duration": null,
+          "duration": "66 hours",
           "certificate": true,
           "URL": null,
           "type_key": [
@@ -348,6 +354,24 @@
         {
           "long_name": "PCR and real-time PCR",
           "short_name": "PCR / real-time PCR",
+          "type_key": [
+            "Full CV",
+            "Biotechnology",
+            "Academic"
+          ]
+        },
+        {
+          "long_name": "Nucleic acid extraction and purification (DNA/RNA)",
+          "short_name": "DNA/RNA extraction",
+          "type_key": [
+            "Full CV",
+            "Biotechnology",
+            "Academic"
+          ]
+        },
+        {
+          "long_name": "Microbial isolation and cultivation principles",
+          "short_name": "Microbial cultivation",
           "type_key": [
             "Full CV",
             "Biotechnology",
@@ -384,7 +408,7 @@
       ],
       "Histology & Cell Culture": [
         {
-          "long_name": "Histological techniques and devices",
+          "long_name": "Histological techniques and staining methods",
           "short_name": "Histology",
           "type_key": [
             "Full CV",
@@ -402,16 +426,54 @@
           ]
         }
       ],
-      "Lab Equipment & Instrumentation": [
+      "Protein & Biomolecule Techniques": [
         {
-          "long_name": "Incubators",
-          "short_name": "Incubators",
+          "long_name": "SDS-PAGE and gel-based protein separation methods",
+          "short_name": "SDS-PAGE",
           "type_key": [
             "Full CV",
             "Biotechnology",
             "Academic"
           ]
         },
+        {
+          "long_name": "Western blotting and related immunodetection methods",
+          "short_name": "Western blotting",
+          "type_key": [
+            "Full CV",
+            "Biotechnology",
+            "Academic"
+          ]
+        },
+        {
+          "long_name": "Chromatography and related separation techniques",
+          "short_name": "Chromatography",
+          "type_key": [
+            "Full CV",
+            "Biotechnology",
+            "Academic"
+          ]
+        },
+        {
+          "long_name": "Protein purification and related separation workflows",
+          "short_name": "Protein purification",
+          "type_key": [
+            "Full CV",
+            "Biotechnology",
+            "Academic"
+          ]
+        },
+        {
+          "long_name": "Protein and biomolecule sample preparation workflows",
+          "short_name": "Biomolecule preparation",
+          "type_key": [
+            "Full CV",
+            "Biotechnology",
+            "Academic"
+          ]
+        }
+      ],
+      "Lab Equipment & Instrumentation": [
         {
           "long_name": "Automated liquid handling systems",
           "short_name": "Liquid handling systems",
@@ -433,24 +495,6 @@
         {
           "long_name": "Spectrophotometers",
           "short_name": "Spectrophotometers",
-          "type_key": [
-            "Full CV",
-            "Biotechnology",
-            "Academic"
-          ]
-        },
-        {
-          "long_name": "Calibration tools",
-          "short_name": "Calibration tools",
-          "type_key": [
-            "Full CV",
-            "Biotechnology",
-            "Academic"
-          ]
-        },
-        {
-          "long_name": "Pipetting tools",
-          "short_name": "Pipetting",
           "type_key": [
             "Full CV",
             "Biotechnology",
@@ -642,52 +686,20 @@
           ]
         }
       ]
-    },
-    "Artistic & Personal Interests": {
-      "Hobbies & Interests": [
-        {
-          "long_name": "Piano",
-          "short_name": "Piano",
-          "type_key": [
-            "Full CV"
-          ]
-        },
-        {
-          "long_name": "Photography",
-          "short_name": "Photography",
-          "type_key": [
-            "Full CV"
-          ]
-        },
-        {
-          "long_name": "Fashion and styling",
-          "short_name": "Fashion",
-          "type_key": [
-            "Full CV"
-          ]
-        },
-        {
-          "long_name": "Drawing and illustration",
-          "short_name": "Drawing",
-          "type_key": [
-            "Full CV"
-          ]
-        },
-        {
-          "long_name": "Dance and fitness",
-          "short_name": "Dance & fitness",
-          "type_key": [
-            "Full CV"
-          ]
-        }
-      ]
     }
   },
   "experiences": [
     {
+  "role": "Laboratory Project – Production of Recombinant Taq Polymerase in E. coli",
+  "institution": "Hochschule Ansbach",
+  "duration": "2025-10-01 - 2026-02-01",
+  "primaryFocus": "Recombinant protein expression and analysis in E. coli",
+  "description": "Worked on the expression and analysis of recombinant Taq polymerase in E. coli, including microbial cultivation, sample preparation, and protein-related laboratory workflows."
+},
+    {
       "role": "Assistant",
       "institution": "Dr. Nejadhossein's Radiology & Sonography Clinic",
-      "duration": "2017-12-01 - present",
+      "duration": "2017-12-01 - 2024-03-01",
       "primaryFocus": "Radiology and sonography practice support",
       "description": "Assisted in daily tasks at a radiology and sonography practice, supporting patient workflow and basic administrative and clinical activities."
     },
