@@ -36,11 +36,13 @@
   | latex_escape
 </VAR>}
 <BLOCK> endif </BLOCK>
-<BLOCK> if OPT_NAME | find_pic </BLOCK>
-  \photo[circle,noedge,left]{<VAR>OPT_NAME|get_pic</VAR>}
-<BLOCK> else </BLOCK>
-  <BLOCK> if "./profile_square.jpg" | file_exists </BLOCK>
-    \photo[circle,noedge,left]{./profile_square.jpg}
+<BLOCK> if options is defined and options.show_photo is defined and options.show_photo </BLOCK>
+  <BLOCK> if OPT_NAME | find_pic </BLOCK>
+    \photo[circle,noedge,left]{<VAR>OPT_NAME|get_pic</VAR>}
+  <BLOCK> else </BLOCK>
+    <BLOCK> if "./profile_square.jpg" | file_exists </BLOCK>
+      \photo[circle,noedge,left]{./profile_square.jpg}
+    <BLOCK> endif </BLOCK>
   <BLOCK> endif </BLOCK>
 <BLOCK> endif </BLOCK>
 

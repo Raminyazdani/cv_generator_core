@@ -1,0 +1,750 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cv.schema.json",
+  "title": "CV JSON Configuration",
+  "description": "Schema reconstructed from Raminyazdani/cv_generator_core. The code validates only the top-level 'basics' key, but the templates are StrictUndefined, so several nested fields are marked as template-required.",
+  "type": "object",
+  "required": [
+    "basics"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "config": {
+      "type": "object",
+      "description": "Optional rendering/configuration object used by CV templates.",
+      "additionalProperties": true,
+      "properties": {
+        "lang": {
+          "type": "string",
+          "description": "Language code stored in examples. The build pipeline actually derives language from the filename.",
+          "examples": [
+            "en",
+            "de",
+            "fa",
+            "ar",
+            "he"
+          ]
+        },
+        "ID": {
+          "type": "string",
+          "description": "Person/config identifier from example CV data."
+        },
+        "color": {
+          "type": "string",
+          "description": "LaTeX Awesome-CV color name inserted into \\colorlet{awesome}{...}. If absent or empty, layout.tex uses awesome-nephritis.",
+          "default": "awesome-nephritis",
+          "examples": [
+            "awesome-emerald",
+            "awesome-skyblue",
+            "awesome-red",
+            "awesome-pink",
+            "awesome-orange",
+            "awesome-nephritis",
+            "awesome-concrete",
+            "awesome-darknight"
+          ]
+        },
+        "no_cert": {
+          "type": "boolean",
+          "description": "If true, certificates.tex suppresses the rendered Certification/Workshop label.",
+          "default": false
+        }
+      }
+    },
+    "basics": {
+      "type": "array",
+      "description": "Template-required personal data. Only the first object is used by header.tex and layout.tex.",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/basic"
+      }
+    },
+    "profiles": {
+      "type": "array",
+      "description": "Social/profile links rendered by header.tex for selected exact network values.",
+      "items": {
+        "$ref": "#/$defs/profile"
+      }
+    },
+    "profile": {
+      "type": "array",
+      "description": "Fallback alias read only by cover-letter sender extraction when a CV is referenced. CV header templates use 'profiles'.",
+      "items": {
+        "$ref": "#/$defs/profile"
+      }
+    },
+    "education": {
+      "type": "array",
+      "description": "Rendered by education.tex only when the array length is greater than 1.",
+      "items": {
+        "$ref": "#/$defs/education"
+      }
+    },
+    "experiences": {
+      "type": "array",
+      "description": "Rendered by experience.tex only when the array length is greater than 1.",
+      "items": {
+        "$ref": "#/$defs/experience"
+      }
+    },
+    "skills": {
+      "type": "object",
+      "description": "Nested skill groups: top-level section name -> category name -> skill item array. Rendered only when object length is greater than 1.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/skillItem"
+          }
+        }
+      }
+    },
+    "languages": {
+      "type": "array",
+      "description": "Rendered by language.tex only when the array length is greater than 1.",
+      "items": {
+        "$ref": "#/$defs/language"
+      }
+    },
+    "workshop_and_certifications": {
+      "type": "array",
+      "description": "Rendered by certificates.tex only when the array length is greater than 1.",
+      "items": {
+        "$ref": "#/$defs/certificationGroup"
+      }
+    },
+    "projects": {
+      "type": "array",
+      "description": "Rendered by projects.tex only when the array length is greater than 1.",
+      "items": {
+        "$ref": "#/$defs/project"
+      }
+    },
+    "publications": {
+      "type": "array",
+      "description": "Rendered by publications.tex only when the array length is greater than 1.",
+      "items": {
+        "$ref": "#/$defs/publication"
+      }
+    },
+    "references": {
+      "type": "array",
+      "description": "Rendered by references.tex only when the array length is greater than 1.",
+      "items": {
+        "$ref": "#/$defs/reference"
+      }
+    }
+  },
+  "$defs": {
+    "stringOrNull": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "numberOrNull": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "tagArray": {
+      "type": "array",
+      "description": "Tag labels used by examples and filtering workflows; core CV PDF templates mostly ignore them except projects.type_key.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "phone": {
+      "type": "object",
+      "description": "Phone object. header.tex renders phone.formatted.",
+      "additionalProperties": true,
+      "required": [
+        "formatted"
+      ],
+      "properties": {
+        "countryCode": {
+          "type": "string"
+        },
+        "number": {
+          "type": "string"
+        },
+        "formatted": {
+          "type": "string",
+          "description": "Template-required by header.tex when phone is present."
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "description": "Location object. header.tex uses the first basics.location item.",
+      "additionalProperties": true,
+      "properties": {
+        "address": {
+          "$ref": "#/$defs/stringOrNull"
+        },
+        "postalCode": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        }
+      }
+    },
+    "picture": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type_of": {
+          "type": "string",
+          "examples": [
+            "profile",
+            "cover"
+          ]
+        },
+        "URL": {
+          "type": "string"
+        }
+      }
+    },
+    "basic": {
+      "type": "object",
+      "description": "First object is used for name, position, address, phone, email, footer, and cover-letter sender fallback.",
+      "additionalProperties": true,
+      "required": [
+        "fname",
+        "lname",
+        "label",
+        "location",
+        "phone",
+        "email"
+      ],
+      "properties": {
+        "fname": {
+          "type": "string",
+          "description": "Template-required first name."
+        },
+        "lname": {
+          "type": "string",
+          "description": "Template-required last name."
+        },
+        "label": {
+          "type": "array",
+          "description": "Position/title labels rendered with dot separators.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "email": {
+          "type": "string",
+          "description": "Rendered by header.tex."
+        },
+        "phone": {
+          "$ref": "#/$defs/phone"
+        },
+        "birthDate": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "location": {
+          "type": "array",
+          "description": "Only the first location object is rendered.",
+          "items": {
+            "$ref": "#/$defs/location"
+          }
+        },
+        "Pictures": {
+          "type": "array",
+          "description": "Used by cover-letter CV fallback; CV header photo lookup instead checks data/pics/<base_name>.jpg.",
+          "items": {
+            "$ref": "#/$defs/picture"
+          }
+        },
+        "pictures": {
+          "type": "array",
+          "description": "Lowercase fallback accepted by cover-letter sender extraction.",
+          "items": {
+            "$ref": "#/$defs/picture"
+          }
+        },
+        "photo": {
+          "description": "Fallback accepted by cover-letter sender extraction.",
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "#/$defs/picture"
+            }
+          ]
+        },
+        "quote": {
+          "type": "string"
+        }
+      }
+    },
+    "profile": {
+      "type": "object",
+      "description": "Profile link. header.tex renders only exact network values: GitHub, Google Scholar, LinkedIn, Website. Other values may exist but are ignored by the current CV template.",
+      "additionalProperties": true,
+      "required": [
+        "network"
+      ],
+      "properties": {
+        "network": {
+          "type": "string",
+          "examples": [
+            "GitHub",
+            "Google Scholar",
+            "LinkedIn",
+            "Website",
+            "ORCID"
+          ]
+        },
+        "username": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "uuid": {
+          "type": "string",
+          "description": "Required by the Google Scholar branch in header.tex."
+        },
+        "type_key": {
+          "$ref": "#/$defs/tagArray"
+        }
+      }
+    },
+    "education": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "studyType",
+        "area",
+        "institution",
+        "location",
+        "startDate",
+        "endDate"
+      ],
+      "properties": {
+        "institution": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string"
+        },
+        "studyType": {
+          "type": "string"
+        },
+        "startDate": {
+          "type": "string"
+        },
+        "endDate": {
+          "type": "string"
+        },
+        "gpa": {
+          "type": "string"
+        },
+        "logo_url": {
+          "type": "string"
+        },
+        "type_key": {
+          "$ref": "#/$defs/tagArray"
+        }
+      }
+    },
+    "experience": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "role",
+        "duration"
+      ],
+      "properties": {
+        "institution": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "string"
+        },
+        "primaryFocus": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "type_key": {
+          "$ref": "#/$defs/tagArray"
+        }
+      }
+    },
+    "skillItem": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "short_name"
+      ],
+      "properties": {
+        "short_name": {
+          "type": "string",
+          "description": "Rendered by skills.tex."
+        },
+        "long_name": {
+          "type": "string"
+        },
+        "type_key": {
+          "$ref": "#/$defs/tagArray"
+        }
+      }
+    },
+    "language": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "language",
+        "proficiency",
+        "certifications"
+      ],
+      "properties": {
+        "language": {
+          "type": "string"
+        },
+        "proficiency": {
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "level",
+            "CEFR",
+            "status"
+          ],
+          "properties": {
+            "level": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "CEFR": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "certifications": {
+          "type": "array",
+          "description": "language.tex reads only the first certification item.",
+          "items": {
+            "$ref": "#/$defs/languageCertification"
+          }
+        },
+        "type_key": {
+          "$ref": "#/$defs/tagArray"
+        }
+      }
+    },
+    "languageCertification": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "test": {
+          "$ref": "#/$defs/stringOrNull"
+        },
+        "organization": {
+          "$ref": "#/$defs/stringOrNull"
+        },
+        "overall": {
+          "$ref": "#/$defs/numberOrNull"
+        },
+        "reading": {
+          "$ref": "#/$defs/numberOrNull"
+        },
+        "writing": {
+          "$ref": "#/$defs/numberOrNull"
+        },
+        "listening": {
+          "$ref": "#/$defs/numberOrNull"
+        },
+        "speaking": {
+          "$ref": "#/$defs/numberOrNull"
+        },
+        "maxScore": {
+          "$ref": "#/$defs/numberOrNull",
+          "default": 9.0
+        },
+        "minScore": {
+          "$ref": "#/$defs/numberOrNull"
+        },
+        "examDate": {
+          "$ref": "#/$defs/stringOrNull"
+        },
+        "URL": {
+          "$ref": "#/$defs/stringOrNull"
+        }
+      }
+    },
+    "certificationGroup": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "issuer",
+        "certifications"
+      ],
+      "properties": {
+        "issuer": {
+          "type": "string"
+        },
+        "certifications": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/certification"
+          }
+        }
+      }
+    },
+    "certification": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "date"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "string"
+        },
+        "certificate": {
+          "type": "boolean",
+          "description": "true renders Certification; false renders Workshop unless config.no_cert is true."
+        },
+        "URL": {
+          "$ref": "#/$defs/stringOrNull"
+        },
+        "type_key": {
+          "$ref": "#/$defs/tagArray"
+        }
+      }
+    },
+    "project": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "title",
+        "description",
+        "type_key"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "type_key": {
+          "$ref": "#/$defs/tagArray",
+          "description": "Rendered as project type labels after filtering out exact values 'Full CV' and 'Academic'."
+        }
+      }
+    },
+    "publication": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "type",
+        "title"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Publication type. Template has special branches for Book Chapter and thesis types; other strings use journal/publisher branch.",
+          "examples": [
+            "Article",
+            "Book Chapter",
+            "Master Thesis",
+            "Bachelor Thesis",
+            "PhD Thesis",
+            "Thesis",
+            "Dissertation"
+          ]
+        },
+        "status": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "URL": {
+          "type": "string"
+        },
+        "year": {
+          "type": [
+            "string",
+            "number"
+          ]
+        },
+        "date": {
+          "type": "string"
+        },
+        "authors_structured": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "literal": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {
+                  "literal": {
+                    "type": "string"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "journal": {
+          "type": "string"
+        },
+        "publisher": {
+          "type": "string"
+        },
+        "book_title": {
+          "type": "string"
+        },
+        "institution": {
+          "type": "string"
+        },
+        "editors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "chapter_pages": {
+          "type": "string"
+        },
+        "degree_type": {
+          "type": "string"
+        },
+        "faculty": {
+          "type": "string"
+        },
+        "school": {
+          "type": "string"
+        },
+        "volume": {
+          "type": "string"
+        },
+        "issue": {
+          "type": "string"
+        },
+        "pages": {
+          "type": "string"
+        },
+        "identifiers": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "doi": {
+              "type": "string"
+            }
+          }
+        },
+        "type_key": {
+          "$ref": "#/$defs/tagArray"
+        }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        },
+        "department": {
+          "type": "string"
+        },
+        "institution": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "email": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "phone": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/phone"
+          }
+        },
+        "URL": {
+          "type": "string"
+        },
+        "type_key": {
+          "$ref": "#/$defs/tagArray"
+        }
+      }
+    }
+  }
+}
