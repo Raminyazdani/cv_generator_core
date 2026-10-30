@@ -1,0 +1,116 @@
+% basics and profiles
+
+
+
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo{./profile.png}
+
+% assume you already set firstname/lastname earlier
+<BLOCK> if ( basics[0]["fname"] and basics[0]["lname"]) </BLOCK>
+\name{<VAR> basics[0]["fname"] | latex_escape </VAR>}{<VAR> basics[0]["lname"] | latex_escape </VAR>}
+<BLOCK> endif </BLOCK>
+
+
+<BLOCK> if basics and (basics|length)>0 and basics[0]['label'] and (basics[0]['label']|length)>0 </BLOCK>
+\position{<BLOCK> for lbl in basics[0]['label'] </BLOCK>
+  <VAR> lbl | latex_escape </VAR><BLOCK> if not loop.last </BLOCK>{\enskip\cdotp\enskip}<BLOCK> endif </BLOCK>
+<BLOCK> endfor </BLOCK>}
+<BLOCK> endif </BLOCK>
+
+<BLOCK> if basics and (basics|length)>0 and basics[0]['location'] and (basics[0]['location']|length)>0 </BLOCK>
+\address{<VAR>
+  [
+    basics[0]['location'][0]['city']       | default(''),
+    basics[0]['location'][0]['region']     | default(''),
+    basics[0]['location'][0]['postalCode'] | default(''),
+    basics[0]['location'][0]['country']    | default('')
+  ]
+  | reject('equalto','')
+  | join(', ')
+  | latex_escape
+</VAR>}
+<BLOCK> endif </BLOCK>
+
+
+<BLOCK> if OPT_NAME | find_pic </BLOCK>
+  \photo[circle,noedge,left]{<VAR>OPT_NAME|get_pic</VAR>}
+<BLOCK> else </BLOCK>
+  <BLOCK> if "./profile_square.jpg" | file_exists </BLOCK>
+    \photo[circle,noedge,left]{./profile_square.jpg}
+  <BLOCK> endif </BLOCK>
+<BLOCK> endif </BLOCK>
+
+
+
+<BLOCK> if basics and (basics|length)>0 and basics[0]['phone'] and (basics[0]['phone']|length)>0 </BLOCK>
+
+\mobile{<VAR> basics[0]["phone"]["formatted"] | latex_escape </VAR>}
+
+<BLOCK> endif </BLOCK>
+
+<BLOCK> if basics and (basics|length)>0 and basics[0]['email'] and (basics[0]['email']|length)>0 </BLOCK>
+
+\email{<VAR> basics[0]["email"] | latex_escape </VAR>}
+
+<BLOCK> endif </BLOCK>
+
+
+
+
+
+% -----------------------
+
+<BLOCK> if profiles and (profiles|length)>0 </BLOCK>
+
+<BLOCK> for prof in profiles </BLOCK>
+
+  <BLOCK> if prof["network"]=="Github" </BLOCK>
+  \github{<VAR>prof["username"]</VAR>}
+  <BLOCK> endif </BLOCK>
+  <BLOCK> if prof["network"]=="Google Scholar" </BLOCK>
+  \googlescholar{<VAR>prof["uuid"]</VAR>}{google scholar :,<VAR>prof["username"]</VAR>}
+  <BLOCK> endif </BLOCK>
+
+  <BLOCK> if prof["network"]=="LinkedIn" </BLOCK>
+  \linkedin{<VAR>prof["username"]</VAR>}
+  <BLOCK> endif </BLOCK>
+    <BLOCK> if prof["network"]=="Website" </BLOCK>
+  \homepage{<VAR>prof["url"]</VAR>}
+  <BLOCK> endif </BLOCK>
+
+
+<BLOCK> endfor </BLOCK>
+<BLOCK> endif </BLOCK>
+
+
+%
+% Publication example omitted; supply your own CV fields.
+%
+%
+% Publication example omitted; supply your own CV fields.
+%
+% Publication example omitted; supply your own CV fields.
+
+
+% Publication example omitted; supply your own CV fields.
+% Publication example omitted; supply your own CV fields.
+% Publication example omitted; supply your own CV fields.
+
+% Publication example omitted; supply your own CV fields.
+
+
+% Publication example omitted; supply your own CV fields.
+% Publication example omitted; supply your own CV fields.
+% Publication example omitted; supply your own CV fields.
+% Publication example omitted; supply your own CV fields.
+% Publication example omitted; supply your own CV fields.
+% Publication example omitted; supply your own CV fields.
+% Publication example omitted; supply your own CV fields.
+% Publication example omitted; supply your own CV fields.
+% Publication example omitted; supply your own CV fields.
+% \telegram{telegram-username}
+
+
+% Publication example omitted; supply your own CV fields.
+
+% \quote{``Be the change that you want to see in the world."}
