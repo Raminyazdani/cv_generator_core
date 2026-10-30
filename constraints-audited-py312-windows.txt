@@ -1,0 +1,5 @@
+# Python3.12 / Windows family resolver snapshot audited2026-10-30 with pip-audit2.10.1.
+# Constraints only: use -c, not -r. Entries unused by this variant do not install packages.
+# Not artifact hashes, not a cross-platform lock, and not a runtime compatibility guarantee.
+jinja2==3.1.6
+markupsafe==3.0.4

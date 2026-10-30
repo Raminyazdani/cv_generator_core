@@ -1,75 +1,29 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Virtual environments
+# Current-tree publication boundary; old Git history may still contain data.
+.env
+.env.*
+!.env.example
+*.db
+*.db3
+*.sqlite*
+*.log
+data/
+private/
+outputs/
+output/
+result/
+results/
+generated_prompts/
+email_tracking_state/
+out_batch_*/
+state_batch_*/
+USER_PROF/
+*_user_data/
+browser_profiles/
+node_modules/
 .venv/
 venv/
-ENV/
-env/
-
-# Editor / IDE settings
-.vscode/
-.idea/
-*.code-workspace
-
-# OS files
-.DS_Store
-Thumbs.db
-Desktop.ini
-
-# Python packaging
+__pycache__/
+*.py[cod]
 build/
 dist/
-*.egg-info/
-
-# Logs
-*.log
-
-# LaTeX auxiliary files
-*.aux
-*.bbl
-*.blg
-*.brf
-*.fdb_latexmk
-*.fls
-*.fot
-*.idx
-*.ilg
-*.ind
-*.lof
-*.log
-*.lot
-*.lox
-*.nav
-*.out
-*.snm
-*.synctex.gz
-*.toc
-*.vrb
-*.xdy
-*.synctex
-
-# LaTeX intermediate directories (if any)
-latexmk/
-
-# Generated result folders
-result/
-
-# Generated PDFs (optional: track only example outputs if you want)
-#output/*.pdf
-
-# OneDrive sync artifacts
-~$*
-*.tmp
-
-# CI generated reports (not tracked, uploaded as artifacts)
-validation-report.json
-requirements-lock.txt
-
-# Visual proof directories (generated during testing)
-docs/visual-proof/
-
-# CV generator cache file (stores file hashes for change detection)
-.cvgen_cache.json
+.react-router/
