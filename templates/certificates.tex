@@ -1,0 +1,23 @@
+<BLOCK> if workshop_and_certifications|length > 1 </BLOCK>
+
+
+
+\cvsection{<VAR> t("workshop_and_certifications", "Workshops & Certifications") </VAR>}
+
+<BLOCK> for grp in workshop_and_certifications </BLOCK>
+\begin{issuerhonors}{<VAR> grp.issuer | latex_escape </VAR>}
+  \newline
+  <BLOCK> for c in grp.certifications </BLOCK>
+  \cvhonor
+    {%
+      <VAR> c.name | latex_escape </VAR>%
+      <BLOCK> if c.URL </BLOCK>\enskip\href{<VAR> c.URL </VAR>}{\honorlocationstyle{[LINK]}}<BLOCK> endif </BLOCK>%
+    }
+    {<BLOCK> if c.duration </BLOCK>(<VAR> c.duration | latex_escape </VAR>)<BLOCK> endif </BLOCK>}
+    {<BLOCK> if c.certificate </BLOCK>Certification<BLOCK> else </BLOCK>Workshop<BLOCK> endif </BLOCK>}
+    {<VAR> c.date | latex_escape</VAR>}
+  <BLOCK> endfor </BLOCK>
+\end{issuerhonors}
+\newline
+<BLOCK> endfor </BLOCK>
+<BLOCK> endif </BLOCK>
